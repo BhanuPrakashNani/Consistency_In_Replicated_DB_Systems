@@ -47,7 +47,22 @@ public class Main {
               { 
                   try
                   { 
-                      R.replicate(); 
+                      R.replicate(2); 
+                  } 
+                  catch(InterruptedException | ClassNotFoundException | SQLException e) 
+                  { 
+                      e.printStackTrace(); 
+                  } 
+              } 
+          }); 
+          Thread t3 = new Thread(new Runnable() 
+          { 
+              @Override
+              public void run() 
+              { 
+                  try
+                  { 
+                      R.replicate(3); 
                   } 
                   catch(InterruptedException | ClassNotFoundException | SQLException e) 
                   { 
@@ -59,6 +74,7 @@ public class Main {
           // Start both threads 
           t1.start(); 
           t2.start(); 
+          t3.start();
 
     }
 	

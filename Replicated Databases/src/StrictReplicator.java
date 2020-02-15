@@ -13,7 +13,7 @@ public class StrictReplicator {
         		int i =0;
         	
         	while(true) {
-        		System.out.println("HEy"+DBhandler1.isUpdated);
+        		System.out.println("Hey"+DBhandler1.isUpdated);
         		if(DBhandler1.isUpdated == 0)  {
         			Scanner sc = new Scanner(System.in);
 //                  System.out.println("Enter sno: \n");
@@ -46,7 +46,7 @@ public class StrictReplicator {
 
     // Sleeps for some time and waits for a key press. After key 
     // is pressed, it notifies produce(). 
-    public void replicate()throws InterruptedException, ClassNotFoundException, SQLException 
+    public void replicate(int p)throws InterruptedException, ClassNotFoundException, SQLException 
     { 
         // this makes the produce thread to run first. 
         Thread.sleep(1000); 
@@ -62,7 +62,7 @@ public class StrictReplicator {
         		if(DBhandler1.isUpdated > 0) {
         			DBhandler2.isReplicating = 1;
         			System.out.println("Found a update, updating......");
-        			Threadreplicator.replicate();
+        			Threadreplicator.replicate(p);
         			System.out.println("UPDATEd "+DBhandler1.isUpdated);
         			DBhandler2.isReplicating = 0;
 

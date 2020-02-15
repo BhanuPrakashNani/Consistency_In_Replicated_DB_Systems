@@ -4,9 +4,9 @@ import java.sql.SQLException;
 public class Threadreplicator{
     static DBhandler1 DBH1 = new DBhandler1();
     static DBhandler2 DBH2 = new DBhandler2();   
-
+    static DBhandler3 DBH3 = new DBhandler3();   
     
-    public static void replicate() throws ClassNotFoundException, SQLException {
+    public static void replicate(int p) throws ClassNotFoundException, SQLException {
     	ResultSet read_input = DBH1.read();
 		System.out.println("Replicating");
 		int sno=0;
@@ -26,7 +26,15 @@ public class Threadreplicator{
 				sno  = read_input.getInt("sno");
 	             name = read_input.getString("name");
 				}
-				DBH2.write(sno, name);
+				switch(p) {
+				case 2:
+					DBH2.write(sno, name);
+					
+				case 3:
+					DBH3.write(sno, name);
+
+				default:
+				}
 				DBhandler1.isUpdated--;
 				System.out.println("Replicating ra");
 			}
