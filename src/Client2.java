@@ -4,13 +4,13 @@ import java.rmi.registry.Registry;
 import java.util.*; 
 import java.sql.*;
 
-public class Client {  
-   private Client() {}  
+public class Client2 {  
+   private Client2() {}  
    public static void main(String[] args)throws Exception, ClassNotFoundException {  
 	   List<Student> list = null;
       try { 
     	  Class.forName("com.mysql.jdbc.Driver");
-         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi2", "root", "asdf;lkj");
+         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi3", "root", "asdf;lkj");
          // MySQL: "jdbc:mysql://hostname:port/databaseName", "username", "password"
          Statement stmt = conn.createStatement();
          // Getting the registry 
@@ -39,11 +39,11 @@ public class Client {
           System.out.println("email: " + s.getEmail());
       }
       while(true) {
-    	  if(stub.dbstatus(0) == 1) {
+    	  if(stub.dbstatus(1) == 1) {
     		  list = (List<Student>)stub.getStudents();
     	      String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values("+list.get(list.size()-1).getId()+",'"+list.get(list.size()-1).getName()+"','"+ list.get(list.size()-1).getBranch()+"',"+list.get(list.size()-1).getPercent()+",'"+ list.get(list.size()-1).getEmail()+ "')";
     	      int count=stmt.executeUpdate(insert);
-    	      stub.notify(0);
+    	      stub.notify(1);
     	      System.out.println("Replicated");
     	  }
     	  System.out.println("Server not updated");

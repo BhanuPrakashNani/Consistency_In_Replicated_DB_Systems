@@ -24,14 +24,22 @@ public class Server extends ImplExample {
          Hello stub2 = (Hello) registry.lookup("Hello");
          System.out.println("lookup server");
 
-         System.out.println(stub2.getstatus());
+//         System.out.println(stub2.notify());
+//         while(true) {
+//             if(stub2.getstatus() ==1)
+//        	 System.out.println(stub2.getMessage());
+//
+//         }
+         int t =0;
+         stub2.addStudent(t);
          while(true) {
-             if(stub2.getstatus() ==1)
-        	 System.out.println(stub2.getMessage());
-
+        	 if(stub2.dbstatus() == 0) {
+        		 stub2.addStudent(t);
+        		 t++;
+        	 }
+        	 System.out.println("We didnt update");
          }
-         
-      } catch (Exception e) { 
+     } catch (Exception e) { 
          System.err.println("Server exception: " + e.toString()); 
          e.printStackTrace(); 
       }
