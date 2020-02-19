@@ -8,7 +8,7 @@ import java.util.List;
 
 public class ImplExample2 implements Hello{
 	static int status;
-	int[] dbstatus = new int[]{ 0, 0, 0};
+	int[] dbstatus = new int[]{ 0, 0, 0, 0};  // 0- c1, 1-c2, 3-s1, 4-s2
 	String msg =",";
 	public List<Student> getStudents() throws Exception, ClassNotFoundException {  
 			List<Student> list = new ArrayList<Student>();   
@@ -106,9 +106,10 @@ public class ImplExample2 implements Hello{
 	      //ResultSet rs = stmt.executeQuery(sql);  
 	      String insert = "INSERT INTO samplermi(id, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
 	      int count=stmt.executeUpdate(insert);
-	      for (int i =0; i<3; i++) {
+	      for (int i =0; i<4; i++) {
 	    	  dbstatus[i]++;
 	      }
+//	      dbstatus[3] = 0;
 	      status = 0;
 	      System.out.println(count);     
 
@@ -136,9 +137,10 @@ public class ImplExample2 implements Hello{
     }
     public int dbstatus() throws RemoteException{
     	int status = 0;
-    	for (int i=0; i<2; i++) {
+    	for (int i=0; i<4; i++) {
     		status = status + dbstatus[i];
     	}
+    	status = status - dbstatus[3];
     	return status;
     }
 	@Override

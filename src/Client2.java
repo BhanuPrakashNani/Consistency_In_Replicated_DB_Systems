@@ -53,7 +53,7 @@ public class Client2 {
     	      stub2.notify(1);
     	      System.out.println("Replicated Server 2");
     	  }
-    	  System.out.println("Server not updated");
+//    	  System.out.println("Server not updated");
       }
 
       

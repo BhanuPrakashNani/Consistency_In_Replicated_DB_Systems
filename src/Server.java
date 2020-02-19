@@ -1,14 +1,24 @@
 import java.rmi.registry.*; 
 import java.rmi.registry.LocateRegistry; 
 import java.rmi.RemoteException; 
-import java.rmi.server.UnicastRemoteObject; 
+import java.rmi.server.UnicastRemoteObject;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.util.List;
 import java.rmi.*;
 
 public class Server extends ImplExample { 
    public Server() {} 
    public static void main(String args[]) { 
+	   List<Student> list = null;
+
       try { 
          // Instantiating the implementation class 
+          Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi", "root", "asdf;lkj");
+
+          Statement stmt = conn.createStatement();
+
          ImplExample obj = new ImplExample(); 
          // Exporting the object of implementation class (
          // here we are exporting the remote object to the stub) 
@@ -33,15 +43,28 @@ public class Server extends ImplExample {
 //
 //         }
          int t =0;
-         stub_self.addStudent(t);
+//         stub_self.addStudent(t);
+         Thread.sleep(2000);
+
          while(true) {
+             Thread.sleep(2000);
+
         	 if(stub_self.dbstatus() == 0 && stub_s2.dbstatus() == 0 && stub_s2.getStatus() == 0) {
-        		 stub_self.addStudent(t);
-                 Thread.sleep(3000);
         		 stub_self.setStatus();
+        		 stub_self.addStudent(t);
+        		 stub_self.notify(2);
+
+//                 stub_self.notify(2);
         		 t++;
         	 }
-        	 System.out.println("We didnt update");
+        	 if(stub_s2.dbstatus(2) == 1) {
+       		  list = (List<Student>)stub_s2.getStudents();
+       	      String insert = "INSERT INTO samplermi(id, name, branch, percentage, email) values("+list.get(list.size()-1).getId()+",'"+list.get(list.size()-1).getName()+"','"+ list.get(list.size()-1).getBranch()+"',"+list.get(list.size()-1).getPercent()+",'"+ list.get(list.size()-1).getEmail()+ "')";
+       	      int count=stmt.executeUpdate(insert);
+       	      stub_s2.notify(2);
+       	      System.out.println("Replicated Server 2 to Server 1");
+       	  }
+//        	 System.out.println("We didnt update");
          }
      } catch (Exception e) { 
          System.err.println("Server exception: " + e.toString()); 
