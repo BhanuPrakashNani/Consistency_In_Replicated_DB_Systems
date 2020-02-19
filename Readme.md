@@ -5,7 +5,7 @@ Open three terminals:
 
 Update your $CLASSPATH env var to the path of connector-xxx.jar
 
-
+** ADD current directory in your class path in every session**
 
 
 
