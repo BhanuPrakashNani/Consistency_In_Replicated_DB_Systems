@@ -20,10 +20,22 @@ public class Server extends ImplExample {
          Registry registry = LocateRegistry.getRegistry(); 
 //         Naming.bind("rmi://localhost:5000/sonoo",stub);  
          registry.bind("Hello", stub);  
-         System.out.println("Server ready"); 
+         System.out.println("Server ready");
+         Hello stub2 = (Hello) registry.lookup("Hello");
+         System.out.println("lookup server");
+
+         System.out.println(stub2.getstatus());
+         while(true) {
+             if(stub2.getstatus() ==1)
+        	 System.out.println(stub2.getMessage());
+
+         }
+         
       } catch (Exception e) { 
          System.err.println("Server exception: " + e.toString()); 
          e.printStackTrace(); 
-      } 
+      }
+      
+
    } 
 }

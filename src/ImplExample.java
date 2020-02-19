@@ -1,3 +1,4 @@
+import java.rmi.RemoteException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -6,6 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ImplExample implements Hello{
+	static int status;
+	String msg =",";
 	public List<Student> getStudents() throws Exception, ClassNotFoundException {  
 			List<Student> list = new ArrayList<Student>();   
 	      // JDBC driver name and database URL 
@@ -64,5 +67,23 @@ public class ImplExample implements Hello{
 	      return list;     
 
 	      }
+	
+    @Override
+    public void sendMessage(String s) throws RemoteException {
+        System.out.println(s);
+        msg = s;
+        status++;
+    }
+
+    @Override
+    public String getMessage() throws RemoteException {
+    	status--;
+        return "Your message is: " + msg;
+        
+    }
+    public int getstatus() throws RemoteException{
+    	return status;
+    }
+    
 }
 
