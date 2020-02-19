@@ -10,5 +10,7 @@ public interface Hello extends Remote{
 	public int dbstatus() throws RemoteException;
 	String getMessage() throws RemoteException;
 	public void notify(int i) throws RemoteException ;
+	public int getStatus() throws RemoteException;
+	public void setStatus() throws RemoteException;
 }
 	

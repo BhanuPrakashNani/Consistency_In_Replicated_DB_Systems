@@ -19,7 +19,7 @@ public class Client {
          // Looking up the registry for the remote object 
          System.out.println("lookup client");
          Hello stub = (Hello) registry.lookup("Hello"); 
-        
+         Hello stub2 = (Hello) registry.lookup("Hello2");
          // Hello stub=(Hello)Naming.lookup("rmi://localhost:5000/sonoo");  
 
          // Calling the remote method using the obtained object 
@@ -45,6 +45,13 @@ public class Client {
     	      int count=stmt.executeUpdate(insert);
     	      stub.notify(0);
     	      System.out.println("Replicated");
+    	  }
+    	  if(stub2.dbstatus(0) == 1) {
+    		  list = (List<Student>)stub2.getStudents();
+    	      String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values("+list.get(list.size()-1).getId()+",'"+list.get(list.size()-1).getName()+"','"+ list.get(list.size()-1).getBranch()+"',"+list.get(list.size()-1).getPercent()+",'"+ list.get(list.size()-1).getEmail()+ "')";
+    	      int count=stmt.executeUpdate(insert);
+    	      stub2.notify(0);
+    	      System.out.println("Replicated Server 2");
     	  }
     	  System.out.println("Server not updated");
       }

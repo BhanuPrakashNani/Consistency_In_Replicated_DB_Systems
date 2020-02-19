@@ -6,9 +6,9 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ImplExample implements Hello{
+public class ImplExample2 implements Hello{
 	static int status;
-	int[] dbstatus = new int[]{ 0, 0};
+	int[] dbstatus = new int[]{ 0, 0, 0};
 	String msg =",";
 	public List<Student> getStudents() throws Exception, ClassNotFoundException {  
 			List<Student> list = new ArrayList<Student>();   
@@ -21,7 +21,7 @@ public class ImplExample implements Hello{
 	    	System.out.println("SWWWWWERRRRRR");
 	    	e.printStackTrace();
 	      }
-	      String DB_URL = "jdbc:mysql://localhost:3306/rmi";  
+	      String DB_URL = "jdbc:mysql://localhost:3306/rmi4";  
 	      
 	      // Database credentials 
 	      String USER = "root"; 
@@ -33,12 +33,12 @@ public class ImplExample implements Hello{
 	      //Register JDBC driver 
 	        
 	      //Open a connection
-	      System.out.println("Connecting to a selected database..."); 
+	      System.out.println("SERVER 2 Connecting to a selected database..."); 
 	      conn = DriverManager.getConnection(DB_URL, USER, PASS); 
 	      System.out.println("Connected database successfully...");  
 	      
 	      //Execute a query 
-	      System.out.println("Creating statement..."); 
+	      System.out.println("SERVER 2 Creating statement..."); 
 	      	
 	      stmt = conn.createStatement();  
 	      String sql = "SELECT * FROM samplermi"; 
@@ -77,7 +77,7 @@ public class ImplExample implements Hello{
 	    	System.out.println("SWWWWWERRRRRR");
 	    	e.printStackTrace();
 	      }
-	      String DB_URL = "jdbc:mysql://localhost:3306/rmi";  
+	      String DB_URL = "jdbc:mysql://localhost:3306/rmi4";  
 	      
 	      // Database credentials 
 	      String USER = "root"; 
@@ -89,24 +89,24 @@ public class ImplExample implements Hello{
 	      //Register JDBC driver 
 	        
 	      //Open a connection
-	      System.out.println("Connecting to a selected database..."); 
+	      System.out.println("SERVER 2 Connecting to a selected database..."); 
 	      conn = DriverManager.getConnection(DB_URL, USER, PASS); 
-	      System.out.println("Connected database successfully...");  
+	      System.out.println("SERVER 2 Connected database successfully...");  
 	      
 	      //Execute a query 
-	      System.out.println("Creating statement...");
+	      System.out.println("SERVER 2 Creating statement...");
 	      
 	      
-	      String name = "Mani";
+	      String name = "Bhanu";
 	      String branch = "cse";
-	      int percent = 95;
-	      String email = "mani.gmail";
+	      int percent = 96;
+	      String email = "bhanu.gmail";
 	      
 	      stmt = conn.createStatement();
 	      //ResultSet rs = stmt.executeQuery(sql);  
 	      String insert = "INSERT INTO samplermi(id, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
 	      int count=stmt.executeUpdate(insert);
-	      for (int i =0; i<2; i++) {
+	      for (int i =0; i<3; i++) {
 	    	  dbstatus[i]++;
 	      }
 	      status = 0;
@@ -141,13 +141,16 @@ public class ImplExample implements Hello{
     	}
     	return status;
     }
-    
-    public int getStatus() throws RemoteException{
-    	return status;
-    }
-    public void setStatus() throws RemoteException{
-    	status = 1;
-    }
+	@Override
+	public int getStatus() throws RemoteException {
+		// TODO Auto-generated method stub
+		return status;
+	}
+	@Override
+	public void setStatus() throws RemoteException {
+		// TODO Auto-generated method stub
+		status = 1;
+	}
     
 }
 
