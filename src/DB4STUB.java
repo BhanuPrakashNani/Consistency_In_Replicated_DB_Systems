@@ -3,12 +3,12 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
-public class ImplExample2 implements Hello{
+public class DB4STUB implements DBRemote{
+	Queue<Student> q = new LinkedList<>();
 	static int status;
-	int[] dbstatus = new int[]{ 0, 0, 0, 0};  // 0- c1, 1-c2, 3-s1, 4-s2
+	int[] dbstatus = new int[]{ 0, 0, 0, 0};  // 0- c1, 1-c2, 2-s1, 3-s2
 	String msg =",";
 	public List<Student> getStudents() throws Exception, ClassNotFoundException {  
 			List<Student> list = new ArrayList<Student>();   
@@ -68,7 +68,8 @@ public class ImplExample2 implements Hello{
 	      return list;     
 
 	      }
-	public void addStudent(int id)throws Exception, ClassNotFoundException {
+
+	public void addStudent(Student s)throws Exception, ClassNotFoundException {
 		String JDBC_DRIVER = "com.mysql.jdbc.Driver"; 
 	      try {
 	    	  Class.forName(JDBC_DRIVER); 
@@ -96,24 +97,32 @@ public class ImplExample2 implements Hello{
 	      //Execute a query 
 	      System.out.println("SERVER 2 Creating statement...");
 	      
-	      
-	      String name = "Bhanu";
-	      String branch = "cse";
-	      int percent = 96;
-	      String email = "bhanu.gmail";
+	      int id = s.getId();
+	      String name = s.getName();
+	      String branch = s.getBranch();
+	      int percent = s.getPercent();
+	      String email = s.getEmail();
 	      
 	      stmt = conn.createStatement();
-	      //ResultSet rs = stmt.executeQuery(sql);  
 	      String insert = "INSERT INTO samplermi(id, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
 	      int count=stmt.executeUpdate(insert);
-	      for (int i =0; i<4; i++) {
-	    	  dbstatus[i]++;
-	      }
-//	      dbstatus[3] = 0;
-	      status = 0;
-	      System.out.println(count);     
-
+	      System.out.println(count);
 	}
+	
+	
+	public void request(Student s) throws RemoteException {
+		
+		for (int i1 =0; i1<4; i1++) {
+	    	  dbstatus[i1]++;
+	      }
+			q.add(s);
+	}
+	
+	public Queue<Student> getQobj() throws RemoteException {		
+		return q;
+	}
+	
+	
     @Override
     public void sendMessage(String s) throws RemoteException {
         System.out.println(s);

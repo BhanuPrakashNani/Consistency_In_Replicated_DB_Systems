@@ -35,4 +35,3 @@ public class Student implements java.io.Serializable {
 	      this.email = email; 
 	   } 
 }
-

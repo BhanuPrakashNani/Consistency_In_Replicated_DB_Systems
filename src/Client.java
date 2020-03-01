@@ -18,8 +18,8 @@ public class Client {
          
          // Looking up the registry for the remote object 
          System.out.println("lookup client");
-         Hello stub = (Hello) registry.lookup("Hello"); 
-         Hello stub2 = (Hello) registry.lookup("Hello2");
+         DBRemote stub = (DBRemote) registry.lookup("Hello"); 
+         DBRemote stub2 = (DBRemote) registry.lookup("Hello2");
          // Hello stub=(Hello)Naming.lookup("rmi://localhost:5000/sonoo");  
 
          // Calling the remote method using the obtained object 
