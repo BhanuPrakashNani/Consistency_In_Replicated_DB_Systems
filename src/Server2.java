@@ -57,24 +57,40 @@ public class Server2 extends DB4STUB {
 
 	         stub_self.request(s);
 	         
-	         int tempStatus = stub_self.dbstatus(2);
+	         int tempStatus = stub_self.dbstatus(3);
 	         
 	         if(tempStatus > 0) {
+	        	 System.out.println("Writer 2 inside loop1 ");
+
 	        	 Queue<Student> q = stub_self.getQobj();
 	        	 while(tempStatus > 0) {
 	        		 s = q.peek();
+	        		 q.remove();
+	        		 System.out.println("Hiiiiii");
 	        		 stub_self.addStudent(s);
+	        		 stub_self.notify(3);
 	        		 tempStatus--;
 	        	 }
 	         }
 	         
-	         tempStatus = stub_s1.dbstatus(2);
+	         tempStatus = stub_s1.dbstatus(3);
 	         
 	         if(tempStatus > 0) {
+	        	 System.out.println("Writer 2 inside loop2 ");
+
 	        	 Queue<Student> q = stub_s1.getQobj();
 	        	 while(tempStatus > 0) {
 	        		 s = q.peek();
-	        		 stub_s1.addStudent(s);
+	        			Student st = q.peek();
+	        	        System.out.println("ID: " + st.getId()); 
+	        	        System.out.println("name: " + st.getName()); 
+	        	        System.out.println("branch: " + st.getBranch()); 
+	        	        System.out.println("percent: " + st.getPercent()); 
+	        	        System.out.println("email: " + st.getEmail());
+	        			System.out.println("QUEUE 1");
+	        		 q.remove();
+	        		 stub_self.addStudent(s);
+	        		 stub_s1.notify(3);
 	        		 tempStatus--;
 	        	 }
 	         }

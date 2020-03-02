@@ -115,7 +115,10 @@ public class DB4STUB implements DBRemote{
 		for (int i1 =0; i1<4; i1++) {
 	    	  dbstatus[i1]++;
 	      }
-			q.add(s);
+
+		q.add(s);
+		System.out.println("QUEUE 2");
+
 	}
 	
 	public Queue<Student> getQobj() throws RemoteException {		
@@ -139,6 +142,10 @@ public class DB4STUB implements DBRemote{
     @Override
     public void notify(int i) throws RemoteException{
     	dbstatus[i]--;
+    	if (this.dbstatus(0) == 0 && this.dbstatus(1) == 0
+    			&& this.dbstatus(2) == 0 && this.dbstatus(3) == 0) {
+    		q.clear();
+    	}
     }
     
     public int dbstatus(int i) throws RemoteException{

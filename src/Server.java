@@ -62,10 +62,13 @@ public class Server extends DB1STUB {
 	         int tempStatus = stub_self.dbstatus(2);
 	         
 	         if(tempStatus > 0) {
+	        	 System.out.println("Writer 1 inside loop1 ");
 	        	 Queue<Student> q = stub_self.getQobj();
 	        	 while(tempStatus > 0) {
 	        		 s = q.peek();
+	        		 q.remove();
 	        		 stub_self.addStudent(s);
+	        		 stub_self.notify(2);
 	        		 tempStatus--;
 	        	 }
 	         }
@@ -73,13 +76,24 @@ public class Server extends DB1STUB {
 	         tempStatus = stub_s2.dbstatus(2);
 	         
 	         if(tempStatus > 0) {
+	        	 System.out.println("Writer 1 inside loop2 ");
+
 	        	 Queue<Student> q = stub_s2.getQobj();
 	        	 while(tempStatus > 0) {
 	        		 s = q.peek();
-	        		 stub_s2.addStudent(s);
+	        			Student st = q.peek();
+	        	        System.out.println("ID: " + st.getId()); 
+	        	        System.out.println("name: " + st.getName()); 
+	        	        System.out.println("branch: " + st.getBranch()); 
+	        	        System.out.println("percent: " + st.getPercent()); 
+	        	        System.out.println("email: " + st.getEmail());
+	        		 q.remove();
+	        		 stub_self.addStudent(s);
+	        		 stub_s2.notify(2);
 	        		 tempStatus--;
 	        	 }
 	         }
+	         System.out.println("WRITER 1"+t);
 	         t++;
         	 
          }
