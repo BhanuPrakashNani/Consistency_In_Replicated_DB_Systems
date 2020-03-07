@@ -40,16 +40,24 @@ public class Client {
       }
       while(true) {
     	  if(stub.dbstatus(0) == 1) {
-    		  list = (List<Student>)stub.getStudents();
-    	      String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values("+list.get(list.size()-1).getId()+",'"+list.get(list.size()-1).getName()+"','"+ list.get(list.size()-1).getBranch()+"',"+list.get(list.size()-1).getPercent()+",'"+ list.get(list.size()-1).getEmail()+ "')";
-    	      int count=stmt.executeUpdate(insert);
+    		  if(stub.isWrite()) {
+//    		  list = (List<Student>)stub.getStudents();
+//    	      String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values("+list.get(list.size()-1).getId()+",'"+list.get(list.size()-1).getName()+"','"+ list.get(list.size()-1).getBranch()+"',"+list.get(list.size()-1).getPercent()+",'"+ list.get(list.size()-1).getEmail()+ "')";
+//    	      int count=stmt.executeUpdate(insert);
+     		  String exec = stub.getStmt();
+     	      int count=stmt.executeUpdate(exec);
+    		  }
     	      stub.notify(0);
     	      System.out.println("Replicated");
     	  }
     	  if(stub2.dbstatus(0) == 1) {
-    		  list = (List<Student>)stub2.getStudents();
-    	      String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values("+list.get(list.size()-1).getId()+",'"+list.get(list.size()-1).getName()+"','"+ list.get(list.size()-1).getBranch()+"',"+list.get(list.size()-1).getPercent()+",'"+ list.get(list.size()-1).getEmail()+ "')";
-    	      int count=stmt.executeUpdate(insert);
+    		  if(stub2.isWrite()) {
+//    		  list = (List<Student>)stub2.getStudents();
+//    	      String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values("+list.get(list.size()-1).getId()+",'"+list.get(list.size()-1).getName()+"','"+ list.get(list.size()-1).getBranch()+"',"+list.get(list.size()-1).getPercent()+",'"+ list.get(list.size()-1).getEmail()+ "')";
+//    	      int count=stmt.executeUpdate(insert);
+     			 String exec = stub2.getStmt();
+     			 int count=stmt.executeUpdate(exec);
+    		  }
     	      stub2.notify(0);
     	      System.out.println("Replicated Server 2");
     	  }

@@ -40,16 +40,33 @@ public class Client2 {
       }
       while(true) {
     	  if(stub.dbstatus(1) == 1) {
-    		  list = (List<Student>)stub.getStudents();
-    	      String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values("+list.get(list.size()-1).getId()+",'"+list.get(list.size()-1).getName()+"','"+ list.get(list.size()-1).getBranch()+"',"+list.get(list.size()-1).getPercent()+",'"+ list.get(list.size()-1).getEmail()+ "')";
-    	      int count=stmt.executeUpdate(insert);
+    		  System.out.println("hi1");
+    		  if(stub.isWrite()) {
+//    		  list = (List<Student>)stub.getStudents();
+//    	      String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values("+list.get(list.size()-1).getId()+",'"+list.get(list.size()-1).getName()+"','"+ list.get(list.size()-1).getBranch()+"',"+list.get(list.size()-1).getPercent()+",'"+ list.get(list.size()-1).getEmail()+ "')";
+//    	      int count=stmt.executeUpdate(insert);
+        		  System.out.println("hi2");
+
+     			 String exec = stub.getStmt();
+     			 System.out.println(exec);
+
+     			 int count=stmt.executeUpdate(exec);
+
+    		  }
     	      stub.notify(1);
     	      System.out.println("Replicated");
     	  }
     	  if(stub2.dbstatus(1) == 1) {
-    		  list = (List<Student>)stub2.getStudents();
-    	      String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values("+list.get(list.size()-1).getId()+",'"+list.get(list.size()-1).getName()+"','"+ list.get(list.size()-1).getBranch()+"',"+list.get(list.size()-1).getPercent()+",'"+ list.get(list.size()-1).getEmail()+ "')";
-    	      int count=stmt.executeUpdate(insert);
+    		  System.out.println("hi3");
+    		  if(stub2.isWrite()) {
+        		  System.out.println("hi4");
+//    		  list = (List<Student>)stub2.getStudents();
+//    	      String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values("+list.get(list.size()-1).getId()+",'"+list.get(list.size()-1).getName()+"','"+ list.get(list.size()-1).getBranch()+"',"+list.get(list.size()-1).getPercent()+",'"+ list.get(list.size()-1).getEmail()+ "')";
+//    	      int count=stmt.executeUpdate(insert);
+     			 String exec = stub2.getStmt();
+     			 System.out.println(exec);
+     			 int count=stmt.executeUpdate(exec);
+    		  }
     	      stub2.notify(1);
     	      System.out.println("Replicated Server 2");
     	  }

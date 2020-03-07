@@ -1,3 +1,7 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.rmi.RemoteException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,10 +12,12 @@ import java.util.List;
 
 public class ImplExample implements Hello{
 	static int status;
+	
 	int[] dbstatus = new int[]{ 0, 0, 0, 0};
-	String msg =",";
+	String msg ="";
+	static boolean isWrite = false; // will be used to know whether the status increment is write or read;
 	public List<Student> getStudents() throws Exception, ClassNotFoundException {  
-			List<Student> list = new ArrayList<Student>();   
+		  List<Student> list = new ArrayList<Student>();   
 	      // JDBC driver name and database URL 
 	      String JDBC_DRIVER = "com.mysql.jdbc.Driver"; 
 	      try {
@@ -68,7 +74,7 @@ public class ImplExample implements Hello{
 	      return list;     
 
 	      }
-	public void addStudent(int id)throws Exception, ClassNotFoundException {
+	public void write(int id)throws Exception, ClassNotFoundException {
 		String JDBC_DRIVER = "com.mysql.jdbc.Driver"; 
 	      try {
 	    	  Class.forName(JDBC_DRIVER); 
@@ -77,6 +83,8 @@ public class ImplExample implements Hello{
 	    	System.out.println("SWWWWWERRRRRR");
 	    	e.printStackTrace();
 	      }
+	      int t = id % 7;
+	      
 	      String DB_URL = "jdbc:mysql://localhost:3306/rmi";  
 	      
 	      // Database credentials 
@@ -99,34 +107,86 @@ public class ImplExample implements Hello{
 	      
 	      String name = "Mani";
 	      String branch = "cse";
-	      int percent = 95;
+	      int percent = 01;
 	      String email = "mani.gmail";
 	      
+	      //check for id in table 
+	      boolean idExists = false;
 	      stmt = conn.createStatement();
+	      String sql = "SELECT * FROM samplermi"; 
+	      ResultSet rs = stmt.executeQuery(sql);  
+	      
+	      //Extract data from result set 
+	      while(rs.next()) { 
+	         // Retrieve by column name 
+	         if( t == rs.getInt("id")) {
+	        	 idExists = true;
+	        	 percent += rs.getInt("percentage");
+	        	 break;
+	         }
+	      }
+	      
+
+	      if (!idExists) {
 	      //ResultSet rs = stmt.executeQuery(sql);  
 	      String insert = "INSERT INTO samplermi(id, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
 	      int count=stmt.executeUpdate(insert);
+	      msg = insert;
+	      }
+	      else {
+	    	  
+	    	  String update = "UPDATE samplermi SET percentage = "+percent+" where id = "+t;
+		      int count=stmt.executeUpdate(update);
+		      msg = update;
+	      }
+	      setDbStatus();
+//	      dbstatus[2] =0;
+	      status = 0;
+
+
+	 		 try {
+	 		      FileWriter logwtr = new FileWriter("Server1.log",true);
+	 		      BufferedWriter bw = new BufferedWriter(logwtr);
+	 		      PrintWriter pw = new PrintWriter(bw);
+	 		      System.out.println("LOGGIGN");
+
+	 		      pw.println("P1:  Write id: "+t	 +"  Percent: "+ percent);
+
+//	 		      logwtr.append();
+	 	          pw.flush();
+	 		      logwtr.close();
+	 		      
+//	 		      System.out.println("Successfully wrote to the file.");
+	 		    } catch (IOException e) {
+	 		      System.out.println("An error occurred.");
+	 		      e.printStackTrace();
+	 		    }
+	      System.out.println("wrote");    
+	      
+
+	}
+    public void setWrite() throws RemoteException {
+        isWrite = true;
+    }
+
+    public void setRead() throws RemoteException {
+    	isWrite = false;
+    }
+    
+    public boolean isWrite() throws RemoteException {
+    	return isWrite;
+    }
+    
+    public String getStmt() throws RemoteException {
+    	return msg;
+    }
+    
+    public void setDbStatus() throws RemoteException {
 	      for (int i =0; i<4; i++) {
 	    	  dbstatus[i]++;
 	      }
-//	      dbstatus[2] =0;
-	      status = 0;
-	      System.out.println(count);     
-
-	}
-    @Override
-    public void sendMessage(String s) throws RemoteException {
-        System.out.println(s);
-        msg = s;
-        status++;
     }
-
-    @Override
-    public String getMessage() throws RemoteException {
-    	status--;
-        return "Your message is: " + msg;
-        
-    }
+    
     @Override
     public void notify(int i) throws RemoteException{
     	dbstatus[i]--;
