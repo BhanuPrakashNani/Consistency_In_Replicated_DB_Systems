@@ -14,5 +14,10 @@ public interface DBRemote extends Remote{
 	public void notify(int i) throws RemoteException ;
 	public int getStatus() throws RemoteException;
 	public void setStatus() throws RemoteException;
+	public void setRead() throws RemoteException;
+	public void setWrite() throws RemoteException;
+	public boolean isWrite() throws RemoteException;
+	public void setDBStatus() throws RemoteException;
+	public Student read(int x) throws Exception, ClassNotFoundException;
 }
 	

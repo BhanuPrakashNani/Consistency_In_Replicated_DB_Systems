@@ -1,5 +1,9 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.rmi.registry.*; 
-import java.rmi.registry.LocateRegistry; 
+import java.rmi.registry.LocateRegistry;
 import java.rmi.server.UnicastRemoteObject;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -39,11 +43,12 @@ public class Server2 extends DB4STUB {
 //        	 System.out.println(stub2.getMessage());
 //
 //         }
-         int t =0;
+         Random rand = new Random();
+         int t =0, x = 0;
          Thread.sleep(2000);
          String name = "Bhanu";
          String branch = "cse";
-	     int percent = 94;
+	     int percent = 01;
 	     String email = "bhanu.gmail";
 
          while(true) {
@@ -54,8 +59,35 @@ public class Server2 extends DB4STUB {
 	         s.setBranch(branch); 
 	         s.setPercent(percent); 
 	         s.setEmail(email); 
-
-	         stub_self.request(s);
+	         switch(rand.nextInt(2)) {
+	            case 1:
+	            	  stub_self.request(s);
+	       	       	  break;
+	            case 0:
+	            	Student st = stub_self.read(x);
+            	 try {
+   	 		      FileWriter logwtr = new FileWriter("Server1.log",true);
+   	 		      BufferedWriter bw = new BufferedWriter(logwtr);
+   	 		      PrintWriter pw = new PrintWriter(bw);
+   	 		      System.out.println("LOGGIGN");
+   	 		      if(st == null)
+   	 		    	  pw.println("P2:  Read id: "+x +" NULL");
+   	 		      else
+   	 		    	  pw.println("P2: Read id: "+st.getId() +"  Percent: "+ st.getPercent());
+//   	 		      logwtr.append();
+   	 	          pw.flush();
+   	 		      logwtr.close();
+   	 		      
+//   	 		      System.out.println("Successfully wrote to the file.");
+   	 		    } catch (IOException e) {
+   	 		      System.out.println("An error occurred.");
+   	 		      e.printStackTrace();
+   	 		    }   	
+	               break;
+	            default:
+	            	System.out.println("NOTHING");
+	         }
+	         
 	         
 	         int tempStatus = stub_self.dbstatus(3);
 	         

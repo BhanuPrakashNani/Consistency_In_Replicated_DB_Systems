@@ -1,4 +1,8 @@
-import java.rmi.registry.LocateRegistry; 
+import java.rmi.registry.LocateRegistry;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.rmi.*;
 import java.rmi.registry.Registry; 
 import java.util.*; 
@@ -10,10 +14,7 @@ public class Client2 {
 	   List<Student> list = null;
 	   Student s;
       try { 
-    	  Class.forName("com.mysql.jdbc.Driver");
-         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi3", "root", "asdf;lkj");
-         // MySQL: "jdbc:mysql://hostname:port/databaseName", "username", "password"
-         Statement stmt = conn.createStatement();
+    	 
          // Getting the registry 
          Registry registry = LocateRegistry.getRegistry(null); 
          
@@ -41,8 +42,7 @@ public class Client2 {
    	        	 while(tempStatus > 0) {
    	        		 s = q.peek();
    	        		 q.remove();
-   	        		 String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values("+s.getId()+",'"+s.getName()+"','"+s.getBranch()+"',"+s.getPercent()+",'"+s.getEmail()+"')";
-   	        		 stmt.executeUpdate(insert);
+   	        		 replicate(s);
    	        		 stub.notify(1);
    	        		 tempStatus--;
    	        	 }
@@ -63,16 +63,13 @@ public class Client2 {
    	        	        System.out.println("percent: " + st.getPercent()); 
    	        	        System.out.println("email: " + st.getEmail());
    	        		 q.remove();
-   	        		 String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values("+s.getId()+",'"+s.getName()+"','"+s.getBranch()+"',"+s.getPercent()+",'"+s.getEmail()+"')";
-   	        		 stmt.executeUpdate(insert);
-   	        		 
+   	        		 replicate(s);
    	        		 
    	        		 
    	        		 stub2.notify(1);
    	        		 tempStatus--;
    	        	 }
    	         }
-   	         System.out.println("Client 1 "+t);
    	         t++;
 //       	  System.out.println("Server not updated");
          }
@@ -92,5 +89,86 @@ public class Client2 {
       } catch (Exception e) { 
           System.err.println("Client exception: " + e);
        }
-      } 
+      }
+   public static void replicate(Student s) throws Exception, ClassNotFoundException {
+	   String JDBC_DRIVER = "com.mysql.jdbc.Driver"; 
+	      try {
+	    	  Class.forName(JDBC_DRIVER); 
+	      }
+	      catch(ClassNotFoundException e) {
+	    	System.out.println("SWWWWWERRRRRR");
+	    	e.printStackTrace();
+	      }
+	      String DB_URL = "jdbc:mysql://localhost:3306/rmi3";  
+	      
+	      // Database credentials 
+	      String USER = "root"; 
+	      String PASS = "asdf;lkj";  
+	      
+	      Connection conn = null; 
+	      Statement stmt = null;  
+	      
+	      //Register JDBC driver 
+	        
+	      //Open a connection
+	      System.out.println("Connecting to a selected database..."); 
+	      conn = DriverManager.getConnection(DB_URL, USER, PASS); 
+	      System.out.println("Connected database successfully...");  
+	      
+	      //Execute a query 
+	      System.out.println("Creating statement...");
+	      
+	      boolean idExists = false;
+	      stmt = conn.createStatement();
+	      String sql = "SELECT * FROM samplermi"; 
+	      ResultSet rs = stmt.executeQuery(sql);  
+	      
+	      int id = s.getId();
+	      String name = s.getName();
+	      String branch = s.getBranch();
+	      int percent = s.getPercent();
+	      String email = s.getEmail();
+	      
+	      int t = id % 7;
+	      // search for id in the database 
+	      while(rs.next()) {
+	    	  if(t == rs.getInt("id")) {
+	    		  idExists = true;
+	    		  percent += rs.getInt("percentage");
+	    		  break;
+	    	  }
+	      }
+	      
+	      stmt = conn.createStatement();
+	      //ResultSet rs = stmt.executeQuery(sql);  
+	      if (!idExists) {
+	      //ResultSet rs = stmt.executeQuery(sql);  
+		      String insert = "INSERT INTO samplermi(id, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
+		      int count=stmt.executeUpdate(insert);
+	      }
+	      else {
+	    	  
+	    	  String update = "UPDATE samplermi SET percentage = "+percent+" where id = "+t;
+		      int count=stmt.executeUpdate(update);
+	      }
+	      try {
+		      FileWriter logwtr = new FileWriter("Server1.log",true);
+		      BufferedWriter bw = new BufferedWriter(logwtr);
+		      PrintWriter pw = new PrintWriter(bw);
+		      System.out.println("LOGGIGN");
+
+		      pw.println("C2:  Write id: "+t	 +"  Percent: "+ percent);
+
+//		      logwtr.append();
+	          pw.flush();
+		      logwtr.close();
+		      
+//		      System.out.println("Successfully wrote to the file.");
+		    } catch (IOException e) {
+		      System.out.println("An error occurred.");
+		      e.printStackTrace();
+		    }
+   System.out.println("wrote in C2");    
+	}
+
 }
