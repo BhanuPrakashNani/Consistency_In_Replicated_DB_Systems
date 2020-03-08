@@ -10,7 +10,7 @@ public class Client2 {
 	   List<Student> list = null;
       try { 
     	  Class.forName("com.mysql.jdbc.Driver");
-         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi3", "root", "asdf;lkj");
+         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi3", "root", "bhanuprakash");
          // MySQL: "jdbc:mysql://hostname:port/databaseName", "username", "password"
          Statement stmt = conn.createStatement();
          // Getting the registry 
@@ -39,7 +39,7 @@ public class Client2 {
           System.out.println("email: " + s.getEmail());
       }
       while(true) {
-    	  if(stub.dbstatus(1) == 1) {
+    	  if(stub.dbstatus(1) == 1 ) {
     		  list = (List<Student>)stub.getStudents();
     	      String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values("+list.get(list.size()-1).getId()+",'"+list.get(list.size()-1).getName()+"','"+ list.get(list.size()-1).getBranch()+"',"+list.get(list.size()-1).getPercent()+",'"+ list.get(list.size()-1).getEmail()+ "')";
     	      int count=stmt.executeUpdate(insert);

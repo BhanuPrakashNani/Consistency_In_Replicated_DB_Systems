@@ -10,7 +10,8 @@ public class ImplExample2 implements Hello{
 	static int status;
 	int[] dbstatus = new int[]{ 0, 0, 0, 0};  // 0- c1, 1-c2, 3-s1, 4-s2
 	String msg =",";
-	public List<Student> getStudents() throws Exception, ClassNotFoundException {  
+	public List<Student> getStudents() throws Exception, ClassNotFoundException {
+   	 		Class.forName("com.mysql.jdbc.Driver");
 			List<Student> list = new ArrayList<Student>();   
 	      // JDBC driver name and database URL 
 	      String JDBC_DRIVER = "com.mysql.jdbc.Driver"; 
@@ -25,7 +26,7 @@ public class ImplExample2 implements Hello{
 	      
 	      // Database credentials 
 	      String USER = "root"; 
-	      String PASS = "asdf;lkj";  
+	      String PASS = "bhanuprakash";  
 	      
 	      Connection conn = null; 
 	      Statement stmt = null;  
@@ -47,7 +48,7 @@ public class ImplExample2 implements Hello{
 	      //Extract data from result set 
 	      while(rs.next()) { 
 	         // Retrieve by column name 
-	         int id  = rs.getInt("id"); 
+	         int id  = rs.getInt("sno"); 
 	         
 	         String name = rs.getString("name"); 
 	         String branch = rs.getString("branch"); 
@@ -81,7 +82,7 @@ public class ImplExample2 implements Hello{
 	      
 	      // Database credentials 
 	      String USER = "root"; 
-	      String PASS = "asdf;lkj";  
+	      String PASS = "bhanuprakash";  
 	      
 	      Connection conn = null; 
 	      Statement stmt = null;  
@@ -104,7 +105,7 @@ public class ImplExample2 implements Hello{
 	      
 	      stmt = conn.createStatement();
 	      //ResultSet rs = stmt.executeQuery(sql);  
-	      String insert = "INSERT INTO samplermi(id, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
+	      String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
 	      int count=stmt.executeUpdate(insert);
 	      for (int i =0; i<4; i++) {
 	    	  dbstatus[i]++;
