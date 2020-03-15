@@ -163,41 +163,37 @@ public class ImplExample implements Hello{
 		          
 
 	}
-	@Override
+
 	public void setWrite() throws RemoteException {
         isWrite = true;
 
     }
 	
-	@Override
     public void setRead() throws RemoteException {
     	isWrite = false;
     }
 	
-	@Override
     public boolean isWrite() throws RemoteException {
     	return isWrite;
     }
-	@Override
+
     public String getStmt() throws RemoteException {
     	return msg;
     }
     
-    @Override
+
     public void sendMessage(String s) throws RemoteException {
         System.out.println(s);
         msg = s;
         status++;
     }
 
-    @Override
     public String getMessage() throws RemoteException {
     	status--;
         return "Your message is: " + msg;
         
     }
     
-    @Override
     public void setDbStatus() throws RemoteException {
 	      for (int i =0; i<4; i++) {
 	    	  dbstatus[i]++;
@@ -209,12 +205,12 @@ public class ImplExample implements Hello{
     	dbstatus[i]--;
     }
     
-    @Override
+
     public int dbstatus(int i) throws RemoteException{
     	return dbstatus[i];
     }
     
-    @Override
+
     public int dbstatus() throws RemoteException{
     	int status = 0;
     	for (int i=0; i<4; i++) {
