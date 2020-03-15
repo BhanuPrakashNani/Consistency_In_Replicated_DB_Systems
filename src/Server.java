@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 import java.util.List;
+import java.util.Random;
 import java.rmi.*;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -82,11 +83,9 @@ public class Server extends ImplExample {
 	             
 	             switch(rand.nextInt(2)) {
 		            case 1:
-		            	 stub_self.setWrite();
 		            	 stub_self.write(x);
 		            	 break;
 		            case 0:
-		            	stub_self.setRead();
 		            	stub_self.setDbStatus();
 		            	Student s = read(x);
 		                if(s != null)

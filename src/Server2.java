@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 import java.util.List;
+import java.util.Random;
 import java.rmi.*;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -72,18 +73,16 @@ public class Server2 extends ImplExample2 {
          	      System.out.println("Replicated Server 1 to Server 2");
          	  }
         	 
-        	 if(stub_self.dbstatus() == 0 && stub_s2.dbstatus() == 0 && stub_s2.getStatus() == 0) {
+        	 if(stub_self.dbstatus() == 0 && stub_s1.dbstatus() == 0 && stub_s1.getStatus() == 0) {
         		 stub_self.setStatus();
         		 
 	             System.out.println("T x is "+t+"  "+x);
 	             
 	             switch(rand.nextInt(2)) {
 		            case 1:
-		            	 stub_self.setWrite();
 		            	 stub_self.write(x);
 		            	 break;
 		            case 0:
-		            	stub_self.setRead();
 		            	stub_self.setDbStatus();
 		            	Student s = read(x);
 		                if(s != null)

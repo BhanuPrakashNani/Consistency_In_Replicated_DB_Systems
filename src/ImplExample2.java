@@ -165,18 +165,7 @@ public class ImplExample2 implements Hello{
 
 	}
 	
-	public void setWrite() throws RemoteException {
-        isWrite = true;
 
-    }
-	
-    public void setRead() throws RemoteException {
-    	isWrite = false;
-    }
-	
-    public boolean isWrite() throws RemoteException {
-    	return isWrite;
-    }
 	
     public String getStmt() throws RemoteException {
     	return msg;
