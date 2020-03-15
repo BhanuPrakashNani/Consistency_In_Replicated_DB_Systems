@@ -48,7 +48,10 @@ public class Server2 extends ImplExample2 {
 //        	 System.out.println(stub2.getMessage());
 //
 //         }
-         int t =0;
+         Random rand = new Random();
+
+         int t =0, x = 0;
+//         Thread.sleep(2000);
 
          while(true) {
              Thread.sleep(2000);

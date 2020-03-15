@@ -49,7 +49,11 @@ public class Server extends ImplExample {
 //        	 System.out.println(stub2.getMessage());
 //
 //         }
-         int t =0;
+         Random rand = new Random();
+
+         int t =0, x = 0;
+//         Thread.sleep(2000);
+         
 //         stub_self.addStudent(t);
          Thread.sleep(2000);
 
