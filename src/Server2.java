@@ -24,7 +24,7 @@ public class Server2 extends ImplExample2 {
      	 Class.forName("com.mysql.jdbc.Driver");
          // Instantiating the implementation class 
          ImplExample2 obj = new ImplExample2(); 
-         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi4", "root", "bhanuprakash");
+         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi4", "root", "asdf;lkj");
 
          Statement stmt = conn.createStatement();
 
@@ -65,7 +65,7 @@ public class Server2 extends ImplExample2 {
         	 if(stub_s1.dbstatus(3) == 1 ) {
 
          		  list = (List<Student>)stub_s1.getStudents();
-         	      String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values("+list.get(list.size()-1).getId()+",'"+list.get(list.size()-1).getName()+"','"+ list.get(list.size()-1).getBranch()+"',"+list.get(list.size()-1).getPercent()+",'"+ list.get(list.size()-1).getEmail()+ "')";
+         	      String insert = "INSERT INTO samplermi(id, name, branch, percentage, email) values("+list.get(list.size()-1).getId()+",'"+list.get(list.size()-1).getName()+"','"+ list.get(list.size()-1).getBranch()+"',"+list.get(list.size()-1).getPercent()+",'"+ list.get(list.size()-1).getEmail()+ "')";
          	      int count=stmt.executeUpdate(insert);
          	      stub_s1.notify(3);
              	  System.out.println("%%HELL  "+stub_s1.dbstatus(3));
@@ -130,7 +130,7 @@ public class Server2 extends ImplExample2 {
 	      
 	      // Database credentials 
 	      String USER = "root"; 
-	      String PASS = "bhanuprakash";  
+	      String PASS = "asdf;lkj";  
 	      
 	      Connection conn = null; 
 	      Statement stmt = null;  
@@ -176,7 +176,7 @@ public class Server2 extends ImplExample2 {
 	 		      PrintWriter pw = new PrintWriter(bw);
 	 		      System.out.println("LOGGIGN");
 
-	 		      pw.println("P1: Read id: "+id +"  Percent: "+ percent);
+	 		      pw.println("P2: Read id: "+id +"  Percent: "+ percent);
 
 //	 		      logwtr.append();
 	 	          pw.flush();
@@ -196,7 +196,7 @@ public class Server2 extends ImplExample2 {
 	 		      PrintWriter pw = new PrintWriter(bw);
 	 		      System.out.println("LOGGIGN");
 
-	 		      pw.println("P1:  Read id: "+t +" NULL");
+	 		      pw.println("P2:  Read id: "+t +" NULL");
 
 //	 		      logwtr.append();
 	 	          pw.flush();

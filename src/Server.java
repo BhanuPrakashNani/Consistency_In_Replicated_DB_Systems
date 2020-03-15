@@ -23,7 +23,7 @@ public class Server extends ImplExample {
       try {
      	 Class.forName("com.mysql.jdbc.Driver");
     	  // Instantiating the implementation class 
-          Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi", "root", "bhanuprakash");
+          Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi", "root", "asdf;lkj");
 
           Statement stmt = conn.createStatement();
 
@@ -70,7 +70,7 @@ public class Server extends ImplExample {
         	 if(stub_s2.dbstatus(2) == 1) {
 
        		  list = (List<Student>)stub_s2.getStudents();
-       	      String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values("+list.get(list.size()-1).getId()+",'"+list.get(list.size()-1).getName()+"','"+ list.get(list.size()-1).getBranch()+"',"+list.get(list.size()-1).getPercent()+",'"+ list.get(list.size()-1).getEmail()+ "')";
+       	      String insert = "INSERT INTO samplermi(id, name, branch, percentage, email) values("+list.get(list.size()-1).getId()+",'"+list.get(list.size()-1).getName()+"','"+ list.get(list.size()-1).getBranch()+"',"+list.get(list.size()-1).getPercent()+",'"+ list.get(list.size()-1).getEmail()+ "')";
        	      int count=stmt.executeUpdate(insert);
        	      stub_s2.notify(2);
        	      System.out.println("Replicated Server 2 to Server 1");
@@ -131,7 +131,7 @@ public class Server extends ImplExample {
 	      
 	      // Database credentials 
 	      String USER = "root"; 
-	      String PASS = "bhanuprakash";  
+	      String PASS = "asdf;lkj";  
 	      
 	      Connection conn = null; 
 	      Statement stmt = null;  

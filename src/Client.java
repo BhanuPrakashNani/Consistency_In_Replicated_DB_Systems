@@ -10,7 +10,7 @@ public class Client {
 	   List<Student> list = null;
       try { 
     	 Class.forName("com.mysql.jdbc.Driver");
-         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi2", "root", "bhanuprakash");
+         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi2", "root", "asdf;lkj");
          // MySQL: "jdbc:mysql://hostname:port/databaseName", "username", "password"
          Statement stmt = conn.createStatement();
          // Getting the registry 
@@ -41,14 +41,14 @@ public class Client {
       while(true) {
     	  if(stub.dbstatus(0) == 1) {
     		  list = (List<Student>)stub.getStudents();
-    	      String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values("+list.get(list.size()-1).getId()+",'"+list.get(list.size()-1).getName()+"','"+ list.get(list.size()-1).getBranch()+"',"+list.get(list.size()-1).getPercent()+",'"+ list.get(list.size()-1).getEmail()+ "')";
+    	      String insert = "INSERT INTO samplermi(id, name, branch, percentage, email) values("+list.get(list.size()-1).getId()+",'"+list.get(list.size()-1).getName()+"','"+ list.get(list.size()-1).getBranch()+"',"+list.get(list.size()-1).getPercent()+",'"+ list.get(list.size()-1).getEmail()+ "')";
     	      int count=stmt.executeUpdate(insert);
     	      stub.notify(0);
     	      System.out.println("Replicated");
     	  }
     	  if(stub2.dbstatus(0) == 1) {
     		  list = (List<Student>)stub2.getStudents();
-    	      String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values("+list.get(list.size()-1).getId()+",'"+list.get(list.size()-1).getName()+"','"+ list.get(list.size()-1).getBranch()+"',"+list.get(list.size()-1).getPercent()+",'"+ list.get(list.size()-1).getEmail()+ "')";
+    	      String insert = "INSERT INTO samplermi(id, name, branch, percentage, email) values("+list.get(list.size()-1).getId()+",'"+list.get(list.size()-1).getName()+"','"+ list.get(list.size()-1).getBranch()+"',"+list.get(list.size()-1).getPercent()+",'"+ list.get(list.size()-1).getEmail()+ "')";
     	      int count=stmt.executeUpdate(insert);
     	      stub2.notify(0);
     	      System.out.println("Replicated Server 2");

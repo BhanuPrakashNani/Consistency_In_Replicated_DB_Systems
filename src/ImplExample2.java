@@ -30,7 +30,7 @@ public class ImplExample2 implements Hello{
 	      
 	      // Database credentials 
 	      String USER = "root"; 
-	      String PASS = "bhanuprakash";  
+	      String PASS = "asdf;lkj";  
 	      
 	      Connection conn = null; 
 	      Statement stmt = null;  
@@ -52,7 +52,7 @@ public class ImplExample2 implements Hello{
 	      //Extract data from result set 
 	      while(rs.next()) { 
 	         // Retrieve by column name 
-	         int id  = rs.getInt("sno"); 
+	         int id  = rs.getInt("id"); 
 	         
 	         String name = rs.getString("name"); 
 	         String branch = rs.getString("branch"); 
@@ -75,7 +75,7 @@ public class ImplExample2 implements Hello{
 	      }
 	
 	
-	public void write(int sno)throws Exception, ClassNotFoundException {
+	public void write(int id)throws Exception, ClassNotFoundException {
 		String JDBC_DRIVER = "com.mysql.jdbc.Driver"; 
 	      try {
 	    	  Class.forName(JDBC_DRIVER); 
@@ -85,12 +85,12 @@ public class ImplExample2 implements Hello{
 	    	e.printStackTrace();
 	      }
 	      
-	      int t = sno%7;
+	      int t = id%7;
 	      String DB_URL = "jdbc:mysql://localhost:3306/rmi4";  
 	      
 	      // Database credentials 
 	      String USER = "root"; 
-	      String PASS = "bhanuprakash";  
+	      String PASS = "asdf;lkj";  
 	      
 	      Connection conn = null; 
 	      Statement stmt = null;  
@@ -119,7 +119,7 @@ public class ImplExample2 implements Hello{
 	      //Extract data from result set 
 	      while(rs.next()) { 
 	         // Retrieve by column name 
-	         if( t == rs.getInt("sno")) {
+	         if( t == rs.getInt("id")) {
 	        	 idExists = true;
 	        	 percent += rs.getInt("percentage");
 	        	 break;
@@ -128,13 +128,13 @@ public class ImplExample2 implements Hello{
 	      
 	      if (!idExists) {
 		      //ResultSet rs = stmt.executeQuery(sql);  
-		      String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values('"+sno+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
+		      String insert = "INSERT INTO samplermi(id, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
 		      int count=stmt.executeUpdate(insert);
 		      msg = insert;
 		      }
 		      else {
 		    	  
-		    	  String update = "UPDATE samplermi SET percentage = "+percent+" where sno = "+t;
+		    	  String update = "UPDATE samplermi SET percentage = "+percent+" where id = "+t;
 			      int count=stmt.executeUpdate(update);
 			      msg = update;
 		      }
@@ -149,7 +149,7 @@ public class ImplExample2 implements Hello{
 		 		      PrintWriter pw = new PrintWriter(bw);
 		 		      System.out.println("LOGGIGN");
 	
-		 		      pw.println("P1:  Write id: "+t	 +"  Percent: "+ percent);
+		 		      pw.println("P2:  Write id: "+t	 +"  Percent: "+ percent);
 	
 	//	 		      logwtr.append();
 		 	          pw.flush();
