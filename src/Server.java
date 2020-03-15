@@ -11,6 +11,8 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.ResultSet;
+
 
 public class Server extends ImplExample { 
    public Server() {} 
@@ -54,7 +56,7 @@ public class Server extends ImplExample {
          while(true) {
              Thread.sleep(2000);
         		 stub_self.setStatus();
-        		 stub_self.addStudent(t);
+        		 stub_self.write(t);
         		 stub_self.notify(2);
 //                 stub_self.notify(2);
         		 t++;
