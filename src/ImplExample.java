@@ -70,7 +70,7 @@ public class ImplExample implements Hello{
 	      return list;     
 
 	      }
-	public void addStudent(int id)throws Exception, ClassNotFoundException {
+	public void write(int sno)throws Exception, ClassNotFoundException {
 		String JDBC_DRIVER = "com.mysql.jdbc.Driver"; 
 	      try {
 	    	  Class.forName(JDBC_DRIVER); 
@@ -79,6 +79,8 @@ public class ImplExample implements Hello{
 	    	System.out.println("SWWWWWERRRRRR");
 	    	e.printStackTrace();
 	      }
+	      
+	      int t = sno%7;
 	      String DB_URL = "jdbc:mysql://localhost:3306/rmi";  
 	      
 	      // Database credentials 
@@ -104,18 +106,79 @@ public class ImplExample implements Hello{
 	      int percent = 95;
 	      String email = "mani.gmail";
 	      
+	      boolean idExists = false;
 	      stmt = conn.createStatement();
-	      //ResultSet rs = stmt.executeQuery(sql);  
-	      String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
-	      int count=stmt.executeUpdate(insert);
-	      for (int i =0; i<4; i++) {
-	    	  dbstatus[i]++;
+	      String sql = "SELECT * FROM samplermi"; 
+	      ResultSet rs = stmt.executeQuery(sql);  
+	      
+	      //Extract data from result set 
+	      while(rs.next()) { 
+	         // Retrieve by column name 
+	         if( t == rs.getInt("sno")) {
+	        	 idExists = true;
+	        	 percent += rs.getInt("percentage");
+	        	 break;
+	         }
 	      }
-//	      dbstatus[2] =0;
-	      status = 0;
-	      System.out.println(count);     
+	      
+	      if (!idExists) {
+		      //ResultSet rs = stmt.executeQuery(sql);  
+		      String insert = "INSERT INTO samplermi(id, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
+		      int count=stmt.executeUpdate(insert);
+		      msg = insert;
+		      }
+		      else {
+		    	  
+		    	  String update = "UPDATE samplermi SET percentage = "+percent+" where id = "+t;
+			      int count=stmt.executeUpdate(update);
+			      msg = update;
+		      }
+		      setDbStatus();
+	//	      dbstatus[2] =0;
+		      status = 0;
+	
+	
+		 		 try {
+		 		      FileWriter logwtr = new FileWriter("Server1.log",true);
+		 		      BufferedWriter bw = new BufferedWriter(logwtr);
+		 		      PrintWriter pw = new PrintWriter(bw);
+		 		      System.out.println("LOGGIGN");
+	
+		 		      pw.println("P1:  Write id: "+t	 +"  Percent: "+ percent);
+	
+	//	 		      logwtr.append();
+		 	          pw.flush();
+		 		      logwtr.close();
+		 		      
+	//	 		      System.out.println("Successfully wrote to the file.");
+		 		    } catch (IOException e) {
+		 		      System.out.println("An error occurred.");
+		 		      e.printStackTrace();
+		 		    }
+		      System.out.println("wrote");    
+		          
 
 	}
+	@Override
+	public void setWrite() throws RemoteException {
+        isWrite = true;
+
+    }
+	
+	@Override
+    public void setRead() throws RemoteException {
+    	isWrite = false;
+    }
+	
+	@Override
+    public boolean isWrite() throws RemoteException {
+    	return isWrite;
+    }
+	@Override
+    public String getStmt() throws RemoteException {
+    	return msg;
+    }
+    
     @Override
     public void sendMessage(String s) throws RemoteException {
         System.out.println(s);
@@ -129,14 +192,25 @@ public class ImplExample implements Hello{
         return "Your message is: " + msg;
         
     }
+    
+    @Override
+    public void setDbStatus() throws RemoteException {
+	      for (int i =0; i<4; i++) {
+	    	  dbstatus[i]++;
+	      }
+    }
+    
     @Override
     public void notify(int i) throws RemoteException{
     	dbstatus[i]--;
     }
     
+    @Override
     public int dbstatus(int i) throws RemoteException{
     	return dbstatus[i];
     }
+    
+    @Override
     public int dbstatus() throws RemoteException{
     	int status = 0;
     	for (int i=0; i<4; i++) {
