@@ -5,6 +5,10 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 public class ImplExample2 implements Hello{
 	static int status;
@@ -179,13 +183,13 @@ public class ImplExample2 implements Hello{
 	      
 	      if (!idExists) {
 		      //ResultSet rs = stmt.executeQuery(sql);  
-		      String insert = "INSERT INTO samplermi(id, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
+		      String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values('"+sno+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
 		      int count=stmt.executeUpdate(insert);
 		      msg = insert;
 		      }
 		      else {
 		    	  
-		    	  String update = "UPDATE samplermi SET percentage = "+percent+" where id = "+t;
+		    	  String update = "UPDATE samplermi SET percentage = "+percent+" where sno = "+t;
 			      int count=stmt.executeUpdate(update);
 			      msg = update;
 		      }

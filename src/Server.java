@@ -7,6 +7,10 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 import java.util.List;
 import java.rmi.*;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 public class Server extends ImplExample { 
    public Server() {} 
