@@ -15,25 +15,25 @@ Update your $CLASSPATH env var to the path of connector-xxx.jar
 
 
 
-# terminal1
+### terminal1
 ``` cd bin/ 
     rmiregistry -J-Djava.rmi.useLocalHostName=true -J-Djava.rmi.server.hostname=127.0.0.1
 ```
 
-# terminal2
+### terminal2
 
 ```
     cd src/
     java Server -cp ./mysql-connector-java-8.0.19.jar
 ```
 
-# terminal3
+### terminal3
 
 ```
     cd src/
     java Server2 -cp ./mysql-connector-java-8.0.19.jar
 ```
-# terminal4
+### terminal4
 
 ```
     cd src/
@@ -41,7 +41,7 @@ Update your $CLASSPATH env var to the path of connector-xxx.jar
     
 ```
 
-# terminal5
+### terminal5
 
 ```
     cd src/
