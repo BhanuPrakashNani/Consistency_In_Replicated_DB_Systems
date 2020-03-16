@@ -10,7 +10,7 @@ public class Client2 {
 	   List<Student> list = null;
       try { 
     	  Class.forName("com.mysql.jdbc.Driver");
-         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi3", "root", "asdf;lkj");
+         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi3", "root", "bhanuprakash");
          // MySQL: "jdbc:mysql://hostname:port/databaseName", "username", "password"
          Statement stmt = conn.createStatement();
          // Getting the registry 

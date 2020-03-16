@@ -23,7 +23,7 @@ public class Server extends ImplExample {
       try {
      	 Class.forName("com.mysql.jdbc.Driver");
     	  // Instantiating the implementation class 
-          Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi", "root", "asdf;lkj");
+          Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi", "root", "bhanuprakash");
 
           Statement stmt = conn.createStatement();
 
@@ -76,8 +76,8 @@ public class Server extends ImplExample {
        	      System.out.println("Replicated Server 2 to Server 1");
        	  }
         	 
-             if(stub_self.dbstatus() == 0 && stub_s2.dbstatus() == 0 && stub_s2.getStatus() == 0) {
-        		 stub_self.setStatus();
+            // if(stub_self.dbstatus() == 0 && stub_s2.dbstatus() == 0 && stub_s2.getStatus() == 0) {
+        	//	 stub_self.setStatus();
         		 
 	             System.out.println("T x is "+t+"  "+x);
 	             
@@ -104,7 +104,7 @@ public class Server extends ImplExample {
 	             x = rand.nextInt(8);
 	             stub_self.notify(2);
 	             t++;
-             }
+           //  }
 //        	 System.out.println("We didnt update");
          }
      } catch (Exception e) { 
@@ -131,7 +131,7 @@ public class Server extends ImplExample {
 	      
 	      // Database credentials 
 	      String USER = "root"; 
-	      String PASS = "asdf;lkj";  
+	      String PASS = "bhanuprakash";  
 	      
 	      Connection conn = null; 
 	      Statement stmt = null;  

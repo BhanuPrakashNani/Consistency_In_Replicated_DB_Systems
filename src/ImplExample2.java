@@ -30,7 +30,7 @@ public class ImplExample2 implements Hello{
 	      
 	      // Database credentials 
 	      String USER = "root"; 
-	      String PASS = "asdf;lkj";  
+	      String PASS = "bhanuprakash";  
 	      
 	      Connection conn = null; 
 	      Statement stmt = null;  
@@ -90,7 +90,7 @@ public class ImplExample2 implements Hello{
 	      
 	      // Database credentials 
 	      String USER = "root"; 
-	      String PASS = "asdf;lkj";  
+	      String PASS = "bhanuprakash";  
 	      
 	      Connection conn = null; 
 	      Statement stmt = null;  
@@ -106,10 +106,10 @@ public class ImplExample2 implements Hello{
 	      System.out.println("Creating statement...");
 	      
 	      
-	      String name = "Mani";
+	      String name = "Bhanu";
 	      String branch = "cse";
 	      int percent = 95;
-	      String email = "mani.gmail";
+	      String email = "bhanu.gmail";
 	      
 	      boolean idExists = false;
 	      stmt = conn.createStatement();
