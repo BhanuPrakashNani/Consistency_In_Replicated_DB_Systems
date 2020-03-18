@@ -38,7 +38,7 @@ public class Client2 {
           System.out.println("percent: " + s.getPercent()); 
           System.out.println("email: " + s.getEmail());
       }
-      while(true) {
+      while(Config.SAFE) {
     	  if(stub.dbstatus(1) == 1) {
     		  System.out.println("hi1");
     		  if(stub.isWrite()) {

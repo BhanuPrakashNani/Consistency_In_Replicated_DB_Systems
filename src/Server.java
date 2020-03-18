@@ -46,7 +46,7 @@ public class Server extends ImplExample {
          int t =0, x = 0;
 //         Thread.sleep(2000);
 
-         while(true) {
+         while(Config.SAFE) {
              Thread.sleep(2000);
 //             System.out.println("T x is "+t+"  "+x);
 //             stub_self.write(t);

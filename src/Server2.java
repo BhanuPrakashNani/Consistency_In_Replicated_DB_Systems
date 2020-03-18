@@ -44,7 +44,7 @@ public class Server2 extends ImplExample2 {
          Random rand = new Random();
          int t =0,x = 0;
 
-         while(true) {
+         while(Config.SAFE) {
              Thread.sleep(2000);
 	             System.out.println("HElllo man DBSTATUS1 "+stub_s1.dbstatus(0)+" "+stub_s1.dbstatus(1)+" "+stub_s1.dbstatus(2)+" "+stub_s1.dbstatus(3)+ " is Write "+stub_s1.isWrite());
 
