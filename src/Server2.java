@@ -73,8 +73,6 @@ public class Server2 extends ImplExample2 {
          	      System.out.println("Replicated Server 1 to Server 2");
          	  }
         	 
-        	 //if(stub_self.dbstatus() == 0 && stub_s1.dbstatus() == 0 && stub_s1.getStatus() == 0) {
-        		// stub_self.setStatus();
         		 
 	             System.out.println("T x is "+t+"  "+x);
 	             
@@ -101,7 +99,6 @@ public class Server2 extends ImplExample2 {
 	             x = rand.nextInt(8);
 	             stub_self.notify(2);
 	             t++;
-            // }
 
 //        	 System.out.println("Server 2 We didnt update");
          }
