@@ -85,6 +85,7 @@ public class DB1STUB implements DBRemote{
 	    	System.out.println("SWWWWWERRRRRR");
 	    	e.printStackTrace();
 	      }
+
 	      String DB_URL = "jdbc:mysql://localhost:3306/rmi";  
 	      
 	      // Database credentials 
@@ -116,11 +117,28 @@ public class DB1STUB implements DBRemote{
 	      String email = s.getEmail();
 	      
 	      int t = id % 7;
+	      try {
+ 		      FileWriter logwtr = new FileWriter("Server1.log",true);
+ 		      BufferedWriter bw = new BufferedWriter(logwtr);
+ 		      PrintWriter pw = new PrintWriter(bw);
+ 		      System.out.println("LOGGIGN");
+
+ 		      pw.println("P1: Entry Write id: "+t	 +" Percent: "+ percent);
+
+// 		      logwtr.append();
+ 	          pw.flush();
+ 		      logwtr.close();
+ 		      
+// 		      System.out.println("Successfully wrote to the file.");
+ 		    } catch (IOException e) {
+ 		      System.out.println("An error occurred.");
+ 		      e.printStackTrace();
+ 		    }
 	      // search for id in the database 
 	      while(rs.next()) {
 	    	  if(t == rs.getInt("id")) {
 	    		  idExists = true;
-	    		  percent += rs.getInt("percentage");
+	    		  percent = rs.getInt("percentage")+1;
 	    		  break;
 	    	  }
 	      }
@@ -129,7 +147,7 @@ public class DB1STUB implements DBRemote{
 	      //ResultSet rs = stmt.executeQuery(sql);  
 	      if (!idExists) {
 	      //ResultSet rs = stmt.executeQuery(sql);  
-		      String insert = "INSERT INTO samplermi(id, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
+		      String insert = "INSERT INTO samplermi(id, name, branch, percentage, email) values('"+t+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
 		      int count=stmt.executeUpdate(insert);
 		      msg = insert;
 	      }
@@ -145,7 +163,7 @@ public class DB1STUB implements DBRemote{
  		      PrintWriter pw = new PrintWriter(bw);
  		      System.out.println("LOGGIGN");
 
- 		      pw.println("P1:  Write id: "+t	 +"  Percent: "+ percent);
+ 		      pw.println("P1: Exit Write id: "+t	 +"  Percent: "+ percent);
 
 // 		      logwtr.append();
  	          pw.flush();
@@ -230,7 +248,23 @@ public class DB1STUB implements DBRemote{
     }
     public Student read(int t)throws Exception, ClassNotFoundException {
 		  t = t % 7;
-		   
+	      try {
+ 		      FileWriter logwtr = new FileWriter("Server1.log",true);
+ 		      BufferedWriter bw = new BufferedWriter(logwtr);
+ 		      PrintWriter pw = new PrintWriter(bw);
+ 		      System.out.println("LOGGIGN");
+
+ 		      pw.println("P1: Entry Read id: "+t);
+
+// 		      logwtr.append();
+ 	          pw.flush();
+ 		      logwtr.close();
+ 		      
+// 		      System.out.println("Successfully wrote to the file.");
+ 		    } catch (IOException e) {
+ 		      System.out.println("An error occurred.");
+ 		      e.printStackTrace();
+ 		    }
 	      // JDBC driver name and database URL 
 	      String JDBC_DRIVER = "com.mysql.jdbc.Driver"; 
 	      try {
@@ -265,6 +299,7 @@ public class DB1STUB implements DBRemote{
 	      
 	      //Extract data from result set
 	         // Retrieve by column name
+
 	      	if(rs.next()) {
 	         int id  = rs.getInt("id"); 
 	         
@@ -273,7 +308,23 @@ public class DB1STUB implements DBRemote{
 	         
 	         int percent = rs.getInt("percentage"); 
 	         String email = rs.getString("email");  
-	         
+		      try {
+	 		      FileWriter logwtr = new FileWriter("Server1.log",true);
+	 		      BufferedWriter bw = new BufferedWriter(logwtr);
+	 		      PrintWriter pw = new PrintWriter(bw);
+	 		      System.out.println("LOGGIGN");
+
+	 		      pw.println("P1: Exit Read id: "+t+ " Percent: "+percent);
+
+//	 		      logwtr.append();
+	 	          pw.flush();
+	 		      logwtr.close();
+	 		      
+//	 		      System.out.println("Successfully wrote to the file.");
+	 		    } catch (IOException e) {
+	 		      System.out.println("An error occurred.");
+	 		      e.printStackTrace();
+	 		    }
 	         // Setting the values 
 	         Student st = new Student(); 
 	         st.setID(id); 
@@ -283,7 +334,25 @@ public class DB1STUB implements DBRemote{
 	         st.setEmail(email); 
 	 		 
 	 		 return st;
+	 		 
 	      	}
+		      try {
+	 		      FileWriter logwtr = new FileWriter("Server1.log",true);
+	 		      BufferedWriter bw = new BufferedWriter(logwtr);
+	 		      PrintWriter pw = new PrintWriter(bw);
+	 		      System.out.println("LOGGIGN");
+
+	 		      pw.println("P1: Exit Read id: "+t+ " Percent: "+0);
+
+//	 		      logwtr.append();
+	 	          pw.flush();
+	 		      logwtr.close();
+	 		      
+//	 		      System.out.println("Successfully wrote to the file.");
+	 		    } catch (IOException e) {
+	 		      System.out.println("An error occurred.");
+	 		      e.printStackTrace();
+	 		    }
 	     return null;
 		
 	}

@@ -66,27 +66,29 @@ public class Server extends DB1STUB {
 	            case 1:
 	            	  stub_self.request(s);
 	       	       	  break;
-	            case 0:
+				case 0:
+					x = rand.nextInt(8);
 	            	Student st = stub_self.read(x);
-               	 try {
-      	 		      FileWriter logwtr = new FileWriter("Server1.log",true);
-      	 		      BufferedWriter bw = new BufferedWriter(logwtr);
-      	 		      PrintWriter pw = new PrintWriter(bw);
-      	 		      System.out.println("LOGGIGN");
-      	 		      if(st == null)
-      	 		    	  pw.println("P1:  Read id: "+x +" NULL");
-      	 		      else
-      	 		    	  pw.println("P1: Read id: "+st.getId() +"  Percent: "+ st.getPercent());
-//      	 		      logwtr.append();
-      	 	          pw.flush();
-      	 		      logwtr.close();
-      	 		      
-//      	 		      System.out.println("Successfully wrote to the file.");
-      	 		    } catch (IOException e) {
-      	 		      System.out.println("An error occurred.");
-      	 		      e.printStackTrace();
-      	 		    }   	
-	               break;
+//               	 try {
+//      	 		      FileWriter logwtr = new FileWriter("Server1.log",true);
+//      	 		      BufferedWriter bw = new BufferedWriter(logwtr);
+//      	 		      PrintWriter pw = new PrintWriter(bw);
+//      	 		      System.out.println("LOGGIGN");
+//      	 		      if(st == null)
+//      	 		    	  pw.println("P1:  Read id: "+x +" NULL");
+//      	 		      else
+//      	 		    	  pw.println("P1: Read id: "+st.getId() +"  Percent: "+ st.getPercent());
+////      	 		      logwtr.append();
+//      	 	          pw.flush();
+//      	 		      logwtr.close();
+//      	 		      
+////      	 		      System.out.println("Successfully wrote to the file.");
+//      	 		    } catch (IOException e) {
+//      	 		      System.out.println("An error occurred.");
+//      	 		      e.printStackTrace();
+//      	 		    }   	
+				   
+					break;
 	            default:
 	            	System.out.println("NOTHING");
           }

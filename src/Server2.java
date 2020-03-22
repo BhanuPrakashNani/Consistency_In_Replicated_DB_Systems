@@ -65,24 +65,24 @@ public class Server2 extends DB4STUB {
 	       	       	  break;
 	            case 0:
 	            	Student st = stub_self.read(x);
-            	 try {
-   	 		      FileWriter logwtr = new FileWriter("Server1.log",true);
-   	 		      BufferedWriter bw = new BufferedWriter(logwtr);
-   	 		      PrintWriter pw = new PrintWriter(bw);
-   	 		      System.out.println("LOGGIGN");
-   	 		      if(st == null)
-   	 		    	  pw.println("P2:  Read id: "+x +" NULL");
-   	 		      else
-   	 		    	  pw.println("P2: Read id: "+st.getId() +"  Percent: "+ st.getPercent());
-//   	 		      logwtr.append();
-   	 	          pw.flush();
-   	 		      logwtr.close();
+//             	 try {
+//    	 		      FileWriter logwtr = new FileWriter("Server1.log",true);
+//    	 		      BufferedWriter bw = new BufferedWriter(logwtr);
+//    	 		      PrintWriter pw = new PrintWriter(bw);
+//    	 		      System.out.println("LOGGIGN");
+//    	 		      if(st == null)
+//    	 		    	  pw.println("P2:  Read id: "+x +" NULL");
+//    	 		      else
+//    	 		    	  pw.println("P2: Read id: "+st.getId() +"  Percent: "+ st.getPercent());
+// //   	 		      logwtr.append();
+//    	 	          pw.flush();
+//    	 		      logwtr.close();
    	 		      
-//   	 		      System.out.println("Successfully wrote to the file.");
-   	 		    } catch (IOException e) {
-   	 		      System.out.println("An error occurred.");
-   	 		      e.printStackTrace();
-   	 		    }   	
+// //   	 		      System.out.println("Successfully wrote to the file.");
+//    	 		    } catch (IOException e) {
+//    	 		      System.out.println("An error occurred.");
+//    	 		      e.printStackTrace();
+//    	 		    }   	
 	               break;
 	            default:
 	            	System.out.println("NOTHING");

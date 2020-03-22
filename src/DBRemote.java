@@ -12,6 +12,7 @@ public interface DBRemote extends Remote{
 	String getMessage() throws RemoteException;
 	public Queue<Student> getQobj() throws RemoteException;
 	public void notify(int i) throws RemoteException ;
+	public Queue<String> getMsgQobj() throws RemoteException;
 	public int getStatus() throws RemoteException;
 	public void setStatus() throws RemoteException;
 	public void setRead() throws RemoteException;

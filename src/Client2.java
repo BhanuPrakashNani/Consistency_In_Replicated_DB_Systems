@@ -134,7 +134,7 @@ public class Client2 {
 	      while(rs.next()) {
 	    	  if(t == rs.getInt("id")) {
 	    		  idExists = true;
-	    		  percent += rs.getInt("percentage");
+	    		  percent = rs.getInt("percentage")+1;
 	    		  break;
 	    	  }
 	      }
@@ -143,7 +143,7 @@ public class Client2 {
 	      //ResultSet rs = stmt.executeQuery(sql);  
 	      if (!idExists) {
 	      //ResultSet rs = stmt.executeQuery(sql);  
-		      String insert = "INSERT INTO samplermi(id, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
+		      String insert = "INSERT INTO samplermi(id, name, branch, percentage, email) values('"+t+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
 		      int count=stmt.executeUpdate(insert);
 	      }
 	      else {
@@ -157,7 +157,7 @@ public class Client2 {
 		      PrintWriter pw = new PrintWriter(bw);
 		      System.out.println("LOGGIGN");
 
-		      pw.println("C2:  Write id: "+t	 +"  Percent: "+ percent);
+		      pw.println("C2: Write id: "+t	 +"  Percent: "+ percent);
 
 //		      logwtr.append();
 	          pw.flush();
