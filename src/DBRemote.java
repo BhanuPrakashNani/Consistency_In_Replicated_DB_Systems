@@ -12,7 +12,6 @@ public interface DBRemote extends Remote{
 	String getMessage() throws RemoteException;
 	public Queue<Student> getQobj() throws RemoteException;
 	public void notify(int i) throws RemoteException ;
-	public Queue<String> getMsgQobj() throws RemoteException;
 	public int getStatus() throws RemoteException;
 	public void setStatus() throws RemoteException;
 	public void setRead() throws RemoteException;
@@ -20,5 +19,6 @@ public interface DBRemote extends Remote{
 	public boolean isWrite() throws RemoteException;
 	public void setDBStatus() throws RemoteException;
 	public Student read(int x) throws Exception, ClassNotFoundException;
+	public void addQobj(Student s) throws RemoteException;
 }
 	

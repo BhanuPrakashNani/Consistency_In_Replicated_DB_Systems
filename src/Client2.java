@@ -134,7 +134,8 @@ public class Client2 {
 	      while(rs.next()) {
 	    	  if(t == rs.getInt("id")) {
 	    		  idExists = true;
-	    		  percent = rs.getInt("percentage")+1;
+	    		  percent = rs.getInt("percentage");
+	    		  name = rs.getString("name");
 	    		  break;
 	    	  }
 	      }

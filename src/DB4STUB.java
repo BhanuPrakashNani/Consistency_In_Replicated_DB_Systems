@@ -10,7 +10,7 @@ import java.sql.Statement;
 import java.util.*;
 
 public class DB4STUB implements DBRemote{
-	Queue<Student> q = new LinkedList<>();
+	static Queue<Student> q = new LinkedList<>();
 	static int status;
 	int[] dbstatus = new int[]{ 0, 0, 0, 0};  // 0- c1, 1-c2, 2-s1, 3-s2
 	String msg =",";
@@ -135,8 +135,6 @@ public class DB4STUB implements DBRemote{
 	      while(rs.next()) {
 	    	  if(t == rs.getInt("id")) {
 	    		  idExists = true;
-	    		  percent = rs.getInt("percentage")+1;
-	    		  break;
 	    	  }
 	      }
 	      
@@ -150,7 +148,7 @@ public class DB4STUB implements DBRemote{
 	      }
 	      else {
 	    	  
-	    	  String update = "UPDATE samplermi SET percentage = "+percent+" where id = "+t;
+	    	  String update = "UPDATE samplermi SET percentage = "+percent+", name = '"+name+"' where id = "+t;
 		      int count=stmt.executeUpdate(update);
 		      msg = update;
 	      }
@@ -180,15 +178,19 @@ public class DB4STUB implements DBRemote{
 		
 		setDBStatus();
 		q.add(s);
-}
-
-public void setDBStatus() throws RemoteException {
-	for (int i1 =0; i1<4; i1++) {
-    	  dbstatus[i1]++;
-      }
-}
+		DB1STUB.q.add(s);
+	}
 	
-	public Queue<Student> getQobj() throws RemoteException {		
+	public void setDBStatus() throws RemoteException {
+		for (int i1 =0; i1<4; i1++) {
+	    	  dbstatus[i1]++;
+	      }
+	}
+	public void addQobj(Student s) throws RemoteException {		
+		q.add(s);
+	}
+	
+		public Queue<Student> getQobj() throws RemoteException {		
 		return q;
 	}
 	
@@ -209,10 +211,7 @@ public void setDBStatus() throws RemoteException {
     @Override
     public void notify(int i) throws RemoteException{
     	dbstatus[i]--;
-    	if (this.dbstatus(0) == 0 && this.dbstatus(1) == 0
-    			&& this.dbstatus(2) == 0 && this.dbstatus(3) == 0) {
-    		q.clear();
-    	}
+    	q.remove();
     }
     
     public int dbstatus(int i) throws RemoteException{

@@ -7,6 +7,7 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.server.UnicastRemoteObject;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.*;
 
@@ -25,11 +26,8 @@ public class Server extends DB1STUB {
          // Exporting the object of implementation class (
          // here we are exporting the remote object to the stub) 
          DBRemote stub = (DBRemote) UnicastRemoteObject.exportObject(obj, 0); 
-//         Hello stub = new ImplExample();
-//       
-//         // Binding the remote object (stub) in the registry 
+
          Registry registry = LocateRegistry.getRegistry(); 
-//         Naming.bind("rmi://localhost:5000/sonoo",stub);  
          registry.bind("Hello", stub);  
          System.out.println("Server ready");
          DBRemote stub_self = (DBRemote) registry.lookup("Hello");
@@ -38,15 +36,10 @@ public class Server extends DB1STUB {
 
          System.out.println("lookup server");
 
-//         System.out.println(stub2.notify());
-//         while(true) {
-//             if(stub2.getstatus() ==1)
-//        	 System.out.println(stub2.getMessage());
-//
-//         }
+
          Random  rand = new Random();
          int t =0, x = 0;
-//         stub_self.addStudent(t);
+         boolean idExists = false;
          Thread.sleep(2000);
          String name = "Mani";
          String branch = "cse";
@@ -56,38 +49,31 @@ public class Server extends DB1STUB {
 	     while(true) {
              Thread.sleep(2000);
              Student s = new Student();
+	   	     t  = t% 7; 
+             String query = "SELECT * FROM SAMPLERMI";
+             ResultSet rs = stmt.executeQuery(query);
+             while(rs.next()) {
+		    	  if(t == rs.getInt("id")) {
+		    		  idExists = true;
+		    		  percent = rs.getInt("percentage")+1;
+		    		  break;
+		    	  }
+		      }
+
              s.setID(t); 
 	         s.setName(name); 
 	         s.setBranch(branch); 
 	         s.setPercent(percent); 
 	         s.setEmail(email); 
-	         
+	         percent = 1;
 	         switch(rand.nextInt(2)) {
 	            case 1:
-	            	  stub_self.request(s);
+	            	  stub_s2.addQobj(s);
+	            	  stub_self.request(s); // request to write
 	       	       	  break;
 				case 0:
 					x = rand.nextInt(8);
-	            	Student st = stub_self.read(x);
-//               	 try {
-//      	 		      FileWriter logwtr = new FileWriter("Server1.log",true);
-//      	 		      BufferedWriter bw = new BufferedWriter(logwtr);
-//      	 		      PrintWriter pw = new PrintWriter(bw);
-//      	 		      System.out.println("LOGGIGN");
-//      	 		      if(st == null)
-//      	 		    	  pw.println("P1:  Read id: "+x +" NULL");
-//      	 		      else
-//      	 		    	  pw.println("P1: Read id: "+st.getId() +"  Percent: "+ st.getPercent());
-////      	 		      logwtr.append();
-//      	 	          pw.flush();
-//      	 		      logwtr.close();
-//      	 		      
-////      	 		      System.out.println("Successfully wrote to the file.");
-//      	 		    } catch (IOException e) {
-//      	 		      System.out.println("An error occurred.");
-//      	 		      e.printStackTrace();
-//      	 		    }   	
-				   
+	            	Student st = stub_self.read(x); // read from db
 					break;
 	            default:
 	            	System.out.println("NOTHING");
@@ -95,8 +81,8 @@ public class Server extends DB1STUB {
 	         
 	         
 	         
-	         
-	         int tempStatus = stub_self.dbstatus(2);
+	         //sync with other writer processes
+	         int tempStatus = stub_self.dbstatus(2)+stub_s2.dbstatus(2);
 	         
 	         if(tempStatus > 0) {
 	        	 System.out.println("Writer 1 inside loop1 ");
@@ -110,27 +96,27 @@ public class Server extends DB1STUB {
 	        	 }
 	         }
 	         
-	         tempStatus = stub_s2.dbstatus(2);
-	         
-	         if(tempStatus > 0) {
-	        	 System.out.println("Writer 1 inside loop2 ");
-
-	        	 Queue<Student> q = stub_s2.getQobj();
-	        	 while(tempStatus > 0) {
-	        		 s = q.peek();
-	        			Student st = q.peek();
-	        	        System.out.println("ID: " + st.getId()); 
-	        	        System.out.println("name: " + st.getName()); 
-	        	        System.out.println("branch: " + st.getBranch()); 
-	        	        System.out.println("percent: " + st.getPercent()); 
-	        	        System.out.println("email: " + st.getEmail());
-	        		 q.remove();
-	        		 stub_self.addStudent(s);
-	        		 stub_s2.notify(2);
-	        		 tempStatus--;
-	        	 }
-	         }
-	         System.out.println("WRITER 1"+t);
+//	         tempStatus = stub_s2.dbstatus(2);
+//	         
+//	         if(tempStatus > 0) {
+//	        	 System.out.println("Writer 1 inside loop2 ");
+//
+//	        	 Queue<Student> q = stub_self.getQobj();
+//	        	 while(tempStatus > 0) {
+//	        		 s = q.peek();
+//	        			Student st = q.peek();
+//	        	        System.out.println("ID: " + st.getId()); 
+//	        	        System.out.println("name: " + st.getName()); 
+//	        	        System.out.println("branch: " + st.getBranch()); 
+//	        	        System.out.println("percent: " + st.getPercent()); 
+//	        	        System.out.println("email: " + st.getEmail());
+//	        		 q.remove();
+//	        		 stub_self.addStudent(s);
+//	        		 stub_s2.notify(2);
+//	        		 tempStatus--;
+//	        	 }
+//	         }
+	         System.out.println("WRITER 1 "+t); 
 	         t++;
         	 
          }

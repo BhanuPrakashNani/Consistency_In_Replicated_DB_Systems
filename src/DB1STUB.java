@@ -7,12 +7,10 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.*;
 
 public class DB1STUB implements DBRemote{
-	Queue<Student> q = new LinkedList<>();
+	static Queue<Student> q = new LinkedList<>();
 	static int status;
 	int[] dbstatus = new int[]{ 0, 0, 0, 0};
 	//Student s;
@@ -138,7 +136,6 @@ public class DB1STUB implements DBRemote{
 	      while(rs.next()) {
 	    	  if(t == rs.getInt("id")) {
 	    		  idExists = true;
-	    		  percent = rs.getInt("percentage")+1;
 	    		  break;
 	    	  }
 	      }
@@ -153,7 +150,7 @@ public class DB1STUB implements DBRemote{
 	      }
 	      else {
 	    	  
-	    	  String update = "UPDATE samplermi SET percentage = "+percent+" where id = "+t;
+	    	  String update = "UPDATE samplermi SET percentage = "+percent+", name = '"+name+"' where id = "+t;
 		      int count=stmt.executeUpdate(update);
 		      msg = update;
 	      }
@@ -187,7 +184,9 @@ public class DB1STUB implements DBRemote{
 	    	  dbstatus[i1]++;
 	      }
 	}
-	
+	public void addQobj(Student s) throws RemoteException {		
+		q.add(s);
+	}
 	public Queue<Student> getQobj() throws RemoteException {		
 		return q;
 	}
@@ -208,10 +207,7 @@ public class DB1STUB implements DBRemote{
     @Override
     public void notify(int i) throws RemoteException{
     	dbstatus[i]--;
-    	if (this.dbstatus(0) == 0 && this.dbstatus(1) == 0
-    			&& this.dbstatus(2) == 0 && this.dbstatus(3) == 0) {
-    		q.clear();
-    	}
+    	q.remove();
     }
     
     public int dbstatus(int i) throws RemoteException{
