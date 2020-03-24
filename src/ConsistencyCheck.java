@@ -17,7 +17,7 @@ import java.nio.file.Paths;
 public class ConsistencyCheck {
 	public static void main(String[] args) throws IOException, InterruptedException {
 		
-		Thread.sleep(5000);
+		Thread.sleep(500);
 		int lineno = 2;
 		long lineCount = Files.lines(Paths.get("Server1.log")).count();
 
@@ -32,11 +32,10 @@ public class ConsistencyCheck {
 		while(true) {
 			lineCount = Files.lines(Paths.get("Server1.log")).count();
 
-			while(lineCount < lineno+2) {
 				System.out.println("waiting to get updated");
 				lineCount = Files.lines(Paths.get("Server1.log")).count();
 
-			}
+
 			lineno++;
 			String[] arrOfStr = current.split(" ",-1);
 			String[] arrOfPrev = previous.split(" ", -1);

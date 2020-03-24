@@ -10,7 +10,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ImplExample2 implements Hello{
+public class ImplExample3 implements Hello{
 	static int status;
 	int[] dbstatus = new int[]{ 0, 0, 0, 0, 0};  // 1-c1, 2-c2, 3-s1, 4-s2
 	String msg ="";
@@ -27,7 +27,7 @@ public class ImplExample2 implements Hello{
 	    	System.out.println("SWWWWWERRRRRR");
 	    	e.printStackTrace();
 	      }
-	      String DB_URL = "jdbc:mysql://localhost:3306/rmi4";  
+	      String DB_URL = "jdbc:mysql://localhost:3306/rmi5";  
 	      
 	      // Database credentials 
 	      String USER = "root"; 
@@ -39,12 +39,12 @@ public class ImplExample2 implements Hello{
 	      //Register JDBC driver 
 	        
 	      //Open a connection
-	      System.out.println("SERVER 2 Connecting to a selected database..."); 
+	      System.out.println("SERVER 3 Connecting to a selected database..."); 
 	      conn = DriverManager.getConnection(DB_URL, USER, PASS); 
 	      System.out.println("Connected database successfully...");  
 	      
 	      //Execute a query 
-	      System.out.println("SERVER 2 Creating statement..."); 
+	      System.out.println("SERVER 3 Creating statement..."); 
 	      	
 	      stmt = conn.createStatement();  
 	      String sql = "SELECT * FROM samplermi"; 
@@ -84,7 +84,7 @@ public class ImplExample2 implements Hello{
 	    	e.printStackTrace();
 	      }
 	      int t = id % 7;
-	      String DB_URL = "jdbc:mysql://localhost:3306/rmi4";  
+	      String DB_URL = "jdbc:mysql://localhost:3306/rmi5";  
 	      
 	      // Database credentials 
 	      String USER = "root"; 
@@ -96,18 +96,18 @@ public class ImplExample2 implements Hello{
 	      //Register JDBC driver 
 	        
 	      //Open a connection
-	      System.out.println("SERVER 2 Connecting to a selected database..."); 
+	      System.out.println("SERVER 3 Connecting to a selected database..."); 
 	      conn = DriverManager.getConnection(DB_URL, USER, PASS); 
-	      System.out.println("SERVER 2 Connected database successfully...");  
+	      System.out.println("SERVER 3 Connected database successfully...");  
 	      
 	      //Execute a query 
-	      System.out.println("SERVER 2 Creating statement...");
+	      System.out.println("SERVER 3 Creating statement...");
 	      
 	      
-	      String name = "Bhanu";
+	      String name = "Abhi";
 	      String branch = "cse";
 	      int percent = 01;
-	      String email = "bhanu.gmail";
+	      String email = "abhi.gmail";
 	      
 	      //check for id in table 
 	      boolean idExists = false;
@@ -147,7 +147,7 @@ public class ImplExample2 implements Hello{
  		      PrintWriter pw = new PrintWriter(bw);
  		      System.out.println("LOGGIGN");
 
- 		      pw.println("P2:  Write id: "+t	 +"  Percent: "+ percent);
+ 		      pw.println("P3:  Write id: "+t	 +"  Percent: "+ percent);
 
 // 		      logwtr.append();
  	          pw.flush();
@@ -193,7 +193,7 @@ public class ImplExample2 implements Hello{
     	for (int i=0; i<5; i++) {
     		status = status + dbstatus[i];
     	}
-    	status = status - dbstatus[3];
+    	status = status - dbstatus[4];
     	return status;
     }
 	@Override

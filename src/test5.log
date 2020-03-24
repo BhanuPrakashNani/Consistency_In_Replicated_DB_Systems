@@ -5475,8 +5475,3 @@ P1:  Write id: 0  Percent: 638
 P2:  Write id: 2  Percent: 355
 P1: Read id: 2  Percent: 355
 P2: Read id: 4  Percent: 357
-P2:  Write id: 0  Percent: 1
-P2: Read id: 0  Percent: 1
-P2:  Write id: 0  Percent: 2
-P1:  Write id: 0  Percent: 3
-P1:  Write id: 0  Percent: 4

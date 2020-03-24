@@ -9,8 +9,8 @@ public class Client2 {
    public static void main(String[] args)throws Exception, ClassNotFoundException {  
 	   List<Student> list = null;
       try { 
-    	  Class.forName("com.mysql.jdbc.Driver");
-         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi3", "root", "asdf;lkj");
+    	 Class.forName("com.mysql.jdbc.Driver");
+         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi3", "root", "bhanuprakash");
          // MySQL: "jdbc:mysql://hostname:port/databaseName", "username", "password"
          Statement stmt = conn.createStatement();
          // Getting the registry 
@@ -20,6 +20,8 @@ public class Client2 {
          System.out.println("lookup client");
          Hello stub = (Hello) registry.lookup("Hello"); 
          Hello stub2 = (Hello) registry.lookup("Hello2");
+         Hello stub3 = (Hello) registry.lookup("Hello3");
+
          // Hello stub=(Hello)Naming.lookup("rmi://localhost:5000/sonoo");  
 
          // Calling the remote method using the obtained object 
@@ -69,6 +71,24 @@ public class Client2 {
     		  }
     	      stub2.notify(1);
     	      System.out.println("Replicated Server 2");
+    	  }
+    	  
+    	  if(stub3.dbstatus(1) == 1) {
+    		  System.out.println("hi5");
+    		  if(stub3.isWrite()) {
+//    		  list = (List<Student>)stub.getStudents();
+//    	      String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values("+list.get(list.size()-1).getId()+",'"+list.get(list.size()-1).getName()+"','"+ list.get(list.size()-1).getBranch()+"',"+list.get(list.size()-1).getPercent()+",'"+ list.get(list.size()-1).getEmail()+ "')";
+//    	      int count=stmt.executeUpdate(insert);
+        		  System.out.println("hi6");
+
+     			 String exec = stub3.getStmt();
+     			 System.out.println(exec);
+
+     			 int count=stmt.executeUpdate(exec);
+
+    		  }
+    	      stub3.notify(1);
+    	      System.out.println("Replicated Server 3");
     	  }
 //    	  System.out.println("Server not updated");
       }

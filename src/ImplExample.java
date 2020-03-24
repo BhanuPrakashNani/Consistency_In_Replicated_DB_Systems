@@ -13,13 +13,14 @@ import java.util.List;
 public class ImplExample implements Hello{
 	static int status;
 	
-	int[] dbstatus = new int[]{ 0, 0, 0, 0};
+	int[] dbstatus = new int[]{ 0, 0, 0, 0, 0};
 	String msg ="";
 	static boolean isWrite = false; // will be used to know whether the status increment is write or read;
 	public List<Student> getStudents() throws Exception, ClassNotFoundException {  
 		  List<Student> list = new ArrayList<Student>();   
 	      // JDBC driver name and database URL 
-	      String JDBC_DRIVER = "com.mysql.jdbc.Driver"; 
+	      String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+	      Class.forName(JDBC_DRIVER);
 	      try {
 	    	  Class.forName(JDBC_DRIVER); 
 	      }
@@ -31,7 +32,7 @@ public class ImplExample implements Hello{
 	      
 	      // Database credentials 
 	      String USER = "root"; 
-	      String PASS = "asdf;lkj";  
+	      String PASS = "bhanuprakash";  
 	      
 	      Connection conn = null; 
 	      Statement stmt = null;  
@@ -89,7 +90,7 @@ public class ImplExample implements Hello{
 	      
 	      // Database credentials 
 	      String USER = "root"; 
-	      String PASS = "asdf;lkj";  
+	      String PASS = "bhanuprakash";  
 	      
 	      Connection conn = null; 
 	      Statement stmt = null;  
@@ -182,7 +183,7 @@ public class ImplExample implements Hello{
     }
     
     public void setDbStatus() throws RemoteException {
-	      for (int i =0; i<4; i++) {
+	      for (int i =0; i<5; i++) {
 	    	  dbstatus[i]++;
 	      }
     }
@@ -197,7 +198,7 @@ public class ImplExample implements Hello{
     }
     public int dbstatus() throws RemoteException{
     	int status = 0;
-    	for (int i=0; i<4; i++) {
+    	for (int i=0; i<5; i++) {
     		status = status + dbstatus[i];
     	}
     	status = status - dbstatus[2];

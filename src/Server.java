@@ -21,9 +21,10 @@ public class Server extends ImplExample {
    public static void main(String args[]) { 
 	   List<Student> list = null;
 
-      try { 
+      try {
+    	  Class.forName("com.mysql.jdbc.Driver");
          // Instantiating the implementation class 
-          Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi", "root", "asdf;lkj");
+          Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi", "root", "bhanuprakash");
 
           Statement stmt = conn.createStatement();
 
@@ -39,6 +40,8 @@ public class Server extends ImplExample {
          Hello stub_self = (Hello) registry.lookup("Hello");
          Thread.sleep(3000);
          Hello stub_s2 = (Hello) registry.lookup("Hello2");
+         Thread.sleep(2000);
+         Hello stub_s3 = (Hello) registry.lookup("Hello3");
 
          System.out.println("lookup server");
          Random rand = new Random();
@@ -48,15 +51,6 @@ public class Server extends ImplExample {
 
          while(Config.SAFE) {
              Thread.sleep(2000);
-//             System.out.println("T x is "+t+"  "+x);
-//             stub_self.write(t);
-//             Student s = read(x);
-//             if(s != null)
-//            	 System.out.println("I am reading :"+s.getId());
-//             else
-//            	 System.out.println("READ NULL");
-//             x = rand.nextInt(8);
-//        	 t++;
 	         System.out.println("HElllo man DBSTATUS2 "+stub_s2.dbstatus(0)+" "+stub_s2.dbstatus(1)+" "+stub_s2.dbstatus(2)+" "+stub_s2.dbstatus(3)+ " is Write "+stub_s2.isWrite());
 
         	 if(stub_s2.dbstatus(2) == 1 ) {
@@ -69,7 +63,19 @@ public class Server extends ImplExample {
           	      stub_s2.notify(2);
           	      System.out.println("Replicated Server 2 to Server 1");
           	  }
-             if(stub_self.dbstatus() == 0 && stub_s2.dbstatus() == 0 && stub_s2.getStatus() == 0) {
+        	 
+        	 if(stub_s3.dbstatus(2) == 1 ) {
+        		 if(stub_s3.isWrite()) {
+        			 list = (List<Student>)stub_s3.getStudents();
+        			 String insert = "INSERT INTO samplermi(id, name, branch, percentage, email) values("+list.get(list.size()-1).getId()+",'"+list.get(list.size()-1).getName()+"','"+ list.get(list.size()-1).getBranch()+"',"+list.get(list.size()-1).getPercent()+",'"+ list.get(list.size()-1).getEmail()+ "')";
+        			 String exec = stub_s3.getStmt();
+        			 int count=stmt.executeUpdate(exec);
+        		 }
+          	      stub_s3.notify(2);
+          	      System.out.println("Replicated Server 3 to Server 1");
+          	  }
+        	 
+             if(stub_self.dbstatus() == 0 && stub_s2.dbstatus() == 0 && stub_s2.getStatus() == 0 && stub_s3.dbstatus() == 0 && stub_s3.getStatus() == 0) {
         		 stub_self.setStatus();
         		 
 	             System.out.println("T x is "+t+"  "+x);
@@ -128,7 +134,7 @@ public class Server extends ImplExample {
 	      
 	      // Database credentials 
 	      String USER = "root"; 
-	      String PASS = "asdf;lkj";  
+	      String PASS = "bhanuprakash";  
 	      
 	      Connection conn = null; 
 	      Statement stmt = null;  
