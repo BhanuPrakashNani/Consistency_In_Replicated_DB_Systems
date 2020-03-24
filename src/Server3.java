@@ -50,7 +50,7 @@ public class Server3 extends ImplExample {
 
          while(Config.SAFE) {
              Thread.sleep(2000);
-	         System.out.println("HElllo man DBSTATUS2 "+stub_s2.dbstatus(0)+" "+stub_s2.dbstatus(1)+" "+stub_s2.dbstatus(2)+" "+stub_s2.dbstatus(3)+ " is Write "+stub_s2.isWrite());
+	         System.out.println("HElllo man DBSTATUS2 "+stub_s2.dbstatus(0)+" "+stub_s2.dbstatus(1)+" is Write "+stub_s2.isWrite());
 
         	 if(stub_s2.dbstatus(4) == 1 ) {
         		 if(stub_s2.isWrite()) {
@@ -62,8 +62,8 @@ public class Server3 extends ImplExample {
           	      stub_s2.notify(4);
           	      System.out.println("Replicated Server 2 to Server 3");
           	  }
-        	 
-        	 System.out.println("HElllo man DBSTATUS1 "+stub_s1.dbstatus(0)+" "+stub_s1.dbstatus(1)+" "+stub_s1.dbstatus(2)+" "+stub_s1.dbstatus(3)+ " is Write "+stub_s1.isWrite());
+        	 Thread.sleep(3000);
+        	 System.out.println("HElllo man DBSTATUS1 "+stub_s1.dbstatus(0)+" "+stub_s1.dbstatus(1)+" is Write "+stub_s1.isWrite());
 
         	 if(stub_s1.dbstatus(4) == 1 ) {
         		 if(stub_s1.isWrite()) {
@@ -178,7 +178,7 @@ public class Server3 extends ImplExample {
 	 		      FileWriter logwtr = new FileWriter("Server1.log",true);
 	 		      BufferedWriter bw = new BufferedWriter(logwtr);
 	 		      PrintWriter pw = new PrintWriter(bw);
-	 		      System.out.println("LOGGIGN");
+	 		      System.out.println("LOGGING");
 
 	 		      pw.println("P3: Read id: "+id +"  Percent: "+ percent);
 

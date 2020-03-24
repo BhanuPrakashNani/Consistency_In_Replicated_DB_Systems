@@ -51,7 +51,7 @@ public class Server extends ImplExample {
 
          while(Config.SAFE) {
              Thread.sleep(2000);
-	         System.out.println("HElllo man DBSTATUS2 "+stub_s2.dbstatus(0)+" "+stub_s2.dbstatus(1)+" "+stub_s2.dbstatus(2)+" "+stub_s2.dbstatus(3)+ " is Write "+stub_s2.isWrite());
+	         System.out.println("HElllo man DBSTATUS2 "+stub_s2.dbstatus(0)+" "+stub_s2.dbstatus(1)+ " is Write "+stub_s2.isWrite());
 
         	 if(stub_s2.dbstatus(2) == 1 ) {
         		 if(stub_s2.isWrite()) {
@@ -64,6 +64,9 @@ public class Server extends ImplExample {
           	      System.out.println("Replicated Server 2 to Server 1");
           	  }
         	 
+        	 Thread.sleep(2000);
+	         System.out.println("HElllo man DBSTATUS3 "+stub_s3.dbstatus(0)+" "+stub_s3.dbstatus(1)+ " is Write "+stub_s3.isWrite());
+      	 
         	 if(stub_s3.dbstatus(2) == 1 ) {
         		 if(stub_s3.isWrite()) {
         			 list = (List<Student>)stub_s3.getStudents();
