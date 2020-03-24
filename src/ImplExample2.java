@@ -12,7 +12,7 @@ import java.util.List;
 
 public class ImplExample2 implements Hello{
 	static int status;
-	int[] dbstatus = new int[]{ 0, 0, 0, 0, 0};  // 1-c1, 2-c2, 3-s1, 4-s2
+	int[] dbstatus = new int[]{ 0, 0, 0, 0, 0};  // 0-c1, 1-c2, 2-s1, 3-s2 4-s3
 	String msg ="";
 	static boolean isWrite = false;
 	public List<Student> getStudents() throws Exception, ClassNotFoundException {  

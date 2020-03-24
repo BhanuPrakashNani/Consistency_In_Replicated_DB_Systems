@@ -103,7 +103,7 @@ public class Server3 extends ImplExample {
 
 	        
 	             x = rand.nextInt(8);
-	             stub_self.notify(2);
+	             stub_self.notify(4);
 	             t++;
         	 }
 
