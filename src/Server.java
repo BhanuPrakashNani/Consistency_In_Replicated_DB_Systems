@@ -2,6 +2,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.rmi.RemoteException;
 import java.rmi.registry.*; 
 import java.rmi.registry.LocateRegistry;
 import java.rmi.server.UnicastRemoteObject;
@@ -87,16 +88,19 @@ public class Server extends DB1STUB {
 	         if(tempStatus > 0) {
 	        	 System.out.println("Writer 1 inside loop1 ");
 	        	 Queue<Student> q = stub_self.getQobj();
-	        	 while(tempStatus > 0) {
-	        		 s = q.peek();
-	        		 q.remove();
-	        		 stub_self.addStudent(s);
-	        		 stub_self.notify(2);
-	        		 tempStatus--;
-	        	 }
+//	        	 while(tempStatus > 0) {
+//	        		 s = q.peek();
+//	        		 q.remove();
+//	        		 stub_self.addStudent(s);
+//	        		 stub_self.notify(2);
+//	        		 tempStatus--;
+//	        	 }
+	        	 syncDB synch = new syncDB(q, tempStatus, stub_self);
+	        	 Thread thrd_sync = new Thread(synch);
+	        	 thrd_sync.start();
 	         }
 	         
-//	         tempStatus = stub_s2.dbstatus(2);
+//	          tempStatus = stub_s2.dbstatus(2);
 //	         
 //	         if(tempStatus > 0) {
 //	        	 System.out.println("Writer 1 inside loop2 ");
@@ -128,4 +132,36 @@ public class Server extends DB1STUB {
       
 
    } 
+}
+
+class syncDB implements Runnable
+{
+	Queue<Student> q = new LinkedList<>();
+	int tempstatus = 0;
+	DBRemote stub_self = null;
+	Student s;
+	syncDB(Queue<Student> que, int tempstat, DBRemote stub_slf){
+		this.q = que;
+		this.tempstatus = tempstat;
+		this.stub_self = stub_slf;
+	}
+	
+	public void run() {
+		System.out.println("Thread for sync start");
+		try {
+			q = stub_self.getQobj();
+
+	   	 while(this.tempstatus > 0) {
+	   		 s = q.peek();
+	   		 q.remove();
+	   		 stub_self.addStudent(s);
+	   		 stub_self.notify(2);
+	   		 this.tempstatus--;
+	   	 }
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
 }
