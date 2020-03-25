@@ -36,10 +36,13 @@ public class Server2 extends DB4STUB {
          System.out.println("Server4 ready");
          DBRemote stub_self = (DBRemote) registry.lookup("Hello4");
          Thread.sleep(2000);
-         DBRemote stub_s1 = (DBRemote) registry.lookup("Hello");
+         DBRemote stub_s1 = (DBRemote) registry.lookup("Hello1");
          DBRemote stub_s2 = (DBRemote) registry.lookup("Hello2");
-         stub_arr[0] = stub_s2;
-         stub_arr[2] = stub_s1;
+         DBRemote stub_s3 = (DBRemote) registry.lookup("Hello3");
+         
+         stub_arr[0] = stub_s1;
+         stub_arr[1] = stub_s2;
+         stub_arr[2] = stub_s3;
          stub_arr[3] = stub_self;
          System.out.println("lookup server2 ");
 
@@ -82,6 +85,7 @@ public class Server2 extends DB4STUB {
 	            case 1:
 	            	  stub_s1.addQobj(s);
 	            	  stub_s2.addQobj(s);
+	            	  stub_s3.addQobj(s);
 	            	  stub_self.request(s); // request to write
 	       	       	  break;
 	            case 0:

@@ -4,7 +4,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.rmi.*;
-import java.rmi.registry.Registry; 
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
 import java.util.*; 
 import java.sql.*;
 
@@ -14,162 +15,64 @@ public class Client2 {
 	   List<Student> list = null;
 	   Student s;
       try { 
-    	 
-         // Getting the registry 
-         Registry registry = LocateRegistry.getRegistry(null); 
+    	  DB3STUB obj = new DB3STUB(); 
+          Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi3", "root", "asdf;lkj");
+
+          Statement stmt = conn.createStatement();
+
+          // Exporting the object of implementation class (
+          // here we are exporting the remote object to the stub) 
+          DBRemote stubk = (DBRemote) UnicastRemoteObject.exportObject(obj,0);  
+//          Hello stub = new ImplExample();
+
+//          // Binding the remote object (stub) in the registry 
+          Registry registry = LocateRegistry.getRegistry(null);
+//          Naming.bind("rmi://localhost:5000/sonoo",stub);  
+          registry.bind("Hello3", stubk);  
+          System.out.println("Server2 ready");
          
          // Looking up the registry for the remote object 
-         System.out.println("lookup client");
-         DBRemote stub = (DBRemote) registry.lookup("Hello"); 
-         DBRemote stub2 = (DBRemote) registry.lookup("Hello2");
-         // Hello stub=(Hello)Naming.lookup("rmi://localhost:5000/sonoo");  
 
+         
+         DBRemote stub_self = (DBRemote) registry.lookup("Hello3");
+         DBRemote stub_s2 = (DBRemote) registry.lookup("Hello2");
+         DBRemote stub = (DBRemote) registry.lookup("Hello1"); 
+         DBRemote stub4 = (DBRemote) registry.lookup("Hello4");
+         // Hello stub=(Hello)Naming.lookup("rmi://localhost:5000/sonoo");  
+         System.out.println("lookup client");
          // Calling the remote method using the obtained object 
-         list = (List<Student>)stub.getStudents(); 
+         DBRemote stub_arr[] = new DBRemote[4]; 
+         stub_arr[0] = stub;
+         stub_arr[1] = stub_s2;
+         stub_arr[2] = stub_self;
+         stub_arr[3] = stub4;
 		 
 
            
       // System.out.println(list); 
-       
-         int t=0;
+       int t=0;
 
-         while(true) {
-       	  int tempStatus = stub.dbstatus(1);
-   	         
-   	         if(tempStatus > 0) {
-   	        	 System.out.println("Writer 1 inside loop1 ");
-   	        	 Queue<Student> q = stub.getQobj();
-   	        	 while(tempStatus > 0) {
-   	        		 s = q.peek();
-   	        		 q.remove();
-   	        		 replicate(s);
-   	        		 stub.notify(1);
-   	        		 tempStatus--;
-   	        	 }
-   	         }
-   	         
-   	         tempStatus = stub2.dbstatus(1);
-   	         
-   	         if(tempStatus > 0) {
-   	        	 System.out.println("Writer 1 inside loop2 ");
+      while(true) {
+	         int tempStatus = stub4.dbstatus(2)+stub.dbstatus(2);
+	         System.out.println("TEMPSTATUS "+tempStatus );
+	         
+	         if(tempStatus > 0) {
+	        	 System.out.println("Client 1 inside loop1 ");
+	        	 Thread.sleep(200);
+	        	 Queue<Student> q = stub_self.getQobj();
+	        	 syncDB synch = new syncDB(q, tempStatus, stub_arr,2); //ERROR: while notifying we are not notifying to the correct manager.
+	        	 Thread thrd_sync = new Thread(synch);
+	        	 thrd_sync.start();
+	         }
+	         
+	         t++;
+//    	  System.out.println("Server not updated");
+      }
 
-   	        	 Queue<Student> q = stub2.getQobj();
-   	        	 while(tempStatus > 0) {
-   	        		 s = q.peek();
-   	        			Student st = q.peek();
-   	        	        System.out.println("ID: " + st.getId()); 
-   	        	        System.out.println("name: " + st.getName()); 
-   	        	        System.out.println("branch: " + st.getBranch()); 
-   	        	        System.out.println("percent: " + st.getPercent()); 
-   	        	        System.out.println("email: " + st.getEmail());
-   	        		 q.remove();
-   	        		 replicate(s);
-   	        		 
-   	        		 
-   	        		 stub2.notify(1);
-   	        		 tempStatus--;
-   	        	 }
-   	         }
-   	         t++;
-//       	  System.out.println("Server not updated");
-         }
-      
-      
-      
-//      String msg="";
-//      while(true) {
-//    	  if(stub.getstatus() == 0) {
-//    		  System.out.println("Enter your  message");
-//    		  Scanner sc = new Scanner(System.in);
-//    		  msg = sc.nextLine();
-//    		  stub.sendMessage(msg);
-//     
-//    	  }
-//      }
+     
       } catch (Exception e) { 
           System.err.println("Client exception: " + e);
        }
       }
-   public static void replicate(Student s) throws Exception, ClassNotFoundException {
-	   String JDBC_DRIVER = "com.mysql.jdbc.Driver"; 
-	      try {
-	    	  Class.forName(JDBC_DRIVER); 
-	      }
-	      catch(ClassNotFoundException e) {
-	    	System.out.println("SWWWWWERRRRRR");
-	    	e.printStackTrace();
-	      }
-	      String DB_URL = "jdbc:mysql://localhost:3306/rmi3";  
-	      
-	      // Database credentials 
-	      String USER = "root"; 
-	      String PASS = "asdf;lkj";  
-	      
-	      Connection conn = null; 
-	      Statement stmt = null;  
-	      
-	      //Register JDBC driver 
-	        
-	      //Open a connection
-	      System.out.println("Connecting to a selected database..."); 
-	      conn = DriverManager.getConnection(DB_URL, USER, PASS); 
-	      System.out.println("Connected database successfully...");  
-	      
-	      //Execute a query 
-	      System.out.println("Creating statement...");
-	      
-	      boolean idExists = false;
-	      stmt = conn.createStatement();
-	      String sql = "SELECT * FROM samplermi"; 
-	      ResultSet rs = stmt.executeQuery(sql);  
-	      
-	      int id = s.getId();
-	      String name = s.getName();
-	      String branch = s.getBranch();
-	      int percent = s.getPercent();
-	      String email = s.getEmail();
-	      
-	      int t = id % 7;
-	      // search for id in the database 
-	      while(rs.next()) {
-	    	  if(t == rs.getInt("id")) {
-	    		  idExists = true;
-	    		  percent = rs.getInt("percentage");
-	    		  name = rs.getString("name");
-	    		  break;
-	    	  }
-	      }
-	      
-	      stmt = conn.createStatement();
-	      //ResultSet rs = stmt.executeQuery(sql);  
-	      if (!idExists) {
-	      //ResultSet rs = stmt.executeQuery(sql);  
-		      String insert = "INSERT INTO samplermi(id, name, branch, percentage, email) values('"+t+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
-		      int count=stmt.executeUpdate(insert);
-	      }
-	      else {
-	    	  
-	    	  String update = "UPDATE samplermi SET percentage = "+percent+" where id = "+t;
-		      int count=stmt.executeUpdate(update);
-	      }
-	      try {
-		      FileWriter logwtr = new FileWriter("Server1.log",true);
-		      BufferedWriter bw = new BufferedWriter(logwtr);
-		      PrintWriter pw = new PrintWriter(bw);
-		      System.out.println("LOGGIGN");
-
-		      pw.println("C2: Write id: "+t	 +"  Percent: "+ percent);
-
-//		      logwtr.append();
-	          pw.flush();
-		      logwtr.close();
-		      
-//		      System.out.println("Successfully wrote to the file.");
-		    } catch (IOException e) {
-		      System.out.println("An error occurred.");
-		      e.printStackTrace();
-		    }
-   System.out.println("wrote in C2");    
-	}
-
+   
 }

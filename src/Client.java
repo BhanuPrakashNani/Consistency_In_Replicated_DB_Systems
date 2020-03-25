@@ -35,14 +35,17 @@ public class Client {
 
          
          DBRemote stub_self = (DBRemote) registry.lookup("Hello2");
-         DBRemote stub = (DBRemote) registry.lookup("Hello"); 
+         DBRemote stub = (DBRemote) registry.lookup("Hello1"); 
          DBRemote stub4 = (DBRemote) registry.lookup("Hello4");
+         DBRemote stub3 = (DBRemote) registry.lookup("Hello3");
+         
          // Hello stub=(Hello)Naming.lookup("rmi://localhost:5000/sonoo");  
          System.out.println("lookup client");
          // Calling the remote method using the obtained object 
          DBRemote stub_arr[] = new DBRemote[4]; 
-         stub_arr[0] = stub_self;
-         stub_arr[2] = stub;
+         stub_arr[0] = stub;
+         stub_arr[1] = stub_self;
+         stub_arr[2] = stub3;
          stub_arr[3] = stub4;
 		 
 
@@ -51,14 +54,13 @@ public class Client {
        int t=0;
 
       while(true) {
-	         int tempStatus = stub4.dbstatus(0)+stub.dbstatus(0);
-	         System.out.println("TEMPSTATUS "+tempStatus );
+	         int tempStatus = stub4.dbstatus(1)+stub.dbstatus(1);
 	         
 	         if(tempStatus > 0) {
 	        	 System.out.println("Client 1 inside loop1 ");
 	        	 Thread.sleep(200);
 	        	 Queue<Student> q = stub_self.getQobj();
-	        	 syncDB synch = new syncDB(q, tempStatus, stub_arr,0); //ERROR: while notifying we are not notifying to the correct manager.
+	        	 syncDB synch = new syncDB(q, tempStatus, stub_arr,1); //ERROR: while notifying we are not notifying to the correct manager.
 	        	 Thread thrd_sync = new Thread(synch);
 	        	 thrd_sync.start();
 	         }

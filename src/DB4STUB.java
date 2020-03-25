@@ -12,7 +12,7 @@ import java.util.*;
 public class DB4STUB implements DBRemote{
 	static Queue<Student> q = new LinkedList<>();
 	static int status;
-	int[] dbstatus = new int[]{ 0, 0, 0, 0};  // 0- c1, 1-c2, 2-s1, 3-s2
+	int[] dbstatus = new int[]{ 0, 0, 0, 0};  // 0- s1, 1-c1, 2-c2, 3-s2
 	String msg =",";
 	boolean isWrite;
 
@@ -178,7 +178,6 @@ public class DB4STUB implements DBRemote{
 		
 		setDBStatus();
 		q.add(s);
-		DB1STUB.q.add(s);
 	}
 	
 	public void setDBStatus() throws RemoteException {
@@ -202,11 +201,8 @@ public class DB4STUB implements DBRemote{
         status++;
     }
 
-    @Override
-    public String getMessage() throws RemoteException {
-    	status--;
-        return "Your message is: " + msg;
-        
+    public void removeQ() throws RemoteException {
+    	q.remove();
     }
     @Override
     public void notify(int i) throws RemoteException{

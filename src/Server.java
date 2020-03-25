@@ -29,16 +29,19 @@ public class Server extends DB1STUB {
          DBRemote stub = (DBRemote) UnicastRemoteObject.exportObject(obj, 0); 
 
          Registry registry = LocateRegistry.getRegistry(); 
-         registry.bind("Hello", stub);  
+         registry.bind("Hello1", stub);  
          System.out.println("Server ready");
-         DBRemote stub_self = (DBRemote) registry.lookup("Hello");
+         DBRemote stub_self = (DBRemote) registry.lookup("Hello1");
          Thread.sleep(3000);
          DBRemote stub_s4 = (DBRemote) registry.lookup("Hello4");
-         DBRemote stub_s2 = (DBRemote) registry.lookup("Hello2");
+         DBRemote stub_s2 = (DBRemote) registry.lookup("Hello2"); // client 1
+         DBRemote stub_s3 = (DBRemote) registry.lookup("Hello3");
+         
          System.out.println("lookup server");
          DBRemote stub_arr[] = new DBRemote[4]; 
-         stub_arr[0] = stub_s2;
-         stub_arr[2] = stub_self;
+         stub_arr[0] = stub_self;
+         stub_arr[1] = stub_s2;
+         stub_arr[2] = stub_s3;
          stub_arr[3] = stub_s4;
 
          Random  rand = new Random();
@@ -74,6 +77,7 @@ public class Server extends DB1STUB {
 	            case 1:
 	            	  stub_s4.addQobj(s);
 	            	  stub_s2.addQobj(s);
+	            	  stub_s3.addQobj(s);
 	            	  stub_self.request(s); // request to write
 	       	       	  break;
 				case 0:
@@ -87,12 +91,12 @@ public class Server extends DB1STUB {
 	         
 	         
 	         //sync with other writer processes
-	         int tempStatus = stub_self.dbstatus(2)+stub_s4.dbstatus(2);
+	         int tempStatus = stub_self.dbstatus(0)+stub_s4.dbstatus(0);
 	         
 	         if(tempStatus > 0) {
 	        	 System.out.println("Writer 1 inside loop1 ");
 	        	 Queue<Student> q = stub_self.getQobj();
-	        	 syncDB synch = new syncDB(q, tempStatus, stub_arr,2);
+	        	 syncDB synch = new syncDB(q, tempStatus, stub_arr,0);
 	        	 Thread thrd_sync = new Thread(synch);
 	        	 thrd_sync.start();
 	         }
@@ -135,7 +139,7 @@ class syncDB implements Runnable
 		try {
 			q = stub_arr[this.status_bit].getQobj();
 
-	   	 while(this.tempstatus > 0) {
+	   	 while(this.tempstatus > 0 && q.size() >0) {
 	   		 s = q.peek();
 	   		 q.remove();
 	   		 stub_arr[this.status_bit].addStudent(s);
@@ -143,6 +147,7 @@ class syncDB implements Runnable
 	   			 stub_arr[2].notify(this.status_bit);
 	   		 else if(s.getName() == "Process 4")
 	   			 stub_arr[3].notify(this.status_bit);
+	   		 stub_arr[this.status_bit].removeQ();
 //	   		 stub_self.notify(this.status_bit);
 	   		 this.tempstatus--;
 	   	 }

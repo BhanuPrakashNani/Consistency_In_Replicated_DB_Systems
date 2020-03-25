@@ -9,7 +9,7 @@ public interface DBRemote extends Remote{
 	public int dbstatus(int i) throws RemoteException;
 	public int dbstatus() throws RemoteException;
 	public void request(Student s) throws RemoteException;
-	String getMessage() throws RemoteException;
+	public void removeQ() throws RemoteException;
 	public Queue<Student> getQobj() throws RemoteException;
 	public void notify(int i) throws RemoteException ;
 	public int getStatus() throws RemoteException;
