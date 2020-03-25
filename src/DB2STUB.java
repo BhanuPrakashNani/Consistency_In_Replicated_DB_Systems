@@ -9,7 +9,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.*;
 
-public class DB1STUB implements DBRemote{
+public class DB2STUB implements DBRemote{
 	static Queue<Student> q = new LinkedList<>();
 	static int status;
 	int[] dbstatus = new int[]{ 0, 0, 0, 0}; //  0- c1, 1-c2, 2-s1, 3-s2
@@ -27,7 +27,7 @@ public class DB1STUB implements DBRemote{
 	    	System.out.println("SWWWWWERRRRRR");
 	    	e.printStackTrace();
 	      }
-	      String DB_URL = "jdbc:mysql://localhost:3306/rmi";  
+	      String DB_URL = "jdbc:mysql://localhost:3306/rmi2";  
 	      
 	      // Database credentials 
 	      String USER = "root"; 
@@ -84,7 +84,7 @@ public class DB1STUB implements DBRemote{
 	    	e.printStackTrace();
 	      }
 
-	      String DB_URL = "jdbc:mysql://localhost:3306/rmi";  
+	      String DB_URL = "jdbc:mysql://localhost:3306/rmi2";  
 	      
 	      // Database credentials 
 	      String USER = "root"; 
@@ -121,7 +121,7 @@ public class DB1STUB implements DBRemote{
  		      PrintWriter pw = new PrintWriter(bw);
  		      System.out.println("LOGGIGN");
 
- 		      pw.println("P1: Entry Write id: "+t	 +" Percent: "+ percent);
+ 		      pw.println("P2: Entry Write id: "+t	 +" Percent: "+ percent);
 
 // 		      logwtr.append();
  	          pw.flush();
@@ -160,7 +160,7 @@ public class DB1STUB implements DBRemote{
  		      PrintWriter pw = new PrintWriter(bw);
  		      System.out.println("LOGGIGN");
 
- 		      pw.println("P1: Exit Write id: "+t	 +"  Percent: "+ percent);
+ 		      pw.println("P2: Exit Write id: "+t	 +"  Percent: "+ percent);
 
 // 		      logwtr.append();
  	          pw.flush();
@@ -172,7 +172,7 @@ public class DB1STUB implements DBRemote{
  		      e.printStackTrace();
  		    }
 	      conn.close();
-      System.out.println("wrote in S1");    
+      System.out.println("wrote in S2");    
 	}
 	public void request(Student s) throws RemoteException {
 	      
@@ -187,6 +187,7 @@ public class DB1STUB implements DBRemote{
 	}
 	public void addQobj(Student s) throws RemoteException {		
 		q.add(s);
+		System.out.println("Added into q2");
 	}
 	public Queue<Student> getQobj() throws RemoteException {		
 		return q;
@@ -220,7 +221,7 @@ public class DB1STUB implements DBRemote{
     	for (int i=0; i<4; i++) {
     		status = status + dbstatus[i];
     	}
-    	status = status - dbstatus[2];
+    	status = status - dbstatus[0];
 
     	return status;
     }
@@ -251,7 +252,7 @@ public class DB1STUB implements DBRemote{
  		      PrintWriter pw = new PrintWriter(bw);
  		      System.out.println("LOGGIGN");
 
- 		      pw.println("P1: Entry Read id: "+t);
+ 		      pw.println("P2: Entry Read id: "+t);
 
 // 		      logwtr.append();
  	          pw.flush();
@@ -271,7 +272,7 @@ public class DB1STUB implements DBRemote{
 	    	System.out.println("SWWWWWERRRRRR");
 	    	e.printStackTrace();
 	      }
-	      String DB_URL = "jdbc:mysql://localhost:3306/rmi";  
+	      String DB_URL = "jdbc:mysql://localhost:3306/rmi2";  
 	      
 	      // Database credentials 
 	      String USER = "root"; 
@@ -311,7 +312,7 @@ public class DB1STUB implements DBRemote{
 	 		      PrintWriter pw = new PrintWriter(bw);
 	 		      System.out.println("LOGGIGN");
 
-	 		      pw.println("P1: Exit Read id: "+t+ " Percent: "+percent);
+	 		      pw.println("P2: Exit Read id: "+t+ " Percent: "+percent);
 
 //	 		      logwtr.append();
 	 	          pw.flush();
@@ -339,7 +340,7 @@ public class DB1STUB implements DBRemote{
 	 		      PrintWriter pw = new PrintWriter(bw);
 	 		      System.out.println("LOGGIGN");
 
-	 		      pw.println("P1: Exit Read id: "+t+ " Percent: "+0);
+	 		      pw.println("P2: Exit Read id: "+t+ " Percent: "+0);
 
 //	 		      logwtr.append();
 	 	          pw.flush();

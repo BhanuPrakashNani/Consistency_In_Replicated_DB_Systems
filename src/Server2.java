@@ -30,12 +30,17 @@ public class Server2 extends DB4STUB {
 
 //         // Binding the remote object (stub) in the registry 
          Registry registry = LocateRegistry.getRegistry(null);
+         DBRemote stub_arr[] = new DBRemote[4]; 
 //         Naming.bind("rmi://localhost:5000/sonoo",stub);  
-         registry.bind("Hello2", stubk);  
-         System.out.println("Server2 ready");
-         DBRemote stub_self = (DBRemote) registry.lookup("Hello2");
+         registry.bind("Hello4", stubk);  
+         System.out.println("Server4 ready");
+         DBRemote stub_self = (DBRemote) registry.lookup("Hello4");
          Thread.sleep(2000);
          DBRemote stub_s1 = (DBRemote) registry.lookup("Hello");
+         DBRemote stub_s2 = (DBRemote) registry.lookup("Hello2");
+         stub_arr[0] = stub_s2;
+         stub_arr[2] = stub_s1;
+         stub_arr[3] = stub_self;
          System.out.println("lookup server2 ");
 
 //         System.out.println(stub2.notify());
@@ -48,7 +53,7 @@ public class Server2 extends DB4STUB {
          int t =0, x = 0;
          boolean idExists = false;
          Thread.sleep(2000);
-         String name = "Bhanu";
+         String name = "Process 4";
          String branch = "cse";
 	     int percent = 01;
 	     String email = "bhanu.gmail";
@@ -76,71 +81,28 @@ public class Server2 extends DB4STUB {
 	         switch(rand.nextInt(2)) {
 	            case 1:
 	            	  stub_s1.addQobj(s);
-	            	  stub_self.request(s);
+	            	  stub_s2.addQobj(s);
+	            	  stub_self.request(s); // request to write
 	       	       	  break;
 	            case 0:
-	            	Student st = stub_self.read(x);
-//             	 try {
-//    	 		      FileWriter logwtr = new FileWriter("Server1.log",true);
-//    	 		      BufferedWriter bw = new BufferedWriter(logwtr);
-//    	 		      PrintWriter pw = new PrintWriter(bw);
-//    	 		      System.out.println("LOGGIGN");
-//    	 		      if(st == null)
-//    	 		    	  pw.println("P2:  Read id: "+x +" NULL");
-//    	 		      else
-//    	 		    	  pw.println("P2: Read id: "+st.getId() +"  Percent: "+ st.getPercent());
-// //   	 		      logwtr.append();
-//    	 	          pw.flush();
-//    	 		      logwtr.close();
-   	 		      
-// //   	 		      System.out.println("Successfully wrote to the file.");
-//    	 		    } catch (IOException e) {
-//    	 		      System.out.println("An error occurred.");
-//    	 		      e.printStackTrace();
-//    	 		    }   	
+	            	x = rand.nextInt(7);
+	            	Student st = stub_self.read(x); // read from db
 	               break;
 	            default:
 	            	System.out.println("NOTHING");
 	         }
 	         
-	         
+	         //sync with other dbs
 	         int tempStatus = stub_self.dbstatus(3)+stub_s1.dbstatus(3);
 	         
 	         if(tempStatus > 0) {
 	        	 System.out.println("Writer 2 inside loop1 ");
-
 	        	 Queue<Student> q = stub_self.getQobj();
-	        	 while(tempStatus > 0) {
-	        		 s = q.peek();
-	        		 q.remove();
-	        		 System.out.println("Hiiiiii");
-	        		 stub_self.addStudent(s);
-	        		 stub_self.notify(3);
-	        		 tempStatus--;
-	        	 }
+	        	 syncDB synch = new syncDB(q, tempStatus, stub_arr,3);
+	        	 Thread thrd_sync = new Thread(synch);
+	        	 thrd_sync.start();
 	         }
 	         
-//	         tempStatus = stub_s1.dbstatus(3);
-	         
-//	         if(tempStatus > 0) {
-//	        	 System.out.println("Writer 2 inside loop2 ");
-//
-//	        	 Queue<Student> q = stub_self.getQobj();
-//	        	 while(tempStatus > 0) {
-//	        		 s = q.peek();
-//	        			Student st = q.peek();
-//	        	        System.out.println("ID: " + st.getId()); 
-//	        	        System.out.println("name: " + st.getName()); 
-//	        	        System.out.println("branch: " + st.getBranch()); 
-//	        	        System.out.println("percent: " + st.getPercent()); 
-//	        	        System.out.println("email: " + st.getEmail());
-//	        			System.out.println("QUEUE 1");
-//	        		 q.remove();
-//	        		 stub_self.addStudent(s);
-//	        		 stub_s1.notify(3);
-//	        		 tempStatus--;
-//	        	 }
-//	         }
 	         System.out.println("WRITER 2 "+t); 
 	         t++;
 	         
@@ -152,6 +114,8 @@ public class Server2 extends DB4STUB {
       }
       
 
-   } 
+   }
 }
+
+
 

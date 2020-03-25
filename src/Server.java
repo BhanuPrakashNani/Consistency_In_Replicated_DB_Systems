@@ -33,16 +33,19 @@ public class Server extends DB1STUB {
          System.out.println("Server ready");
          DBRemote stub_self = (DBRemote) registry.lookup("Hello");
          Thread.sleep(3000);
+         DBRemote stub_s4 = (DBRemote) registry.lookup("Hello4");
          DBRemote stub_s2 = (DBRemote) registry.lookup("Hello2");
-
          System.out.println("lookup server");
-
+         DBRemote stub_arr[] = new DBRemote[4]; 
+         stub_arr[0] = stub_s2;
+         stub_arr[2] = stub_self;
+         stub_arr[3] = stub_s4;
 
          Random  rand = new Random();
          int t =0, x = 0;
          boolean idExists = false;
          Thread.sleep(2000);
-         String name = "Mani";
+         String name = "Process 1";
          String branch = "cse";
 	     int percent = 01;
 	     String email = "mani.gmail";
@@ -69,11 +72,12 @@ public class Server extends DB1STUB {
 	         percent = 1;
 	         switch(rand.nextInt(2)) {
 	            case 1:
+	            	  stub_s4.addQobj(s);
 	            	  stub_s2.addQobj(s);
 	            	  stub_self.request(s); // request to write
 	       	       	  break;
 				case 0:
-					x = rand.nextInt(8);
+					x = rand.nextInt(7);
 	            	Student st = stub_self.read(x); // read from db
 					break;
 	            default:
@@ -83,43 +87,16 @@ public class Server extends DB1STUB {
 	         
 	         
 	         //sync with other writer processes
-	         int tempStatus = stub_self.dbstatus(2)+stub_s2.dbstatus(2);
+	         int tempStatus = stub_self.dbstatus(2)+stub_s4.dbstatus(2);
 	         
 	         if(tempStatus > 0) {
 	        	 System.out.println("Writer 1 inside loop1 ");
 	        	 Queue<Student> q = stub_self.getQobj();
-//	        	 while(tempStatus > 0) {
-//	        		 s = q.peek();
-//	        		 q.remove();
-//	        		 stub_self.addStudent(s);
-//	        		 stub_self.notify(2);
-//	        		 tempStatus--;
-//	        	 }
-	        	 syncDB synch = new syncDB(q, tempStatus, stub_self);
+	        	 syncDB synch = new syncDB(q, tempStatus, stub_arr,2);
 	        	 Thread thrd_sync = new Thread(synch);
 	        	 thrd_sync.start();
 	         }
 	         
-//	          tempStatus = stub_s2.dbstatus(2);
-//	         
-//	         if(tempStatus > 0) {
-//	        	 System.out.println("Writer 1 inside loop2 ");
-//
-//	        	 Queue<Student> q = stub_self.getQobj();
-//	        	 while(tempStatus > 0) {
-//	        		 s = q.peek();
-//	        			Student st = q.peek();
-//	        	        System.out.println("ID: " + st.getId()); 
-//	        	        System.out.println("name: " + st.getName()); 
-//	        	        System.out.println("branch: " + st.getBranch()); 
-//	        	        System.out.println("percent: " + st.getPercent()); 
-//	        	        System.out.println("email: " + st.getEmail());
-//	        		 q.remove();
-//	        		 stub_self.addStudent(s);
-//	        		 stub_s2.notify(2);
-//	        		 tempStatus--;
-//	        	 }
-//	         }
 	         System.out.println("WRITER 1 "+t); 
 	         t++;
         	 
@@ -136,26 +113,37 @@ public class Server extends DB1STUB {
 
 class syncDB implements Runnable
 {
+
 	Queue<Student> q = new LinkedList<>();
 	int tempstatus = 0;
-	DBRemote stub_self = null;
+	DBRemote stub_arr[] = null;
+
 	Student s;
-	syncDB(Queue<Student> que, int tempstat, DBRemote stub_slf){
+	int status_bit;
+	
+
+	
+	syncDB(Queue<Student> que, int tempstat, DBRemote stub_ar[], int stat_bit){
 		this.q = que;
 		this.tempstatus = tempstat;
-		this.stub_self = stub_slf;
+		this.stub_arr = stub_ar;
+		this.status_bit = stat_bit;
 	}
 	
 	public void run() {
 		System.out.println("Thread for sync start");
 		try {
-			q = stub_self.getQobj();
+			q = stub_arr[this.status_bit].getQobj();
 
 	   	 while(this.tempstatus > 0) {
 	   		 s = q.peek();
 	   		 q.remove();
-	   		 stub_self.addStudent(s);
-	   		 stub_self.notify(2);
+	   		 stub_arr[this.status_bit].addStudent(s);
+	   		 if(s.getName() == "Process 1")
+	   			 stub_arr[2].notify(this.status_bit);
+	   		 else if(s.getName() == "Process 4")
+	   			 stub_arr[3].notify(this.status_bit);
+//	   		 stub_self.notify(this.status_bit);
 	   		 this.tempstatus--;
 	   	 }
 		} catch (Exception e) {

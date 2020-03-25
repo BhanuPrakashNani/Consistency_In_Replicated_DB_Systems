@@ -170,7 +170,7 @@ public class DB4STUB implements DBRemote{
  		      e.printStackTrace();
  		    }
 	      System.out.println("wrote in S2");    
-
+	      conn.close();
 	}
 	
 	
