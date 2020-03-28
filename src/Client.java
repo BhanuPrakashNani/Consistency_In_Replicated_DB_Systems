@@ -47,7 +47,8 @@ public class Client {
          stub_arr[1] = stub_self;
          stub_arr[2] = stub3;
          stub_arr[3] = stub4;
-		 
+         Random  rand = new Random();
+
 
            
       // System.out.println(list); 
@@ -55,7 +56,14 @@ public class Client {
 
       while(true) {
 	         int tempStatus = stub4.dbstatus(1)+stub.dbstatus(1);
-	         
+            
+				if(!Config.synchStart[1]) {
+				int x = rand.nextInt(7);
+         	Student st = stub_self.read(x);
+				} 
+				else{
+					System.out.println("cant read");// read from db
+				}
 	         if(tempStatus > 0) {
 	        	 System.out.println("Client 1 inside loop1 ");
 	        	 Thread.sleep(200);

@@ -54,7 +54,6 @@ public class Client2 {
 
       while(true) {
 	         int tempStatus = stub4.dbstatus(2)+stub.dbstatus(2);
-	         System.out.println("TEMPSTATUS "+tempStatus );
 	         
 	         if(tempStatus > 0) {
 	        	 System.out.println("Client 1 inside loop1 ");

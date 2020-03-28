@@ -231,11 +231,11 @@ public class DB4STUB implements DBRemote{
 		// TODO Auto-generated method stub
 		status = 1;
 	}
-	 public void setRead() throws RemoteException {
+	 public void releaseSynch() throws RemoteException {
 	    	isWrite = false;
 	    }
 	    
-	    public void setWrite() throws RemoteException{
+	    public void setSynch() throws RemoteException{
 	    	isWrite = true;
 	    }
 	    
@@ -346,7 +346,8 @@ public class DB4STUB implements DBRemote{
 		 		    } catch (IOException e) {
 		 		      System.out.println("An error occurred.");
 		 		      e.printStackTrace();
-		 		    }
+					 }
+					 conn.close();
 		     return null;
 			
 		}

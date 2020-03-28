@@ -89,8 +89,13 @@ public class Server2 extends DB4STUB {
 	            	  stub_self.request(s); // request to write
 	       	       	  break;
 	            case 0:
-	            	x = rand.nextInt(7);
-	            	Student st = stub_self.read(x); // read from db
+					if(!Config.synchStart[3]) {
+					x = rand.nextInt(7);
+	            	Student st = stub_self.read(x);
+					} 
+					else{
+						System.out.println("cant read");// read from db
+					} // read from db
 	               break;
 	            default:
 	            	System.out.println("NOTHING");

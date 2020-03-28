@@ -8,6 +8,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.*;
+import java.util.concurrent.Semaphore;
 
 public class DB1STUB implements DBRemote{
 	static Queue<Student> q = new LinkedList<>();
@@ -35,7 +36,6 @@ public class DB1STUB implements DBRemote{
 	      
 	      Connection conn = null; 
 	      Statement stmt = null;  
-
 	      //Register JDBC driver 
 	        
 	      //Open a connection
@@ -229,12 +229,17 @@ public class DB1STUB implements DBRemote{
     	status = 1;
     }
     
-    public void setRead() throws RemoteException {
-    	isWrite = false;
+    public void releaseSynch() throws RemoteException {
+//    	sem.release();
     }
     
-    public void setWrite() throws RemoteException{
-    	isWrite = true;
+    public void setSynch() throws RemoteException{
+//    	try {
+////			sem.acquire();
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
     }
     
     public boolean isWrite() throws RemoteException {
@@ -346,7 +351,8 @@ public class DB1STUB implements DBRemote{
 	 		    } catch (IOException e) {
 	 		      System.out.println("An error occurred.");
 	 		      e.printStackTrace();
-	 		    }
+				 }
+		conn.close();
 	     return null;
 		
 	}

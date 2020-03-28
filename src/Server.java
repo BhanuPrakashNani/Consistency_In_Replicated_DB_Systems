@@ -1,3 +1,4 @@
+//we implemented local-read algo 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -11,6 +12,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.*;
+import java.util.concurrent.Semaphore;
 
 public class Server extends DB1STUB { 
    public Server() {} 
@@ -20,7 +22,6 @@ public class Server extends DB1STUB {
       try { 
          // Instantiating the implementation class 
           Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi", "root", "asdf;lkj");
-
           Statement stmt = conn.createStatement();
 
          DB1STUB obj = new DB1STUB(); 
@@ -81,8 +82,17 @@ public class Server extends DB1STUB {
 	            	  stub_self.request(s); // request to write
 	       	       	  break;
 				case 0:
+					if(!Config.synchStart[0]) {
+						x = rand.nextInt(7);
+		            	Student st = stub_self.read(x);
+						} 
+						else{
+							System.out.println("cant read");// read from db
+						} // read from db
 					x = rand.nextInt(7);
-	            	Student st = stub_self.read(x); // read from db
+	            	Student st = stub_self.read(x);
+
+
 					break;
 	            default:
 	            	System.out.println("NOTHING");
@@ -95,10 +105,15 @@ public class Server extends DB1STUB {
 	         
 	         if(tempStatus > 0) {
 	        	 System.out.println("Writer 1 inside loop1 ");
+	   	      
+
+	        	 
 	        	 Queue<Student> q = stub_self.getQobj();
 	        	 syncDB synch = new syncDB(q, tempStatus, stub_arr,0);
 	        	 Thread thrd_sync = new Thread(synch);
 	        	 thrd_sync.start();
+	        	 
+	        	 
 	         }
 	         
 	         System.out.println("WRITER 1 "+t); 
@@ -136,13 +151,50 @@ class syncDB implements Runnable
 	
 	public void run() {
 		System.out.println("Thread for sync start");
+		int t = tempstatus;
 		try {
+		      FileWriter logwtr = new FileWriter("Server1.log",true);
+		      BufferedWriter bw = new BufferedWriter(logwtr);
+		      PrintWriter pw = new PrintWriter(bw);
+		      System.out.println("LOGGIGN");
+
+		      pw.println("P"+(this.status_bit+1)+": Synch start "+t);
+
+//		      logwtr.append();
+	          pw.flush();
+		      logwtr.close();
+		      
+//		      System.out.println("Successfully wrote to the file.");
+		 } catch (Exception e) {
+		      System.out.println("An error occurred.");
+		      e.printStackTrace();
+		    }
+		try {
+			
 			q = stub_arr[this.status_bit].getQobj();
 
 	   	 while(this.tempstatus > 0 && q.size() >0) {
+	   		 Config.synchStart[this.status_bit] = true;
 	   		 s = q.peek();
 	   		 q.remove();
 	   		 stub_arr[this.status_bit].addStudent(s);
+	   		try {
+				
+			      FileWriter logwtr = new FileWriter("Server1.log",true);
+			      BufferedWriter bw = new BufferedWriter(logwtr);
+			      PrintWriter pw = new PrintWriter(bw);
+			      System.out.println("LOGGIGN");
+
+			      pw.println("UPdate from "+s.getName()+" for percent: "+s.getPercent());
+
+//			      logwtr.append();
+		          pw.flush();
+			      logwtr.close();
+//			      System.out.println("Successfully wrote to the file.");
+			    } catch (Exception e) {
+			      System.out.println("An error occurred.");
+			      e.printStackTrace();
+			    }
 	   		 if(s.getName() == "Process 1")
 	   			 stub_arr[2].notify(this.status_bit);
 	   		 else if(s.getName() == "Process 4")
@@ -151,10 +203,32 @@ class syncDB implements Runnable
 //	   		 stub_self.notify(this.status_bit);
 	   		 this.tempstatus--;
 	   	 }
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+   		 Config.synchStart[this.status_bit] = false;
+
+		 } catch (Exception e) {
+		      System.out.println("An error occurred.");
+		      e.printStackTrace();
+		    }
+		try {
+			
+		      FileWriter logwtr = new FileWriter("Server1.log",true);
+		      BufferedWriter bw = new BufferedWriter(logwtr);
+		      PrintWriter pw = new PrintWriter(bw);
+		      System.out.println("LOGGIGN");
+
+		      pw.println("P"+(this.status_bit+1)+": Synch end "+t);
+
+//		      logwtr.append();
+	          pw.flush();
+		      logwtr.close();
+//		      System.out.println("Successfully wrote to the file.");
+		    } catch (Exception e) {
+		      System.out.println("An error occurred.");
+		      e.printStackTrace();
+		    }
+
+
+	
 	}
 	
 }

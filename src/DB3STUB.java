@@ -230,11 +230,11 @@ public class DB3STUB implements DBRemote{
     	status = 1;
     }
     
-    public void setRead() throws RemoteException {
+    public void releaseSynch() throws RemoteException {
     	isWrite = false;
     }
     
-    public void setWrite() throws RemoteException{
+    public void setSynch() throws RemoteException{
     	isWrite = true;
     }
     
@@ -348,6 +348,7 @@ public class DB3STUB implements DBRemote{
 	 		      System.out.println("An error occurred.");
 	 		      e.printStackTrace();
 	 		    }
+		      conn.close();
 	     return null;
 		
 	}
