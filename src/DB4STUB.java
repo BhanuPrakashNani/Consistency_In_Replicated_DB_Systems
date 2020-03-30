@@ -15,7 +15,8 @@ public class DB4STUB implements DBRemote{
 	int[] dbstatus = new int[]{ 0, 0, 0, 0};  // 0- s1, 1-c1, 2-c2, 3-s2
 	String msg =",";
 	boolean isWrite;
-
+	boolean SAFE=true;
+	
 	public List<Student> getStudents() throws Exception, ClassNotFoundException {  
 			List<Student> list = new ArrayList<Student>();   
 	      // JDBC driver name and database URL 
@@ -194,11 +195,11 @@ public class DB4STUB implements DBRemote{
 	}
 	
 	
-    @Override
-    public void sendMessage(String s) throws RemoteException {
-        System.out.println(s);
-        msg = s;
-        status++;
+    public boolean isSafe() throws RemoteException {
+        return SAFE;
+    }
+    public void notSafe() throws RemoteException {
+        SAFE = false;
     }
 
     public void removeQ() throws RemoteException {
@@ -292,7 +293,7 @@ public class DB4STUB implements DBRemote{
 		      stmt = conn.createStatement();  
 		      String sql = "SELECT * FROM samplermi where id ="+t; 
 		      ResultSet rs = stmt.executeQuery(sql);  
-		      
+
 		      //Extract data from result set
 		         // Retrieve by column name
 		      	if(rs.next()) {
@@ -303,6 +304,8 @@ public class DB4STUB implements DBRemote{
 		         
 		         int percent = rs.getInt("percentage"); 
 		         String email = rs.getString("email");  
+				  conn.close();
+
 		         try {
 		 		      FileWriter logwtr = new FileWriter("Server1.log",true);
 		 		      BufferedWriter bw = new BufferedWriter(logwtr);

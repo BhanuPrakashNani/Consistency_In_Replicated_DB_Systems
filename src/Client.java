@@ -13,6 +13,7 @@ public class Client {
    private Client() {}  
    public static void main(String[] args)throws Exception, ClassNotFoundException {  
 	   List<Student> list = null;
+	   
 	   Student s;
       try { 
     	  DB2STUB obj = new DB2STUB(); 
@@ -54,7 +55,7 @@ public class Client {
       // System.out.println(list); 
        int t=0;
 
-      while(true) {
+      while(stub_self.isSafe()) {
 	         int tempStatus = stub4.dbstatus(1)+stub.dbstatus(1);
             
 				if(!Config.synchStart[1]) {

@@ -7,7 +7,8 @@ public interface DBRemote extends Remote{
 //	 Semaphore sem = null;
 	public List<Student> getStudents() throws Exception;
 	 public void addStudent(Student s) throws Exception;
-	void sendMessage(String s) throws RemoteException;
+	public boolean isSafe() throws RemoteException;
+	public void notSafe() throws RemoteException;
 	public int dbstatus(int i) throws RemoteException;
 	public int dbstatus() throws RemoteException;
 	public void request(Student s) throws RemoteException;

@@ -61,7 +61,7 @@ public class Server2 extends DB4STUB {
 	     int percent = 01;
 	     String email = "bhanu.gmail";
 
-         while(true) {
+         while(stub_self.isSafe()) {
              Thread.sleep(3000);
              Student s = new Student();
              t = t%7;
@@ -70,7 +70,7 @@ public class Server2 extends DB4STUB {
              while(rs.next()) {
 		    	  if(t == rs.getInt("id")) {
 		    		  idExists = true;
-		    		  percent = rs.getInt("percentage")+1;
+		    		  percent = rs.getInt("percentage")+5;
 		    		  break;
 		    	  }
 		      }

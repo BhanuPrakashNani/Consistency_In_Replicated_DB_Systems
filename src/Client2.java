@@ -46,17 +46,24 @@ public class Client2 {
          stub_arr[1] = stub_s2;
          stub_arr[2] = stub_self;
          stub_arr[3] = stub4;
-		 
+         Random  rand = new Random();
+
 
            
       // System.out.println(list); 
        int t=0;
 
-      while(true) {
+      while(stub_self.isSafe()) {
 	         int tempStatus = stub4.dbstatus(2)+stub.dbstatus(2);
-	         
+	         if(!Config.synchStart[1]) {
+					int x = rand.nextInt(7);
+	         	Student st = stub_self.read(x);
+					} 
+					else{
+						System.out.println("cant read");// read from db
+					}
 	         if(tempStatus > 0) {
-	        	 System.out.println("Client 1 inside loop1 ");
+	        	 System.out.println("Client 2 inside loop1 ");
 	        	 Thread.sleep(200);
 	        	 Queue<Student> q = stub_self.getQobj();
 	        	 syncDB synch = new syncDB(q, tempStatus, stub_arr,2); //ERROR: while notifying we are not notifying to the correct manager.

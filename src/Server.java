@@ -54,7 +54,7 @@ public class Server extends DB1STUB {
 	     int percent = 01;
 	     String email = "mani.gmail";
          
-	     while(true) {
+	     while(stub_self.isSafe()) {
              Thread.sleep(2000);
              Student s = new Student();
 	   	     t  = t% 7; 
@@ -150,8 +150,16 @@ class syncDB implements Runnable
 	}
 	
 	public void run() {
+        Random  rand = new Random();
+
 		System.out.println("Thread for sync start");
 		int t = tempstatus;
+		try {
+			Thread.sleep(rand.nextInt(500));
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		try {
 		      FileWriter logwtr = new FileWriter("Server1.log",true);
 		      BufferedWriter bw = new BufferedWriter(logwtr);

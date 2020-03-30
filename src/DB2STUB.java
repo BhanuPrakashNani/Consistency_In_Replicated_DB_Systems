@@ -16,6 +16,7 @@ public class DB2STUB implements DBRemote{
 	//Student s;
 	String msg =",";
 	boolean isWrite;
+	boolean SAFE= true;
 	public List<Student> getStudents() throws Exception, ClassNotFoundException {  
 			List<Student> list = new ArrayList<Student>();   
 	      // JDBC driver name and database URL 
@@ -30,7 +31,7 @@ public class DB2STUB implements DBRemote{
 	      String DB_URL = "jdbc:mysql://localhost:3306/rmi2";  
 	      
 	      // Database credentials 
-	      String USER = "root"; 
+	      String USER = "root";  
 	      String PASS = "asdf;lkj";  
 	      
 	      Connection conn = null; 
@@ -160,7 +161,7 @@ public class DB2STUB implements DBRemote{
  		      PrintWriter pw = new PrintWriter(bw);
  		      System.out.println("LOGGIGN");
 
- 		      pw.println("P2: Exit Write id: "+t	 +"  Percent: "+ percent);
+ 		      pw.println("P2: Exit Write id: "+t	 +" Percent: "+ percent);
 
 // 		      logwtr.append();
  	          pw.flush();
@@ -193,11 +194,11 @@ public class DB2STUB implements DBRemote{
 		return q;
 	}
 	
-    @Override
-    public void sendMessage(String s) throws RemoteException {
-        System.out.println(s);
-        msg = s;
-        status++;
+    public boolean isSafe() throws RemoteException {
+        return SAFE;
+    }
+    public void notSafe() throws RemoteException {
+        SAFE = false;
     }
 
     public void removeQ() throws RemoteException {
@@ -290,7 +291,7 @@ public class DB2STUB implements DBRemote{
 	      stmt = conn.createStatement();  
 	      String sql = "SELECT * FROM samplermi where id ="+t; 
 	      ResultSet rs = stmt.executeQuery(sql);  
-	      
+
 	      //Extract data from result set
 	         // Retrieve by column name
 
@@ -302,6 +303,8 @@ public class DB2STUB implements DBRemote{
 	         
 	         int percent = rs.getInt("percentage"); 
 	         String email = rs.getString("email");  
+			  conn.close();
+
 		      try {
 	 		      FileWriter logwtr = new FileWriter("Server1.log",true);
 	 		      BufferedWriter bw = new BufferedWriter(logwtr);

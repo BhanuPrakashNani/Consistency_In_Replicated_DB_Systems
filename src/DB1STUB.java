@@ -17,6 +17,7 @@ public class DB1STUB implements DBRemote{
 	//Student s;
 	String msg =",";
 	boolean isWrite;
+	boolean SAFE = true;
 	public List<Student> getStudents() throws Exception, ClassNotFoundException {  
 			List<Student> list = new ArrayList<Student>();   
 	      // JDBC driver name and database URL 
@@ -160,7 +161,7 @@ public class DB1STUB implements DBRemote{
  		      PrintWriter pw = new PrintWriter(bw);
  		      System.out.println("LOGGIGN");
 
- 		      pw.println("P1: Exit Write id: "+t	 +"  Percent: "+ percent);
+ 		      pw.println("P1: Exit Write id: "+t	 +" Percent: "+ percent);
 
 // 		      logwtr.append();
  	          pw.flush();
@@ -192,11 +193,11 @@ public class DB1STUB implements DBRemote{
 		return q;
 	}
 	
-    @Override
-    public void sendMessage(String s) throws RemoteException {
-        System.out.println(s);
-        msg = s;
-        status++;
+    public boolean isSafe() throws RemoteException {
+        return SAFE;
+    }
+    public void notSafe() throws RemoteException {
+        SAFE = false;
     }
 
     public void removeQ() throws RemoteException {
@@ -295,7 +296,7 @@ public class DB1STUB implements DBRemote{
 	      stmt = conn.createStatement();  
 	      String sql = "SELECT * FROM samplermi where id ="+t; 
 	      ResultSet rs = stmt.executeQuery(sql);  
-	      
+
 	      //Extract data from result set
 	         // Retrieve by column name
 
@@ -307,6 +308,8 @@ public class DB1STUB implements DBRemote{
 	         
 	         int percent = rs.getInt("percentage"); 
 	         String email = rs.getString("email");  
+			  conn.close();
+
 		      try {
 	 		      FileWriter logwtr = new FileWriter("Server1.log",true);
 	 		      BufferedWriter bw = new BufferedWriter(logwtr);
@@ -331,7 +334,7 @@ public class DB1STUB implements DBRemote{
 	         st.setBranch(branch); 
 	         st.setPercent(percent); 
 	         st.setEmail(email); 
-	 		 
+
 	 		 return st;
 	 		 
 	      	}
@@ -352,7 +355,6 @@ public class DB1STUB implements DBRemote{
 	 		      System.out.println("An error occurred.");
 	 		      e.printStackTrace();
 				 }
-		conn.close();
 	     return null;
 		
 	}
