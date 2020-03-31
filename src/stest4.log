@@ -1,0 +1,31 @@
+
+P2:  Read id: 0 NULL
+P2:  Write id: 5  Percent: 1
+P1:  Write id: 0  Percent: 1
+P1:  Write id: 0  Percent: 2
+P1:  Write id: 0  Percent: 3
+P2:  Write id: 0  Percent: 4
+P1:  Read id: 1 NULL
+P1:  Write id: 2  Percent: 1
+P2:  Write id: 3  Percent: 1
+P1:  Write id: 0  Percent: 5
+P2:  Write id: 6  Percent: 1
+P1:  Write id: 2  Percent: 2
+P2:  Write id: 3  Percent: 2
+P2: Read id: 0  Percent: 5
+P2: Read id: 3  Percent: 2
+P2:  Write id: 1  Percent: 1
+P1:  Write id: 6  Percent: 2
+P2:  Write id: 6  Percent: 3
+P1:  Write id: 5  Percent: 2
+P1:  Write id: 3  Percent: 3
+P2:  Write id: 5  Percent: 3
+P2: Read id: 6  Percent: 3
+P2:  Write id: 5  Percent: 4
+P3:  Read id: 0 NULL
+P1:  Write id: 4  Percent: 1
+P1: Read id: 0  Percent: 5
+P1:  Write id: 2  Percent: 3
+P3:  Read id: 0 NULL
+P3: Read id: 5  Percent: 4
+P1:  Write id: 6  Percent: 4

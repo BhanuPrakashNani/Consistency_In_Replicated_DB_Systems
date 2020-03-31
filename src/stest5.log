@@ -1,0 +1,97 @@
+
+P2:  Read id: 0 NULL
+P2:  Write id: 5  Percent: 1
+P1:  Write id: 0  Percent: 1
+P1:  Write id: 0  Percent: 2
+P1:  Write id: 0  Percent: 3
+P2:  Write id: 0  Percent: 4
+P1:  Read id: 1 NULL
+P1:  Write id: 2  Percent: 1
+P2:  Write id: 3  Percent: 1
+P1:  Write id: 0  Percent: 5
+P2:  Write id: 6  Percent: 1
+P1:  Write id: 2  Percent: 2
+P2:  Write id: 3  Percent: 2
+P2: Read id: 0  Percent: 5
+P2: Read id: 3  Percent: 2
+P2:  Write id: 1  Percent: 1
+P1:  Write id: 6  Percent: 2
+P2:  Write id: 6  Percent: 3
+P1:  Write id: 5  Percent: 2
+P1:  Write id: 3  Percent: 3
+P2:  Write id: 5  Percent: 3
+P2: Read id: 6  Percent: 3
+P2:  Write id: 5  Percent: 4
+P3:  Read id: 0 NULL
+P1:  Write id: 4  Percent: 1
+P1: Read id: 0  Percent: 5
+P1:  Write id: 2  Percent: 3
+P3:  Read id: 0 NULL
+P3: Read id: 5  Percent: 4
+P1:  Write id: 6  Percent: 4
+P2:  Write id: 0  Percent: 1
+P1:  Write id: 0  Percent: 2
+P1:  Read id: 3 NULL
+P1:  Write id: 5  Percent: 1
+P2: Read id: 5  Percent: 1
+P2:  Write id: 6  Percent: 1
+P1:  Write id: 0  Percent: 3
+P2:  Write id: 0  Percent: 8
+P1:  Write id: 0  Percent: 9
+P1:  Read id: 1 NULL
+P1:  Write id: 0  Percent: 10
+P1:  Write id: 0  Percent: 11
+P3:  Read id: 3 NULL
+P3:  Read id: 3 NULL
+P1:  Write id: 6  Percent: 2
+P2: Read id: 0  Percent: 11
+P2:  Write id: 0  Percent: 16
+P2:  Write id: 5  Percent: 6
+P2:  Read id: 3 NULL
+P2:  Read id: 1 NULL
+P2: Read id: 5  Percent: 6
+P2:  Read id: 1 NULL
+P2:  Write id: 6  Percent: 7
+P2:  Write id: 0  Percent: 21
+P3: Read id: 0  Percent: 21
+P1:  Write id: 5  Percent: 7
+P2:  Write id: 2  Percent: 1
+P1:  Write id: 1  Percent: 1
+P3: Read id: 2  Percent: 1
+P3: Read id: 5  Percent: 6
+P1:  Write id: 5  Percent: 8
+P2:  Write id: 6  Percent: 12
+P1:  Write id: 0  Percent: 22
+P3: Read id: 1  Percent: 1
+P1:  Write id: 0  Percent: 23
+P2:  Write id: 0  Percent: 28
+P2:  Write id: 4  Percent: 1
+P2:  Write id: 4  Percent: 6
+P2:  Write id: 0  Percent: 33
+P1:  Write id: 5  Percent: 9
+P1:  Write id: 6  Percent: 13
+P1: Read id: 4  Percent: 6
+P1: Read id: 0  Percent: 33
+P1:  Write id: 6  Percent: 14
+P1:  Write id: 0  Percent: 34
+P1:  Write id: 5  Percent: 10
+P1:  Write id: 2  Percent: 2
+P2:  Write id: 6  Percent: 19
+P2:  Write id: 2  Percent: 7
+P2:  Write id: 5  Percent: 15
+P2: Read id: 2  Percent: 7
+P2: Read id: 2  Percent: 7
+P2:  Read id: 3 NULL
+P2:  Write id: 2  Percent: 12
+P1: Read id: 1  Percent: 1
+P1:  Write id: 1  Percent: 2
+P1:  Read id: 3 NULL
+P1:  Write id: 5  Percent: 16
+P2:  Write id: 6  Percent: 24
+P1: Read id: 4  Percent: 6
+P1:  Write id: 0  Percent: 35
+P1:  Write id: 0  Percent: 36
+P2: Read id: 1  Percent: 2
+P2:  Write id: 2  Percent: 17
+P2: Read id: 0  Percent: 36
+P2:  Write id: 0  Percent: 41

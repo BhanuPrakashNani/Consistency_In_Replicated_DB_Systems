@@ -41,6 +41,7 @@ public class Client2 {
           System.out.println("email: " + s.getEmail());
       }
       while(Config.SAFE) {
+          Thread.sleep(1000);
     	  if(stub.dbstatus(1) == 1) {
     		  System.out.println("hi1");
     		  if(stub.isWrite()) {

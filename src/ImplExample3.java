@@ -120,7 +120,7 @@ public class ImplExample3 implements Hello{
 		         // Retrieve by column name 
 		         if( t == rs.getInt("id")) {
 		        	 idExists = true;
-		        	 percent += rs.getInt("percentage");
+		        	 percent += rs.getInt("percentage")-9;
 		        	 break;
 		         }
 		      }

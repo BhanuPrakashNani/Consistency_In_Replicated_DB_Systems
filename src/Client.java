@@ -40,6 +40,7 @@ public class Client {
           System.out.println("email: " + s.getEmail());
       }
       while(Config.SAFE) {
+          Thread.sleep(1000);
     	  if(stub.dbstatus(0) == 1) {
     		  if(stub.isWrite()) {
 //    		  list = (List<Student>)stub.getStudents();

@@ -50,7 +50,7 @@ public class Server extends ImplExample {
 //         Thread.sleep(2000);
 
          while(Config.SAFE) {
-             Thread.sleep(2000);
+            Thread.sleep(3000);
 	         System.out.println("HElllo man DBSTATUS2 "+stub_s2.dbstatus(0)+" "+stub_s2.dbstatus(1)+ " is Write "+stub_s2.isWrite());
 
         	 if(stub_s2.dbstatus(2) == 1 ) {
