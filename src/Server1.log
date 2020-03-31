@@ -1,0 +1,4126 @@
+p1 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+P2: updated for p1
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+P1: updated for p3
+P3: updated for p2
+P2: updated for p3
+P3: updated for p1
+p4 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+P4: updated for p3
+P4: updated for p2
+P1: updated for p4
+P4: updated for p1
+p1 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+P4: updated for p1
+P3: updated for p1
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+P1: updated for p3
+P4: updated for p3
+P3: updated for p4
+P2: updated for p1
+p1 insert a new statement STARTS
+P2: updated for p3
+P2: updated for p4
+p4 insert a new statement STARTS
+p2 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p2 insert a new statement ENDS
+P2: updated rmi
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated for p2
+P4: updated for p2
+P1: updated for p4
+P4: updated for p1
+P2: updated for p1
+P2: updated for p4
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p3 insert a new statement ENDS
+P3: updated rmi
+P4: updated for p1
+P1: updated for p3
+P3: updated for p4
+P4: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p2
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated for p4
+P2: updated for p1
+P2: updated for p3
+P2: updated for p4
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+P4: updated for p2
+P3: updated for p1
+p3 insert a new statement STARTS
+p1 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+p1 insert a new statement ENDS
+P1: updated rmi
+P4: updated for p3
+P3: updated for p4
+P1: updated for p3
+P4: updated for p1
+P3: updated for p2
+p4 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated for p4
+P2: updated for p1
+P2: updated for p3
+P2: updated for p4
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+P4: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+p1 insert a new statement ENDS
+P1: updated rmi
+P4: updated for p3
+P3: updated for p4
+P1: updated for p3
+P4: updated for p1
+P3: updated for p2
+p4 insert a new statement STARTS
+P2: updated for p1
+P2: updated for p3
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated for p4
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+P4: updated for p2
+P2: updated for p4
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p3 insert a new statement ENDS
+P3: updated rmi
+P4: updated for p1
+P3: updated for p4
+P1: updated for p3
+P4: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p2
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated for p4
+P2: updated for p1
+P2: updated for p3
+P2: updated for p4
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+P4: updated for p2
+P1: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+P4: updated for p1
+p3 insert a new statement ENDS
+P3: updated rmi
+P4: updated for p3
+P1: updated for p3
+P3: updated for p4
+p4 insert a new statement STARTS
+P3: updated for p2
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated for p4
+P2: updated for p1
+P2: updated for p3
+P2: updated for p4
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+P4: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p3 insert a new statement ENDS
+P3: updated rmi
+P4: updated for p1
+P1: updated for p3
+P3: updated for p4
+P2: updated for p1
+P4: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p2
+P2: updated for p3
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated for p4
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+P4: updated for p2
+P2: updated for p4
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p1 insert a new statement STARTS4
+p3 insert a new statement ENDS
+P3: updated rmi
+P4: updated for p1
+P3: updated for p4
+P4: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p2
+p1 update a new statement ENDS4
+P1: updated(update) rmi
+p4 insert a new statement ENDS
+P4: updated rmi
+P2: updated for p1
+P2: updated for p3
+P2: updated for p4
+p2 insert a new statement STARTS
+P1: updated for p3
+P1: updated for p4
+p2 insert a new statement ENDS
+P2: updated rmi
+P4: updated for p2
+P3: updated for p1
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+P1: updated for p2
+P4: updated for p3
+P3: updated for p4
+p4 insert a new statement STARTS
+P1: updated for p3
+P3: updated for p2
+p4 insert a new statement ENDS
+P4: updated rmi
+p4 update a new statement STARTS with sno1
+p4 update a new statement ENDS for sno1
+P4: updated(update) rmi
+P4: updated(update) for p1
+P2: updated for p3
+P2: updated for p4
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+P1: updated for p4
+P1: updated(update) for p4
+P3: updated for p4
+P3: updated for p2
+p2 update a new statement STARTS4
+p2 update a new statement ENDS4
+P2: updated(update) rmi
+P2: updated(update) for p1
+P2: updated(update) for p4
+P1: updated(update) for p2
+P4: updated for p2
+P4: updated(update) for p2
+p3 update a new statement STARTS7
+p3 update a new statement ENDS for sno:7
+P3: updated(update) rmi
+P3: updated(update) for p4
+P3: updated(update) for p2
+P3: updated(update) for p1
+p1 insert a new statement STARTS8
+p1 update a new statement ENDS8
+P1: updated(update) rmi
+P1: updated(update) for p3
+p2 update a new statement STARTS7
+p2 update a new statement ENDS7
+P2: updated(update) rmi
+P2: updated(update) for p1
+P2: updated(update) for p3
+P1: updated(update) for p2
+P3: updated(update) for p2
+P3: updated(update) for p1
+p4 update a new statement STARTS with sno8
+p4 update a new statement ENDS for sno8
+P4: updated(update) rmi
+P4: updated(update) for p3
+P4: updated(update) for p2
+P4: updated(update) for p1
+p1 insert a new statement STARTS1
+p2 update a new statement STARTS9
+p1 update a new statement ENDS1
+P1: updated(update) rmi
+P1: updated(update) for p4
+p2 update a new statement ENDS9
+P2: updated(update) rmi
+P2: updated(update) for p1
+P2: updated(update) for p4
+p3 update a new statement STARTS3
+P1: updated(update) for p2
+p3 update a new statement ENDS for sno:3
+P3: updated(update) rmi
+P3: updated(update) for p4
+P3: updated(update) for p2
+P3: updated(update) for p1
+P2: updated(update) for p3
+P1: updated(update) for p3
+p4 update a new statement STARTS with sno1
+p4 update a new statement ENDS for sno1
+P4: updated(update) rmi
+P4: updated(update) for p3
+P4: updated(update) for p2
+P4: updated(update) for p1
+p1 insert a new statement STARTS4
+p2 update a new statement STARTS6
+p1 update a new statement ENDS4
+P1: updated(update) rmi
+p2 update a new statement ENDS6
+P2: updated(update) rmi
+P1: updated(update) for p4
+P2: updated(update) for p1
+P2: updated(update) for p4
+p3 update a new statement STARTS9
+p3 update a new statement ENDS for sno:9
+P3: updated(update) rmi
+P3: updated(update) for p4
+P3: updated(update) for p2
+P3: updated(update) for p1
+P1: updated(update) for p2
+P1: updated(update) for p3
+P2: updated(update) for p3
+p4 update a new statement STARTS with sno8
+p4 update a new statement ENDS for sno8
+P4: updated(update) rmi
+P4: updated(update) for p3
+P4: updated(update) for p2
+P4: updated(update) for p1
+p1 insert a new statement STARTS7
+p2 update a new statement STARTS6
+p1 update a new statement ENDS7
+P1: updated(update) rmi
+P1: updated(update) for p4
+p2 update a new statement ENDS6
+P2: updated(update) rmi
+P2: updated(update) for p1
+P2: updated(update) for p4
+P1: updated(update) for p2
+p3 update a new statement STARTS3
+p3 update a new statement ENDS for sno:3
+P3: updated(update) rmi
+P3: updated(update) for p4
+P3: updated(update) for p2
+P3: updated(update) for p1
+P1: updated(update) for p3
+P2: updated(update) for p3
+p4 update a new statement STARTS with sno5
+p4 update a new statement ENDS for sno5
+P4: updated(update) rmi
+P4: updated(update) for p3
+P4: updated(update) for p2
+P4: updated(update) for p1
+p1 insert a new statement STARTS0
+p1 update a new statement ENDS0
+P1: updated(update) rmi
+P1: updated(update) for p4
+p2 update a new statement STARTS9
+p3 update a new statement STARTS8
+p2 update a new statement ENDS9
+P2: updated(update) rmi
+P2: updated(update) for p1
+P2: updated(update) for p4
+p3 update a new statement ENDS for sno:8
+P3: updated(update) rmi
+P3: updated(update) for p4
+P3: updated(update) for p2
+P3: updated(update) for p1
+P1: updated(update) for p2
+P1: updated(update) for p3
+P2: updated(update) for p3
+p4 update a new statement STARTS with sno7
+p4 update a new statement ENDS for sno7
+P4: updated(update) rmi
+P4: updated(update) for p3
+P4: updated(update) for p2
+P4: updated(update) for p1
+p1 insert a new statement STARTS2
+p3 update a new statement STARTS4
+p1 update a new statement ENDS2
+P1: updated(update) rmi
+P1: updated(update) for p4
+p3 update a new statement ENDS for sno:4
+P3: updated(update) rmi
+P3: updated(update) for p4
+P3: updated(update) for p1
+p2 update a new statement STARTS0
+p2 update a new statement ENDS0
+P2: updated(update) rmi
+P2: updated(update) for p1
+P2: updated(update) for p3
+P2: updated(update) for p4
+P1: updated(update) for p2
+P1: updated(update) for p3
+P3: updated(update) for p2
+p4 update a new statement STARTS with sno4
+p4 update a new statement ENDS for sno4
+P4: updated(update) rmi
+P4: updated(update) for p3
+P4: updated(update) for p2
+P4: updated(update) for p1
+p2 update a new statement STARTS4
+p2 update a new statement ENDS4
+P2: updated(update) rmi
+P2: updated(update) for p4
+p1 insert a new statement STARTS6
+p1 update a new statement ENDS6
+P1: updated(update) rmi
+P1: updated(update) for p2
+P1: updated(update) for p4
+p3 update a new statement STARTS8
+P2: updated(update) for p1
+p3 update a new statement ENDS for sno:8
+P3: updated(update) rmi
+P3: updated(update) for p4
+P3: updated(update) for p2
+P3: updated(update) for p1
+P1: updated(update) for p3
+P2: updated(update) for p3
+p4 update a new statement STARTS with sno3
+p4 update a new statement ENDS for sno3
+P4: updated(update) rmi
+P4: updated(update) for p3
+P4: updated(update) for p2
+P4: updated(update) for p1
+p1 insert a new statement STARTS4
+p1 update a new statement ENDS4
+P1: updated(update) rmi
+P1: updated(update) for p4
+p3 update a new statement STARTS4
+p3 update a new statement ENDS for sno:4
+P3: updated(update) rmi
+P3: updated(update) for p4
+P3: updated(update) for p1
+p2 update a new statement STARTS9
+p2 update a new statement ENDS9
+P2: updated(update) rmi
+P2: updated(update) for p1
+P2: updated(update) for p3
+P2: updated(update) for p4
+P1: updated(update) for p2
+P1: updated(update) for p3
+p4 update a new statement STARTS with sno4
+P3: updated(update) for p2
+p4 update a new statement ENDS for sno4
+P4: updated(update) rmi
+P4: updated(update) for p3
+P4: updated(update) for p2
+P4: updated(update) for p1
+p2 update a new statement STARTS6
+p1 insert a new statement STARTS5
+p2 update a new statement ENDS6
+P2: updated(update) rmi
+p1 update a new statement ENDS5
+P1: updated(update) rmi
+P2: updated(update) for p4
+P1: updated(update) for p2
+P1: updated(update) for p4
+p3 update a new statement STARTS9
+p3 update a new statement ENDS for sno:9
+P3: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p4
+P2: updated(update) for p3
+P3: updated(update) for p2
+P3: updated(update) for p1
+P1: updated(update) for p3
+p4 update a new statement STARTS with sno3
+p4 update a new statement ENDS for sno3
+P4: updated(update) rmi
+P4: updated(update) for p3
+P4: updated(update) for p2
+P4: updated(update) for p1
+p2 update a new statement STARTS1
+p1 insert a new statement STARTS1
+p2 update a new statement ENDS1
+P2: updated(update) rmi
+p1 update a new statement ENDS1
+P1: updated(update) rmi
+P2: updated(update) for p4
+P1: updated(update) for p2
+P1: updated(update) for p4
+p3 update a new statement STARTS5
+p3 update a new statement ENDS for sno:5
+P3: updated(update) rmi
+P3: updated(update) for p4
+P3: updated(update) for p2
+P3: updated(update) for p1
+P2: updated(update) for p1
+P2: updated(update) for p3
+P1: updated(update) for p3
+p4 update a new statement STARTS with sno4
+p4 update a new statement ENDS for sno4
+P4: updated(update) rmi
+P4: updated(update) for p3
+P4: updated(update) for p2
+P4: updated(update) for p1
+p3 update a new statement STARTS4
+p3 update a new statement ENDS for sno:4
+P3: updated(update) rmi
+P3: updated(update) for p4
+p1 insert a new statement STARTS5
+p1 update a new statement ENDS5
+P1: updated(update) rmi
+P1: updated(update) for p3
+P1: updated(update) for p4
+p2 update a new statement STARTS2
+p2 update a new statement ENDS2
+P2: updated(update) rmi
+P2: updated(update) for p1
+P2: updated(update) for p3
+P2: updated(update) for p4
+P1: updated(update) for p2
+P3: updated(update) for p2
+P3: updated(update) for p1
+p4 update a new statement STARTS with sno6
+p4 update a new statement ENDS for sno6
+P4: updated(update) rmi
+P4: updated(update) for p3
+P4: updated(update) for p2
+P4: updated(update) for p1
+p1 insert a new statement STARTS1
+p1 update a new statement ENDS1
+P1: updated(update) rmi
+P1: updated(update) for p4
+p2 update a new statement STARTS7
+p2 update a new statement ENDS7
+P2: updated(update) rmi
+P2: updated(update) for p1
+P2: updated(update) for p4
+P1: updated(update) for p2
+p3 update a new statement STARTS8
+p3 update a new statement ENDS for sno:8
+P3: updated(update) rmi
+P3: updated(update) for p4
+P3: updated(update) for p2
+P3: updated(update) for p1
+P2: updated(update) for p3
+P1: updated(update) for p3
+p4 update a new statement STARTS with sno8
+p4 update a new statement ENDS for sno8
+P4: updated(update) rmi
+P4: updated(update) for p3
+P4: updated(update) for p2
+P4: updated(update) for p1
+p1 insert a new statement STARTS6
+p2 update a new statement STARTS6
+p1 update a new statement ENDS6
+P1: updated(update) rmi
+P1: updated(update) for p4
+p2 update a new statement ENDS6
+P2: updated(update) rmi
+P2: updated(update) for p1
+P2: updated(update) for p4
+p3 update a new statement STARTS5
+p3 update a new statement ENDS for sno:5
+P3: updated(update) rmi
+P3: updated(update) for p4
+P3: updated(update) for p2
+P3: updated(update) for p1
+P1: updated(update) for p2
+P1: updated(update) for p3
+P2: updated(update) for p3
+p4 update a new statement STARTS with sno0
+p4 update a new statement ENDS for sno0
+P4: updated(update) rmi
+P4: updated(update) for p3
+P3: updated(update) for p4
+P4: updated(update) for p2
+P4: updated(update) for p1
+P1: updated(update) for p4
+p2 update a new statement STARTS4
+p2 update a new statement ENDS4
+P2: updated(update) rmi
+P2: updated(update) for p4
+P1: updated(update) for p2
+p3 update a new statement STARTS4
+p3 update a new statement ENDS for sno:4
+P3: updated(update) rmi
+P3: updated(update) for p2
+P1: updated(update) for p3
+P2: updated(update) for p3
+p4 update a new statement STARTS with sno6
+p4 update a new statement ENDS for sno6
+P4: updated(update) rmi
+P4: updated(update) for p3
+P4: updated(update) for p2
+p2 update a new statement STARTS1
+p2 update a new statement ENDS1
+P2: updated(update) rmi
+P2: updated(update) for p4
+P1: updated(update) for p2
+P1: updated(update) for p4
+p3 update a new statement STARTS1
+p3 update a new statement ENDS for sno:1
+P3: updated(update) rmi
+P3: updated(update) for p4
+P3: updated(update) for p2
+P1: updated(update) for p3
+P2: updated(update) for p3
+p4 update a new statement STARTS with sno3
+p4 update a new statement ENDS for sno3
+P4: updated(update) rmi
+P4: updated(update) for p3
+P4: updated(update) for p2
+p2 update a new statement STARTS1
+P1: updated(update) for p4
+p2 update a new statement ENDS1
+P2: updated(update) rmi
+P2: updated(update) for p4
+p3 update a new statement STARTS0
+p3 update a new statement ENDS for sno:0
+P3: updated(update) rmi
+P3: updated(update) for p4
+P3: updated(update) for p2
+P1: updated(update) for p2
+P1: updated(update) for p3
+P2: updated(update) for p3
+p4 update a new statement STARTS with sno8
+p4 update a new statement ENDS for sno8
+P4: updated(update) rmi
+P4: updated(update) for p3
+P4: updated(update) for p2
+P1: updated(update) for p4
+p2 update a new statement STARTS6
+p2 update a new statement ENDS6
+P2: updated(update) rmi
+P2: updated(update) for p4
+P1: updated(update) for p2
+p3 update a new statement STARTS9
+p3 update a new statement ENDS for sno:9
+P3: updated(update) rmi
+P3: updated(update) for p4
+P3: updated(update) for p2
+P1: updated(update) for p3
+P2: updated(update) for p3
+p4 update a new statement STARTS with sno2
+p4 update a new statement ENDS for sno2
+P4: updated(update) rmi
+P4: updated(update) for p3
+P4: updated(update) for p2
+p2 update a new statement STARTS6
+p2 update a new statement ENDS6
+P2: updated(update) rmi
+P2: updated(update) for p4
+p3 update a new statement STARTS0
+P1: updated(update) for p2
+P1: updated(update) for p4
+p3 update a new statement ENDS for sno:0
+P3: updated(update) rmi
+P3: updated(update) for p4
+P3: updated(update) for p2
+P1: updated(update) for p3
+P2: updated(update) for p3
+p4 update a new statement STARTS with sno5
+p4 update a new statement ENDS for sno5
+P4: updated(update) rmi
+P4: updated(update) for p3
+P4: updated(update) for p2
+P1: updated(update) for p4
+p2 update a new statement STARTS7
+p2 update a new statement ENDS7
+P2: updated(update) rmi
+P2: updated(update) for p4
+P1: updated(update) for p2
+p3 update a new statement STARTS0
+p3 update a new statement ENDS for sno:0
+P3: updated(update) rmi
+P3: updated(update) for p4
+P3: updated(update) for p2
+P2: updated(update) for p3
+P1: updated(update) for p3
+p4 update a new statement STARTS with sno2
+p4 update a new statement ENDS for sno2
+P4: updated(update) rmi
+P4: updated(update) for p3
+P4: updated(update) for p2
+P1: updated(update) for p4
+p2 update a new statement STARTS3
+p2 update a new statement ENDS3
+P2: updated(update) rmi
+P2: updated(update) for p4
+p3 update a new statement STARTS9
+p3 update a new statement ENDS for sno:9
+P3: updated(update) rmi
+P3: updated(update) for p4
+P3: updated(update) for p2
+P1: updated(update) for p2
+P1: updated(update) for p3
+P2: updated(update) for p3
+p4 update a new statement STARTS with sno9
+p4 update a new statement ENDS for sno9
+P4: updated(update) rmi
+P4: updated(update) for p3
+P4: updated(update) for p2
+p3 update a new statement STARTS8
+p2 update a new statement STARTS0
+p3 update a new statement ENDS for sno:8
+P3: updated(update) rmi
+P3: updated(update) for p4
+p2 update a new statement ENDS0
+P2: updated(update) rmi
+P2: updated(update) for p3
+P2: updated(update) for p4
+P1: updated(update) for p2
+P1: updated(update) for p3
+P1: updated(update) for p4
+P3: updated(update) for p2
+p4 update a new statement STARTS with sno6
+p4 update a new statement ENDS for sno6
+P4: updated(update) rmi
+P4: updated(update) for p3
+P4: updated(update) for p2
+P1: updated(update) for p4
+P2: updated(update) for p4
+p3 update a new statement STARTS9
+p3 update a new statement ENDS for sno:9
+P3: updated(update) rmi
+P3: updated(update) for p4
+P1: updated(update) for p3
+P2: updated(update) for p3
+p4 update a new statement STARTS with sno3
+p4 update a new statement ENDS for sno3
+P4: updated(update) rmi
+P4: updated(update) for p3
+P1: updated(update) for p4
+P2: updated(update) for p4
+p3 update a new statement STARTS7
+p3 update a new statement ENDS for sno:7
+P3: updated(update) rmi
+P3: updated(update) for p4
+P1: updated(update) for p3
+P2: updated(update) for p3
+p4 update a new statement STARTS with sno4
+p4 update a new statement ENDS for sno4
+P4: updated(update) rmi
+P4: updated(update) for p3
+P2: updated(update) for p4
+P1: updated(update) for p4
+p3 update a new statement STARTS7
+p3 update a new statement ENDS for sno:7
+P3: updated(update) rmi
+P3: updated(update) for p4
+P2: updated(update) for p3
+P1: updated(update) for p3
+p4 update a new statement STARTS with sno5
+p4 update a new statement ENDS for sno5
+P4: updated(update) rmi
+P4: updated(update) for p3
+P1: updated(update) for p4
+P2: updated(update) for p4
+p3 update a new statement STARTS5
+p3 update a new statement ENDS for sno:5
+P3: updated(update) rmi
+P3: updated(update) for p4
+P2: updated(update) for p3
+P1: updated(update) for p3
+p4 update a new statement STARTS with sno9
+p4 update a new statement ENDS for sno9
+P4: updated(update) rmi
+P4: updated(update) for p3
+P2: updated(update) for p4
+p3 update a new statement STARTS4
+p3 update a new statement ENDS for sno:4
+P3: updated(update) rmi
+P3: updated(update) for p4
+P1: updated(update) for p3
+P1: updated(update) for p4
+P2: updated(update) for p3
+p4 update a new statement STARTS with sno6
+p4 update a new statement ENDS for sno6
+P4: updated(update) rmi
+P4: updated(update) for p3
+P1: updated(update) for p4
+P2: updated(update) for p4
+p3 update a new statement STARTS4
+p3 update a new statement ENDS for sno:4
+P3: updated(update) rmi
+P3: updated(update) for p4
+P1: updated(update) for p3
+P2: updated(update) for p3
+p4 update a new statement STARTS with sno1
+p4 update a new statement ENDS for sno1
+P4: updated(update) rmi
+P4: updated(update) for p3
+P2: updated(update) for p4
+P1: updated(update) for p4
+p3 update a new statement STARTS9
+p3 update a new statement ENDS for sno:9
+P3: updated(update) rmi
+P3: updated(update) for p4
+P1: updated(update) for p3
+P2: updated(update) for p3
+p4 update a new statement STARTS with sno9
+p4 update a new statement ENDS for sno9
+P4: updated(update) rmi
+P4: updated(update) for p3
+p3 update a new statement STARTS0
+p3 update a new statement ENDS for sno:0
+P3: updated(update) rmi
+P3: updated(update) for p4
+P1: updated(update) for p3
+P1: updated(update) for p4
+P2: updated(update) for p3
+P2: updated(update) for p4
+p4 update a new statement STARTS with sno5
+p4 update a new statement ENDS for sno5
+P4: updated(update) rmi
+P4: updated(update) for p3
+P1: updated(update) for p4
+P2: updated(update) for p4
+p3 update a new statement STARTS6
+p3 update a new statement ENDS for sno:6
+P3: updated(update) rmi
+P3: updated(update) for p4
+P2: updated(update) for p3
+P1: updated(update) for p3
+p4 update a new statement STARTS with sno8
+p4 update a new statement ENDS for sno8
+P4: updated(update) rmi
+P4: updated(update) for p3
+P2: updated(update) for p4
+p3 update a new statement STARTS2
+p3 update a new statement ENDS for sno:2
+P3: updated(update) rmi
+P3: updated(update) for p4
+P1: updated(update) for p3
+P1: updated(update) for p4
+P2: updated(update) for p3
+p4 update a new statement STARTS with sno4
+p4 update a new statement ENDS for sno4
+P4: updated(update) rmi
+P4: updated(update) for p3
+P1: updated(update) for p4
+P2: updated(update) for p4
+p3 update a new statement STARTS4
+p3 update a new statement ENDS for sno:4
+P3: updated(update) rmi
+P3: updated(update) for p4
+P1: updated(update) for p3
+P2: updated(update) for p3
+p4 update a new statement STARTS with sno6
+p4 update a new statement ENDS for sno6
+P4: updated(update) rmi
+P4: updated(update) for p3
+P2: updated(update) for p4
+P1: updated(update) for p4
+p3 update a new statement STARTS5
+p3 update a new statement ENDS for sno:5
+P3: updated(update) rmi
+P3: updated(update) for p4
+P1: updated(update) for p3
+P2: updated(update) for p3
+p4 update a new statement STARTS with sno6
+p4 update a new statement ENDS for sno6
+P4: updated(update) rmi
+P3: updated(update) for p4
+P4: updated(update) for p3
+P1: updated(update) for p4
+P2: updated(update) for p4
+p3 update a new statement STARTS6
+p3 update a new statement ENDS for sno:6
+P3: updated(update) rmi
+P2: updated(update) for p3
+P1: updated(update) for p3
+p4 update a new statement STARTS with sno2
+p4 update a new statement ENDS for sno2
+P4: updated(update) rmi
+P4: updated(update) for p3
+P1: updated(update) for p4
+P2: updated(update) for p4
+p3 update a new statement STARTS5
+p3 update a new statement ENDS for sno:5
+P3: updated(update) rmi
+P3: updated(update) for p4
+P2: updated(update) for p3
+P1: updated(update) for p3
+p4 update a new statement STARTS with sno0
+p4 update a new statement ENDS for sno0
+P4: updated(update) rmi
+P4: updated(update) for p3
+P2: updated(update) for p4
+p3 update a new statement STARTS8
+p3 update a new statement ENDS for sno:8
+P3: updated(update) rmi
+P3: updated(update) for p4
+P1: updated(update) for p3
+P1: updated(update) for p4
+P2: updated(update) for p3
+p4 update a new statement STARTS with sno0
+p4 update a new statement ENDS for sno0
+P4: updated(update) rmi
+P4: updated(update) for p3
+P1: updated(update) for p4
+P2: updated(update) for p4
+P3: updated(update) for p4
+p4 update a new statement STARTS with sno8
+p4 update a new statement ENDS for sno8
+P4: updated(update) rmi
+P2: updated(update) for p4
+P1: updated(update) for p4
+P3: updated(update) for p4
+p4 update a new statement STARTS with sno1
+p4 update a new statement ENDS for sno1
+P4: updated(update) rmi
+P1: updated(update) for p4
+P2: updated(update) for p4
+P3: updated(update) for p4
+p4 update a new statement STARTS with sno7
+p4 update a new statement ENDS for sno7
+P4: updated(update) rmi
+P2: updated(update) for p4
+P3: updated(update) for p4
+P1: updated(update) for p4
+p4 update a new statement STARTS with sno7
+p4 update a new statement ENDS for sno7
+P4: updated(update) rmi
+P1: updated(update) for p4
+P2: updated(update) for p4
+P3: updated(update) for p4
+p4 update a new statement STARTS with sno2
+p4 update a new statement ENDS for sno2
+P4: updated(update) rmi
+P2: updated(update) for p4
+P1: updated(update) for p4
+P3: updated(update) for p4
+p4 update a new statement STARTS with sno5
+p4 update a new statement ENDS for sno5
+P4: updated(update) rmi
+P1: updated(update) for p4
+P2: updated(update) for p4
+P3: updated(update) for p4
+p4 update a new statement STARTS with sno7
+p4 update a new statement ENDS for sno7
+P4: updated(update) rmi
+P1: updated(update) for p4
+P2: updated(update) for p4
+P3: updated(update) for p4
+p4 update a new statement STARTS with sno0
+p4 update a new statement ENDS for sno0
+P4: updated(update) rmi
+P3: updated(update) for p4
+P1: updated(update) for p4
+P2: updated(update) for p4
+p4 update a new statement STARTS with sno8
+p4 update a new statement ENDS for sno8
+P4: updated(update) rmi
+P1: updated(update) for p4
+P2: updated(update) for p4
+P3: updated(update) for p4
+p4 update a new statement STARTS with sno5
+p4 update a new statement ENDS for sno5
+P4: updated(update) rmi
+P2: updated(update) for p4
+P1: updated(update) for p4
+P3: updated(update) for p4
+p4 update a new statement STARTS with sno7
+p4 update a new statement ENDS for sno7
+P4: updated(update) rmi
+P1: updated(update) for p4
+P2: updated(update) for p4
+P3: updated(update) for p4
+p4 update a new statement STARTS with sno9
+p4 update a new statement ENDS for sno9
+P4: updated(update) rmi
+P1: updated(update) for p4
+P3: updated(update) for p4
+P2: updated(update) for p4
+p1 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+P2: updated for p1
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+P1: updated for p3
+P2: updated for p3
+P3: updated for p2
+p4 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated for p4
+P2: updated for p4
+P4: updated for p3
+p2 insert a new statement STARTS
+P4: updated for p2
+P4: updated for p1
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+P4: updated for p2
+P3: updated for p1
+p3 insert a new statement STARTS
+p1 insert a new statement STARTS
+p3 insert a new statement ENDS
+p1 insert a new statement ENDS
+P1: updated rmi
+P3: updated rmi
+P3: updated for p4
+P2: updated for p1
+P3: updated for p2
+P2: updated for p3
+P1: updated for p3
+P4: updated for p1
+p4 insert a new statement STARTS
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+p2 insert a new statement ENDS
+P2: updated rmi
+P4: updated for p3
+P1: updated for p4
+P4: updated for p2
+P1: updated for p2
+P2: updated for p4
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p3 insert a new statement ENDS
+P3: updated rmi
+P4: updated for p1
+P2: updated for p1
+P3: updated for p4
+P2: updated for p3
+P1: updated for p3
+P4: updated for p3
+P3: updated for p2
+p2 insert a new statement STARTS
+p4 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated for p2
+P2: updated for p4
+P1: updated for p4
+P4: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p3 insert a new statement ENDS
+P3: updated rmi
+P2: updated for p1
+P4: updated for p1
+P1: updated for p3
+P3: updated for p4
+P2: updated for p3
+P4: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated for p4
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+P4: updated for p2
+P2: updated for p4
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+p1 insert a new statement ENDS
+P1: updated rmi
+P2: updated for p3
+P3: updated for p4
+P4: updated for p3
+P1: updated for p3
+P3: updated for p2
+P2: updated for p1
+P4: updated for p1
+p2 insert a new statement STARTS
+p4 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p4
+P4: updated for p2
+P2: updated for p4
+P1: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+p3 insert a new statement ENDS
+P3: updated rmi
+P1: updated rmi
+P2: updated for p3
+P3: updated for p4
+P4: updated for p3
+P1: updated for p3
+P2: updated for p1
+P4: updated for p1
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p4
+P2: updated for p4
+P4: updated for p2
+P1: updated for p2
+P3: updated for p1
+p3 insert a new statement STARTS
+p1 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+p1 insert a new statement ENDS
+P1: updated rmi
+P4: updated for p3
+P2: updated for p3
+P3: updated for p4
+P1: updated for p3
+P2: updated for p1
+P4: updated for p1
+P3: updated for p2
+p2 insert a new statement STARTS
+p4 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p4
+P4: updated for p2
+P2: updated for p4
+P1: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p3 insert a new statement ENDS
+P3: updated rmi
+P4: updated for p1
+P2: updated for p1
+P1: updated for p3
+P3: updated for p4
+P4: updated for p3
+P2: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated for p2
+P4: updated for p2
+P2: updated for p4
+P1: updated for p4
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p3 insert a new statement ENDS
+P3: updated rmi
+P4: updated for p1
+P2: updated for p1
+P1: updated for p3
+P3: updated for p4
+P4: updated for p3
+P2: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p4
+P4: updated for p2
+P2: updated for p4
+p2 update a new statement STARTS9
+P1: updated for p2
+p2 update a new statement ENDS9
+P2: updated(update) rmi
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p1 insert a new statement STARTS4
+p3 insert a new statement ENDS
+P3: updated rmi
+P4: updated for p1
+P3: updated for p4
+P4: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p2
+p1 update a new statement ENDS4
+P1: updated(update) rmi
+P1: updated(update) for p2
+p4 insert a new statement ENDS
+P4: updated rmi
+p4 update a new statement STARTS with sno1
+p4 update a new statement ENDS for sno1
+P4: updated(update) rmi
+P4: updated(update) for p2
+P4: updated(update) for p1
+P1: updated for p3
+P2: updated for p1
+P1: updated for p4
+P2: updated for p3
+P1: updated(update) for p4
+P2: updated for p4
+P2: updated(update) for p1
+P2: updated(update) for p4
+P3: updated for p1
+P3: updated for p4
+p3 update a new statement STARTS7
+p3 update a new statement ENDS for sno:7
+P3: updated(update) rmi
+P3: updated(update) for p4
+P1: updated(update) for p3
+P4: updated(update) for p3
+P3: updated(update) for p2
+p2 update a new statement STARTS1
+P3: updated(update) for p1
+p2 update a new statement ENDS1
+P2: updated(update) rmi
+P4: updated(update) for p2
+P2: updated(update) for p3
+P3: updated(update) for p2
+p3 update a new statement STARTS7
+p3 update a new statement ENDS for sno:7
+P3: updated(update) rmi
+P4: updated(update) for p3
+p1 insert a new statement STARTS8
+p1 update a new statement ENDS8
+P1: updated(update) rmi
+P4: updated(update) for p1
+P1: updated(update) for p2
+P3: updated(update) for p1
+P1: updated(update) for p3
+p2 update a new statement STARTS3
+p2 update a new statement ENDS3
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+P2: updated(update) for p3
+p1 insert a new statement STARTS7
+p1 update a new statement ENDS7
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS7
+p2 update a new statement ENDS7
+P2: updated(update) rmi
+P3: updated(update) for p2
+P2: updated(update) for p1
+P4: updated(update) for p2
+p1 insert a new statement STARTS7
+p1 update a new statement ENDS7
+P1: updated(update) rmi
+P4: updated(update) for p1
+P3: updated(update) for p1
+P1: updated(update) for p2
+p2 update a new statement STARTS3
+p2 update a new statement ENDS3
+P2: updated(update) rmi
+P4: updated(update) for p2
+P2: updated(update) for p1
+P3: updated(update) for p2
+p1 insert a new statement STARTS1
+p1 update a new statement ENDS1
+P1: updated(update) rmi
+P3: updated(update) for p1
+P4: updated(update) for p1
+P1: updated(update) for p2
+p2 update a new statement STARTS0
+p2 update a new statement ENDS0
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+p1 insert a new statement STARTS8
+p1 update a new statement ENDS8
+P1: updated(update) rmi
+P3: updated(update) for p1
+P4: updated(update) for p1
+P1: updated(update) for p2
+p2 update a new statement STARTS0
+p2 update a new statement ENDS0
+P2: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p2
+P2: updated(update) for p1
+p1 insert a new statement STARTS3
+p1 update a new statement ENDS3
+P1: updated(update) rmi
+P3: updated(update) for p1
+P1: updated(update) for p2
+P4: updated(update) for p1
+p2 update a new statement STARTS2
+p2 update a new statement ENDS2
+P2: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p2
+P2: updated(update) for p1
+p1 insert a new statement STARTS5
+p1 update a new statement ENDS5
+P1: updated(update) rmi
+P4: updated(update) for p1
+P1: updated(update) for p2
+P3: updated(update) for p1
+p2 update a new statement STARTS2
+p2 update a new statement ENDS2
+P2: updated(update) rmi
+P4: updated(update) for p2
+P2: updated(update) for p1
+P3: updated(update) for p2
+p1 insert a new statement STARTS4
+p1 update a new statement ENDS4
+P1: updated(update) rmi
+P3: updated(update) for p1
+P1: updated(update) for p2
+P4: updated(update) for p1
+p2 update a new statement STARTS0
+p2 update a new statement ENDS0
+P2: updated(update) rmi
+P4: updated(update) for p2
+P3: updated(update) for p2
+P2: updated(update) for p1
+p1 insert a new statement STARTS9
+p1 update a new statement ENDS9
+P1: updated(update) rmi
+P4: updated(update) for p1
+P1: updated(update) for p2
+P3: updated(update) for p1
+p2 update a new statement STARTS3
+p2 update a new statement ENDS3
+P2: updated(update) rmi
+P3: updated(update) for p2
+P2: updated(update) for p1
+P4: updated(update) for p2
+p1 insert a new statement STARTS1
+p1 update a new statement ENDS1
+P1: updated(update) rmi
+P4: updated(update) for p1
+P1: updated(update) for p2
+P3: updated(update) for p1
+p2 update a new statement STARTS3
+p2 update a new statement ENDS3
+P2: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p2
+P2: updated(update) for p1
+p1 insert a new statement STARTS3
+p1 update a new statement ENDS3
+P1: updated(update) rmi
+P3: updated(update) for p1
+P1: updated(update) for p2
+P4: updated(update) for p1
+p2 update a new statement STARTS2
+p2 update a new statement ENDS2
+P2: updated(update) rmi
+P4: updated(update) for p2
+P2: updated(update) for p1
+P3: updated(update) for p2
+p1 insert a new statement STARTS6
+p1 update a new statement ENDS6
+P1: updated(update) rmi
+P3: updated(update) for p1
+P4: updated(update) for p1
+P1: updated(update) for p2
+p2 update a new statement STARTS8
+p2 update a new statement ENDS8
+P2: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p2
+P2: updated(update) for p1
+p1 insert a new statement STARTS8
+p1 update a new statement ENDS8
+P1: updated(update) rmi
+P4: updated(update) for p1
+P1: updated(update) for p2
+P3: updated(update) for p1
+p2 update a new statement STARTS4
+p2 update a new statement ENDS4
+P2: updated(update) rmi
+P4: updated(update) for p2
+P2: updated(update) for p1
+P3: updated(update) for p2
+p1 insert a new statement STARTS6
+p1 update a new statement ENDS6
+P1: updated(update) rmi
+P3: updated(update) for p1
+P1: updated(update) for p2
+P4: updated(update) for p1
+p2 update a new statement STARTS7
+p2 update a new statement ENDS7
+P2: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p2
+P2: updated(update) for p1
+p1 insert a new statement STARTS6
+p1 update a new statement ENDS6
+P1: updated(update) rmi
+P4: updated(update) for p1
+P3: updated(update) for p1
+P1: updated(update) for p2
+p2 update a new statement STARTS0
+p2 update a new statement ENDS0
+P2: updated(update) rmi
+P3: updated(update) for p2
+P2: updated(update) for p1
+P4: updated(update) for p2
+p1 insert a new statement STARTS4
+p1 update a new statement ENDS4
+P1: updated(update) rmi
+P3: updated(update) for p1
+P4: updated(update) for p1
+P1: updated(update) for p2
+p2 update a new statement STARTS6
+p2 update a new statement ENDS6
+P2: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p2
+P2: updated(update) for p1
+p1 insert a new statement STARTS4
+p1 update a new statement ENDS4
+P1: updated(update) rmi
+P3: updated(update) for p1
+P1: updated(update) for p2
+P4: updated(update) for p1
+p2 update a new statement STARTS2
+p2 update a new statement ENDS2
+P2: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p2
+P2: updated(update) for p1
+p1 insert a new statement STARTS0
+p1 update a new statement ENDS0
+P1: updated(update) rmi
+P3: updated(update) for p1
+P4: updated(update) for p1
+P1: updated(update) for p2
+p2 update a new statement STARTS5
+p2 update a new statement ENDS5
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS2
+p1 update a new statement ENDS2
+P1: updated(update) rmi
+P3: updated(update) for p1
+P4: updated(update) for p1
+P1: updated(update) for p2
+p2 update a new statement STARTS0
+p2 update a new statement ENDS0
+P2: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p2
+P2: updated(update) for p1
+p1 insert a new statement STARTS3
+p1 update a new statement ENDS3
+P1: updated(update) rmi
+P4: updated(update) for p1
+P3: updated(update) for p1
+P1: updated(update) for p2
+p2 update a new statement STARTS2
+p2 update a new statement ENDS2
+P2: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p2
+P2: updated(update) for p1
+p1 insert a new statement STARTS4
+p1 update a new statement ENDS4
+P1: updated(update) rmi
+P3: updated(update) for p1
+P4: updated(update) for p1
+P1: updated(update) for p2
+p2 update a new statement STARTS0
+p2 update a new statement ENDS0
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS8
+p1 update a new statement ENDS8
+P1: updated(update) rmi
+P3: updated(update) for p1
+P1: updated(update) for p2
+P4: updated(update) for p1
+p2 update a new statement STARTS4
+p2 update a new statement ENDS4
+P2: updated(update) rmi
+P3: updated(update) for p2
+P2: updated(update) for p1
+P4: updated(update) for p2
+p1 insert a new statement STARTS9
+p1 update a new statement ENDS9
+P1: updated(update) rmi
+P3: updated(update) for p1
+P1: updated(update) for p2
+P4: updated(update) for p1
+p2 update a new statement STARTS1
+p2 update a new statement ENDS1
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+p1 insert a new statement STARTS1
+p1 update a new statement ENDS1
+P1: updated(update) rmi
+P4: updated(update) for p1
+P1: updated(update) for p2
+P3: updated(update) for p1
+p2 update a new statement STARTS8
+p2 update a new statement ENDS8
+P2: updated(update) rmi
+P3: updated(update) for p2
+P2: updated(update) for p1
+P4: updated(update) for p2
+p1 insert a new statement STARTS7
+p1 update a new statement ENDS7
+P1: updated(update) rmi
+P4: updated(update) for p1
+P1: updated(update) for p2
+P3: updated(update) for p1
+p2 update a new statement STARTS0
+p2 update a new statement ENDS0
+P2: updated(update) rmi
+P4: updated(update) for p2
+P2: updated(update) for p1
+P3: updated(update) for p2
+p1 insert a new statement STARTS7
+p1 update a new statement ENDS7
+P1: updated(update) rmi
+P4: updated(update) for p1
+P1: updated(update) for p2
+P3: updated(update) for p1
+p2 update a new statement STARTS5
+p2 update a new statement ENDS5
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS9
+p1 update a new statement ENDS9
+P1: updated(update) rmi
+P4: updated(update) for p1
+P1: updated(update) for p2
+P3: updated(update) for p1
+p2 update a new statement STARTS5
+p2 update a new statement ENDS5
+P2: updated(update) rmi
+P3: updated(update) for p2
+P2: updated(update) for p1
+P4: updated(update) for p2
+p1 insert a new statement STARTS5
+p1 update a new statement ENDS5
+P1: updated(update) rmi
+P4: updated(update) for p1
+P1: updated(update) for p2
+P3: updated(update) for p1
+p2 update a new statement STARTS5
+p2 update a new statement ENDS5
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS5
+p1 update a new statement ENDS5
+P1: updated(update) rmi
+P3: updated(update) for p1
+P4: updated(update) for p1
+P1: updated(update) for p2
+p2 update a new statement STARTS5
+p2 update a new statement ENDS5
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS1
+p1 update a new statement ENDS1
+P1: updated(update) rmi
+P3: updated(update) for p1
+P1: updated(update) for p2
+P4: updated(update) for p1
+p2 update a new statement STARTS5
+p2 update a new statement ENDS5
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS5
+p2 update a new statement ENDS5
+P2: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS6
+p2 update a new statement ENDS6
+P2: updated(update) rmi
+P4: updated(update) for p2
+P3: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS7
+p2 update a new statement ENDS7
+P2: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS0
+p2 update a new statement ENDS0
+P2: updated(update) rmi
+P4: updated(update) for p2
+P3: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS6
+p2 update a new statement ENDS6
+P2: updated(update) rmi
+P4: updated(update) for p2
+P3: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS9
+p2 update a new statement ENDS9
+P2: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS1
+p2 update a new statement ENDS1
+P2: updated(update) rmi
+P4: updated(update) for p2
+P3: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS8
+p2 update a new statement ENDS8
+P2: updated(update) rmi
+P4: updated(update) for p2
+P3: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS5
+p2 update a new statement ENDS5
+P2: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS0
+p2 update a new statement ENDS0
+P2: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS0
+p2 update a new statement ENDS0
+P2: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS8
+p2 update a new statement ENDS8
+P2: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS3
+p2 update a new statement ENDS3
+P2: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS2
+p2 update a new statement ENDS2
+P2: updated(update) rmi
+P4: updated(update) for p2
+P3: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS5
+p2 update a new statement ENDS5
+P2: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p2
+P1: updated(update) for p2
+p1 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+P2: updated for p1
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+P2: updated for p3
+P3: updated for p2
+P1: updated for p3
+p4 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+P4: updated for p3
+P2: updated for p4
+P4: updated for p2
+P1: updated for p4
+p2 insert a new statement STARTS
+P4: updated for p1
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+P4: updated for p2
+p1 insert a new statement STARTS
+P3: updated for p1
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+p1 insert a new statement ENDS
+P1: updated rmi
+P4: updated for p3
+P2: updated for p3
+P3: updated for p4
+P1: updated for p3
+P4: updated for p1
+p4 insert a new statement STARTS
+P3: updated for p2
+P2: updated for p1
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated for p4
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+P2: updated for p4
+P4: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+P2: updated for p1
+P4: updated for p1
+p3 insert a new statement ENDS
+P3: updated rmi
+P2: updated for p3
+P1: updated for p3
+P4: updated for p3
+P3: updated for p4
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p4
+P4: updated for p2
+P2: updated for p4
+P1: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+P4: updated for p1
+P2: updated for p1
+p3 insert a new statement ENDS
+P3: updated rmi
+P3: updated for p4
+p4 insert a new statement STARTS
+P1: updated for p3
+P2: updated for p3
+P3: updated for p2
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+p4 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+P4: updated rmi
+P2: updated for p4
+P1: updated for p4
+P4: updated for p3
+P4: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+P4: updated for p3
+p1 insert a new statement ENDS
+P2: updated for p3
+P3: updated for p4
+p4 insert a new statement STARTS
+P1: updated rmi
+P3: updated for p2
+P1: updated for p3
+P2: updated for p1
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated for p4
+P4: updated for p1
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+P2: updated for p4
+P4: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+p1 insert a new statement ENDS
+P1: updated rmi
+P4: updated for p3
+P3: updated for p4
+P2: updated for p3
+P1: updated for p3
+P4: updated for p1
+P3: updated for p2
+p4 insert a new statement STARTS
+P2: updated for p1
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p4
+P2: updated for p4
+P4: updated for p2
+P1: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+p1 insert a new statement ENDS
+P1: updated rmi
+P2: updated for p3
+P4: updated for p3
+P3: updated for p4
+P1: updated for p3
+P4: updated for p1
+P2: updated for p1
+P3: updated for p2
+p4 insert a new statement STARTS
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated for p2
+P2: updated for p4
+P4: updated for p2
+P1: updated for p4
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+p1 insert a new statement ENDS
+P1: updated rmi
+P4: updated for p3
+P2: updated for p3
+P3: updated for p4
+P1: updated for p3
+P4: updated for p1
+P2: updated for p1
+P3: updated for p2
+p4 insert a new statement STARTS
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated for p2
+P4: updated for p2
+P2: updated for p4
+P1: updated for p4
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p3 insert a new statement ENDS
+P3: updated rmi
+P4: updated for p1
+P2: updated for p1
+P3: updated for p4
+P1: updated for p3
+P2: updated for p3
+P4: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p4
+P2: updated for p4
+P4: updated for p2
+p2 update a new statement STARTS3
+P1: updated for p2
+p2 update a new statement ENDS3
+P2: updated(update) rmi
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+p1 insert a new statement ENDS
+P1: updated rmi
+P4: updated for p3
+P3: updated for p4
+P1: updated for p3
+p1 insert a new statement STARTS8
+P4: updated for p1
+P3: updated for p2
+p4 insert a new statement STARTS
+P2: updated for p1
+P2: updated for p3
+p1 update a new statement ENDS8
+P1: updated(update) rmi
+p4 insert a new statement ENDS
+P4: updated rmi
+p4 update a new statement STARTS with sno5
+P1: updated(update) for p2
+p4 update a new statement ENDS for sno5
+P4: updated(update) rmi
+P4: updated(update) for p2
+P4: updated(update) for p1
+P1: updated for p4
+P1: updated(update) for p4
+P2: updated for p4
+P2: updated(update) for p1
+P2: updated(update) for p4
+P3: updated for p1
+P3: updated for p4
+p3 update a new statement STARTS1
+p3 update a new statement ENDS for sno:1
+P3: updated(update) rmi
+P3: updated(update) for p4
+P3: updated(update) for p2
+p4 update a new statement STARTS with sno0
+P3: updated(update) for p1
+p4 update a new statement ENDS for sno0
+P4: updated(update) rmi
+P4: updated(update) for p3
+P3: updated(update) for p4
+p2 update a new statement STARTS2
+p1 insert a new statement STARTS0
+p2 update a new statement ENDS2
+P2: updated(update) rmi
+p1 update a new statement ENDS0
+P1: updated(update) rmi
+P2: updated(update) for p3
+P3: updated(update) for p2
+P1: updated(update) for p2
+P2: updated(update) for p4
+P3: updated(update) for p1
+P4: updated(update) for p2
+P1: updated(update) for p3
+P4: updated(update) for p1
+P1: updated(update) for p4
+p3 update a new statement STARTS4
+p4 update a new statement STARTS with sno3
+p3 update a new statement ENDS for sno:4
+P3: updated(update) rmi
+p4 update a new statement ENDS for sno3
+P4: updated(update) rmi
+P4: updated(update) for p3
+P3: updated(update) for p4
+P1: updated(update) for p3
+P1: updated(update) for p4
+p2 update a new statement STARTS3
+p2 update a new statement ENDS3
+P2: updated(update) rmi
+P2: updated(update) for p1
+P2: updated(update) for p3
+P3: updated(update) for p2
+P4: updated(update) for p2
+P2: updated(update) for p4
+p3 update a new statement STARTS5
+p3 update a new statement ENDS for sno:5
+P3: updated(update) rmi
+P4: updated(update) for p3
+p1 insert a new statement STARTS9
+p1 update a new statement ENDS9
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P1: updated(update) for p3
+P3: updated(update) for p1
+p2 update a new statement STARTS8
+p2 update a new statement ENDS8
+P2: updated(update) rmi
+P2: updated(update) for p1
+P2: updated(update) for p3
+P4: updated(update) for p2
+p1 insert a new statement STARTS2
+p3 update a new statement STARTS8
+p1 update a new statement ENDS2
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+p3 update a new statement ENDS for sno:8
+P3: updated(update) rmi
+P3: updated(update) for p2
+P3: updated(update) for p1
+P4: updated(update) for p3
+P1: updated(update) for p3
+p2 update a new statement STARTS0
+p2 update a new statement ENDS0
+P2: updated(update) rmi
+P2: updated(update) for p1
+P2: updated(update) for p3
+p3 update a new statement STARTS6
+P4: updated(update) for p2
+p3 update a new statement ENDS for sno:6
+P3: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p3
+p1 insert a new statement STARTS9
+p1 update a new statement ENDS9
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P1: updated(update) for p3
+P3: updated(update) for p1
+p2 update a new statement STARTS4
+p2 update a new statement ENDS4
+P2: updated(update) rmi
+P2: updated(update) for p1
+P2: updated(update) for p3
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS9
+p1 update a new statement ENDS9
+P1: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p1
+P4: updated(update) for p1
+p2 update a new statement STARTS2
+p2 update a new statement ENDS2
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+p1 insert a new statement STARTS1
+p1 update a new statement ENDS1
+P1: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p1
+P4: updated(update) for p1
+p2 update a new statement STARTS7
+p2 update a new statement ENDS7
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+p1 insert a new statement STARTS7
+p1 update a new statement ENDS7
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS5
+p2 update a new statement ENDS5
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+p1 insert a new statement STARTS8
+p1 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+P2: updated for p1
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+P1: updated for p3
+P3: updated for p2
+P2: updated for p3
+P3: updated for p1
+p4 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+P4: updated for p3
+P4: updated for p2
+P1: updated for p4
+P2: updated for p4
+p2 insert a new statement STARTS
+P4: updated for p1
+p1 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+P4: updated for p2
+p1 insert a new statement ENDS
+P1: updated rmi
+P2: updated for p1
+P4: updated for p1
+P1: updated for p2
+P3: updated for p1
+p3 insert a new statement STARTS
+p1 insert a new statement STARTS
+p1 insert a new statement ENDS
+p3 insert a new statement ENDS
+P3: updated rmi
+P2: updated for p1
+P1: updated rmi
+P3: updated for p4
+P4: updated for p3
+P2: updated for p3
+P1: updated for p3
+P3: updated for p2
+p2 insert a new statement STARTS
+P4: updated for p1
+p4 insert a new statement STARTS
+p4 insert a new statement ENDS
+p2 insert a new statement ENDS
+P1: updated for p2
+P4: updated rmi
+P2: updated rmi
+P1: updated for p4
+P2: updated for p4
+P4: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p3 insert a new statement ENDS
+P3: updated rmi
+P4: updated for p1
+P2: updated for p1
+P3: updated for p4
+P1: updated for p3
+P4: updated for p3
+p4 insert a new statement STARTS
+P2: updated for p3
+P3: updated for p2
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+p4 insert a new statement ENDS
+P4: updated rmi
+P2: updated for p4
+P1: updated for p4
+P4: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+P2: updated for p1
+p3 insert a new statement ENDS
+P4: updated for p1
+P3: updated rmi
+P2: updated for p3
+P1: updated for p3
+P4: updated for p3
+P3: updated for p4
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p4
+P4: updated for p2
+P2: updated for p4
+P1: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+p1 insert a new statement ENDS
+P1: updated rmi
+P2: updated for p3
+P4: updated for p3
+P3: updated for p4
+P1: updated for p3
+P2: updated for p1
+P3: updated for p2
+P4: updated for p1
+p2 insert a new statement STARTS
+p4 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated for p2
+P2: updated for p4
+P4: updated for p2
+P1: updated for p4
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+p1 insert a new statement ENDS
+P1: updated rmi
+P4: updated for p3
+P2: updated for p3
+P3: updated for p4
+P1: updated for p3
+P3: updated for p2
+P4: updated for p1
+p4 insert a new statement STARTS
+P2: updated for p1
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p4
+P4: updated for p2
+P2: updated for p4
+P1: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p3 insert a new statement ENDS
+P3: updated rmi
+P2: updated for p1
+P4: updated for p1
+P1: updated for p3
+P3: updated for p4
+P2: updated for p3
+P4: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p4
+P2: updated for p4
+P4: updated for p2
+P1: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p3 insert a new statement ENDS
+P3: updated rmi
+P4: updated for p1
+P2: updated for p1
+P1: updated for p3
+P3: updated for p4
+P4: updated for p3
+P2: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated for p4
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+P2: updated for p4
+P4: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+p1 insert a new statement ENDS
+P1: updated rmi
+P4: updated for p3
+P2: updated for p3
+P3: updated for p4
+P1: updated for p3
+p1 insert a new statement STARTS8
+P3: updated for p2
+P4: updated for p1
+P2: updated for p1
+p4 insert a new statement STARTS
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+p4 insert a new statement ENDS
+P4: updated rmi
+p2 update a new statement STARTS3
+P4: updated for p2
+p1 update a new statement ENDS8
+p2 update a new statement ENDS3
+P2: updated(update) rmi
+P1: updated(update) rmi
+P2: updated(update) for p1
+P1: updated(update) for p2
+P1: updated for p2
+P1: updated for p4
+P3: updated for p1
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+P4: updated for p3
+P3: updated for p4
+P3: updated for p2
+P2: updated for p3
+P2: updated for p4
+p4 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+p4 update a new statement STARTS with sno7
+p4 update a new statement ENDS for sno7
+P4: updated(update) rmi
+P4: updated(update) for p2
+P4: updated(update) for p1
+P1: updated for p3
+P1: updated for p4
+P1: updated(update) for p4
+P2: updated for p4
+P2: updated(update) for p4
+P3: updated for p4
+p3 update a new statement STARTS0
+p3 update a new statement ENDS for sno:0
+P3: updated(update) rmi
+P3: updated(update) for p4
+P3: updated(update) for p2
+P3: updated(update) for p1
+p4 update a new statement STARTS with sno5
+P1: updated(update) for p3
+p4 update a new statement ENDS for sno5
+P4: updated(update) rmi
+P4: updated(update) for p3
+P3: updated(update) for p4
+p2 update a new statement STARTS5
+p2 update a new statement ENDS5
+P2: updated(update) rmi
+P2: updated(update) for p3
+P2: updated(update) for p4
+p3 update a new statement STARTS3
+P4: updated(update) for p2
+p1 insert a new statement STARTS7
+p3 update a new statement ENDS for sno:3
+P3: updated(update) rmi
+P3: updated(update) for p2
+p1 update a new statement ENDS7
+P1: updated(update) rmi
+P4: updated(update) for p3
+P1: updated(update) for p2
+P1: updated(update) for p3
+P4: updated(update) for p1
+P3: updated(update) for p1
+P1: updated(update) for p4
+p4 update a new statement STARTS with sno0
+p4 update a new statement ENDS for sno0
+P4: updated(update) rmi
+P3: updated(update) for p4
+p2 update a new statement STARTS7
+P1: updated(update) for p4
+p2 update a new statement ENDS7
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P2: updated(update) for p3
+P4: updated(update) for p2
+P2: updated(update) for p4
+p3 update a new statement STARTS3
+p3 update a new statement ENDS for sno:3
+P3: updated(update) rmi
+P4: updated(update) for p3
+p1 insert a new statement STARTS6
+p1 update a new statement ENDS6
+P1: updated(update) rmi
+P1: updated(update) for p2
+P1: updated(update) for p3
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS7
+p2 update a new statement ENDS7
+P2: updated(update) rmi
+P2: updated(update) for p1
+P2: updated(update) for p3
+P3: updated(update) for p2
+P4: updated(update) for p2
+p3 update a new statement STARTS6
+p3 update a new statement ENDS for sno:6
+P3: updated(update) rmi
+P4: updated(update) for p3
+p1 insert a new statement STARTS5
+p1 update a new statement ENDS5
+P1: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p1
+P1: updated(update) for p3
+P4: updated(update) for p1
+p2 update a new statement STARTS9
+p2 update a new statement ENDS9
+P2: updated(update) rmi
+P2: updated(update) for p1
+P2: updated(update) for p3
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS9
+p3 update a new statement STARTS8
+p3 update a new statement ENDS for sno:8
+P3: updated(update) rmi
+p1 update a new statement ENDS9
+P1: updated(update) rmi
+P1: updated(update) for p2
+P1: updated(update) for p3
+P4: updated(update) for p3
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS8
+p2 update a new statement ENDS8
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P2: updated(update) for p3
+P3: updated(update) for p2
+p3 update a new statement STARTS6
+p3 update a new statement ENDS for sno:6
+P3: updated(update) rmi
+P4: updated(update) for p3
+p1 insert a new statement STARTS8
+p1 update a new statement ENDS8
+P1: updated(update) rmi
+P4: updated(update) for p1
+P1: updated(update) for p2
+P1: updated(update) for p3
+P3: updated(update) for p1
+p2 update a new statement STARTS4
+p2 update a new statement ENDS4
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P2: updated(update) for p3
+P3: updated(update) for p2
+p3 update a new statement STARTS0
+p1 insert a new statement STARTS6
+p1 update a new statement ENDS6
+P1: updated(update) rmi
+p3 update a new statement ENDS for sno:0
+P1: updated(update) for p2
+P3: updated(update) rmi
+P1: updated(update) for p3
+P3: updated(update) for p1
+P4: updated(update) for p3
+P4: updated(update) for p1
+p2 update a new statement STARTS7
+p2 update a new statement ENDS7
+P2: updated(update) rmi
+P1: updated(update) for p2
+P2: updated(update) for p1
+P2: updated(update) for p3
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS2
+p1 update a new statement ENDS2
+P1: updated(update) rmi
+P3: updated(update) for p1
+P4: updated(update) for p1
+p2 update a new statement STARTS4
+p2 update a new statement ENDS4
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS2
+p1 update a new statement ENDS2
+P1: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p1
+P4: updated(update) for p1
+p2 update a new statement STARTS4
+p2 update a new statement ENDS4
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS7
+p1 update a new statement ENDS7
+P1: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p1
+P4: updated(update) for p1
+p2 update a new statement STARTS6
+p2 update a new statement ENDS6
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS7
+p1 update a new statement ENDS7
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS9
+p2 update a new statement ENDS9
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS4
+p1 update a new statement ENDS4
+P1: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p1
+P4: updated(update) for p1
+p2 update a new statement STARTS3
+p1 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+P2: updated for p1
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+P2: updated for p3
+P3: updated for p2
+P1: updated for p3
+p4 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+P4: updated for p3
+P1: updated for p4
+P2: updated for p4
+P4: updated for p2
+p2 insert a new statement STARTS
+P4: updated for p1
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+P4: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+P2: updated for p3
+P4: updated for p3
+P3: updated for p4
+p4 insert a new statement STARTS
+p1 insert a new statement ENDS
+P3: updated for p2
+p2 insert a new statement STARTS
+P1: updated rmi
+P1: updated for p3
+p4 insert a new statement ENDS
+P4: updated rmi
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p4
+P4: updated for p1
+P2: updated for p1
+P4: updated for p2
+P1: updated for p2
+P2: updated for p4
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+P4: updated for p1
+P2: updated for p1
+p3 insert a new statement ENDS
+P3: updated rmi
+P2: updated for p3
+P1: updated for p3
+P3: updated for p4
+P4: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+p2 insert a new statement ENDS
+P1: updated for p4
+P2: updated rmi
+P1: updated for p2
+P2: updated for p4
+P4: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+p1 insert a new statement ENDS
+P1: updated rmi
+P4: updated for p3
+P2: updated for p3
+P3: updated for p4
+P1: updated for p3
+P4: updated for p1
+P2: updated for p1
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated for p4
+p2 insert a new statement ENDS
+P2: updated rmi
+P4: updated for p2
+P1: updated for p2
+P2: updated for p4
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+p1 insert a new statement ENDS
+P1: updated rmi
+P4: updated for p3
+P3: updated for p4
+P2: updated for p3
+P1: updated for p3
+P2: updated for p1
+P3: updated for p2
+P4: updated for p1
+p4 insert a new statement STARTS
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+p2 insert a new statement ENDS
+P1: updated for p4
+P2: updated rmi
+P1: updated for p2
+P2: updated for p4
+P4: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+p1 insert a new statement ENDS
+P1: updated rmi
+P4: updated for p3
+P3: updated for p4
+P2: updated for p3
+P1: updated for p3
+P4: updated for p1
+P2: updated for p1
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p4
+P4: updated for p2
+P2: updated for p4
+P1: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p3 insert a new statement ENDS
+P3: updated rmi
+P4: updated for p1
+P2: updated for p1
+P3: updated for p4
+P1: updated for p3
+P4: updated for p3
+P2: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated for p2
+P4: updated for p2
+P2: updated for p4
+P1: updated for p4
+P3: updated for p1
+p3 insert a new statement STARTS
+p1 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p3 insert a new statement ENDS
+P3: updated rmi
+P4: updated for p1
+P2: updated for p1
+P1: updated for p3
+P3: updated for p4
+P4: updated for p3
+P2: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p4
+P4: updated for p2
+P2: updated for p4
+P1: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+p3 insert a new statement ENDS
+P1: updated rmi
+P3: updated rmi
+P2: updated for p1
+P4: updated for p1
+P1: updated for p3
+P3: updated for p4
+p4 insert a new statement STARTS
+P2: updated for p3
+P3: updated for p2
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+P4: updated for p3
+P1: updated for p4
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+P4: updated for p2
+P2: updated for p4
+p2 update a new statement STARTS6
+p2 update a new statement ENDS6
+P2: updated(update) rmi
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+p1 insert a new statement ENDS
+P1: updated rmi
+P4: updated for p3
+P3: updated for p4
+P2: updated for p1
+P1: updated for p3
+p1 insert a new statement STARTS5
+P3: updated for p2
+P4: updated for p1
+p4 insert a new statement STARTS
+P2: updated for p3
+p1 update a new statement ENDS5
+P1: updated(update) rmi
+p4 insert a new statement ENDS
+P4: updated rmi
+p4 update a new statement STARTS with sno3
+P1: updated(update) for p2
+p4 update a new statement ENDS for sno3
+P4: updated(update) rmi
+P4: updated(update) for p2
+P4: updated(update) for p1
+P1: updated for p4
+P1: updated(update) for p4
+P2: updated for p4
+P2: updated(update) for p1
+P2: updated(update) for p4
+P3: updated for p1
+P3: updated for p4
+p3 update a new statement STARTS4
+p3 update a new statement ENDS for sno:4
+P3: updated(update) rmi
+P3: updated(update) for p4
+p4 update a new statement STARTS with sno0
+P3: updated(update) for p2
+P3: updated(update) for p1
+p4 update a new statement ENDS for sno0
+P4: updated(update) rmi
+P4: updated(update) for p3
+P3: updated(update) for p4
+p1 insert a new statement STARTS7
+p2 update a new statement STARTS5
+p1 update a new statement ENDS7
+P1: updated(update) rmi
+p2 update a new statement ENDS5
+P2: updated(update) rmi
+P2: updated(update) for p1
+P1: updated(update) for p3
+P2: updated(update) for p3
+P1: updated(update) for p4
+P2: updated(update) for p4
+P4: updated(update) for p2
+p3 update a new statement STARTS8
+P4: updated(update) for p1
+p4 update a new statement STARTS with sno2
+p3 update a new statement ENDS for sno:8
+P3: updated(update) rmi
+P3: updated(update) for p2
+P3: updated(update) for p1
+p4 update a new statement ENDS for sno2
+P4: updated(update) rmi
+P4: updated(update) for p3
+P3: updated(update) for p4
+p1 insert a new statement STARTS3
+p1 update a new statement ENDS3
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P1: updated(update) for p3
+P3: updated(update) for p1
+P1: updated(update) for p4
+p2 update a new statement STARTS7
+p2 update a new statement ENDS7
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+P2: updated(update) for p3
+P2: updated(update) for p4
+p4 update a new statement STARTS with sno5
+p3 update a new statement STARTS1
+p4 update a new statement ENDS for sno5
+P4: updated(update) rmi
+p3 update a new statement ENDS for sno:1
+P3: updated(update) rmi
+P3: updated(update) for p4
+P4: updated(update) for p3
+p1 insert a new statement STARTS9
+p1 update a new statement ENDS9
+P1: updated(update) rmi
+P4: updated(update) for p1
+P3: updated(update) for p1
+P1: updated(update) for p2
+P1: updated(update) for p3
+P1: updated(update) for p4
+p2 update a new statement STARTS0
+p2 update a new statement ENDS0
+P2: updated(update) rmi
+P2: updated(update) for p1
+P2: updated(update) for p3
+P4: updated(update) for p2
+P2: updated(update) for p4
+p3 update a new statement STARTS4
+p1 insert a new statement STARTS1
+p3 update a new statement ENDS for sno:4
+P3: updated(update) rmi
+p1 update a new statement ENDS1
+P1: updated(update) rmi
+P3: updated(update) for p2
+P1: updated(update) for p2
+P4: updated(update) for p3
+P3: updated(update) for p1
+P1: updated(update) for p3
+P4: updated(update) for p1
+p2 update a new statement STARTS5
+p2 update a new statement ENDS5
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+P2: updated(update) for p3
+p3 update a new statement STARTS2
+p3 update a new statement ENDS for sno:2
+P3: updated(update) rmi
+P4: updated(update) for p3
+p1 insert a new statement STARTS1
+p1 update a new statement ENDS1
+P1: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p1
+P4: updated(update) for p1
+P1: updated(update) for p3
+p2 update a new statement STARTS4
+p2 update a new statement ENDS4
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P2: updated(update) for p3
+P4: updated(update) for p2
+p3 update a new statement STARTS5
+p1 insert a new statement STARTS2
+p1 update a new statement ENDS2
+P1: updated(update) rmi
+p3 update a new statement ENDS for sno:5
+P3: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p1
+P1: updated(update) for p3
+P4: updated(update) for p3
+P4: updated(update) for p1
+p2 update a new statement STARTS4
+p2 update a new statement ENDS4
+P2: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p2
+P4: updated(update) for p2
+P2: updated(update) for p1
+P2: updated(update) for p3
+p3 update a new statement STARTS4
+p3 update a new statement ENDS for sno:4
+P3: updated(update) rmi
+P4: updated(update) for p3
+p1 insert a new statement STARTS4
+p1 update a new statement ENDS4
+P1: updated(update) rmi
+P1: updated(update) for p3
+P4: updated(update) for p1
+p2 update a new statement STARTS6
+P3: updated(update) for p1
+p2 update a new statement ENDS6
+P2: updated(update) rmi
+P2: updated(update) for p1
+P2: updated(update) for p3
+P3: updated(update) for p2
+P4: updated(update) for p2
+p1 insert a new statement STARTS2
+p1 update a new statement ENDS2
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS8
+p2 update a new statement ENDS8
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+p1 insert a new statement STARTS9
+p1 update a new statement ENDS9
+P1: updated(update) rmi
+P3: updated(update) for p1
+P4: updated(update) for p1
+P1: updated(update) for p2
+p2 update a new statement STARTS4
+p2 update a new statement ENDS4
+P2: updated(update) rmi
+P3: updated(update) for p2
+P2: updated(update) for p1
+P4: updated(update) for p2
+p1 insert a new statement STARTS5
+p1 update a new statement ENDS5
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS1
+p2 update a new statement ENDS1
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS7
+p1 update a new statement ENDS7
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS3
+p2 update a new statement ENDS3
+P2: updated(update) rmi
+P4: updated(update) for p2
+P2: updated(update) for p1
+p1 insert a new statement STARTS3
+P3: updated(update) for p2
+p1 update a new statement ENDS3
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS5
+p2 update a new statement ENDS5
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+p1 insert a new statement STARTS4
+p1 update a new statement ENDS4
+P1: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p1
+P4: updated(update) for p1
+p2 update a new statement STARTS2
+p2 update a new statement ENDS2
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS5
+p1 update a new statement ENDS5
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS2
+p2 update a new statement ENDS2
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS7
+p1 update a new statement ENDS7
+P1: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p1
+P4: updated(update) for p1
+p2 update a new statement STARTS7
+p2 update a new statement ENDS7
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+p1 insert a new statement STARTS9
+p1 update a new statement ENDS9
+P1: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p1
+P4: updated(update) for p1
+p2 update a new statement STARTS3
+p2 update a new statement ENDS3
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+p1 insert a new statement STARTS3
+p1 update a new statement ENDS3
+P1: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p1
+P4: updated(update) for p1
+p2 update a new statement STARTS4
+p2 update a new statement ENDS4
+P2: updated(update) rmi
+P4: updated(update) for p2
+P2: updated(update) for p1
+P3: updated(update) for p2
+p1 insert a new statement STARTS7
+p1 update a new statement ENDS7
+P1: updated(update) rmi
+P4: updated(update) for p1
+P1: updated(update) for p2
+P3: updated(update) for p1
+p2 update a new statement STARTS2
+p2 update a new statement ENDS2
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS3
+p1 update a new statement ENDS3
+P1: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p1
+P4: updated(update) for p1
+p2 update a new statement STARTS2
+p2 update a new statement ENDS2
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+p1 insert a new statement STARTS9
+p1 update a new statement ENDS9
+P1: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p1
+P4: updated(update) for p1
+p2 update a new statement STARTS7
+p2 update a new statement ENDS7
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+p1 insert a new statement STARTS4
+p1 update a new statement ENDS4
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS5
+p2 update a new statement ENDS5
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+p1 insert a new statement STARTS6
+p1 update a new statement ENDS6
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS1
+p2 update a new statement ENDS1
+P2: updated(update) rmi
+P2: updated(update) for p1
+p1 insert a new statement STARTS7
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 update a new statement ENDS7
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS7
+p1 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+P2: updated for p1
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+P2: updated for p3
+P1: updated for p3
+P3: updated for p2
+p4 insert a new statement STARTS
+P3: updated for p1
+p4 insert a new statement ENDS
+P4: updated rmi
+P4: updated for p3
+P1: updated for p4
+P2: updated for p4
+P4: updated for p2
+p2 insert a new statement STARTS
+P4: updated for p1
+p1 insert a new statement STARTS
+p2 insert a new statement ENDS
+p1 insert a new statement ENDS
+P2: updated rmi
+P4: updated for p2
+P1: updated rmi
+P4: updated for p1
+P1: updated for p2
+P2: updated for p1
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+P2: updated for p1
+P4: updated for p1
+p3 insert a new statement ENDS
+P3: updated rmi
+P3: updated for p4
+P2: updated for p3
+P1: updated for p3
+P4: updated for p3
+P3: updated for p2
+p4 insert a new statement STARTS
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+p4 insert a new statement ENDS
+P4: updated rmi
+P2: updated for p4
+P4: updated for p2
+P1: updated for p4
+P3: updated for p1
+p3 insert a new statement STARTS
+p1 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p3 insert a new statement ENDS
+P2: updated for p1
+P3: updated rmi
+P2: updated for p3
+P4: updated for p1
+P3: updated for p4
+P1: updated for p3
+P4: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated for p2
+P4: updated for p2
+P2: updated for p4
+P1: updated for p4
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+P2: updated for p1
+P4: updated for p1
+p3 insert a new statement ENDS
+P3: updated rmi
+P4: updated for p3
+P2: updated for p3
+P1: updated for p3
+P3: updated for p4
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated for p2
+P2: updated for p4
+P4: updated for p2
+P1: updated for p4
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p3 insert a new statement ENDS
+P3: updated rmi
+P2: updated for p1
+P4: updated for p1
+P1: updated for p3
+P3: updated for p4
+P2: updated for p3
+P4: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated for p4
+p2 insert a new statement ENDS
+P2: updated rmi
+P4: updated for p2
+P2: updated for p4
+P1: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+P4: updated for p1
+p3 insert a new statement ENDS
+P2: updated for p1
+P3: updated rmi
+P2: updated for p3
+P3: updated for p4
+P4: updated for p3
+P1: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p4
+P2: updated for p4
+P4: updated for p2
+P1: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p3 insert a new statement ENDS
+P3: updated rmi
+P2: updated for p1
+P4: updated for p1
+P3: updated for p4
+P1: updated for p3
+P2: updated for p3
+P4: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p4
+P2: updated for p4
+P4: updated for p2
+P1: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+p1 insert a new statement ENDS
+P1: updated rmi
+P3: updated for p4
+P4: updated for p3
+P2: updated for p3
+P1: updated for p3
+P4: updated for p1
+P2: updated for p1
+P3: updated for p2
+p4 insert a new statement STARTS
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p4
+P2: updated for p4
+P4: updated for p2
+P1: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p1 insert a new statement STARTS7
+p3 insert a new statement ENDS
+P3: updated rmi
+P2: updated for p1
+P4: updated for p1
+P3: updated for p4
+P4: updated for p3
+P2: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p1 update a new statement ENDS7
+P1: updated(update) rmi
+p4 insert a new statement ENDS
+P4: updated rmi
+p2 insert a new statement ENDS
+P2: updated rmi
+P4: updated for p2
+P2: updated for p4
+p2 update a new statement STARTS3
+p2 update a new statement ENDS3
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated for p1
+P3: updated for p4
+P3: updated for p2
+p1 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+P2: updated for p1
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+P1: updated for p3
+P3: updated for p2
+P2: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p1
+p4 insert a new statement ENDS
+P4: updated rmi
+P2: updated for p4
+P1: updated for p4
+P4: updated for p3
+P4: updated for p2
+p2 insert a new statement STARTS
+P4: updated for p1
+p1 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+p1 insert a new statement ENDS
+P1: updated rmi
+P4: updated for p2
+P2: updated for p1
+P1: updated for p2
+P4: updated for p1
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+P2: updated for p3
+P3: updated for p4
+P4: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p2 insert a new statement ENDS
+P2: updated rmi
+P2: updated for p1
+P1: updated for p3
+p4 insert a new statement ENDS
+P4: updated rmi
+P2: updated for p4
+P4: updated for p2
+P1: updated for p2
+P4: updated for p1
+P1: updated for p4
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p3 insert a new statement ENDS
+P3: updated rmi
+P4: updated for p1
+P2: updated for p1
+P1: updated for p3
+P3: updated for p4
+P4: updated for p3
+P2: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+p4 insert a new statement ENDS
+P4: updated rmi
+P2: updated for p4
+P1: updated for p4
+P4: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p3 insert a new statement ENDS
+P3: updated rmi
+P2: updated for p1
+P1: updated for p3
+P4: updated for p1
+P3: updated for p4
+p4 insert a new statement STARTS
+P2: updated for p3
+P3: updated for p2
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated for p4
+P4: updated for p3
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p2
+P4: updated for p2
+P2: updated for p4
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+p1 insert a new statement ENDS
+P1: updated rmi
+P3: updated for p4
+P4: updated for p3
+P2: updated for p3
+P1: updated for p3
+P3: updated for p2
+P2: updated for p1
+P4: updated for p1
+p4 insert a new statement STARTS
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated for p2
+P4: updated for p2
+P1: updated for p4
+P2: updated for p4
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p3 insert a new statement ENDS
+P3: updated rmi
+P4: updated for p1
+P2: updated for p1
+P1: updated for p3
+P3: updated for p4
+P2: updated for p3
+P4: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p4
+P4: updated for p2
+P2: updated for p4
+P1: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+P2: updated for p1
+P4: updated for p1
+p3 insert a new statement ENDS
+P3: updated rmi
+P1: updated for p3
+P2: updated for p3
+P3: updated for p4
+P4: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p4
+P4: updated for p2
+P2: updated for p4
+P1: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p1 insert a new statement ENDS
+P1: updated rmi
+p3 insert a new statement ENDS
+P3: updated rmi
+P4: updated for p1
+P2: updated for p1
+P3: updated for p4
+P1: updated for p3
+P2: updated for p3
+P4: updated for p3
+p4 insert a new statement STARTS
+P3: updated for p2
+p2 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+p2 insert a new statement ENDS
+P2: updated rmi
+P1: updated for p4
+P2: updated for p4
+P4: updated for p2
+P1: updated for p2
+P3: updated for p1
+p1 insert a new statement STARTS
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+p1 insert a new statement ENDS
+P1: updated rmi
+P2: updated for p3
+P4: updated for p3
+P3: updated for p4
+P1: updated for p3
+p1 insert a new statement STARTS5
+P4: updated for p1
+P2: updated for p1
+P3: updated for p2
+p4 insert a new statement STARTS
+p2 insert a new statement STARTS
+p2 insert a new statement ENDS
+P2: updated rmi
+p2 update a new statement STARTS5
+p1 update a new statement ENDS5
+p4 insert a new statement ENDS
+P4: updated rmi
+P1: updated(update) rmi
+P4: updated for p2
+p2 update a new statement ENDS5
+P2: updated(update) rmi
+P2: updated(update) for p1
+P1: updated for p2
+P1: updated for p4
+P1: updated(update) for p2
+P3: updated for p1
+p3 insert a new statement STARTS
+p3 insert a new statement ENDS
+P3: updated rmi
+P4: updated for p3
+P3: updated for p4
+P3: updated for p2
+P2: updated for p3
+P2: updated for p4
+p4 insert a new statement STARTS
+p4 insert a new statement ENDS
+P4: updated rmi
+p4 update a new statement STARTS with sno1
+p4 update a new statement ENDS for sno1
+P4: updated(update) rmi
+P4: updated(update) for p2
+P4: updated(update) for p1
+P1: updated for p3
+P1: updated for p4
+P1: updated(update) for p4
+P2: updated for p4
+P2: updated(update) for p4
+P3: updated for p4
+p3 update a new statement STARTS0
+p3 update a new statement ENDS for sno:0
+P3: updated(update) rmi
+P3: updated(update) for p4
+p4 update a new statement STARTS with sno3
+P3: updated(update) for p2
+P3: updated(update) for p1
+p4 update a new statement ENDS for sno3
+P4: updated(update) rmi
+P4: updated(update) for p3
+P3: updated(update) for p4
+p2 update a new statement STARTS6
+p1 insert a new statement STARTS2
+p2 update a new statement ENDS6
+P2: updated(update) rmi
+P2: updated(update) for p3
+p1 update a new statement ENDS2
+P1: updated(update) rmi
+P2: updated(update) for p4
+P1: updated(update) for p2
+P4: updated(update) for p2
+P3: updated(update) for p2
+P1: updated(update) for p3
+P4: updated(update) for p1
+P3: updated(update) for p1
+P1: updated(update) for p4
+p4 update a new statement STARTS with sno8
+p3 update a new statement STARTS3
+p3 update a new statement ENDS for sno:3
+P3: updated(update) rmi
+p4 update a new statement ENDS for sno8
+P4: updated(update) rmi
+P4: updated(update) for p3
+P3: updated(update) for p4
+P1: updated(update) for p3
+P1: updated(update) for p4
+p2 update a new statement STARTS1
+p2 update a new statement ENDS1
+P2: updated(update) rmi
+P2: updated(update) for p1
+P2: updated(update) for p3
+P3: updated(update) for p2
+P2: updated(update) for p4
+p4 update a new statement STARTS with sno1
+p4 update a new statement ENDS for sno1
+P4: updated(update) rmi
+p3 update a new statement STARTS5
+P4: updated(update) for p2
+p3 update a new statement ENDS for sno:5
+P3: updated(update) rmi
+P3: updated(update) for p4
+P4: updated(update) for p3
+p1 insert a new statement STARTS8
+p1 update a new statement ENDS8
+P1: updated(update) rmi
+P1: updated(update) for p2
+P1: updated(update) for p3
+P4: updated(update) for p1
+P1: updated(update) for p4
+P3: updated(update) for p1
+p2 update a new statement STARTS3
+p2 update a new statement ENDS3
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P2: updated(update) for p3
+P2: updated(update) for p4
+P4: updated(update) for p2
+p3 update a new statement STARTS9
+p1 insert a new statement STARTS9
+p1 update a new statement ENDS9
+P1: updated(update) rmi
+p3 update a new statement ENDS for sno:9
+P1: updated(update) for p2
+P3: updated(update) rmi
+P4: updated(update) for p1
+P1: updated(update) for p3
+P3: updated(update) for p1
+P4: updated(update) for p3
+p2 update a new statement STARTS0
+p2 update a new statement ENDS0
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P2: updated(update) for p3
+p3 update a new statement STARTS0
+p3 update a new statement ENDS for sno:0
+P3: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p3
+p1 insert a new statement STARTS3
+p1 update a new statement ENDS3
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P1: updated(update) for p3
+p2 update a new statement STARTS7
+P3: updated(update) for p1
+p2 update a new statement ENDS7
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P2: updated(update) for p3
+p3 update a new statement STARTS8
+p3 update a new statement ENDS for sno:8
+P3: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p3
+p1 insert a new statement STARTS4
+p1 update a new statement ENDS4
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P1: updated(update) for p3
+P3: updated(update) for p1
+p2 update a new statement STARTS4
+p2 update a new statement ENDS4
+P2: updated(update) rmi
+P2: updated(update) for p1
+P2: updated(update) for p3
+p3 update a new statement STARTS8
+P4: updated(update) for p2
+p3 update a new statement ENDS for sno:8
+P3: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p3
+p1 insert a new statement STARTS3
+p1 update a new statement ENDS3
+P1: updated(update) rmi
+P1: updated(update) for p2
+P1: updated(update) for p3
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS9
+p2 update a new statement ENDS9
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+P2: updated(update) for p3
+p1 insert a new statement STARTS0
+p1 update a new statement ENDS0
+P1: updated(update) rmi
+P3: updated(update) for p1
+P1: updated(update) for p2
+P4: updated(update) for p1
+p2 update a new statement STARTS1
+p2 update a new statement ENDS1
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS2
+p1 update a new statement ENDS2
+P1: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p1
+P4: updated(update) for p1
+p2 update a new statement STARTS3
+p2 update a new statement ENDS3
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+p1 insert a new statement STARTS0
+p1 update a new statement ENDS0
+P1: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p1
+P4: updated(update) for p1
+p2 update a new statement STARTS0
+p2 update a new statement ENDS0
+P2: updated(update) rmi
+P3: updated(update) for p2
+P2: updated(update) for p1
+P4: updated(update) for p2
+p1 insert a new statement STARTS0
+p1 update a new statement ENDS0
+P1: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p1
+P4: updated(update) for p1
+p2 update a new statement STARTS1
+p2 update a new statement ENDS1
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+p1 insert a new statement STARTS4
+p1 update a new statement ENDS4
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS3
+p2 update a new statement ENDS3
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+p1 insert a new statement STARTS2
+p1 update a new statement ENDS2
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS0
+p2 update a new statement ENDS0
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+p1 insert a new statement STARTS6
+p1 update a new statement ENDS6
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS9
+p2 update a new statement ENDS9
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+p1 insert a new statement STARTS7
+p1 update a new statement ENDS7
+P1: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p1
+P4: updated(update) for p1
+p2 update a new statement STARTS7
+p2 update a new statement ENDS7
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS8
+p1 update a new statement ENDS8
+P1: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p1
+P4: updated(update) for p1
+p2 update a new statement STARTS9
+p2 update a new statement ENDS9
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS6
+p1 update a new statement ENDS6
+P1: updated(update) rmi
+P3: updated(update) for p1
+P1: updated(update) for p2
+P4: updated(update) for p1
+p2 update a new statement STARTS1
+p2 update a new statement ENDS1
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+p1 insert a new statement STARTS8
+p1 update a new statement ENDS8
+P1: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p1
+P4: updated(update) for p1
+p2 update a new statement STARTS7
+p2 update a new statement ENDS7
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS7
+p1 update a new statement ENDS7
+P1: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p1
+P4: updated(update) for p1
+p2 update a new statement STARTS7
+p2 update a new statement ENDS7
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+p1 insert a new statement STARTS4
+p1 update a new statement ENDS4
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS4
+p2 update a new statement ENDS4
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+p1 insert a new statement STARTS1
+p1 update a new statement ENDS1
+P1: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p1
+P4: updated(update) for p1
+p2 update a new statement STARTS5
+p2 update a new statement ENDS5
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS9
+p1 update a new statement ENDS9
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS3
+p2 update a new statement ENDS3
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+p1 insert a new statement STARTS8
+p1 update a new statement ENDS8
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS9
+p2 update a new statement ENDS9
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS6
+p1 update a new statement ENDS6
+P1: updated(update) rmi
+P4: updated(update) for p1
+P1: updated(update) for p2
+P3: updated(update) for p1
+p2 update a new statement STARTS0
+p2 update a new statement ENDS0
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS0
+p1 update a new statement ENDS0
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS3
+p2 update a new statement ENDS3
+P2: updated(update) rmi
+P2: updated(update) for p1
+P1: updated(update) for p2
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS1
+p1 update a new statement ENDS1
+P1: updated(update) rmi
+P3: updated(update) for p1
+P4: updated(update) for p1
+p2 update a new statement STARTS6
+p2 update a new statement ENDS6
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS8
+p1 update a new statement ENDS8
+P1: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p1
+P4: updated(update) for p1
+p2 update a new statement STARTS3
+p2 update a new statement ENDS3
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+p1 insert a new statement STARTS7
+P3: updated(update) for p2
+p1 update a new statement ENDS7
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS6
+p2 update a new statement ENDS6
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+p1 insert a new statement STARTS0
+p1 update a new statement ENDS0
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS1
+p2 update a new statement ENDS1
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS9
+p1 update a new statement ENDS9
+P1: updated(update) rmi
+P1: updated(update) for p2
+P3: updated(update) for p1
+P4: updated(update) for p1
+p2 update a new statement STARTS8
+p2 update a new statement ENDS8
+P2: updated(update) rmi
+P2: updated(update) for p1
+P3: updated(update) for p2
+P4: updated(update) for p2
+p1 insert a new statement STARTS0
+p1 update a new statement ENDS0
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS7
+p2 update a new statement ENDS7
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+p1 insert a new statement STARTS7
+p1 update a new statement ENDS7
+P1: updated(update) rmi
+P1: updated(update) for p2
+P4: updated(update) for p1
+P3: updated(update) for p1
+p2 update a new statement STARTS2
+p2 update a new statement ENDS2
+P2: updated(update) rmi
+P2: updated(update) for p1
+P4: updated(update) for p2
+P3: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS1
+p2 update a new statement ENDS1
+P2: updated(update) rmi
+P4: updated(update) for p2
+P3: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS5
+p2 update a new statement ENDS5
+P2: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS4
+p2 update a new statement ENDS4
+P2: updated(update) rmi
+P4: updated(update) for p2
+P3: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS2
+p2 update a new statement ENDS2
+P2: updated(update) rmi
+P4: updated(update) for p2
+P3: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS9
+p2 update a new statement ENDS9
+P2: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS7
+p2 update a new statement ENDS7
+P2: updated(update) rmi
+P4: updated(update) for p2
+P3: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS3
+p2 update a new statement ENDS3
+P2: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS9
+p2 update a new statement ENDS9
+P2: updated(update) rmi
+P4: updated(update) for p2
+P3: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS8
+p2 update a new statement ENDS8
+P2: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS4
+p2 update a new statement ENDS4
+P2: updated(update) rmi
+P4: updated(update) for p2
+P3: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS4
+p2 update a new statement ENDS4
+P2: updated(update) rmi
+P4: updated(update) for p2
+P3: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS1
+p2 update a new statement ENDS1
+P2: updated(update) rmi
+P3: updated(update) for p2
+P4: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS1
+p2 update a new statement ENDS1
+P2: updated(update) rmi
+P4: updated(update) for p2
+P3: updated(update) for p2
+P1: updated(update) for p2
+p2 update a new statement STARTS0
+p2 update a new statement ENDS0
+P2: updated(update) rmi
+P4: updated(update) for p2
+P3: updated(update) for p2
+P1: updated(update) for p2
