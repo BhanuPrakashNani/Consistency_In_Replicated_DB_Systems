@@ -54,6 +54,7 @@ public class Client2 {
        int t=0;
 
       while(stub_self.isSafe()) {
+    	  Thread.sleep(5000);
 	         int tempStatus = stub4.dbstatus(2)+stub.dbstatus(2);
 	         if(!Config.synchStart[1]) {
 					int x = rand.nextInt(7);

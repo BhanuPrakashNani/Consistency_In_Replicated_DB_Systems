@@ -46,7 +46,7 @@ public class Server extends DB1STUB {
          stub_arr[3] = stub_s4;
 
          Random  rand = new Random();
-         int t =0, x = 0;
+         int t =0, x = 0, c = 0;
          boolean idExists = false;
          Thread.sleep(2000);
          String name = "Process 1";
@@ -73,6 +73,7 @@ public class Server extends DB1STUB {
 	         s.setBranch(branch); 
 	         s.setPercent(percent); 
 	         s.setEmail(email); 
+	         s.setClock(c);
 	         percent = 1;
 	         switch(rand.nextInt(2)) {
 	            case 1:
@@ -118,6 +119,7 @@ public class Server extends DB1STUB {
 	         
 	         System.out.println("WRITER 1 "+t); 
 	         t++;
+	         c++;
         	 
          }
      } 
@@ -193,7 +195,7 @@ class syncDB implements Runnable
 			      PrintWriter pw = new PrintWriter(bw);
 			      System.out.println("LOGGIGN");
 
-			      pw.println("UPdate from "+s.getName()+" for percent: "+s.getPercent());
+			      pw.println("UPdate from "+s.getName()+" for id: "+s.getId()+" percent: "+s.getPercent());
 
 //			      logwtr.append();
 		          pw.flush();

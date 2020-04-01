@@ -50,13 +50,13 @@ class Check implements Runnable {
 		String current = Files.readAllLines(Paths.get("Server1.log")).get(2);
 		String previous = Files.readAllLines(Paths.get("Server1.log")).get(1);
 		int[] data = new int[10];
-		Queue<Integer> q1 = new LinkedList<>();
-		Queue<Integer> q4 = new LinkedList<>();
-		Queue<Integer> q2 = new LinkedList<>();
-		Queue<Integer> que = new LinkedList<>();
-		Queue<Integer> order = new LinkedList<>();
-		Queue<Integer> qwrites = new LinkedList<>();
-		que.add(0);
+		boolean success = true;
+		Queue<QP> q1 = new LinkedList<>();
+		Queue<QP> que = new LinkedList<>();
+		Queue<QP> order = new LinkedList<>();
+		Queue<QP> qwrites = new LinkedList<>();
+		QP qzero = new QP(0, 0);
+		que.add(qzero);
 		while(true) {
 			lineCount = Files.lines(Paths.get("Server1.log")).count();
 			if(lineCount < lineno+2) {
@@ -68,33 +68,32 @@ class Check implements Runnable {
 			 	break;
 			lineno++;
 			String[] arrOfStr = current.split(" ",-1);
-//			if(arrOfStr[0].equals(Process)&&arrOfStr[2].equals("Write") && arrOfStr[1].equals("Exit") && arrOfStr[4].equals(row)){
-//				boolean found = false;
-//				System.out.println(arrOfStr);
-//					qwrites.add(Integer.parseInt(arrOfStr[6]));
-//
-//			}
 			if(arrOfStr[2].equals("Read") && arrOfStr[1].equals("Exit") && arrOfStr[4].equals(row)){
 				System.out.println(arrOfStr[0] +"->  :(  "+arrOfStr[4]+" , "+arrOfStr[6]);
 				boolean found = false;
-				for (Integer item: order) {
-					if(item == Integer.parseInt(arrOfStr[6])){
+				QP temp;
+				for (QP item: order) {
+					if(item.getData() == Integer.parseInt(arrOfStr[6]) && item.getClock() == Integer.parseInt(arrOfStr[8])){
 						found = true;
+						break;
 					}
+					temp = item;
 				}
 				if(!found){
-					order.add(Integer.parseInt(arrOfStr[6]));
-					que.add(Integer.parseInt(arrOfStr[6]));
+					QP qt = new QP(Integer.parseInt(arrOfStr[6]),Integer.parseInt(arrOfStr[8]));
+					order.add(qt);
+					que.add(qt);
 
 				}
 				if(arrOfStr[0].equals(Process)){
-					q1.add(Integer.parseInt(arrOfStr[6]));
+					QP qt = new QP(Integer.parseInt(arrOfStr[6]),Integer.parseInt(arrOfStr[8]));
+					q1.add(qt);
 
 					int c =0;
 					boolean f = false;
-					for (Integer item: que){
+					for (QP item: que){
 						c++;
-						if(item == Integer.parseInt(arrOfStr[6])){
+						if(item.getData() == Integer.parseInt(arrOfStr[6]) && item.getClock() == Integer.parseInt(arrOfStr[8])){
 							f = true;
 							System.out.println("hehehe "+c+"  "+item);
 							break;
@@ -110,7 +109,11 @@ class Check implements Runnable {
 					            BufferedWriter bw = new BufferedWriter(logwtr);
 					            PrintWriter pw = new PrintWriter(bw);
 					            System.out.println("LOGGIGN");
-								pw.println("READ order: "+order);
+								pw.print("READ order: ");
+								for (QP item: order){
+									pw.print(item.getData()+", ");
+								}
+								pw.println();
 					            pw.println(Process+row+" BREAK ln: "+lineno);
 
 //						 		      logwtr.append();
@@ -122,12 +125,13 @@ class Check implements Runnable {
 					            System.out.println("An error occurred.");
 					            e.printStackTrace();
 					          }
+						success= false;
 						break;
 					}
 				}
 
-				System.out.println("Queue: order " + order); 
-				System.out.println("Queue: que " + que); 
+				// System.out.println("Queue: order " + order); 
+				// System.out.println("Queue: que " + que); 
 
 
 				
@@ -137,13 +141,18 @@ class Check implements Runnable {
 			current = Files.readAllLines(Paths.get("Server1.log")).get(lineno);
 			
 		}
-		System.out.println("Queue : correct q " + q1); 
-        try {
+		//System.out.println("Queue : correct q " + q1); 
+        if(success) {
+		try {
             FileWriter logwtr = new FileWriter("result.txt",true);
             BufferedWriter bw = new BufferedWriter(logwtr);
             PrintWriter pw = new PrintWriter(bw);
             System.out.println("LOGGIGN");
-			pw.println("READ order: "+order);
+			pw.print("READ order: ");
+			for (QP item: order){
+				pw.print(item.getData()+", ");
+			}
+			pw.println();
 //			pw.println("writes order: "+qwrites);
 
             pw.println(Process+row+" SUCCESS");
@@ -157,7 +166,8 @@ class Check implements Runnable {
             System.out.println("An error occurred.");
             e.printStackTrace();
           }
-    }
+        }
+      }
     catch(Exception e) {
 	      System.out.println("An error occurred.");
 	      e.printStackTrace();

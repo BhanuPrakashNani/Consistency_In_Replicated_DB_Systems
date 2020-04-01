@@ -56,6 +56,8 @@ public class Client {
        int t=0;
 
       while(stub_self.isSafe()) {
+    	  Thread.sleep(7000);
+
 	         int tempStatus = stub4.dbstatus(1)+stub.dbstatus(1);
             
 				if(!Config.synchStart[1]) {

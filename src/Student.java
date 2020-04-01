@@ -1,12 +1,15 @@
 
 public class Student implements java.io.Serializable {
 
-	private int id, percent;   
+	private int id, percent, clock;   
 	   private String name, branch, email;    
 	  
 	   public int getId() { 
 	      return id; 
 	   } 
+	   public int getClock() { 
+		      return clock; 
+		   } 
 	   public String getName() { 
 	      return name; 
 	   } 
@@ -21,6 +24,9 @@ public class Student implements java.io.Serializable {
 	   } 
 	   public void setID(int id) { 
 	      this.id = id; 
+	   } 
+	   public void setClock(int c) { 
+		      this.clock = c; 
 	   } 
 	   public void setName(String name) { 
 	      this.name = name; 

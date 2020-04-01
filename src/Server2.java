@@ -53,16 +53,16 @@ public class Server2 extends DB4STUB {
 //
 //         }
          Random rand = new Random();
-         int t =0, x = 0;
+         int t =0, x = 0, c = 0;
          boolean idExists = false;
-         Thread.sleep(2000);
+         Thread.sleep(5000);
          String name = "Process 4";
          String branch = "cse";
 	     int percent = 01;
 	     String email = "bhanu.gmail";
 
          while(stub_self.isSafe()) {
-             Thread.sleep(3000);
+             Thread.sleep(10000);
              Student s = new Student();
              t = t%7;
              String query = "SELECT * FROM SAMPLERMI";
@@ -70,7 +70,7 @@ public class Server2 extends DB4STUB {
              while(rs.next()) {
 		    	  if(t == rs.getInt("id")) {
 		    		  idExists = true;
-		    		  percent = rs.getInt("percentage")+5;
+		    		  percent = rs.getInt("percentage")-5;
 		    		  break;
 		    	  }
 		      }
@@ -80,6 +80,7 @@ public class Server2 extends DB4STUB {
 	         s.setBranch(branch); 
 	         s.setPercent(percent); 
 	         s.setEmail(email); 
+	         s.setClock(c);
 	         percent = 1;
 	         switch(rand.nextInt(2)) {
 	            case 1:
@@ -114,6 +115,7 @@ public class Server2 extends DB4STUB {
 	         
 	         System.out.println("WRITER 2 "+t); 
 	         t++;
+	         c++;
 	         
          }
      } 

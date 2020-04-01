@@ -114,7 +114,7 @@ public class DB2STUB implements DBRemote{
 	      String branch = s.getBranch();
 	      int percent = s.getPercent();
 	      String email = s.getEmail();
-	      
+	      int clock = s.getClock();
 	      int t = id % 7;
 	      try {
  		      FileWriter logwtr = new FileWriter("Server1.log",true);
@@ -145,13 +145,13 @@ public class DB2STUB implements DBRemote{
 	      //ResultSet rs = stmt.executeQuery(sql);  
 	      if (!idExists) {
 	      //ResultSet rs = stmt.executeQuery(sql);  
-		      String insert = "INSERT INTO samplermi(id, name, branch, percentage, email) values('"+t+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
+		      String insert = "INSERT INTO samplermi(id, name, branch, percentage, email,clock) values('"+t+"','"+name+"','"+branch+"','"+percent+"','"+email+"',"+clock+")";
 		      int count=stmt.executeUpdate(insert);
 		      msg = insert;
 	      }
 	      else {
 	    	  
-	    	  String update = "UPDATE samplermi SET percentage = "+percent+", name = '"+name+"' where id = "+t;
+	    	  String update = "UPDATE samplermi SET percentage = "+percent+", name = '"+name+"', clock = "+clock+" where id = "+t;
 		      int count=stmt.executeUpdate(update);
 		      msg = update;
 	      }
@@ -161,7 +161,7 @@ public class DB2STUB implements DBRemote{
  		      PrintWriter pw = new PrintWriter(bw);
  		      System.out.println("LOGGIGN");
 
- 		      pw.println("P2: Exit Write id: "+t	 +" Percent: "+ percent);
+ 		      pw.println("P2: Exit Write id: "+t	 +" Percent: "+ percent+" Clock: "+clock);
 
 // 		      logwtr.append();
  	          pw.flush();
@@ -303,6 +303,7 @@ public class DB2STUB implements DBRemote{
 	         
 	         int percent = rs.getInt("percentage"); 
 	         String email = rs.getString("email");  
+	         int clock = rs.getInt("clock");
 			  conn.close();
 
 		      try {
@@ -311,7 +312,7 @@ public class DB2STUB implements DBRemote{
 	 		      PrintWriter pw = new PrintWriter(bw);
 	 		      System.out.println("LOGGIGN");
 
-	 		      pw.println("P2: Exit Read id: "+t+ " Percent: "+percent);
+	 		      pw.println("P2: Exit Read id: "+t+ " Percent: "+percent+" Clock: "+clock);
 
 //	 		      logwtr.append();
 	 	          pw.flush();
@@ -339,7 +340,7 @@ public class DB2STUB implements DBRemote{
 	 		      PrintWriter pw = new PrintWriter(bw);
 	 		      System.out.println("LOGGIGN");
 
-	 		      pw.println("P2: Exit Read id: "+t+ " Percent: "+0);
+	 		      pw.println("P2: Exit Read id: "+t+ " Percent: "+0+" Clock: "+0);
 
 //	 		      logwtr.append();
 	 	          pw.flush();
