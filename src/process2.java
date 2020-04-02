@@ -6,7 +6,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 import java.util.Random;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -62,7 +64,26 @@ public class process2 extends container2 {
          Thread.sleep(200);
 //----------------------------------------------------------------------------------------------------------
          while(true) {
-             Thread.sleep(300);
+             if(x<10) {
+            	 try {
+         	          FileWriter logwtr = new FileWriter("Server1.log",true);
+         	          BufferedWriter bw = new BufferedWriter(logwtr);
+         	          PrintWriter pw = new PrintWriter(bw);
+         	          System.out.println("LOGGING");
+
+         	          pw.println(x);
+
+//         	          logwtr.append();
+         	             pw.flush();
+         	          logwtr.close();
+         	          
+//         	          System.out.println("Successfully wrote to the file.");
+         	        } catch (IOException e) {
+         	          System.out.println("An error occurred.");
+         	          e.printStackTrace();
+         	        }
+            	 x++;	 
+             
              while(t<10 || (stub_self2.dbstatus(0)!=0 || stub_self2.dbstatus(1)!=0 || stub_self2.dbstatus(2)!=0 || stub_self2.dbstatus(3)!=0)) {
             	 if(t<10) {
              
@@ -74,7 +95,7 @@ public class process2 extends container2 {
           	          PrintWriter pw = new PrintWriter(bw);
           	          System.out.println("LOGGING");
 
-          	          pw.println("p2 insert a new statement STARTS");
+          	          pw.println("p2 request insert a new statement STARTS");
 
 //          	          logwtr.append();
           	             pw.flush();
@@ -85,14 +106,14 @@ public class process2 extends container2 {
           	          System.out.println("An error occurred.");
           	          e.printStackTrace();
           	        }
-        		 stub_self2.addStudent(t,2);
+        		 stub_self2.request_write(t,2);
         		 try {
           	          FileWriter logwtr = new FileWriter("Server1.log",true);
           	          BufferedWriter bw = new BufferedWriter(logwtr);
           	          PrintWriter pw = new PrintWriter(bw);
           	          System.out.println("LOGGING");
 
-          	          pw.println("p2 insert a new statement ENDS");
+          	          pw.println("p2 request insert a new statement ENDS");
 
 //          	          logwtr.append();
           	             pw.flush();
@@ -115,7 +136,7 @@ public class process2 extends container2 {
        	          PrintWriter pw = new PrintWriter(bw);
        	          System.out.println("LOGGING");
 
-       	          pw.println("P2: updated rmi");
+       	          pw.println("P2: requested write");
 
 //       	          logwtr.append();
        	             pw.flush();
@@ -135,17 +156,16 @@ public class process2 extends container2 {
 
         	 if(stub_self2.dbstatus(0) == 1) {
         		 String insert1 = stub_s1.insert_container();
-        		 int count=stmt.executeUpdate(insert1);
-        		
-           	      stub_self2.notify(0);
-         	      System.out.println("Replicated Server 1 to Server 2");
+        		 stub_self2.request_write_others(insert1);
+        		 stub_self2.notify(0);
+         	      System.out.println("Requested replication of Server 1 to Server 2");
           		 try {
           	          FileWriter logwtr = new FileWriter("Server1.log",true);
           	          BufferedWriter bw = new BufferedWriter(logwtr);
           	          PrintWriter pw = new PrintWriter(bw);
           	          System.out.println("LOGGING");
 
-          	          pw.println("P2: updated for p1");
+          	          pw.println("P2: requested write for p1");
 
 //          	          logwtr.append();
           	             pw.flush();
@@ -160,17 +180,17 @@ public class process2 extends container2 {
        	 
        	 if(stub_self2.dbstatus(2) == 1) {
     		 String insert1 = stub_s3.insert_container();
-    		 int count=stmt.executeUpdate(insert1);
+    		 stub_self2.request_write_others(insert1);
     		
        	      stub_self2.notify(2);
-          	      System.out.println("Replicated Server 3 to Server 2");
+          	      System.out.println("Requested replication of Server 3 to Server 2");
           		 try {
           	          FileWriter logwtr = new FileWriter("Server1.log",true);
           	          BufferedWriter bw = new BufferedWriter(logwtr);
           	          PrintWriter pw = new PrintWriter(bw);
           	          System.out.println("LOGGING");
 
-          	          pw.println("P2: updated for p3");
+          	          pw.println("P2: requested write for p3");
 
 //          	          logwtr.append();
           	             pw.flush();
@@ -185,17 +205,17 @@ public class process2 extends container2 {
        	 
        	 if(stub_self2.dbstatus(3) == 1) {
     		 String insert1 = stub_s4.insert_container();
-    		 int count=stmt.executeUpdate(insert1);
+    		 stub_self2.request_write_others(insert1);
     		
        	      stub_self2.notify(3);
-          	      System.out.println("Replicated Server 4 to Server 2");
+          	      System.out.println("Requesed replication of Server 4 to Server 2");
           		 try {
           	          FileWriter logwtr = new FileWriter("Server1.log",true);
           	          BufferedWriter bw = new BufferedWriter(logwtr);
           	          PrintWriter pw = new PrintWriter(bw);
           	          System.out.println("LOGGING");
 
-          	          pw.println("P2: updated for p4");
+          	          pw.println("P2: request write for p4");
 
 //          	          logwtr.append();
           	             pw.flush();
@@ -208,6 +228,12 @@ public class process2 extends container2 {
           	        }
           	  }
              }
+             
+             
+             
+             
+             
+          
        	 Random rand = new Random();
          int upper = 10;
          x = rand.nextInt(upper);
@@ -223,7 +249,7 @@ public class process2 extends container2 {
       	          PrintWriter pw = new PrintWriter(bw);
       	          System.out.println("LOGGING");
 
-      	          pw.println("p2 update a new statement STARTS"+Integer.toString(x));
+      	          pw.println("p2 request to update a new statement STARTS with sno: "+Integer.toString(x));
 
 //      	          logwtr.append();
       	             pw.flush();
@@ -234,14 +260,14 @@ public class process2 extends container2 {
       	          System.out.println("An error occurred.");
       	          e.printStackTrace();
       	        }
-    		 stub_self2.updateStudent(t1,x);
+    		 stub_self2.request_update(t1,x);
     		 try {
       	          FileWriter logwtr = new FileWriter("Server1.log",true);
       	          BufferedWriter bw = new BufferedWriter(logwtr);
       	          PrintWriter pw = new PrintWriter(bw);
       	          System.out.println("LOGGING");
 
-      	          pw.println("p2 update a new statement ENDS"+Integer.toString(x));
+      	          pw.println("p2 request to update a new statement ENDS with sno: "+Integer.toString(x));
 
 //      	          logwtr.append();
       	             pw.flush();
@@ -264,7 +290,7 @@ public class process2 extends container2 {
    	          PrintWriter pw = new PrintWriter(bw);
    	          System.out.println("LOGGING");
 
-   	          pw.println("P2: updated(update) rmi");
+   	          pw.println("P2: updated(request) rmi");
 
 //   	          logwtr.append();
    	             pw.flush();
@@ -284,8 +310,7 @@ public class process2 extends container2 {
 
     	 if(stub_self2.dbstatus1(0) == 1) {
     		 String insert1 = stub_s1.insert_container1();
-    		 int count=stmt.executeUpdate(insert1);
-    		
+    		 stub_self2.request_update_others(insert1);    		
        	      stub_self2.notify1(0);
      	      System.out.println("Replicated update of Server 1 to Server 2");
       		 try {
@@ -294,7 +319,7 @@ public class process2 extends container2 {
       	          PrintWriter pw = new PrintWriter(bw);
       	          System.out.println("LOGGING");
 
-      	          pw.println("P2: updated(update) for p1");
+      	          pw.println("P2: updated(request) for p1");
 
 //      	          logwtr.append();
       	             pw.flush();
@@ -309,7 +334,7 @@ public class process2 extends container2 {
    	 
    	 if(stub_self2.dbstatus1(2) == 1) {
 		 String insert1 = stub_s3.insert_container1();
-		 int count=stmt.executeUpdate(insert1);
+		 stub_self2.request_update_others(insert1);    
 		
    	      stub_self2.notify1(2);
       	      System.out.println("Replicated update of Server 3 to Server 2");
@@ -319,7 +344,7 @@ public class process2 extends container2 {
       	          PrintWriter pw = new PrintWriter(bw);
       	          System.out.println("LOGGING");
 
-      	          pw.println("P2: updated(update) for p3");
+      	          pw.println("P2: updated(request) for p3");
 
 //      	          logwtr.append();
       	             pw.flush();
@@ -334,7 +359,7 @@ public class process2 extends container2 {
    	 
    	 if(stub_self2.dbstatus1(3) == 1) {
 		 String insert1 = stub_s4.insert_container1();
-		 int count=stmt.executeUpdate(insert1);
+		 stub_self2.request_update_others(insert1);    
 		
    	      stub_self2.notify1(3);
       	      System.out.println("Replicated update of Server 4 to Server 2");
@@ -344,7 +369,7 @@ public class process2 extends container2 {
       	          PrintWriter pw = new PrintWriter(bw);
       	          System.out.println("LOGGING");
 
-      	          pw.println("P2: updated(update) for p4");
+      	          pw.println("P2: updated(request) for p4");
 
 //      	          logwtr.append();
       	             pw.flush();
@@ -361,11 +386,33 @@ public class process2 extends container2 {
    		 
 		 
    	      System.out.println("Reading from process 2");
-   	      list = new ArrayList<Student>(); 
-   	      list = stub_self2.getStudents();
+   	   Random rand1 = new Random();
+       int upperno = 10;
+       int d = rand1.nextInt(upperno);
+       Student student = new Student();
+       list = new ArrayList<Student>(); 
+	   student = stub_self2.getStudents(d);  
+   	      
+	   try {
+	          FileWriter logwtr = new FileWriter("Server1.log",true);
+	          BufferedWriter bw = new BufferedWriter(logwtr);
+	          PrintWriter pw = new PrintWriter(bw);
+	          System.out.println("LOGGING");
+	          if(student.getId()!=-1)
+	          pw.println("P2: read "+ student.getId() + "with percent: "+ student.getPercent());
+
+//	          logwtr.append();
+	             pw.flush();
+	          logwtr.close();
+	          
+//	          System.out.println("Successfully wrote to the file.");
+	        } catch (IOException e) {
+	          System.out.println("An error occurred.");
+	          e.printStackTrace();
+	        }
    	      
    	      try {
-  	          FileWriter logwtr = new FileWriter("process2.log",true);
+  	          FileWriter logwtr = new FileWriter("Server1.log",true);
   	          BufferedWriter bw = new BufferedWriter(logwtr);
   	          PrintWriter pw = new PrintWriter(bw);
   	          System.out.println("LOGGING");
@@ -385,16 +432,147 @@ public class process2 extends container2 {
    	  
      
  }
-    	 
-    	 
-    	 
-         
-        	 
+             }
              
-        	 
+             
+             
+             
+             
+             
+             
+             
+             
+           //------------------------------------sync----------------------------------------------------------------------------------------------   	        
+             
+             
+             
+             
+             
+             
+             
+             
+   	Queue<String> q = stub_self2.queue();
+//	 syncDB2 synch = new syncDB2(q);
+//	 Thread thrd_sync = new Thread(synch);
+//	 Thread.sleep(2000);
+//	 thrd_sync.start();
+//	 try {
+//	          FileWriter logwtr = new FileWriter("Server1.log",true);
+//	          BufferedWriter bw = new BufferedWriter(logwtr);
+//	          PrintWriter pw = new PrintWriter(bw);
+//	          System.out.println("LOGGING");
+//
+//	          pw.println("p2: " + thrd_sync.getId());
+//
+////	          logwtr.append();
+//	             pw.flush();
+//	          logwtr.close();
+//	          
+////	          System.out.println("Successfully wrote to the file.");
+//	        } catch (IOException e) {
+//	          System.out.println("An error occurred.");
+//	          e.printStackTrace();
+//	        }
+//	 try {
+//         FileWriter logwtr = new FileWriter("Server1.log",true);
+//         BufferedWriter bw = new BufferedWriter(logwtr);
+//         PrintWriter pw = new PrintWriter(bw);
+//         System.out.println("LOGGING");
+//
+//         pw.println("p2 : " + thrd_sync.getId());
+//
+////         logwtr.append();
+//            pw.flush();
+//         logwtr.close();
+//         
+////         System.out.println("Successfully wrote to the file.");
+//       } catch (IOException e) {
+//         System.out.println("An error occurred.");
+//         e.printStackTrace();
+//       }
+//	 stub_self2.clearqueue(); 
+//       
+         
+   	
+   	
+   	if(x==9||y>42) {
+   	
+   	while(q.peek()!=null) {
+		String insert1 = q.peek();
+		q.remove();
+		
+		
+		String DB_URL = "jdbc:mysql://localhost:3306/rmi2";  
+	      
+		 
+	      
+	      Connection conn1 = null; 
+	      Statement stmt1 = null;  
+
+	      //Register JDBC driver 
+	        
+	      //Open a connection
+	      System.out.println("Connecting to a selected database..."); 
+	      conn1 = DriverManager.getConnection(DB_URL, "newuser", "password"); 
+	      System.out.println("Connected database successfully...");  
+	      stmt1 = conn1.createStatement();
+	      //ResultSet rs = stmt.executeQuery(sql);  
+	      stmt1.executeUpdate(insert1);
+	      conn1.close();
+	      try {
+   	          FileWriter logwtr = new FileWriter("Server1.log",true);
+   	          BufferedWriter bw = new BufferedWriter(logwtr);
+   	          PrintWriter pw = new PrintWriter(bw);
+   	          System.out.println("LOGGING");
+
+   	       pw.println("P2: wrote once");
+   	    pw.println(insert1);
+   	 pw.println("P2: wrote once");
+   	       
+//   	          logwtr.append();
+   	             pw.flush();
+   	          logwtr.close();
+   	          
+//   	          System.out.println("Successfully wrote to the file.");
+   	        } catch (IOException e) {
+   	          System.out.println("An error occurred.");
+   	          e.printStackTrace();
+   	        }
+
+	      
+	}
+	
+	 try {
+	          FileWriter logwtr = new FileWriter("Server1.log",true);
+	          BufferedWriter bw = new BufferedWriter(logwtr);
+	          PrintWriter pw = new PrintWriter(bw);
+	          System.out.println("LOGGING");
+
+	          pw.println("P2: finished a set");
+
+//	          logwtr.append();
+	             pw.flush();
+	          logwtr.close();
+	          
+//	          System.out.println("Successfully wrote to the file.");
+	        } catch (IOException e) {
+	          System.out.println("An error occurred.");
+	          e.printStackTrace();
+	        }
+
+             
+        	 x=0;
+        	 stub_self2.clearqueue();
+         }
         	 
 //        }	 System.out.println("We didnt update");
-         }
+         
+         
+         
+         
+         }    
+         
+         
      } catch (Exception e) { 
          System.err.println("Server exception: " + e.toString()); 
          e.printStackTrace(); 
@@ -403,3 +581,42 @@ public class process2 extends container2 {
 
    } 
 }
+
+
+
+
+
+//class syncDB2 implements Runnable
+//{
+//
+//	Queue<String> q = new LinkedList<>();
+//	int tempstatus = 0;
+//	
+//	
+//
+//	
+//	syncDB2(Queue<String> queue){
+//		this.q = queue;
+//	}
+//	
+//	
+//	
+//	
+//	public void run() {
+//		System.out.println("Thread for sync start");
+//		try {
+//			
+//			
+//			
+//			
+//			
+//			
+//			
+//		
+//			
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//	}
+//	
+//}

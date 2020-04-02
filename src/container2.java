@@ -1,10 +1,16 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.rmi.RemoteException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class container2 implements hello{
 	static int status;
@@ -16,7 +22,8 @@ public class container2 implements hello{
 	int id=0;
 	int l=-100;
 	int k=0;
-	public List<Student> getStudents() throws Exception, ClassNotFoundException {  
+	Queue<String> queue = new LinkedList<>();
+	public Student getStudents(int k) throws Exception, ClassNotFoundException {  
 			List<Student> list = new ArrayList<Student>();   
 	      // JDBC driver name and database URL 
 	      String JDBC_DRIVER = "com.mysql.jdbc.Driver"; 
@@ -45,11 +52,12 @@ public class container2 implements hello{
 	      System.out.println("Creating statement..."); 
 	      	
 	      stmt = conn.createStatement();  
-	      String sql = "SELECT * FROM samplermi where sno =" + Integer.toString(k) + ";";
+	      String sql = "SELECT * FROM samplermi where sno = " + Integer.toString(k) + " and name = 'abhinav';";
 	      ResultSet rs = stmt.executeQuery(sql);  
-	      
+	      Student student = new Student(); 
+	      student.setID(-1);
 	      //Extract data from result set 
-	      while(rs.next()) { 
+	       if(rs.next()) {
 	         // Retrieve by column name 
 	         int id  = rs.getInt("sno"); 
 	         
@@ -60,18 +68,19 @@ public class container2 implements hello{
 	         String email = rs.getString("email");  
 	         
 	         // Setting the values 
-	         Student student = new Student(); 
+	         
 	         student.setID(id); 
 	         student.setName(name); 
 	         student.setBranch(branch); 
 	         student.setPercent(percent); 
 	         student.setEmail(email); 
-	         list.add(student); 
-	      } 
+	         list.add(student);
 	      
-	      rs.close(); 
+	      
+	       }
+	       rs.close(); 
 	      conn.close();
-	      return list;     
+	      return student;     
 
 	      }
 	public void addStudent(int id, int k)throws Exception, ClassNotFoundException {
@@ -148,10 +157,10 @@ public class container2 implements hello{
 	      System.out.println("Updating statement...");
 	     
 
-	      l--;
+	      i++;
 	      stmt = conn.createStatement();
 	      //ResultSet rs = stmt.executeQuery(sql);  
-	      insert = "UPDATE samplermi SET percentage = " + Integer.toString(l) + " where sno = " + Integer.toString(k)+" ;";
+	      insert = "UPDATE samplermi SET percentage = " + Integer.toString(i) + " where sno = " + Integer.toString(k)+" ;";
 	      int count=stmt.executeUpdate(insert);
 	      conn.close();
 //	      dbstatus[2] =0;
@@ -180,7 +189,7 @@ public class container2 implements hello{
     public String insert_container1() throws RemoteException{
     	
 
-    	insert = "UPDATE samplermi SET percentage = " + Integer.toString(l) + " where sno = " + Integer.toString(k)+" ;";
+    	insert = "UPDATE samplermi SET percentage = " + Integer.toString(i) + " where sno = " + Integer.toString(k)+" ;";
 	    return insert;
     }
 
@@ -236,6 +245,76 @@ public class container2 implements hello{
     }
     public void setStatus() throws RemoteException{
     	status = 1;
+    }
+    
+    public void request_write(int id, int k) throws RemoteException{
+    	this.id=id;
+    	String name = "bhanu";
+	      String branch = "cse";
+	      int percent = i;
+	      i++;
+	      String email = "bhanu.gmail";
+	    insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
+	      
+    	queue.add(insert);	
+    }
+    
+    public void request_update(int id, int k) throws RemoteException{
+    	this.k=k;
+	    insert = "UPDATE samplermi SET percentage = " + Integer.toString(i) + " where sno = " + Integer.toString(k)+" ;";
+	     i++;
+    	queue.add(insert);
+    	
+    	
+    	
+    	
+    	
+    	
+    }
+    
+    
+    
+    public void request_write_others(String insert) throws RemoteException{
+    	queue.add(insert);
+	      try {
+   	          FileWriter logwtr = new FileWriter("Server1.log",true);
+   	          BufferedWriter bw = new BufferedWriter(logwtr);
+   	          PrintWriter pw = new PrintWriter(bw);
+   	          System.out.println("LOGGING");
+
+   	          pw.println(insert);
+   	          
+//   	          logwtr.append();
+   	             pw.flush();
+   	          logwtr.close();
+   	          
+//   	          System.out.println("Successfully wrote to the file.");
+   	        } catch (IOException e) {
+   	          System.out.println("An error occurred.");
+   	          e.printStackTrace();
+   	        }
+    	
+    	
+    	
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    public void request_update_others(String insert) throws RemoteException{
+    	queue.add(insert);
+    	
+    }
+    
+    public Queue<String> queue() throws RemoteException{
+    	return this.queue;
+    }
+    public void clearqueue() throws RemoteException{
+    	queue.clear();
     }
     
 }

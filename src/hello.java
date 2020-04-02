@@ -3,7 +3,7 @@ import java.rmi.RemoteException;
 import java.util.*;
 
 public interface hello extends Remote{
-	 public List<Student> getStudents() throws Exception;
+	 public Student getStudents(int k) throws Exception;
 	 public void addStudent(int id,int k) throws Exception;
 	 public void updateStudent(int id,int k) throws Exception;
 	void sendMessage(String s) throws RemoteException;
@@ -20,5 +20,11 @@ public interface hello extends Remote{
 	public String get_insert() throws RemoteException;
 	public String insert_container() throws RemoteException;
 	public String insert_container1() throws RemoteException;
+	public void request_write(int id, int k) throws RemoteException;
+	public void request_update(int id, int k) throws RemoteException;
+	public void request_write_others(String insert) throws RemoteException;
+	public void request_update_others(String insert) throws RemoteException;
+	public Queue<String> queue() throws RemoteException;
+	public void clearqueue() throws RemoteException;
 }
 	
