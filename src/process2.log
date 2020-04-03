@@ -1369,3 +1369,2425 @@ P2: Exit read id: 2 percent: 49
 P2: sync starts
 P2: sync ends
 P2: Entry read id: 2
+P2: Entry read id: 0
+P2: Exit read id: 0 nothing to read
+P2: Entry read id: 8
+P2: Exit read id: 8 nothing to read
+P2: Entry read id: 1
+P2: Exit read id: 1 nothing to read
+P2: sync starts
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('0','bhanu','cse','1','bhanu.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('0','Mani','cse','2','mani1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('0','Abhinav','cse','3','abhi1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('0','shrestha','cse','3','shres1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('1','bhanu','cse','5','bhanu.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('1','Mani','cse','6','mani1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('1','shrestha','cse','7','shres1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('2','bhanu','cse','9','bhanu.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('2','Mani','cse','10','mani1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('1','Abhinav','cse','8','abhi1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('2','shrestha','cse','11','shres1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('3','bhanu','cse','13','bhanu.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('3','Mani','cse','15','mani1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('2','Abhinav','cse','10','abhi1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('3','shrestha','cse','15','shres1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('4','bhanu','cse','17','bhanu.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('4','Mani','cse','18','mani1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('3','Abhinav','cse','16','abhi1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('5','bhanu','cse','21','bhanu.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('5','Mani','cse','22','mani1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('4','Abhinav','cse','18','abhi1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('4','shrestha','cse','20','shres1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('5','shrestha','cse','22','shres1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('6','bhanu','cse','25','bhanu.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('6','Mani','cse','28','mani1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('5','Abhinav','cse','24','abhi1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('6','shrestha','cse','28','shres1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('7','bhanu','cse','29','bhanu.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('7','Mani','cse','32','mani1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('7','shrestha','cse','30','shres1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('8','Mani','cse','34','mani1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('6','Abhinav','cse','26','abhi1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('8','bhanu','cse','33','bhanu.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('9','Mani','cse','39','mani1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('7','Abhinav','cse','30','abhi1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('8','shrestha','cse','36','shres1.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('9','bhanu','cse','37','bhanu.gmail')
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('9','shrestha','cse','39','shres1.gmail')
+P2: Exit write
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 39 where sno = 4 ;
+P2: Exit write
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 41 where sno = 7 ;
+P2: Exit write
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 40 where sno = 9 ;
+P2: Exit write
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('8','Abhinav','cse','34','abhi1.gmail')
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 40
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 42
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 27
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 36
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 42
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 11
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 27
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 42
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 2
+P2: sync starts
+P2: Entry write
+P2: INSERT INTO samplermi(sno, name, branch, percentage, email) values('9','Abhinav','cse','41','abhi1.gmail')
+P2: Exit write
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 42 where sno = 7 ;
+P2: Exit write
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 42 where sno = 3 ;
+P2: Exit write
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 41 where sno = 4 ;
+P2: Exit write
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 42 where sno = 1 ;
+P2: Exit write
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 42 where sno = 6 ;
+P2: Exit write
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 43 where sno = 9 ;
+P2: Exit write
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 43 where sno = 3 ;
+P2: Exit write
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 43 where sno = 6 ;
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 11
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 40
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 40
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 40
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 42
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 40
+P2: sync starts
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 44 where sno = 6 ;
+P2: Exit write
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 44 where sno = 4 ;
+P2: Exit write
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 43 where sno = 4 ;
+P2: Exit write
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 44 where sno = 2 ;
+P2: Exit write
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 45 where sno = 0 ;
+P2: Exit write
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 45 where sno = 8 ;
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 40
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 42
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 42
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 27
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 42
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 32
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 40
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 42
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 11
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 36
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 11
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 40
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 43
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 44
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 42
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 45
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 45
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 43
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 43
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 45
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 44
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 43
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 43
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 42
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 43
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 42
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 42
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 42
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 43
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 43
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 43
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 43
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 42
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 44
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 43
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 43
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 44
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 42
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 44
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 44
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 43
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 42
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 44
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 43
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 42
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 42
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 44 where sno = 2 ;
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 44
+P2: sync starts
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 45 where sno = 7 ;
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 46 where sno = 3 ;
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 47 where sno = 9 ;
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 44
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 42
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 43
+P2: sync starts
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 48 where sno = 0 ;
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 48
+P2: sync starts
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 49 where sno = 2 ;
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 48
+P2: sync starts
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 50 where sno = 1 ;
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 49
+P2: sync starts
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 51 where sno = 9 ;
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 44
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 46
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 49
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 49
+P2: sync starts
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 52 where sno = 6 ;
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 46
+P2: sync starts
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 53 where sno = 1 ;
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 48
+P2: sync starts
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 54 where sno = 0 ;
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 53
+P2: sync starts
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 55 where sno = 7 ;
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 43
+P2: sync starts
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 56 where sno = 2 ;
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 57 where sno = 3 ;
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 58 where sno = 0 ;
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 56
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 51
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 56
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 53
+P2: sync starts
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 59 where sno = 9 ;
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 56
+P2: sync starts
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 60 where sno = 1 ;
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 61 where sno = 2 ;
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 62 where sno = 1 ;
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 63 where sno = 1 ;
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 64 where sno = 6 ;
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: Entry write
+P2: UPDATE samplermi SET percentage = 65 where sno = 4 ;
+P2: Exit write
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7
+P2: Exit read id: 7 percent: 55
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 3
+P2: Exit read id: 3 percent: 57
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 0
+P2: Exit read id: 0 percent: 58
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 1
+P2: Exit read id: 1 percent: 63
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 8
+P2: Exit read id: 8 percent: 45
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 6
+P2: Exit read id: 6 percent: 64
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 9
+P2: Exit read id: 9 percent: 59
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 2
+P2: Exit read id: 2 percent: 61
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 5
+P2: Exit read id: 5 percent: 23
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 4
+P2: Exit read id: 4 percent: 65
+P2: sync starts
+P2: sync ends
+P2: Entry read id: 7

@@ -191,7 +191,7 @@ public class container1 implements hello{
 	    String branch = "cse";
 	    int percent = i;
 	    
-	    String email = "mani1.gmail";
+	    String email = "mani.gmail";
     	
 	    String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
     	

@@ -210,7 +210,7 @@ public class container4 implements hello{
 	      i++;
 	      int percent = i;
 	       
-	      String email = "shres1.gmail";
+	      String email = "shre.gmail";
     	String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
     	return insert;
     }
@@ -253,7 +253,7 @@ public class container4 implements hello{
 	      i++;
 	      int percent = i;
 	      
-	      String email = "thatguy.gmail";
+	      String email = "shre.gmail";
 	    insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
 	      
     	queue.add(insert);

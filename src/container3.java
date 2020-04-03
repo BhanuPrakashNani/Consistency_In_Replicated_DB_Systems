@@ -222,7 +222,7 @@ public class container3 implements hello{
 	      int percent = i;
 	      
 	      
-	      String email = "abhi1.gmail";
+	      String email = "abhi.gmail";
     	String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
     	return insert;
     }

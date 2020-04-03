@@ -114,7 +114,7 @@ public class container2 implements hello{
 	      String name = "bhanu";
 	      String branch = "cse";
 	      int percent = i;
-	      String email = "bhanu.gmail";
+	      String email = "bhan.gmail";
 	      
 	      stmt = conn.createStatement();
 	      //ResultSet rs = stmt.executeQuery(sql);  
@@ -181,7 +181,7 @@ public class container2 implements hello{
 	      String branch = "cse";
 	      int percent = i;
 	      
-	      String email = "bhanu1.gmail";
+	      String email = "bhan.gmail";
     	String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
     	return insert;
     }
@@ -253,7 +253,7 @@ public class container2 implements hello{
 	      String branch = "cse";
 	      int percent = i;
 	      
-	      String email = "bhanu.gmail";
+	      String email = "bhan.gmail";
 	    insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
 	      
     	queue.add(insert);	
