@@ -163,7 +163,6 @@ public class container2 implements hello{
 	      insert = "UPDATE samplermi SET percentage = " + Integer.toString(i) + " where sno = " + Integer.toString(k)+" ;";
 	      int count=stmt.executeUpdate(insert);
 	      conn.close();
-//	      dbstatus[2] =0;
 	      status = 0;
 	      System.out.println(count);     
 
@@ -263,48 +262,11 @@ public class container2 implements hello{
     	this.k=k;
 	    insert = "UPDATE samplermi SET percentage = " + Integer.toString(i) + " where sno = " + Integer.toString(k)+" ;";
 	     i++;
-    	queue.add(insert);
-    	
-    	
-    	
-    	
-    	
-    	
+    	queue.add(insert);	
     }
-    
-    
-    
     public void request_write_others(String insert) throws RemoteException{
     	queue.add(insert);
-	      try {
-   	          FileWriter logwtr = new FileWriter("Server1.log",true);
-   	          BufferedWriter bw = new BufferedWriter(logwtr);
-   	          PrintWriter pw = new PrintWriter(bw);
-   	          System.out.println("LOGGING");
-
-   	          pw.println(insert);
-   	          
-//   	          logwtr.append();
-   	             pw.flush();
-   	          logwtr.close();
-   	          
-//   	          System.out.println("Successfully wrote to the file.");
-   	        } catch (IOException e) {
-   	          System.out.println("An error occurred.");
-   	          e.printStackTrace();
-   	        }
-    	
-    	
-    	
     }
-    
-    
-    
-    
-    
-    
-    
-    
     public void request_update_others(String insert) throws RemoteException{
     	queue.add(insert);
     	

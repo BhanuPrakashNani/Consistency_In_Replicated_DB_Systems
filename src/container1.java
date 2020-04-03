@@ -282,84 +282,27 @@ public class container1 implements hello{
     
     public void request_write(int id, int k) throws RemoteException{
     	this.id = id;
+    	
     	String name = "Mani";
-	      String branch = "cse";
-	      int percent = i;
-	      i++;
-	      String email = "mani.gmail";
+	    String branch = "cse";
+	    int percent = i;  
+	    String email = "mani.gmail";
+	    
 	    insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
-	      
-    	queue.add(insert);
-    	
-    	try {
- 	          FileWriter logwtr = new FileWriter("Server1.log",true);
- 	          BufferedWriter bw = new BufferedWriter(logwtr);
- 	          PrintWriter pw = new PrintWriter(bw);
- 	          System.out.println("LOGGING");
-
- 	          pw.println("p1 requesting a new statement: updated in queue");
-
-
- 	             pw.flush();
- 	          logwtr.close();
- 	          
-
- 	        } catch (IOException e) {
- 	          System.out.println("An error occurred.");
- 	          e.printStackTrace();
- 	        }
-    	
-    	
-    	
-    	
+	    queue.add(insert);
+    	    	
+    	i++;	
     }
-    
     public void request_update(int id, int k) throws RemoteException{
     	this.k = k;
     	
 	    insert = "UPDATE samplermi SET percentage = " + Integer.toString(i) + " where sno = " + Integer.toString(k)+" ;";
 	     i++;
-    	queue.add(insert);
-    	
-    	
-    	
-    	
-    	
-    	
+    	queue.add(insert);	
     }
-    
-    
-    
     public void request_write_others(String insert) throws RemoteException{
-    	queue.add(insert);
-	      try {
-   	          FileWriter logwtr = new FileWriter("Server1.log",true);
-   	          BufferedWriter bw = new BufferedWriter(logwtr);
-   	          PrintWriter pw = new PrintWriter(bw);
-   	          System.out.println("LOGGING");
-
-   	          pw.println(insert);
-   	          
-//   	          logwtr.append();
-   	             pw.flush();
-   	          logwtr.close();
-   	          
-//   	          System.out.println("Successfully wrote to the file.");
-   	        } catch (IOException e) {
-   	          System.out.println("An error occurred.");
-   	          e.printStackTrace();
-   	        }
-    	
-    	
-    	
+    	queue.add(insert); 	
     }
-    
-    
-    
-    
-    
-    
-    
     
     public void request_update_others(String insert) throws RemoteException{
     	queue.add(insert);

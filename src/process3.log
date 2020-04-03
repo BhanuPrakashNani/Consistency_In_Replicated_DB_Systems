@@ -1,5055 +1,1375 @@
-[]
-
-
-[Student@b2c9a9c, Student@4c178a76, Student@fa4c865, Student@3bd82cf5]
-
-
-[Student@d35dea7, Student@7770f470, Student@5e5d171f, Student@24313fcc]
-
-
-[Student@6c40365c, Student@7bedc48a, Student@131ef10, Student@55b0dcab]
-
-
-[Student@70325e14, Student@37ceb1df, Student@7c9d8e2, Student@20d525]
-
-
-[Student@6f4a47c7, Student@ae13544, Student@3d34d211, Student@7dc0f706]
-
-
-[Student@22fcf7ab, Student@2de23121, Student@63475ace, Student@4988d8b8]
-
-
-[Student@6913c1fb, Student@66d18979, Student@bccb269, Student@609cd4d8]
-
-
-[Student@158a8276, Student@3c3d9b6b, Student@79d8407f, Student@5fbe4146]
-
-
-[Student@58a9760d, Student@71e9ddb4, Student@394df057, Student@4961f6af]
-
-
-[Student@33c911a1, Student@75db5df9, Student@707194ba, Student@1190200a]
-
-
-[Student@291caca8, Student@385e9564, Student@5b94b04d, Student@8c3b9d]
-
-
-[Student@1f59a598, Student@1e178745, Student@192c3f1e, Student@26b3fd41]
-
-
-[Student@1757cd72, Student@445b295b, Student@49e5f737, Student@5c671d7f]
-
-
-[Student@6aaceffd, Student@c86b9e3, Student@10aa41f2, Student@3af9c5b7]
-
-
-[Student@6ab778a, Student@4e3958e7, Student@77f80c04, Student@1dac5ef]
-
-
-[Student@63070bab, Student@68e5eea7, Student@291b4bf5, Student@2d2ffcb7]
-
-
-[Student@10d68fcd, Student@117e949d, Student@6db9f5a4, Student@5f8edcc5]
-
-
-[Student@15ca7889, Student@7a675056, Student@d21a74c, Student@6e509ffa]
-
-
-[Student@2638011, Student@6ff29830, Student@6a2b953e, Student@313b2ea6]
-
-
-[Student@a1cdc6d, Student@175b9425, Student@3098cf3b, Student@610f7aa]
-
-
-[Student@5609159b, Student@2118cddf, Student@17a7f733, Student@68567e20]
-
-
-[Student@394a2528, Student@6236eb5f, Student@7c1e2a9e, Student@fa36558]
-
-
-[Student@2b4bac49, Student@fd07cbb, Student@3571b748, Student@3e96bacf]
-
-
-[Student@7748410a, Student@740773a3, Student@37f1104d, Student@55740540]
-
-
-[Student@65b3f4a4, Student@f2ff811, Student@568ff82, Student@50caa560]
-
-
-[Student@1d8bd0de, Student@45ca843, Student@11c9af63, Student@757acd7b]
-
-
-[Student@28975c28, Student@3943a2be, Student@343570b7, Student@157853da]
-
-
-[Student@6bf0219d, Student@dd0c991, Student@5f16132a, Student@69fb6037]
-
-
-[Student@671a5887, Student@5552768b, Student@3c947bc5, Student@609db43b]
-
-
-[Student@1329eff, Student@6497b078, Student@41c2284a, Student@53aad5d5]
-
-
-[Student@4a668b6e, Student@5f683daf, Student@78ffe6dc, Student@8317c52]
-
-
-[Student@6f27a732, Student@6c779568, Student@f381794, Student@2cdd0d4b]
-
-
-[Student@2525ff7e, Student@524d6d96, Student@152aa092, Student@44a7bfbc]
-
-
-[Student@4e268090, Student@1bb266b3, Student@306cf3ea, Student@2beee7ff]
-
-
-[Student@52102734, Student@3541cb24, Student@2177849e, Student@40cb8df7]
-
-
-[Student@29647f75, Student@3315d2d7, Student@d6e7bab, Student@5fa07e12]
-
-
-[Student@6a6afff2, Student@1649b0e6, Student@865dd6, Student@4da4253]
-
-
-[Student@503d687a, Student@6a370f4, Student@2abf4075, Student@770d3326]
-
-
-[Student@1f97cf0d, Student@140c9f39, Student@4d910fd6, Student@26275bef]
-
-
-[Student@2e222612, Student@61386958, Student@73ee04c8, Student@7671cb68]
-
-
-[Student@10959ece, Student@3a6bb9bf, Student@34f7cfd9, Student@65f095f8]
-
-
-[Student@55536d9e, Student@747edf66, Student@3d1cfad4, Student@62230c58]
-
-
-[Student@74455848, Student@e7edb54, Student@378542de, Student@3738449f]
-
-
-[Student@79da8dc5, Student@1eb5174b, Student@67080771, Student@72cde7cc]
-
-
-[Student@53976f5c, Student@2bfc268b, Student@2f8dad04, Student@29e495ff]
-
-
-[Student@44821a96, Student@a3d8174, Student@1ba9117e, Student@732c2a62]
-
-
-[Student@625732, Student@51dcb805, Student@66498326, Student@cad498c]
-
-
-[Student@6631f5ca, Student@5ace1ed4, Student@1613674b, Student@27ff5d15]
-
-
-[Student@649bec2e, Student@693fe6c9, Student@34f5090e, Student@31e5415e]
-
-
-[Student@a2431d0, Student@1cbb87f3, Student@1a4013, Student@1b6e1eff]
-
-
-[Student@306f16f3, Student@702b8b12, Student@22e357dc, Student@49912c99]
-
-
-[Student@10163d6, Student@2dde1bff, Student@15bbf42f, Student@550ee7e5]
-
-
-[Student@5f9b2141, Student@247d8ae, Student@48974e45, Student@6a84a97d]
-
-
-[Student@6c130c45, Student@50ad3bc1, Student@223aa2f7, Student@6d3a388c]
-
-
-[Student@193f604a, Student@20f5239f, Student@57af006c, Student@6bedbc4d]
-
-
-[Student@932bc4a, Student@d29f28, Student@2fd1433e, Student@29d89d5d]
-
-
-[Student@3514a4c0, Student@212b5695, Student@446293d, Student@69997e9d]
-
-
-[Student@793be5ca, Student@2df9b86, Student@37654521, Student@15aab8c6]
-
-
-[Student@33990a0c, Student@4de4b452, Student@50b5ac82, Student@101952da]
-
-
-[Student@6babf3bf, Student@3059cbc, Student@7ea9e1e2, Student@24fcf36f]
-
-
-[Student@10feca44, Student@3fb1549b, Student@ea6147e, Student@4d02f94e]
-
-
-[Student@2b48a640, Student@1e683a3e, Student@2053d869, Student@7a419da4]
-
-
-[Student@14555e0a, Student@4bb33f74, Student@759d26fb, Student@3c73951]
-
-
-[Student@3d5c822d, Student@6f46426d, Student@73700b80, Student@49c7b90e]
-
-
-[Student@10d307f1, Student@4d5b6aac, Student@3e84448c, Student@4a7f959b]
-
-
-[Student@429bffaa, Student@5403f35f, Student@483f6d77, Student@7e5afaa6]
-
-
-[Student@63a12c68, Student@28f3b248, Student@1b1426f4, Student@32b260fa]
-
-
-[Student@581ac8a8, Student@6d4e5011, Student@57d7f8ca, Student@76c3e77a]
-
-
-[Student@78123e82, Student@67c33749, Student@fba92d3, Student@662b4c69]
-
-
-[Student@fa49800, Student@71238fc2, Student@2a54a73f, Student@16a0ee18]
-
-
-[Student@3d6f0054, Student@505fc5a4, Student@5fbdfdcf, Student@4efc180e]
-
-
-[Student@bd4dc25, Student@25084a1e, Student@156b88f5, Student@3bf9ce3e]
-
-
-[Student@16610890, Student@71def8f8, Student@383bfa16, Student@4d465b11]
-
-
-[Student@53fdffa1, Student@5562c41e, Student@32ee6fee, Student@4d0f2471]
-
-
-[Student@7133da86, Student@3232a28a, Student@73e22a3d, Student@47faa49c]
-
-
-[Student@28f2a10f, Student@f736069, Student@6da21078, Student@7fee8714]
-
-
-[Student@4229bb3f, Student@56cdfb3b, Student@2b91004a, Student@20ccf40b]
-
-
-[Student@2fb3536e, Student@169e6180, Student@35aea049, Student@7205765b]
-
-
-[]
-
-
-[]
-
-
-[Student@2df3b89c, Student@23348b5d, Student@70325e14, Student@37ceb1df]
-
-
-[Student@6200f9cb, Student@2002fc1d, Student@69453e37, Student@6f4a47c7]
-
-
-[Student@4009e306, Student@43c1b556, Student@587e5365, Student@22fcf7ab]
-
-
-[Student@c0c2f8d, Student@305b7c14, Student@6913c1fb, Student@66d18979]
-
-
-[Student@7d8704ef, Student@13b6aecc, Student@158a8276, Student@3c3d9b6b]
-
-
-[Student@4e50c791, Student@7530ad9c, Student@58a9760d, Student@71e9ddb4]
-
-
-[Student@65d09a04, Student@33c911a1, Student@75db5df9, Student@707194ba]
-
-
-[Student@399c4be1, Student@291caca8, Student@385e9564, Student@5b94b04d]
-
-
-[Student@7ee8290b, Student@1f59a598, Student@1e178745, Student@192c3f1e]
-
-
-[Student@561b6512, Student@2e377400, Student@1757cd72, Student@445b295b]
-
-
-[Student@687e99d8, Student@e4487af, Student@6aaceffd, Student@c86b9e3]
-
-
-[Student@ed7f8b4, Student@4c309d4d, Student@38102d01, Student@37883b97]
-
-
-[Student@1dac5ef, Student@5c90e579, Student@58ea606c, Student@6f45df59]
-
-
-[Student@762ef0ea, Student@31f9b85e, Student@424e1977, Student@10d68fcd]
-
-
-[Student@3c0be339, Student@15ca7889, Student@7a675056, Student@d21a74c]
-
-
-[Student@683dbc2c, Student@68267da0, Student@2638011, Student@6ff29830]
-
-
-[Student@548e6d58, Student@623a8092, Student@a1cdc6d, Student@175b9425]
-
-
-[Student@6a03bcb1, Student@21b2e768, Student@57250572, Student@5609159b]
-
-
-[Student@76ed1b7c, Student@11fc564b, Student@394a2528, Student@6236eb5f]
-
-
-[Student@32910148, Student@3f56875e, Student@2b4bac49, Student@fd07cbb]
-
-
-[Student@484970b0, Student@4470f8a6, Student@7c83dc97, Student@7748410a]
-
-
-[]
-
-
-p3: 27
-[Student@38afe297, Student@2df3b89c, Student@23348b5d, Student@70325e14]
-
-
-p3: 28
-[Student@6200f9cb, Student@2002fc1d, Student@69453e37, Student@6f4a47c7]
-
-
-p3: 29
-[Student@7dc0f706, Student@4009e306, Student@43c1b556, Student@587e5365]
-
-
-p3: 30
-[Student@4988d8b8, Student@c0c2f8d, Student@305b7c14, Student@6913c1fb]
-
-
-p3: 31
-[Student@17f7cd29, Student@7d8704ef, Student@13b6aecc, Student@158a8276]
-
-
-p3: 32
-[Student@1e66f1f5, Student@4e50c791, Student@7530ad9c, Student@58a9760d]
-
-
-p3: 33
-[Student@5aebe890, Student@65d09a04, Student@33c911a1, Student@75db5df9]
-
-
-p3: 34
-[Student@45b4c3a9, Student@399c4be1, Student@291caca8, Student@385e9564]
-
-
-p3: 35
-[Student@f79e, Student@7ee8290b, Student@1f59a598, Student@1e178745]
-
-
-p3: 36
-[Student@561b6512, Student@2e377400, Student@1757cd72, Student@445b295b]
-
-
-p3: 37
-[Student@687e99d8, Student@e4487af, Student@6aaceffd, Student@c86b9e3]
-
-
-p3: 38
-[Student@ed7f8b4, Student@4c309d4d, Student@38102d01, Student@37883b97]
-
-
-p3: 39
-[Student@1dac5ef, Student@5c90e579, Student@58ea606c, Student@6f45df59]
-
-
-p3: 40
-[Student@291b4bf5, Student@2d2ffcb7, Student@762ef0ea, Student@31f9b85e]
-
-
-p3: 41
-[]
-
-
-[Student@131ef10, Student@55b0dcab, Student@38afe297, Student@2df3b89c]
-
-
-[Student@7c9d8e2, Student@20d525, Student@6200f9cb, Student@2002fc1d]
-
-
-[Student@3d34d211, Student@7dc0f706, Student@4009e306, Student@43c1b556]
-
-
-[Student@63475ace, Student@4988d8b8, Student@c0c2f8d, Student@305b7c14]
-
-
-[Student@609cd4d8, Student@17f7cd29, Student@7d8704ef, Student@13b6aecc]
-
-
-[Student@5fbe4146, Student@1e66f1f5, Student@4e50c791, Student@7530ad9c]
-
-
-[Student@4961f6af, Student@5aebe890, Student@65d09a04, Student@33c911a1]
-
-
-[Student@6a2f6f80, Student@45b4c3a9, Student@399c4be1, Student@291caca8]
-
-
-[Student@4c39bec8, Student@f79e, Student@7ee8290b, Student@1f59a598]
-
-
-[Student@7494f96a, Student@561b6512, Student@2e377400, Student@1757cd72]
-
-
-[Student@757277dc, Student@687e99d8, Student@e4487af, Student@6aaceffd]
-
-
-[Student@37271612, Student@ed7f8b4, Student@4c309d4d, Student@38102d01]
-
-
-[Student@77f80c04, Student@1dac5ef, Student@5c90e579, Student@58ea606c]
-
-
-[Student@68e5eea7, Student@291b4bf5, Student@2d2ffcb7, Student@762ef0ea]
-
-
-[Student@5f8edcc5, Student@7b02881e, Student@1ebd319f, Student@3c0be339]
-
-
-[Student@683dbc2c, Student@68267da0, Student@2638011, Student@6ff29830]
-
-
-[Student@2f465398, Student@548e6d58, Student@623a8092, Student@a1cdc6d]
-
-
-[Student@6a03bcb1, Student@21b2e768, Student@57250572, Student@5609159b]
-
-
-[Student@68567e20, Student@76ed1b7c, Student@11fc564b, Student@394a2528]
-
-
-[Student@fa36558, Student@672872e1, Student@32910148, Student@3f56875e]
-
-
-[Student@3e96bacf, Student@484970b0, Student@4470f8a6, Student@7c83dc97]
-
-
-[Student@55740540, Student@60015ef5, Student@2f54a33d, Student@1018bde2]
-
-
-[Student@50caa560, Student@2a266d09, Student@5ab9e72c, Student@186f8716]
-
-
-[Student@757acd7b, Student@36b4fe2a, Student@574b560f, Student@ba54932]
-
-
-[Student@157853da, Student@71c3b41, Student@236e3f4e, Student@3cc1435c]
-
-
-[Student@69fb6037, Student@36d585c, Student@87a85e1, Student@671a5887]
-
-
-[Student@55f616cf, Student@1356d4d4, Student@c03cf28, Student@1329eff]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
-[]
-
-
+P3: Entry read id: 8
+P3: Exit read id: 8 nothing to read
+P3: Entry read id: 2
+P3: Exit read id: 2 nothing to read
+P3: Entry read id: 4
+P3: Exit read id: 4 nothing to read
+P3: Entry read id: 1
+P3: Exit read id: 1 nothing to read
+P3: Entry read id: 2
+P3: Exit read id: 2 nothing to read
+P3: Entry read id: 2
+P3: Exit read id: 2 nothing to read
+P3: Entry read id: 5
+P3: Exit read id: 5 nothing to read
+P3: Entry read id: 2
+P3: Exit read id: 2 nothing to read
+P3: Entry read id: 8
+P3: Exit read id: 8 nothing to read
+P3: Entry read id: 6
+P3: Exit read id: 6 nothing to read
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 2
+P3: Entry read id: 8
+P3: Exit read id: 8 nothing to read
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 10
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 2
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 10
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 10
+P3: Entry read id: 8
+P3: Exit read id: 8 nothing to read
+P3: Entry read id: 7
+P3: Exit read id: 7 nothing to read
+P3: Entry read id: 9
+P3: Exit read id: 9 nothing to read
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 2
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 2
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 21
+P3: Entry read id: 7
+P3: Exit read id: 7 nothing to read
+P3: Entry read id: 9
+P3: Exit read id: 9 nothing to read
+P3: Entry read id: 8
+P3: Exit read id: 8 nothing to read
+P3: sync starts
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('0','abhinav','cse','0','abhi.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('0','bhanu','cse','2','bhanu1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('0','Mani','cse','2','mani1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('0','shrestha','cse','3','shres1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('1','abhinav','cse','4','abhi.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('1','Mani','cse','5','mani1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('1','bhanu','cse','6','bhanu1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('2','abhinav','cse','8','abhi.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('1','shrestha','cse','7','shres1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('2','bhanu','cse','11','bhanu1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('2','Mani','cse','11','mani1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('3','abhinav','cse','12','abhi.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('2','shrestha','cse','11','shres1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('3','Mani','cse','13','mani1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('3','shrestha','cse','14','shres1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('3','bhanu','cse','13','bhanu1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('4','abhinav','cse','16','abhi.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('4','Mani','cse','18','mani1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('4','shrestha','cse','18','shres1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('4','bhanu','cse','18','bhanu1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('5','Mani','cse','22','mani1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('5','abhinav','cse','20','abhi.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('5','shrestha','cse','22','shres1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('5','bhanu','cse','22','bhanu1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('6','abhinav','cse','24','abhi.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('6','Mani','cse','25','mani1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('6','bhanu','cse','26','bhanu1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('6','shrestha','cse','26','shres1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('7','abhinav','cse','28','abhi.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('7','shrestha','cse','30','shres1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('7','bhanu','cse','31','bhanu1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('7','Mani','cse','31','mani1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('8','abhinav','cse','32','abhi.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('8','shrestha','cse','35','shres1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('8','bhanu','cse','35','bhanu1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('8','Mani','cse','35','mani1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('9','abhinav','cse','36','abhi.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('9','shrestha','cse','39','shres1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('9','Mani','cse','37','mani1.gmail')
+P3: Exit write
+P3: Entry write
+P3: INSERT INTO samplermi(sno, name, branch, percentage, email) values('9','bhanu','cse','38','bhanu1.gmail')
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 39 where sno = 4 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 41 where sno = 6 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 40 where sno = 5 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 40 where sno = 5 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 42 where sno = 6 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 42 where sno = 9 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 41 where sno = 7 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 43 where sno = 3 ;
+P3: Exit write
+P3: sync ends
+P3: Entry read id: 6
+P3: Exit read id: 6 percent: 42
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 42
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: Entry read id: 8
+P3: Exit read id: 8 percent: 44
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 41
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 41
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 41
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 41
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 6
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 41
+P3: Entry read id: 8
+P3: Exit read id: 8 percent: 43
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 42
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 44
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 44
+P3: Entry read id: 8
+P3: Exit read id: 8 percent: 46
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 44
+P3: Entry read id: 8
+P3: Exit read id: 8 percent: 47
+P3: sync starts
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 42 where sno = 0 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 44 where sno = 8 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 42 where sno = 4 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 43 where sno = 7 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 45 where sno = 7 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 43 where sno = 2 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 44 where sno = 8 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 43 where sno = 5 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 46 where sno = 8 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 44 where sno = 1 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 45 where sno = 0 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 46 where sno = 5 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 44 where sno = 6 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 47 where sno = 8 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 47 where sno = 4 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 45 where sno = 8 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 48 where sno = 1 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 45 where sno = 6 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 49 where sno = 1 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 46 where sno = 8 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 48 where sno = 9 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 46 where sno = 6 ;
+P3: Exit write
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 45
+P3: sync starts
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 47 where sno = 7 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 50 where sno = 5 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 47 where sno = 4 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 49 where sno = 5 ;
+P3: Exit write
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 50
+P3: sync starts
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 48 where sno = 2 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 51 where sno = 8 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 48 where sno = 1 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 50 where sno = 4 ;
+P3: Exit write
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 44
+P3: sync starts
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 49 where sno = 0 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 52 where sno = 1 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 49 where sno = 7 ;
+P3: Exit write
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 50
+P3: sync starts
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 50 where sno = 5 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 53 where sno = 7 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 50 where sno = 1 ;
+P3: Exit write
+P3: sync ends
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 49
+P3: sync starts
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 51 where sno = 5 ;
+P3: Exit write
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 51 where sno = 5 ;
+P3: Exit write
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 52 where sno = 9 ;
+P3: Exit write
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: Entry write
+P3: UPDATE samplermi SET percentage = 53 where sno = 9 ;
+P3: Exit write
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 54
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 8
+P3: Exit read id: 8 percent: 51
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 54
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 6
+P3: Exit read id: 6 percent: 47
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 8
+P3: Exit read id: 8 percent: 51
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 6
+P3: Exit read id: 6 percent: 47
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 54
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 54
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 8
+P3: Exit read id: 8 percent: 51
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 54
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 54
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 54
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 54
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 8
+P3: Exit read id: 8 percent: 51
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 6
+P3: Exit read id: 6 percent: 47
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 6
+P3: Exit read id: 6 percent: 47
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 8
+P3: Exit read id: 8 percent: 51
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 6
+P3: Exit read id: 6 percent: 47
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 54
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 8
+P3: Exit read id: 8 percent: 51
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 8
+P3: Exit read id: 8 percent: 51
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 6
+P3: Exit read id: 6 percent: 47
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 8
+P3: Exit read id: 8 percent: 51
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 6
+P3: Exit read id: 6 percent: 47
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 8
+P3: Exit read id: 8 percent: 51
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 8
+P3: Exit read id: 8 percent: 51
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 54
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 54
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 6
+P3: Exit read id: 6 percent: 47
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 54
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 6
+P3: Exit read id: 6 percent: 47
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 54
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 54
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 6
+P3: Exit read id: 6 percent: 47
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 8
+P3: Exit read id: 8 percent: 51
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 6
+P3: Exit read id: 6 percent: 47
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 54
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 8
+P3: Exit read id: 8 percent: 51
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 8
+P3: Exit read id: 8 percent: 51
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 8
+P3: Exit read id: 8 percent: 51
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 6
+P3: Exit read id: 6 percent: 47
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 54
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 54
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 6
+P3: Exit read id: 6 percent: 47
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 8
+P3: Exit read id: 8 percent: 51
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 6
+P3: Exit read id: 6 percent: 47
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 54
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 6
+P3: Exit read id: 6 percent: 47
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 8
+P3: Exit read id: 8 percent: 51
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 6
+P3: Exit read id: 6 percent: 47
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 8
+P3: Exit read id: 8 percent: 51
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 8
+P3: Exit read id: 8 percent: 51
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 54
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 54
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 6
+P3: Exit read id: 6 percent: 47
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 8
+P3: Exit read id: 8 percent: 51
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 6
+P3: Exit read id: 6 percent: 47
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 0
+P3: Exit read id: 0 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 3
+P3: Exit read id: 3 percent: 43
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7
+P3: Exit read id: 7 percent: 53
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 5
+P3: Exit read id: 5 percent: 52
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 4
+P3: Exit read id: 4 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 54
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 8
+P3: Exit read id: 8 percent: 51
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 9
+P3: Exit read id: 9 percent: 54
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 2
+P3: Exit read id: 2 percent: 49
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 1
+P3: Exit read id: 1 percent: 50
+P3: sync starts
+P3: sync ends
+P3: Entry read id: 7

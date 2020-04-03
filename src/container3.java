@@ -270,23 +270,7 @@ public class container3 implements hello{
     }
     public void request_write_others(String insert) throws RemoteException{
     	queue.add(insert);
-	      try {
-   	          FileWriter logwtr = new FileWriter("Server1.log",true);
-   	          BufferedWriter bw = new BufferedWriter(logwtr);
-   	          PrintWriter pw = new PrintWriter(bw);
-   	          System.out.println("LOGGING");
 
-   	          pw.println(insert);
-   	          
-//   	          logwtr.append();
-   	             pw.flush();
-   	          logwtr.close();
-   	          
-//   	          System.out.println("Successfully wrote to the file.");
-   	        } catch (IOException e) {
-   	          System.out.println("An error occurred.");
-   	          e.printStackTrace();
-   	        }
     	
     	
     	
