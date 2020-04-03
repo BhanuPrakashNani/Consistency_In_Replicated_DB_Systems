@@ -84,6 +84,7 @@ public class container1 implements hello{
 	      
 	      }
 	public void addStudent(int id,int k)throws Exception, ClassNotFoundException {
+		
 		String JDBC_DRIVER = "com.mysql.jdbc.Driver"; 
 	      try {
 	    	  Class.forName(JDBC_DRIVER); 
@@ -96,7 +97,7 @@ public class container1 implements hello{
 	      String DB_URL = "jdbc:mysql://localhost:3306/rmi";  
 	      
  
-	      
+	      i++;
 	      Connection conn = null; 
 	      Statement stmt = null;  
 
@@ -114,7 +115,7 @@ public class container1 implements hello{
 	      String name = "Mani";
 	      String branch = "cse";
 	      int percent = i;
-	      i++;
+	      
 	      String email = "mani.gmail";
 	      
 	      stmt = conn.createStatement();
@@ -132,6 +133,7 @@ public class container1 implements hello{
 	
 	
 	public void updateStudent(int id,int k)throws Exception, ClassNotFoundException {
+		
 		String JDBC_DRIVER = "com.mysql.jdbc.Driver"; 
 	      try {
 	    	  Class.forName(JDBC_DRIVER); 
@@ -144,7 +146,7 @@ public class container1 implements hello{
 	      String DB_URL = "jdbc:mysql://localhost:3306/rmi";  
 	      
  
-	      
+	    i++;  
 	      Connection conn = null; 
 	      Statement stmt = null;  
 
@@ -159,7 +161,7 @@ public class container1 implements hello{
 	      System.out.println("Updating statement...");
 	     
 
-	      i++;
+	      
 	      stmt = conn.createStatement();
 	      //ResultSet rs = stmt.executeQuery(sql);  
 	      insert = "UPDATE samplermi SET percentage = " + Integer.toString(i) + " where sno = " + Integer.toString(k)+" ;";
@@ -184,11 +186,11 @@ public class container1 implements hello{
     
     
     public String insert_container() throws RemoteException{
-    	
+    	i++;
     	String name = "Mani";
 	    String branch = "cse";
 	    int percent = i;
-	    i++;
+	    
 	    String email = "mani1.gmail";
     	
 	    String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
@@ -282,7 +284,7 @@ public class container1 implements hello{
     
     public void request_write(int id, int k) throws RemoteException{
     	this.id = id;
-    	
+    	i++;
     	String name = "Mani";
 	    String branch = "cse";
 	    int percent = i;  
@@ -291,13 +293,13 @@ public class container1 implements hello{
 	    insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
 	    queue.add(insert);
     	    	
-    	i++;	
+    		
     }
     public void request_update(int id, int k) throws RemoteException{
     	this.k = k;
-    	
+    	i++;
 	    insert = "UPDATE samplermi SET percentage = " + Integer.toString(i) + " where sno = " + Integer.toString(k)+" ;";
-	     i++;
+	     
     	queue.add(insert);	
     }
     public void request_write_others(String insert) throws RemoteException{

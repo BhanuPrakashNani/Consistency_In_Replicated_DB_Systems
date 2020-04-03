@@ -94,7 +94,7 @@ public class container4 implements hello{
 	      String DB_URL = "jdbc:mysql://localhost:3306/rmi" + Integer.toString(k);  
 	      
   
-	      
+	      i++;
 	      Connection conn = null; 
 	      Statement stmt = null;  
 
@@ -113,7 +113,7 @@ public class container4 implements hello{
 	      String branch = "cse";
 	      int percent = i;
 	      String email = "shre.gmail";
-	      i++;
+	      
 	      stmt = conn.createStatement();
 	      //ResultSet rs = stmt.executeQuery(sql);  
 	      insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
@@ -139,7 +139,7 @@ public class container4 implements hello{
 	      }
 	      String DB_URL = "jdbc:mysql://localhost:3306/rmi";  
 	      
- 
+	      i++;
 	      
 	      Connection conn = null; 
 	      Statement stmt = null;  
@@ -155,7 +155,7 @@ public class container4 implements hello{
 	      System.out.println("Updating statement...");
 	     
 
-	      i++;
+	      
 	      stmt = conn.createStatement();
 	      //ResultSet rs = stmt.executeQuery(sql);  
 	      insert = "UPDATE samplermi SET percentage = " + Integer.toString(i) + " where sno = " + Integer.toString(k)+" ;";
@@ -207,8 +207,9 @@ public class container4 implements hello{
     public String insert_container() throws RemoteException{
     	String name = "shrestha";
 	      String branch = "cse";
+	      i++;
 	      int percent = i;
-	      i++; 
+	       
 	      String email = "shres1.gmail";
     	String insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
     	return insert;
@@ -249,8 +250,9 @@ public class container4 implements hello{
     	this.id=id;		
     	String name = "thatguy";
 	      String branch = "cse";
-	      int percent = i;
 	      i++;
+	      int percent = i;
+	      
 	      String email = "thatguy.gmail";
 	    insert = "INSERT INTO samplermi(sno, name, branch, percentage, email) values('"+id+"','"+name+"','"+branch+"','"+percent+"','"+email+"')";
 	      
@@ -265,10 +267,11 @@ public class container4 implements hello{
     
     public void request_update(int id, int k) throws RemoteException{
     	this.k=k;
+    	i++;
 	    insert = "UPDATE samplermi SET percentage = " + Integer.toString(i) + " where sno = " + Integer.toString(k)+" ;";
 	      
     	queue.add(insert);
-    	i++;
+    	
     	
     	
     	
