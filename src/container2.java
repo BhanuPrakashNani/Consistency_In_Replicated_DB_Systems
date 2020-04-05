@@ -21,9 +21,11 @@ public class container2 implements hello{
 	int i=0;
 	int id=0;
 	int l=-100;
-	int k=0;
+	int k=-2;
+	int ii=10;
+	String name;
 	Queue<String> queue = new LinkedList<>();
-	public Student getStudents(int k) throws Exception, ClassNotFoundException {  
+	public Student getStudents(int k, int j) throws Exception, ClassNotFoundException {  
 			List<Student> list = new ArrayList<Student>();   
 	      // JDBC driver name and database URL 
 	      String JDBC_DRIVER = "com.mysql.jdbc.Driver"; 
@@ -34,7 +36,7 @@ public class container2 implements hello{
 	    	System.out.println("SWWWWWERRRRRR");
 	    	e.printStackTrace();
 	      }
-	      String DB_URL = "jdbc:mysql://localhost:3306/rmi";  
+	      String DB_URL = "jdbc:mysql://localhost:3306/rmi2";  
 	      
 
 	      
@@ -50,9 +52,20 @@ public class container2 implements hello{
 	      
 	      //Execute a query 
 	      System.out.println("Creating statement..."); 
-	      	
-	      stmt = conn.createStatement();  
-	      String sql = "SELECT * FROM samplermi where sno = " + Integer.toString(k) + " and name = 'abhinav';";
+	      	String sql;
+	      stmt = conn.createStatement(); 
+	      if(j==0) {
+	      sql = "SELECT * FROM samplermi where sno = " + Integer.toString(k) + " and name = 'Mani';";
+	      }
+	      else if(j==1) {
+		  sql = "SELECT * FROM samplermi where sno = " + Integer.toString(k) + " and name = 'bhanu';";
+		      }
+	      else if(j==2) {
+		  sql = "SELECT * FROM samplermi where sno = " + Integer.toString(k) + " and name = 'abhinav';";
+		      }
+	      else {
+		  sql = "SELECT * FROM samplermi where sno = " + Integer.toString(k) + " and name = 'shrestha';";
+		      }
 	      ResultSet rs = stmt.executeQuery(sql);  
 	      Student student = new Student(); 
 	      student.setID(-1);
@@ -142,7 +155,7 @@ public class container2 implements hello{
 	      String DB_URL = "jdbc:mysql://localhost:3306/rmi2";  
 	      
  
-	      i++;
+	      ii++;
 	      Connection conn = null; 
 	      Statement stmt = null;  
 
@@ -160,7 +173,7 @@ public class container2 implements hello{
 	      
 	      stmt = conn.createStatement();
 	      //ResultSet rs = stmt.executeQuery(sql);  
-	      insert = "UPDATE samplermi SET percentage = " + Integer.toString(i) + " where sno = " + Integer.toString(k)+" ;";
+	      insert = "UPDATE samplermi SET percentage = " + Integer.toString(ii) + " where sno = " + Integer.toString(k)+" ;";
 	      int count=stmt.executeUpdate(insert);
 	      conn.close();
 	      status = 0;
@@ -176,7 +189,7 @@ public class container2 implements hello{
     
     
     public String insert_container() throws RemoteException{
-    	i++;
+    	
     	String name = "bhanu";
 	      String branch = "cse";
 	      int percent = i;
@@ -188,7 +201,7 @@ public class container2 implements hello{
     public String insert_container1() throws RemoteException{
     	
 
-    	insert = "UPDATE samplermi SET percentage = " + Integer.toString(i) + " where sno = " + Integer.toString(k)+" ;";
+    	insert = "UPDATE samplermi SET percentage = " + Integer.toString(ii) + " where sno = " + Integer.toString(k)+" and name = \""+ this.name + "\" ;";
 	    return insert;
     }
 
@@ -259,11 +272,14 @@ public class container2 implements hello{
     	queue.add(insert);	
     }
     
-    public void request_update(int id, int k) throws RemoteException{
+    public void request_update(int y, int k, String name) throws RemoteException{
     	this.k=k;
-    	i++;
-	    insert = "UPDATE samplermi SET percentage = " + Integer.toString(i) + " where sno = " + Integer.toString(k)+" ;";
-	     
+    	ii++;
+    	insert = "UPDATE samplermi SET percentage = " + Integer.toString(ii) + " where sno = " + Integer.toString(k)+" and name = \""+ name + "\" ;";
+	    this.name = name;
+    	if(y==50) {
+	    	k=-2;
+	    }
     	queue.add(insert);	
     }
     public void request_write_others(String insert) throws RemoteException{
@@ -280,5 +296,16 @@ public class container2 implements hello{
     public void clearqueue() throws RemoteException{
     	queue.clear();
     }
-    
+	public int getRandupd() throws RemoteException{
+		return k;
+	}
+	public void setRandupd(int kval) throws RemoteException{
+		this.k = kval;
+	}
+    public String getRandname() {
+    	return this.name;
+    }
+    public void setRandname(String name) {
+    	this.name = name;
+    }
 }

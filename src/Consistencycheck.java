@@ -12,17 +12,19 @@ public class Consistencycheck{
 	public static void main(String[] args) {
 		
 		
-		int[] vals = new int[10];
-	
+		int[] vals1 = new int[10];
+		int[] vals2 = new int[10];
+		int[] vals3 = new int[10];
+		int[] vals4 = new int[10];
 		
-		
+		int[]write = new int[10];
 		
 	    try {
-	        File myObj = new File("process1.log");
+	        File myObj = new File("process2.log");
 	        Scanner myReader = new Scanner(myObj);
 	        
 	        while (myReader.hasNextLine()) {
-	          
+	       
 	          
 	          String data = myReader.nextLine();
 	          char[] arr = data.toCharArray();
@@ -30,12 +32,25 @@ public class Consistencycheck{
 	          
 	          
 	          if(arr[4]=='I') {
-	        	  int sno = Integer.parseInt(String.valueOf(arr[72]));//yes
+	        	  
 	        	  String[] parts = data.split("\'");
+	        	  int sno = Integer.parseInt(String.valueOf(parts[1]));
 	        	  String s = parts[7];
-	        	  if(parts[3].contentEquals("bhanu")) {
-	        		  vals[sno] = Integer.parseInt(String.valueOf(s));
+	        	  if(parts[3]=="Mani") {
+	        		  vals1[sno] = Integer.parseInt(String.valueOf(s));  
 	        	  }
+	        	  else if(parts[3]=="bhanu") {
+	        		  vals2[sno] = Integer.parseInt(String.valueOf(s));  
+	        	  }
+	        	  else if(parts[3]=="abhinav") {
+	        		  vals3[sno] = Integer.parseInt(String.valueOf(s));  
+	        	  }
+	        	  else if(parts[3]=="shrestha") {
+	        		  vals4[sno] = Integer.parseInt(String.valueOf(s));  
+	        	  }
+	        	  
+	        		  
+	        	  
 	        	  
 	        	  System.out.println("Done1"); 
 	        	  }
@@ -44,7 +59,21 @@ public class Consistencycheck{
 	        	  String[] parts = data.split(" ");
 	        	  int sno = Integer.parseInt(String.valueOf(parts[10]));
 	        	  int per = Integer.parseInt(String.valueOf(parts[6]));
-	        	  vals[sno] = per;
+	        	  
+	        	  if(parts[3]=="\"mani\"") {
+	        		  vals1[sno] = Integer.parseInt(String.valueOf(per));  
+	        	  }
+	        	  else if(parts[14]=="\"bhanu\"") {
+	        		  vals2[sno] = Integer.parseInt(String.valueOf(per));  
+	        	  }
+	        	  else if(parts[14]=="\"abhinav\"") {
+	        		  vals3[sno] = Integer.parseInt(String.valueOf(per));  
+	        	  }
+	        	  else if(parts[14]=="\"shrestha\"") {
+	        		  vals4[sno] = Integer.parseInt(String.valueOf(per));  
+	        	  }
+	        	  
+	        	 
 	        	  System.out.println("Done2");
 	        	  
 	          }
@@ -54,11 +83,39 @@ public class Consistencycheck{
 	        	  	if(  String.valueOf(parts[1]).contentEquals("Exit") && String.valueOf(parts[2]).contentEquals("read") && String.valueOf(parts[5]).contentEquals("percent:")) {
 	        	  		int decider = Integer.parseInt(String.valueOf(parts[6]));
 	        	  		int sno = Integer.parseInt(String.valueOf(parts[4]));
-	        	  		if(vals[sno]!=decider) {
-	        	  			System.out.println("Error for "+ data);
-	        	  			System.out.println(vals[3]	);
-	        	  			return;
+	        	  		
+	        	  		
+	        	  		
+	        	  		if(parts[8]=="mani") {
+	        	  			if(vals1[sno]!=decider) {
+		        	  			System.out.println("Error for "+ data);
+		        	  			System.out.println(vals1[sno]	);
+		        	  			return;
+		        	  		}
 	        	  		}
+	        	  		if(parts[8]=="bhanu") {
+	        	  			if(vals2[sno]!=decider) {
+		        	  			System.out.println("Error for "+ data);
+		        	  			System.out.println(vals2[sno]	);
+		        	  			return;
+		        	  		}
+	        	  		}
+	        	  		if(parts[8]=="abhinav") {
+	        	  			if(vals3[sno]!=decider) {
+		        	  			System.out.println("Error for "+ data);
+		        	  			System.out.println(vals1[3]	);
+		        	  			return;
+		        	  		}
+	        	  		}
+	        	  		if(parts[8]=="shrestha") {
+	        	  			if(vals4[sno]!=decider) {
+		        	  			System.out.println("Error for "+ data);
+		        	  			System.out.println(vals1[3]	);
+		        	  			return;
+		        	  		}
+	        	  		}
+	        	  		
+	        	  		
 	        	  		System.out.println("Done3");
 	        	  	}
 	          }

@@ -68,13 +68,13 @@ public class process1 extends container1 {
             	 if(t<10) {
         	 if(stub_self1.dbstatus(0) == 0 && stub_s2.dbstatus(0) == 0 && stub_s3.dbstatus(0) == 0 && stub_s4.dbstatus(0) == 0 ) {
         		 
-        		 
+        		    t++;
         		 	stub_self1.request_write(t,1);
        	 
         		    stub_s2.set_dbstatus(0,1);
         		 	stub_s3.set_dbstatus(0,1);
         		 	stub_s4.set_dbstatus(0,1);
-        		    t++;
+        		    
         		 
         	 		}
         	 
@@ -134,19 +134,40 @@ public class process1 extends container1 {
              Random rand = new Random();
              int upper = 10;
              x = rand.nextInt(upper);
-             
-             
-     
+             int max = 4;
+             int nam = rand.nextInt(max);
+             String name;
+             switch (nam) {
+			case 0:
+				name = "mani";
+				break;
+			case 1:
+				name = "bhanu";
+				break;
+			case 2:
+				name="abhinav";
+				break;
+			case 3:
+				name="shrestha";
+				break;
+			default:
+				name = 	"Error";
+			
+			}
              
              
              
              if(y<50) {
             	 y++;
-             
+
              
             	 if(stub_self1.dbstatus1(0) == 0 && stub_s2.dbstatus1(0) == 0 && stub_s3.dbstatus1(0) == 0 && stub_s4.dbstatus1(0) == 0 ) {
-        		 
-        		 stub_self1.request_update(t1,x);
+            		 while((x==stub_s2.getRandupd() && name==stub_s2.getRandname()) || (x==stub_s3.getRandupd() && name == stub_s3.getRandname()) || (x==stub_s4.getRandupd() && name == stub_s4.getRandname())) {
+                		 stub_self1.setRandupd(x);
+                		 stub_self1.setRandname(name);
+                		 System.out.println("stopped "+ x + stub_s2.getRandupd()+  stub_s3.getRandupd()+ stub_s4.getRandupd());
+                     }
+        		 stub_self1.request_update(y,x,name);
         		 
 
         		 
@@ -195,58 +216,7 @@ public class process1 extends container1 {
         	 
         	 
         	 
-//------------------------------------------------------------------READ-----------------------------------------------------------------------------        	 
-        	 
-        	 
-        	 if(stub_self1.dbstatus1(0) == 0 && stub_self1.dbstatus1(1) == 0 && stub_self1.dbstatus1(2) == 0 && stub_self1.dbstatus1(3) == 0) {
-
-           	      System.out.println("Reading from process 1");
-           	      Random rand1 = new Random();
-           	      int upperno = 10;
-           	      int d = rand1.nextInt(upperno);
-           	   try {
- 			      FileWriter logwtr = new FileWriter("Server1.log",true);
- 			      BufferedWriter bw = new BufferedWriter(logwtr);
- 			      PrintWriter pw = new PrintWriter(bw);
- 			      System.out.println("LOGGING");
-
- 			      pw.println("P1: Entry read id: "+Integer.toString(d));
-
-// 			      logwtr.append();
- 			         pw.flush();
- 			      logwtr.close();
- 			      
- 			      System.out.println("Successfully wrote to the file.");
- 			    } 
- 			 catch (IOException e) {
- 			      System.out.println("An error occurred.");
- 			      e.printStackTrace();
- 			    }
-           	      Student student = new Student();
-           	      list = new ArrayList<Student>(); 
-           	      student = stub_self1.getStudents(d);  
-           	       
-           	      
-     			 try {
-     			      FileWriter logwtr = new FileWriter("Server1.log",true);
-     			      BufferedWriter bw = new BufferedWriter(logwtr);
-     			      PrintWriter pw = new PrintWriter(bw);
-     			      System.out.println("LOGGING");
-     			      if(student.getId()!=-1)
-     			      pw.println("P1: Exit read id: "+student.getId() +" percent: "+student.getPercent());
-     			      else
-     			      pw.println("P1: Exit read id: "+Integer.toString(d)+" nothing to read");  
-//     			      logwtr.append();
-     			         pw.flush();
-     			      logwtr.close();
-     			      
-     			      System.out.println("Successfully wrote to the file.");
-     			    } 
-     			 catch (IOException e) {
-     			      System.out.println("An error occurred.");
-     			      e.printStackTrace();
-     			    }
-           	}	 
+	 
        }
         	 
         	 
@@ -255,7 +225,7 @@ public class process1 extends container1 {
         	 
         	   	Queue<String> q = stub_self1.queue();
 
-        	 if(x==9||y>42) {
+        	 if(x>=9||y>42) {
         		 
     			 try {
    			      FileWriter logwtr = new FileWriter("Server1.log",true);
@@ -374,7 +344,65 @@ public class process1 extends container1 {
 			    }
 			 
 			 
-        	 }   
+        	 }  
+        	 
+        	 
+//------------------------------------------------------------------READ-----------------------------------------------------------------------------        	 
+        	 
+        	 
+        	 if(stub_self1.dbstatus1(0) == 0 && stub_self1.dbstatus1(1) == 0 && stub_self1.dbstatus1(2) == 0 && stub_self1.dbstatus1(3) == 0) {
+
+           	      System.out.println("Reading from process 1");
+              	Random rand1 = new Random();
+            	Random rand2 = new Random();
+            	int upperno = 11;
+            	int upperno1 = 4;
+            	int d = rand1.nextInt(upperno);
+            	int d1 = rand2.nextInt(upperno1);
+           	   try {
+ 			      FileWriter logwtr = new FileWriter("Server1.log",true);
+ 			      BufferedWriter bw = new BufferedWriter(logwtr);
+ 			      PrintWriter pw = new PrintWriter(bw);
+ 			      System.out.println("LOGGING");
+
+ 			      pw.println("P1: Entry read id: "+Integer.toString(d));
+
+// 			      logwtr.append();
+ 			         pw.flush();
+ 			      logwtr.close();
+ 			      
+ 			      System.out.println("Successfully wrote to the file.");
+ 			    } 
+ 			 catch (IOException e) {
+ 			      System.out.println("An error occurred.");
+ 			      e.printStackTrace();
+ 			    }
+           	      Student student = new Student();
+           	      list = new ArrayList<Student>(); 
+           	      student = stub_self1.getStudents(d,d1);  
+           	       
+           	      
+     			 try {
+     			      FileWriter logwtr = new FileWriter("Server1.log",true);
+     			      BufferedWriter bw = new BufferedWriter(logwtr);
+     			      PrintWriter pw = new PrintWriter(bw);
+     			      System.out.println("LOGGING");
+     			      if(student.getId()!=-1)
+     			    	 pw.println("P1: Exit read id: "+student.getId() +" percent: "+student.getPercent()+" name: "+student.getName());
+     			      else
+     			      pw.println("P1: Exit read id: "+Integer.toString(d)+" nothing to read");  
+//     			      logwtr.append();
+     			         pw.flush();
+     			      logwtr.close();
+     			      
+     			      System.out.println("Successfully wrote to the file.");
+     			    } 
+     			 catch (IOException e) {
+     			      System.out.println("An error occurred.");
+     			      e.printStackTrace();
+     			    }
+           	} 
+        	 
          }
      } 
       
