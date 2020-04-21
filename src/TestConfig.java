@@ -11,14 +11,17 @@ public class TestConfig {
         DBRemote stub_s2 = (DBRemote) registry.lookup("Hello2"); // client 1
         DBRemote stub_s3 = (DBRemote) registry.lookup("Hello3");
         DBRemote stub_s1 = (DBRemote) registry.lookup("Hello1");
-        DBRemote stub_arr[] = new DBRemote[4]; 
+        DBRemote stub_s5 = (DBRemote) registry.lookup("Hello5");
+
+        DBRemote stub_arr[] = new DBRemote[5]; 
         stub_arr[0] = stub_s1;
         stub_arr[1] = stub_s2;
         stub_arr[2] = stub_s3;
         stub_arr[3] = stub_s4;
+        stub_arr[4] = stub_s5;
 		if(args[0].equals("STOP")){
 			System.out.println("Stopping writes");
-			for(int i=0; i <4;i++) {
+			for(int i=0; i <5;i++) {
 				stub_arr[i].notSafe();
 			}
 			

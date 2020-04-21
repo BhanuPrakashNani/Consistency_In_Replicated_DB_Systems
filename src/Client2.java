@@ -33,19 +33,20 @@ public class Client2 {
          
          // Looking up the registry for the remote object 
 
-         
-         DBRemote stub_self = (DBRemote) registry.lookup("Hello3");
-         DBRemote stub_s2 = (DBRemote) registry.lookup("Hello2");
          DBRemote stub = (DBRemote) registry.lookup("Hello1"); 
+         DBRemote stub_s2 = (DBRemote) registry.lookup("Hello2");
+         DBRemote stub_self = (DBRemote) registry.lookup("Hello3");
          DBRemote stub4 = (DBRemote) registry.lookup("Hello4");
+         DBRemote stub5 = (DBRemote) registry.lookup("Hello5");
          // Hello stub=(Hello)Naming.lookup("rmi://localhost:5000/sonoo");  
          System.out.println("lookup client");
          // Calling the remote method using the obtained object 
-         DBRemote stub_arr[] = new DBRemote[4]; 
+         DBRemote stub_arr[] = new DBRemote[5]; 
          stub_arr[0] = stub;
          stub_arr[1] = stub_s2;
          stub_arr[2] = stub_self;
          stub_arr[3] = stub4;
+         stub_arr[4] = stub5;
          Random  rand = new Random();
 
 

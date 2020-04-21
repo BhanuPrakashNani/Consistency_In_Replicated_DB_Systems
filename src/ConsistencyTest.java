@@ -9,7 +9,7 @@ import java.util.Queue;
 
 public class ConsistencyTest {
     public static void main(String[] args) throws IOException, InterruptedException {
-        for (int i = 1; i < 5; i++) {
+        for (int i = 1; i < 6; i++) {
             for (int j = 0; j < 7; j++) {
                 String PStr = "P"+i+":";
                 String Row = ""+j;

@@ -1,6 +1,6 @@
 
 public class Config {
-	static boolean[] synchStart = {false,false,false,false};
+	static boolean[] synchStart = {false,false,false,false,false};
 	static int p1sleep=2000;
 	static int p2sleep=2000;
 	static int p3sleep;

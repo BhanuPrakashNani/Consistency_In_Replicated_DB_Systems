@@ -34,17 +34,18 @@ public class Server extends DB1STUB {
          System.out.println("Server ready");
          DBRemote stub_self = (DBRemote) registry.lookup("Hello1");
          Thread.sleep(3000);
-         DBRemote stub_s4 = (DBRemote) registry.lookup("Hello4");
          DBRemote stub_s2 = (DBRemote) registry.lookup("Hello2"); // client 1
          DBRemote stub_s3 = (DBRemote) registry.lookup("Hello3");
-         
+         DBRemote stub_s4 = (DBRemote) registry.lookup("Hello4");
+         DBRemote stub_s5 = (DBRemote) registry.lookup("Hello5");
+
          System.out.println("lookup server");
-         DBRemote stub_arr[] = new DBRemote[4]; 
+         DBRemote stub_arr[] = new DBRemote[5]; 
          stub_arr[0] = stub_self;
          stub_arr[1] = stub_s2;
          stub_arr[2] = stub_s3;
          stub_arr[3] = stub_s4;
-
+         stub_arr[4] = stub_s5;
          Random  rand = new Random();
          int t =0, x = 0, c = 0;
          boolean idExists = false;
@@ -80,6 +81,7 @@ public class Server extends DB1STUB {
 	            	  stub_s4.addQobj(s);
 	            	  stub_s2.addQobj(s);
 	            	  stub_s3.addQobj(s);
+	            	  stub_s5.addQobj(s);
 	            	  stub_self.request(s); // request to write
 	       	       	  break;
 				case 0:
@@ -209,6 +211,8 @@ class syncDB implements Runnable
 	   			 stub_arr[2].notify(this.status_bit);
 	   		 else if(s.getName() == "Process 4")
 	   			 stub_arr[3].notify(this.status_bit);
+	   		 else if(s.getName() == "Process 5")
+	   			 stub_arr[4].notify(this.status_bit);
 	   		 stub_arr[this.status_bit].removeQ();
 //	   		 stub_self.notify(this.status_bit);
 	   		 this.tempstatus--;
