@@ -19,7 +19,7 @@ public class Server2 extends DB4STUB {
       try { 
          // Instantiating the implementation class 
          DB4STUB obj = new DB4STUB(); 
-         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi4", "root", "asdf;lkj");
+         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi4", "root", "bhanuprakash");
 
          Statement stmt = conn.createStatement();
 
@@ -33,7 +33,7 @@ public class Server2 extends DB4STUB {
          DBRemote stub_arr[] = new DBRemote[5]; 
 //         Naming.bind("rmi://localhost:5000/sonoo",stub);  
          registry.bind("Hello4", stubk);  
-         System.out.println("Server4 ready");
+         System.out.println("Server2 ready");
          DBRemote stub_self = (DBRemote) registry.lookup("Hello4");
          Thread.sleep(2000);
          DBRemote stub_s1 = (DBRemote) registry.lookup("Hello1");
@@ -67,7 +67,7 @@ public class Server2 extends DB4STUB {
              Thread.sleep(10000);
              Student s = new Student();
              t = t%7;
-             String query = "SELECT * FROM SAMPLERMI";
+             String query = "SELECT * FROM samplermi";
              ResultSet rs = stmt.executeQuery(query);
              while(rs.next()) {
 		    	  if(t == rs.getInt("id")) {
@@ -94,20 +94,20 @@ public class Server2 extends DB4STUB {
 	            	  stub_self.request(s); // request to write
 	       	       	  break;
 	            case 0:
-					if(!Config.synchStart[3]) {
+					//if(!Config.synchStart[3]) {
 					x = rand.nextInt(7);
 	            	Student st = stub_self.read(x);
-					} 
-					else{
-						System.out.println("cant read");// read from db
-					} // read from db
+					//} 
+					//else{
+						//System.out.println("cant read");// read from db
+					//} // read from db
 	               break;
 	            default:
 	            	System.out.println("NOTHING");
 	         }
 	         
 	         //sync with other dbs
-	         int tempStatus = stub_self.dbstatus(3)+stub_s1.dbstatus(3);
+	         int tempStatus = stub_self.dbstatus(3)+stub_s1.dbstatus(3)+stub_s5.dbstatus(3);
 	         
 	         if(tempStatus > 0) {
 	        	 System.out.println("Writer 2 inside loop1 ");

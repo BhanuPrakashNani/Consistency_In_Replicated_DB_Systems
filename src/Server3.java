@@ -19,7 +19,7 @@ public class Server3 extends DB4STUB {
       try { 
          // Instantiating the implementation class 
          DB5STUB obj = new DB5STUB(); 
-         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi5", "root", "asdf;lkj");
+         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi5", "root", "bhanuprakash");
 
          Statement stmt = conn.createStatement();
 
@@ -45,7 +45,7 @@ public class Server3 extends DB4STUB {
          stub_arr[2] = stub_s3;
          stub_arr[3] = stub_s4;
          stub_arr[4] = stub_self;
-         System.out.println("lookup server3 ");
+         System.out.println("lookup server3");
 
 //         System.out.println(stub2.notify());
 //         while(true) {
@@ -66,7 +66,7 @@ public class Server3 extends DB4STUB {
              Thread.sleep(10000);
              Student s = new Student();
              t = t%7;
-             String query = "SELECT * FROM SAMPLERMI";
+             String query = "SELECT * FROM samplermi";
              ResultSet rs = stmt.executeQuery(query);
              while(rs.next()) {
 		    	  if(t == rs.getInt("id")) {
@@ -92,20 +92,20 @@ public class Server3 extends DB4STUB {
 	            	  stub_self.request(s); // request to write
 	       	       	  break;
 	            case 0:
-					if(!Config.synchStart[4]) {
+					//if(!Config.synchStart[4]) {
 					x = rand.nextInt(7);
 	            	Student st = stub_self.read(x);
-					} 
-					else{
-						System.out.println("cant read");// read from db
-					} // read from db
+					//} 
+					//else{
+						//System.out.println("cant read");// read from db
+					//} // read from db
 	               break;
 	            default:
 	            	System.out.println("NOTHING");
 	         }
 	         
 	         //sync with other dbs
-	         int tempStatus = stub_self.dbstatus(4)+stub_s1.dbstatus(4);
+	         int tempStatus = stub_self.dbstatus(4)+stub_s1.dbstatus(4)+stub_s4.dbstatus(4);
 	         
 	         if(tempStatus > 0) {
 	        	 System.out.println("Writer 3 inside loop1 ");

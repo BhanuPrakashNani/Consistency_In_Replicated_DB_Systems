@@ -32,7 +32,7 @@ public class DB3STUB implements DBRemote{
 	      
 	      // Database credentials 
 	      String USER = "root"; 
-	      String PASS = "asdf;lkj";  
+	      String PASS = "bhanuprakash";  
 	      
 	      Connection conn = null; 
 	      Statement stmt = null;  
@@ -89,7 +89,7 @@ public class DB3STUB implements DBRemote{
 	      
 	      // Database credentials 
 	      String USER = "root"; 
-	      String PASS = "asdf;lkj";  
+	      String PASS = "bhanuprakash";  
 	      
 	      Connection conn = null; 
 	      Statement stmt = null;  
@@ -274,7 +274,7 @@ public class DB3STUB implements DBRemote{
 	      
 	      // Database credentials 
 	      String USER = "root"; 
-	      String PASS = "asdf;lkj";  
+	      String PASS = "bhanuprakash";  
 	      
 	      Connection conn = null; 
 	      Statement stmt = null;  

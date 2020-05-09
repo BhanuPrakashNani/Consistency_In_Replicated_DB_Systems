@@ -17,7 +17,7 @@ public class Client {
 	   Student s;
       try { 
     	  DB2STUB obj = new DB2STUB(); 
-          Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi2", "root", "asdf;lkj");
+          Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi2", "root", "bhanuprakash");
 
           Statement stmt = conn.createStatement();
 
@@ -30,7 +30,7 @@ public class Client {
           Registry registry = LocateRegistry.getRegistry(null);
 //          Naming.bind("rmi://localhost:5000/sonoo",stub);  
           registry.bind("Hello2", stubk);  
-          System.out.println("Server2 ready");
+          System.out.println("Client ready");
          
          // Looking up the registry for the remote object 
 
@@ -60,15 +60,15 @@ public class Client {
       while(stub_self.isSafe()) {
     	  Thread.sleep(7000);
 
-	         int tempStatus = stub4.dbstatus(1)+stub.dbstatus(1);
+	         int tempStatus = stub4.dbstatus(1)+stub.dbstatus(1)+stub5.dbstatus(1);
             
-				if(!Config.synchStart[1]) {
+				//if(!Config.synchStart[1]) {
 				int x = rand.nextInt(7);
          	Student st = stub_self.read(x);
-				} 
-				else{
-					System.out.println("cant read");// read from db
-				}
+//				} 
+//				else{
+//					System.out.println("cant read");// read from db
+//				}
 	         if(tempStatus > 0) {
 	        	 System.out.println("Client 1 inside loop1 ");
 	        	 Thread.sleep(200);

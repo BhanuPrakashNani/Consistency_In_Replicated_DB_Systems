@@ -21,12 +21,12 @@ public class Server extends DB1STUB {
 
       try { 
          // Instantiating the implementation class 
-          Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi", "root", "asdf;lkj");
+          Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi", "root", "bhanuprakash");
           Statement stmt = conn.createStatement();
 
          DB1STUB obj = new DB1STUB(); 
          // Exporting the object of implementation class (
-         // here we are exporting the remote object to the stub) 
+         // here we are exporting the remote object to the stub)
          DBRemote stub = (DBRemote) UnicastRemoteObject.exportObject(obj, 0); 
 
          Registry registry = LocateRegistry.getRegistry(); 
@@ -59,7 +59,7 @@ public class Server extends DB1STUB {
              Thread.sleep(2000);
              Student s = new Student();
 	   	     t  = t% 7; 
-             String query = "SELECT * FROM SAMPLERMI";
+             String query = "SELECT * FROM samplermi";
              ResultSet rs = stmt.executeQuery(query);
              while(rs.next()) {
 		    	  if(t == rs.getInt("id")) {
@@ -85,15 +85,15 @@ public class Server extends DB1STUB {
 	            	  stub_self.request(s); // request to write
 	       	       	  break;
 				case 0:
-					if(!Config.synchStart[0]) {
+					//if(!Config.synchStart[0]) {
 						x = rand.nextInt(7);
 		            	Student st = stub_self.read(x);
-						} 
-						else{
-							System.out.println("cant read");// read from db
-						} // read from db
+						//} 
+//						else{
+//							System.out.println("cant read");// read from db
+//						} // read from db
 					x = rand.nextInt(7);
-	            	Student st = stub_self.read(x);
+	            	//Student st = stub_self.read(x);
 
 
 					break;
@@ -104,7 +104,7 @@ public class Server extends DB1STUB {
 	         
 	         
 	         //sync with other writer processes
-	         int tempStatus = stub_self.dbstatus(0)+stub_s4.dbstatus(0);
+	         int tempStatus = stub_self.dbstatus(0)+stub_s4.dbstatus(0)+stub_s5.dbstatus(0);
 	         
 	         if(tempStatus > 0) {
 	        	 System.out.println("Writer 1 inside loop1 ");
@@ -197,7 +197,7 @@ class syncDB implements Runnable
 			      PrintWriter pw = new PrintWriter(bw);
 			      System.out.println("LOGGIGN");
 
-			      pw.println("UPdate from "+s.getName()+" for id: "+s.getId()+" percent: "+s.getPercent());
+			      pw.println("Update from "+s.getName()+" for id: "+s.getId()+" percent: "+s.getPercent());
 
 //			      logwtr.append();
 		          pw.flush();
@@ -208,7 +208,7 @@ class syncDB implements Runnable
 			      e.printStackTrace();
 			    }
 	   		 if(s.getName() == "Process 1")
-	   			 stub_arr[2].notify(this.status_bit);
+	   			 stub_arr[0].notify(this.status_bit);
 	   		 else if(s.getName() == "Process 4")
 	   			 stub_arr[3].notify(this.status_bit);
 	   		 else if(s.getName() == "Process 5")

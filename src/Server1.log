@@ -2612,3 +2612,41 @@ P1: Entry Read id: 5
 P1: Exit Read id: 5 Percent: 22 Clock: 145
 P1: Entry Read id: 4
 P1: Exit Read id: 4 Percent: 19 Clock: 144
+P3: Entry Read id: 5
+P3: Exit Read id: 5 Percent: 0 Clock: 0
+P3: Entry Read id: 5
+P3: Exit Read id: 5 Percent: 0 Clock: 0
+P3: Entry Read id: 2
+P3: Exit Read id: 2 Percent: 0 Clock: 0
+P3: Entry Read id: 0
+P3: Entry Read id: 0
+P3: Entry Read id: 4
+P3: Entry Read id: 2
+P3: Exit Read id: 2 Percent: 0 Clock: 0
+P3: Entry Read id: 6
+P3: Entry Read id: 4
+P3: Entry Read id: 3
+P1: Entry Read id: 5
+P1: Exit Read id: 5 Percent: 0 Clock: 0
+P3: Exit Read id: 3 Percent: 0 Clock: 0
+P1: Entry Read id: 3
+P1: Exit Read id: 3 Percent: 0 Clock: 0
+P1: Synch start 1
+P1: Entry Write id: 2 Percent: 1
+P1: Synch end 1
+P3: Entry Read id: 6
+P1: Synch start 2
+P1: Entry Write id: 2 Percent: 1
+P1: Synch end 2
+P1: Synch start 3
+P1: Entry Write id: 2 Percent: 1
+P1: Synch end 3
+P1: Entry Read id: 0
+P5: Synch start 4
+P5: Entry Write id: 2 Percent: 1
+P5: Synch end 4
+P5: Entry Read id: 6
+P5: Exit Read id: 6 Percent: 0 Clock: 0
+P5: Synch start 4
+P5: Entry Write id: 2 Percent: 1
+P5: Synch end 4
