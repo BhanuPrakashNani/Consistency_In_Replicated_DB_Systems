@@ -10,6 +10,7 @@ import java.rmi.server.UnicastRemoteObject;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.*;
 import java.util.concurrent.Semaphore;
@@ -21,8 +22,8 @@ public class Server extends DB1STUB {
 
       try { 
          // Instantiating the implementation class 
-          Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi", "root", "bhanuprakash");
-          Statement stmt = conn.createStatement();
+         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi", "root", "bhanuprakash");
+         Statement stmt = conn.createStatement();
 
          DB1STUB obj = new DB1STUB(); 
          // Exporting the object of implementation class (
@@ -33,7 +34,7 @@ public class Server extends DB1STUB {
          registry.bind("Hello1", stub);  
          System.out.println("Server ready");
          DBRemote stub_self = (DBRemote) registry.lookup("Hello1");
-         Thread.sleep(3000);
+         Thread.sleep(5000);
          DBRemote stub_s2 = (DBRemote) registry.lookup("Hello2"); // client 1
          DBRemote stub_s3 = (DBRemote) registry.lookup("Hello3");
          DBRemote stub_s4 = (DBRemote) registry.lookup("Hello4");
@@ -54,6 +55,15 @@ public class Server extends DB1STUB {
          String branch = "cse";
 	     int percent = 01;
 	     String email = "mani.gmail";
+	     
+	     
+	     read r = new read(stub_self);
+	     Thread tr = new Thread(r);
+	     tr.start();
+	     
+	     write w = new write(stub_self, stmt);
+	     Thread tw = new Thread(w);
+	     tw.start();
          
 	     while(stub_self.isSafe()) {
              Thread.sleep(2000);
@@ -76,30 +86,30 @@ public class Server extends DB1STUB {
 	         s.setEmail(email); 
 	         s.setClock(c);
 	         percent = 1;
-	         switch(rand.nextInt(2)) {
-	            case 1:
-	            	  stub_s4.addQobj(s);
-	            	  stub_s2.addQobj(s);
-	            	  stub_s3.addQobj(s);
-	            	  stub_s5.addQobj(s);
-	            	  stub_self.request(s); // request to write
-	       	       	  break;
-				case 0:
-					//if(!Config.synchStart[0]) {
-						x = rand.nextInt(7);
-		            	Student st = stub_self.read(x);
-						//} 
-//						else{
-//							System.out.println("cant read");// read from db
-//						} // read from db
-					x = rand.nextInt(7);
-	            	//Student st = stub_self.read(x);
-
-
-					break;
-	            default:
-	            	System.out.println("NOTHING");
-          }
+//	         switch(rand.nextInt(2)) {
+//	            case 1:
+//	            	  stub_s4.addQobj(s);
+//	            	  stub_s2.addQobj(s);
+//	            	  stub_s3.addQobj(s);
+//	            	  stub_s5.addQobj(s);
+//	            	  stub_self.request(s); // request to write
+//	       	       	  break;
+//				case 0:
+//					//if(!Config.synchStart[0]) {
+//						x = rand.nextInt(7);
+//		            	Student st = stub_self.read(x);
+//						//} 
+////						else{
+////							System.out.println("cant read");// read from db
+////						} // read from db
+//					x = rand.nextInt(7);
+//	            	//Student st = stub_self.read(x);
+//
+//
+//					break;
+//	            default:
+//	            	System.out.println("NOTHING");
+//          }
 	         
 	         
 	         
@@ -132,6 +142,97 @@ public class Server extends DB1STUB {
       
 
    } 
+}
+
+class read implements Runnable {
+	
+	DBRemote stub_s;
+    Random  rand2 = new Random();
+    
+	read(DBRemote stub){
+		this.stub_s = stub;
+		
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		System.out.println("Thread for Individual Read");
+		while(true) {
+			int t1 = rand2.nextInt(7);
+			try {
+				stub_s.read(t1);
+			} 
+			catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} 
+			catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+	}
+}
+
+class write implements Runnable{
+	DBRemote stub_s;    
+    Random  rand2 = new Random();
+    Statement stmt1;
+    boolean idExists = false;
+
+	write(DBRemote stub, Statement stmt){
+		this.stub_s = stub;
+		this.stmt1 = stmt;
+	}
+	
+	int c = 0;
+	String name = "Process 1";
+    String branch = "cse";
+    int percent = 01;
+    String email = "mani.gmail";
+    
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		while(true) {
+			try {
+				 
+				 int t1 = rand2.nextInt(7);
+				 Student s = new Student();
+	             String query = "SELECT * FROM samplermi";
+	             ResultSet rs = stmt1.executeQuery(query);
+	             while(rs.next()) {
+			    	  if(t1 == rs.getInt("id")) {
+			    		  idExists = true;
+			    		  percent = rs.getInt("percentage")+1;
+			    		  break;
+			    	  }
+			      }
+
+	             s.setID(t1); 
+		         s.setName(name); 
+		         s.setBranch(branch); 
+		         s.setPercent(percent); 
+		         s.setEmail(email); 
+		         s.setClock(c);
+		         percent = 1;
+				stub_s.request(s);
+				
+				c++;
+			} 
+			catch (RemoteException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} 
+			catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+	}
 }
 
 class syncDB implements Runnable
@@ -186,7 +287,6 @@ class syncDB implements Runnable
 			q = stub_arr[this.status_bit].getQobj();
 
 	   	 while(this.tempstatus > 0 && q.size() >0) {
-	   		 Config.synchStart[this.status_bit] = true;
 	   		 s = q.peek();
 	   		 q.remove();
 	   		 stub_arr[this.status_bit].addStudent(s);
@@ -217,8 +317,6 @@ class syncDB implements Runnable
 //	   		 stub_self.notify(this.status_bit);
 	   		 this.tempstatus--;
 	   	 }
-   		 Config.synchStart[this.status_bit] = false;
-
 		 } catch (Exception e) {
 		      System.out.println("An error occurred.");
 		      e.printStackTrace();

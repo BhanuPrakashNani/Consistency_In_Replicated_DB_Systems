@@ -35,7 +35,7 @@ public class Server3 extends DB4STUB {
          registry.bind("Hello5", stubk);  
          System.out.println("Server3 ready");
          DBRemote stub_self = (DBRemote) registry.lookup("Hello5");
-         Thread.sleep(2000);
+         Thread.sleep(8000);
          DBRemote stub_s1 = (DBRemote) registry.lookup("Hello1");
          DBRemote stub_s2 = (DBRemote) registry.lookup("Hello2");
          DBRemote stub_s3 = (DBRemote) registry.lookup("Hello3");
@@ -53,6 +53,15 @@ public class Server3 extends DB4STUB {
 //        	 System.out.println(stub2.getMessage());
 //
 //         }
+         
+         read r = new read(stub_self);
+	     Thread tr = new Thread(r);
+	     tr.start();
+	     
+	     write w = new write(stub_self, stmt);
+	     Thread tw = new Thread(w);
+	     tw.start();
+	     
          Random rand = new Random();
          int t =0, x = 0, c = 0;
          boolean idExists = false;
@@ -83,26 +92,26 @@ public class Server3 extends DB4STUB {
 	         s.setEmail(email); 
 	         s.setClock(c);
 	         percent = 1;
-	         switch(rand.nextInt(2)) {
-	            case 1:
-	            	  stub_s1.addQobj(s);
-	            	  stub_s2.addQobj(s);
-	            	  stub_s3.addQobj(s);
-	            	  stub_s4.addQobj(s);
-	            	  stub_self.request(s); // request to write
-	       	       	  break;
-	            case 0:
-					//if(!Config.synchStart[4]) {
-					x = rand.nextInt(7);
-	            	Student st = stub_self.read(x);
-					//} 
-					//else{
-						//System.out.println("cant read");// read from db
-					//} // read from db
-	               break;
-	            default:
-	            	System.out.println("NOTHING");
-	         }
+//	         switch(rand.nextInt(2)) {
+//	            case 1:
+//	            	  stub_s1.addQobj(s);
+//	            	  stub_s2.addQobj(s);
+//	            	  stub_s3.addQobj(s);
+//	            	  stub_s4.addQobj(s);
+//	            	  stub_self.request(s); // request to write
+//	       	       	  break;
+//	            case 0:
+//					//if(!Config.synchStart[4]) {
+//					x = rand.nextInt(7);
+//	            	Student st = stub_self.read(x);
+//					//} 
+//					//else{
+//						//System.out.println("cant read");// read from db
+//					//} // read from db
+//	               break;
+//	            default:
+//	            	System.out.println("NOTHING");
+//	         }
 	         
 	         //sync with other dbs
 	         int tempStatus = stub_self.dbstatus(4)+stub_s1.dbstatus(4)+stub_s4.dbstatus(4);
