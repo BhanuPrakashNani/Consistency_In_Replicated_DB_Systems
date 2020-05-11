@@ -1,4 +1,3 @@
-//we implemented local-read algo 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -17,8 +16,7 @@ import java.util.concurrent.Semaphore;
 
 public class Server extends DB1STUB { 
    public Server() {} 
-   public static void main(String args[]) { 
-	   //List<Student> list = null;
+   public static void main(String args[]) {
 
       try { 
          // Instantiating the implementation class 
@@ -47,6 +45,8 @@ public class Server extends DB1STUB {
          stub_arr[2] = stub_s3;
          stub_arr[3] = stub_s4;
          stub_arr[4] = stub_s5;
+         
+         
          Random  rand = new Random();
          int t =0, x = 0, c = 0;
          boolean idExists = false;
@@ -55,7 +55,6 @@ public class Server extends DB1STUB {
          String branch = "cse";
 	     int percent = 01;
 	     String email = "mani.gmail";
-	     
 	     
 	     read r = new read(stub_self);
 	     Thread tr = new Thread(r);
@@ -86,34 +85,6 @@ public class Server extends DB1STUB {
 	         s.setEmail(email); 
 	         s.setClock(c);
 	         percent = 1;
-//	         switch(rand.nextInt(2)) {
-//	            case 1:
-//	            	  stub_s4.addQobj(s);
-//	            	  stub_s2.addQobj(s);
-//	            	  stub_s3.addQobj(s);
-//	            	  stub_s5.addQobj(s);
-//	            	  stub_self.request(s); // request to write
-//	       	       	  break;
-//				case 0:
-//					//if(!Config.synchStart[0]) {
-//						x = rand.nextInt(7);
-//		            	Student st = stub_self.read(x);
-//						//} 
-////						else{
-////							System.out.println("cant read");// read from db
-////						} // read from db
-//					x = rand.nextInt(7);
-//	            	//Student st = stub_self.read(x);
-//
-//
-//					break;
-//	            default:
-//	            	System.out.println("NOTHING");
-//          }
-	         
-	         
-	         
-	         //sync with other writer processes
 	         int tempStatus = stub_self.dbstatus(0)+stub_s4.dbstatus(0)+stub_s5.dbstatus(0);
 	         
 	         if(tempStatus > 0) {
@@ -158,19 +129,25 @@ class read implements Runnable {
 	public void run() {
 		// TODO Auto-generated method stub
 		System.out.println("Thread for Individual Read");
-		while(true) {
-			int t1 = rand2.nextInt(7);
-			try {
-				stub_s.read(t1);
-			} 
-			catch (ClassNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} 
-			catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+		try {
+			while(stub_s.isSafe()) {
+				int t1 = rand2.nextInt(7);
+				try {
+					Thread.sleep(2000);
+					stub_s.read(t1);
+				} 
+				catch (ClassNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} 
+				catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		
 	}
@@ -196,40 +173,48 @@ class write implements Runnable{
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-		while(true) {
-			try {
-				 
-				 int t1 = rand2.nextInt(7);
-				 Student s = new Student();
-	             String query = "SELECT * FROM samplermi";
-	             ResultSet rs = stmt1.executeQuery(query);
-	             while(rs.next()) {
-			    	  if(t1 == rs.getInt("id")) {
-			    		  idExists = true;
-			    		  percent = rs.getInt("percentage")+1;
-			    		  break;
-			    	  }
-			      }
+		try {
+			while(stub_s.isSafe()) {
+				try {
+					 Thread.sleep(2000);
+					 int t1 = rand2.nextInt(7);
+					 Student s = new Student();
+			         String query = "SELECT * FROM samplermi";
+			         ResultSet rs = stmt1.executeQuery(query);
+			         while(rs.next()) {
+				    	  if(t1 == rs.getInt("id")) {
+				    		  idExists = true;
+				    		  percent = rs.getInt("percentage")+1;
+				    		  break;
+				    	  }
+				      }
 
-	             s.setID(t1); 
-		         s.setName(name); 
-		         s.setBranch(branch); 
-		         s.setPercent(percent); 
-		         s.setEmail(email); 
-		         s.setClock(c);
-		         percent = 1;
-				stub_s.request(s);
-				
-				c++;
-			} 
-			catch (RemoteException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} 
-			catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+			         s.setID(t1); 
+			         s.setName(name); 
+			         s.setBranch(branch); 
+			         s.setPercent(percent); 
+			         s.setEmail(email); 
+			         s.setClock(c);
+			         percent = 1;
+					stub_s.request(s);
+					
+					c++;
+				} 
+				catch (RemoteException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} 
+				catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		
 	}
