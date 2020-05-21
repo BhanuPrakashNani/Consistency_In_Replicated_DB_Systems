@@ -214,11 +214,11 @@ class DBWriter implements Runnable{
 //                Student st = this.read(x);
                 
                 
-                read r = new read(this,nickname);
+                Tread r = new Tread(this,nickname);
        	     	Thread tr = new Thread(r);
        	     	tr.start();
        	     	
-                write w = new write(this,nickname);
+                Twrite w = new Twrite(this,nickname);
        	     	Thread tw = new Thread(w);
        	     	tw.start();
  
@@ -399,7 +399,7 @@ class DBWriter implements Runnable{
 }
 
 
-class read implements Runnable{
+class Tread implements Runnable{
     Queue<Student> q = new LinkedList<>();
 	int tempstatus = 0;
     DBWriter dbWriter = null;
@@ -408,7 +408,7 @@ class read implements Runnable{
     Random  rand2 = new Random();
 
     
-    read(DBWriter DBW, String nickname){
+    Tread(DBWriter DBW, String nickname){
         this.dbWriter = DBW;
         this.nickname = nickname;
     }
@@ -435,7 +435,7 @@ class read implements Runnable{
 }
 
 
-class write implements Runnable{
+class Twrite implements Runnable{
     Queue<Student> q = new LinkedList<>();
 	int tempstatus = 0;
     DBWriter dbWriter = null;
@@ -452,7 +452,7 @@ class write implements Runnable{
     int percent = s.getPercent();
     String email = s.getEmail();
     int clock = s.getClock();
-    write(DBWriter DBW, String nickname){
+    Twrite(DBWriter DBW, String nickname){
         this.dbWriter = DBW;
         this.nickname = nickname;
     }
@@ -571,7 +571,7 @@ class syncDB  implements Runnable{
 		    }
 		try {
 			
-		      FileWriter logwtr = new FileWriter("Server1.log",true);
+		      FileWriter logwtr = new FileWriter("Writers.log",true);
 		      BufferedWriter bw = new BufferedWriter(logwtr);
 		      PrintWriter pw = new PrintWriter(bw);
 		      System.out.println("LOGGIGN");
