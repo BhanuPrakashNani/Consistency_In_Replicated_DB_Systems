@@ -175,44 +175,13 @@ class DBWriter implements Runnable{
     public void run(){
         try{
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi"+nickname, "root", "bhanuprakash");
-            Statement stmt = conn.createStatement();
-
             System.out.println("Writer ready");
             Random  rand = new Random();
             int t =0, x = 0, c = 0;
-            boolean idExists = false;
             Thread.sleep(2000);
-            String name = "Process "+nickname ;
-            String branch = "cse";
-            int percent = 01;
-            String email = "mani.gmail";
          
             while(writer.getIsSafe()){
                 Thread.sleep(2000);
-                Student s = new Student();
-	   	        t  = t% 7; 
-                String query = "SELECT * FROM samplermi";
-                ResultSet rs = stmt.executeQuery(query);
-                while(rs.next()) {
-                    if(t == rs.getInt("id")) {
-                        idExists = true;
-                        percent = rs.getInt("percentage")+5;
-                        break;
-                    }
-                }
-                s.setID(t); 
-                s.setName(name); 
-                s.setBranch(branch); 
-                s.setPercent(percent); 
-                s.setEmail(email); 
-                s.setClock(c);
-            
-//                writer.addToStudentSendQueue(writer, s);
-//                this.write(s);
-//              
-//                x = rand.nextInt(7);
-//                Student st = this.read(x);
-                
                 
                 Tread r = new Tread(this,nickname);
        	     	Thread tr = new Thread(r);
@@ -414,20 +383,14 @@ class Tread implements Runnable{
     }
     
     public void run() {
-		// TODO Auto-generated method stub
 		System.out.println("Thread for Individual Read");
-		while(true) {
+		while(dbWriter.writer.getIsSafe()) {
 			int t1 = rand2.nextInt(7);
 			try {
 				Thread.sleep(2000);
 				dbWriter.read(t1);
 			} 
-			catch (ClassNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} 
 			catch (Exception e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
@@ -459,7 +422,7 @@ class Twrite implements Runnable{
 
 	@Override
 	public void run() {
-		while(true) {
+		while(dbWriter.writer.getIsSafe()) {
 			try {
 				 Thread.sleep(2000);	 
 				 int t1 = rand2.nextInt(7);
@@ -484,14 +447,7 @@ class Twrite implements Runnable{
 		         dbWriter.write(s);
 				c++;
 			} 
-			catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
+			catch (Exception e) {
 				e.printStackTrace();
 			}
 		}
