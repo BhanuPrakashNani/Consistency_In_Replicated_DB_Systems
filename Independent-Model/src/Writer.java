@@ -408,13 +408,6 @@ class Twrite implements Runnable{
     boolean idExists = false;
     Statement stmt1;
     
-    int id = s.getId();
-    int c = 0;
-    String name = s.getName();
-    String branch = s.getBranch();
-    int percent = s.getPercent();
-    String email = s.getEmail();
-    int clock = s.getClock();
     Twrite(DBWriter DBW, String nickname){
         this.dbWriter = DBW;
         this.nickname = nickname;
@@ -422,6 +415,19 @@ class Twrite implements Runnable{
 
 	@Override
 	public void run() {
+        System.out.println("Writer ready");
+        int t =0, x = 0, c = 0;
+        try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+        String name = "Process "+nickname ;
+        String branch = "cse";
+        int percent = 01;
+        String email = "mani.gmail";
+        
 		while(dbWriter.writer.getIsSafe()) {
 			try {
 				 Thread.sleep(2000);	 
@@ -431,7 +437,6 @@ class Twrite implements Runnable{
 		         ResultSet rs = stmt1.executeQuery(query);
 		         while(rs.next()) {
 			    	  if(t1 == rs.getInt("id")) {
-			    		  idExists = true;
 			    		  percent = rs.getInt("percentage")+1;
 			    		  break;
 			    	  }
