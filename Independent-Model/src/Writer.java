@@ -445,13 +445,6 @@ class Twrite implements Runnable{
     boolean idExists = false;
     Statement stmt1;
     
-    int id = s.getId();
-    int c = 0;
-    String name = s.getName();
-    String branch = s.getBranch();
-    int percent = s.getPercent();
-    String email = s.getEmail();
-    int clock = s.getClock();
     Twrite(DBWriter DBW, String nickname){
         this.dbWriter = DBW;
         this.nickname = nickname;
@@ -459,6 +452,36 @@ class Twrite implements Runnable{
 
 	@Override
 	public void run() {
+		
+		Connection conn = null;
+		try {
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi"+nickname, "root", "bhanuprakash");
+		} catch (SQLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+        try {
+			Statement stmt = conn.createStatement();
+		} catch (SQLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+
+        System.out.println("Writer ready");
+        Random  rand = new Random();
+        int t =0, x = 0, c = 0;
+        boolean idExists = false;
+        try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+        String name = "Process "+nickname ;
+        String branch = "cse";
+        int percent = 01;
+        String email = "mani.gmail";
+        
 		while(true) {
 			try {
 				 Thread.sleep(2000);	 
