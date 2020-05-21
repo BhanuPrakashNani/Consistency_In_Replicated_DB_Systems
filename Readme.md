@@ -1,50 +1,33 @@
-[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Naereen/) [![Open Source Love png2](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/) [![GitHub version](https://badge.fury.io/gh/Naereen%2FStrapDown.js.svg)](https://github.com/Naereen/StrapDown.js)
+# rmi-experiments
 
+Run the following commands in root directory
 
-# Implementation of Consistency Algorithms in Replicated Database Systems.
+`$ ./run.sh`
 
-## HOW TO RUN
+Start the server
 
-Open five terminals:
+`$ java Server`
 
+Start the Client
 
-Update your $CLASSPATH env var to the path of connector-xxx.jar
+`$ java Writer`
 
-** ADD current directory in your class path in every session**
+Start the Controller
 
+` $ java Controller`
 
+To begin the distributed process :
+` $ begin` and to exit `$ exit` 
+Sample Execution:
 
-
-### terminal1
-``` cd bin/ 
-    rmiregistry -J-Djava.rmi.useLocalHostName=true -J-Djava.rmi.server.hostname=127.0.0.1
-```
-
-### terminal2
-
-```
-    cd src/
-    java Server -cp ./mysql-connector-java-8.0.19.jar
-```
-
-### terminal3
-
-```
-    cd src/
-    java Server2 -cp ./mysql-connector-java-8.0.19.jar
-```
-### terminal4
-
-```
-    cd src/
-    java Client -cp ./mysql-connector-java-8.0.19.jar
-    
-```
-
-### terminal5
-
-```
-    cd src/
-    java Client2 -cp ./mysql-connector-java-8.0.19.jar
-    
-```
+- execute in terminal 1 - ./run.sh
+- execute in terminal 2 - javac *.java
+- execute in terminal 2 - java Server
+- execute in terminal 3 - java Writer
+- type in terminal 3 - first
+- execute in terminal 4 - java Writer
+- type in terminal 4 - second
+- type in terminal 3 - Hello
+- execute in terminal 5 - java Writer
+- type in terminal 5 - third
+- type in terminal 4 - exit
