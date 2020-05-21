@@ -427,15 +427,13 @@ class Twrite implements Runnable{
 			try {
 				 Thread.sleep(2000);	 
 				 int t1 = rand2.nextInt(7);
-				 Student s = new Student();
-		         String query = "SELECT * FROM samplermi";
-		         ResultSet rs = stmt1.executeQuery(query);
-		         while(rs.next()) {
-			    	  if(t1 == rs.getInt("id")) {
-			    		  percent = rs.getInt("percentage")+1;
-			    		  break;
-			    	  }
-			      }
+				 s = dbWriter.read(t1);
+		        if(s !=null) {
+			    		  percent = s.getPercent()+1;
+			    }else{
+					s = new Student();
+				}
+			      
 
 		         s.setID(t1); 
 		         s.setName(name); 
