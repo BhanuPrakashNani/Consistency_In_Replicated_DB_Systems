@@ -460,7 +460,7 @@ class syncDB  implements Runnable{
 		    }
 		try {
 			
-		      FileWriter logwtr = new FileWriter("Server1.log",true);
+		      FileWriter logwtr = new FileWriter("Writers.log",true);
 		      BufferedWriter bw = new BufferedWriter(logwtr);
 		      PrintWriter pw = new PrintWriter(bw);
 		      System.out.println("LOGGIGN");
