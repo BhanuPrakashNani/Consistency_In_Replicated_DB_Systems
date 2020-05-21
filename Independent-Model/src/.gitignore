@@ -10,3 +10,12 @@
 /Server3.class
 /read.class
 /write.class
+/Controller.class
+/DBWriter.class
+/Process.class
+/ServerInterface.class
+/Tread.class
+/Twrite.class
+/WriteInterface.class
+/Writer.class
+/syncDB.class

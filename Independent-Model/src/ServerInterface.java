@@ -7,5 +7,5 @@ public interface ServerInterface extends Remote{
     public void sendToAll(String newMessage) throws RemoteException;
     public void sendStudentToAll(Student student) throws RemoteException;
     public void disconnect(String nickname) throws RemoteException;
-	public void sendStudent1(Student student) throws RemoteException;
+	//public void sendStudent1(Student student) throws RemoteException;
 }

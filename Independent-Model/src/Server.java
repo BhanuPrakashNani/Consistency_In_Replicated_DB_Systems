@@ -77,9 +77,4 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
         }
 	}
 
-	@Override
-	public void sendStudent1(Student student) {
-		// TODO Auto-generated method stub
-		
-	}
 }

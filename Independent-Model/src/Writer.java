@@ -154,11 +154,6 @@ public class Writer extends UnicastRemoteObject implements WriteInterface {
         return this.isSafe;
     }
 
-	@Override
-	public void studentFromServer1(Student student) {
-		// TODO Auto-generated method stub
-		
-	}
 }
 
 class DBWriter implements Runnable{
@@ -450,7 +445,7 @@ class Twrite implements Runnable{
 		         s.setClock(c);
 		         percent = 1;
 		         dbWriter.write(s);
-				c++;
+		         c++;
 			} 
 			catch (Exception e) {
 				e.printStackTrace();
