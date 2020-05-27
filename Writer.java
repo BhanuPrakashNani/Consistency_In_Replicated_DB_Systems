@@ -128,15 +128,15 @@ public class Writer extends UnicastRemoteObject implements WriteInterface {
 
     public Queue<String> getReceiveQueue(){
         Queue<String> temp = new LinkedList<>();
-        for(String s : receiveQueue){
-            temp.add(s);
+        for(int i = 0; i< receiveQueue.size();i++){
+            temp.add(receiveQueue.remove());
         }
         //receiveQueue.clear();
         return temp;
     }
     public Queue<Student> getReceivedStudentQueue(){
         Queue<Student> temp = new LinkedList<>();
-        for(Student s : receiveStudentQueue){
+        for(int i = 0; i< receiveStudentQueue.size();i++){
             temp.add(receiveStudentQueue.remove());
         }
         return temp;
