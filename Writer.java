@@ -137,9 +137,8 @@ public class Writer extends UnicastRemoteObject implements WriteInterface {
     public Queue<Student> getReceivedStudentQueue(){
         Queue<Student> temp = new LinkedList<>();
         for(Student s : receiveStudentQueue){
-            temp.add(s);
+            temp.add(receiveStudentQueue.remove());
         }
-        //receiveStudentQueue.clear();
         return temp;
     }
     public void addToSendQueue(Writer w, String message){
@@ -184,25 +183,25 @@ class DBWriter implements Runnable{
                 Thread.sleep(2000);
                 Student s = new Student();
 	   	        t  = t% 7; 
-                String query = "SELECT * FROM SAMPLERMI";
-                ResultSet rs = stmt.executeQuery(query);
-                while(rs.next()) {
-                    if(t == rs.getInt("id")) {
-                        idExists = true;
-                        percent = rs.getInt("percentage")+5;
-                        break;
-                    }
-                }
-                s.setID(t); 
-                s.setName(name); 
-                s.setBranch(branch); 
-                s.setPercent(percent); 
-                s.setEmail(email); 
-                s.setClock(c);
+               
                 switch(rand.nextInt(2)) {
                     case 1:
+			String query = "SELECT * FROM SAMPLERMI";
+                	ResultSet rs = stmt.executeQuery(query);
+               		while(rs.next()) {
+                    		if(t == rs.getInt("id")) {
+                        		idExists = true;
+                        		percent = rs.getInt("percentage")+5;
+                        		break;
+                    		}
+               		 }
+			s.setID(t); 
+			s.setName(name); 
+			s.setBranch(branch); 
+			s.setPercent(percent); 
+			s.setEmail(email); 
+			s.setClock(c);
                         writer.addToStudentSendQueue(writer, s);
-                        this.write(s);
                         break;
                     case 0:
                         x = rand.nextInt(7);
