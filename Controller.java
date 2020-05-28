@@ -65,4 +65,10 @@ public class Controller extends UnicastRemoteObject implements WriteInterface {
 
     }
 
+    @Override
+    public void requestFromServer(Request request) throws RemoteException {
+        // TODO Auto-generated method stub
+
+    }
+
 }

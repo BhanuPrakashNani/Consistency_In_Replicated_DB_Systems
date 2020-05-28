@@ -226,7 +226,7 @@ class DBWriter implements Runnable{
  
                  //process the pending requests.
                  Queue<Request> temp = writer.getRequestQueue();
-                 
+                if(temp != null){
                  while(temp.size() > 0) {
                     Student st;
                     System.out.println("Writer "+nickname+" processing pending requests");
@@ -246,7 +246,7 @@ class DBWriter implements Runnable{
                     }
                     
                  }
-                 
+                }
                  System.out.println("WRITER "+nickname+" "+t); 
                  c++;
                  
