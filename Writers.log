@@ -1,0 +1,1182 @@
+P2: Entry Read id: 5
+P2: Exit Read id: 5 Percent: 0 Clock: 0
+P3: Entry Write id: 6 Percent: 1
+P1: Entry Write id: 6 Percent: 1
+P5: Entry Write id: 6 Percent: 1
+P4: Entry Write id: 6 Percent: 1
+P3: Exit Write id: 6 Percent: 1 Clock: 0
+P4: Exit Write id: 6 Percent: 1 Clock: 0
+P1: Exit Write id: 6 Percent: 1 Clock: 0
+P5: Exit Write id: 6 Percent: 1 Clock: 0
+P4: Entry Write id: 4 Percent: 1
+P5: Entry Write id: 4 Percent: 1
+P4: Exit Write id: 4 Percent: 1 Clock: 0
+P5: Exit Write id: 4 Percent: 1 Clock: 0
+P2: Entry Write id: 6 Percent: 1
+P2: Exit Write id: 6 Percent: 1 Clock: 0
+P2: Entry Write id: 4 Percent: 1
+P2: Exit Write id: 4 Percent: 1 Clock: 0
+P3: Entry Write id: 4 Percent: 1
+P1: Entry Write id: 4 Percent: 1
+P3: Exit Write id: 4 Percent: 1 Clock: 0
+P1: Exit Write id: 4 Percent: 1 Clock: 0
+P4: Entry Read id: 3
+P4: Exit Read id: 3 Percent: 0 Clock: 0
+P5: Entry Read id: 3
+P5: Exit Read id: 3 Percent: 0 Clock: 0
+P2: Entry Read id: 5
+P2: Exit Read id: 5 Percent: 0 Clock: 0
+P2: Entry Write id: 2 Percent: 1
+P2: Exit Write id: 2 Percent: 1 Clock: 1
+P3: Entry Read id: 3
+P3: Exit Read id: 3 Percent: 0 Clock: 0
+P4: Entry Write id: 2 Percent: 1
+P5: Entry Write id: 2 Percent: 1
+P3: Entry Write id: 2 Percent: 1
+P1: Entry Write id: 2 Percent: 1
+P3: Exit Write id: 2 Percent: 1 Clock: 1
+P1: Exit Write id: 2 Percent: 1 Clock: 1
+P5: Exit Write id: 2 Percent: 1 Clock: 1
+P4: Exit Write id: 2 Percent: 1 Clock: 1
+P5: Entry Write id: 4 Percent: 6
+P4: Entry Read id: 6
+P4: Exit Read id: 6 Percent: 1 Clock: 0
+P5: Exit Write id: 4 Percent: 6 Clock: 1
+P4: Entry Write id: 4 Percent: 6
+P4: Exit Write id: 4 Percent: 6 Clock: 1
+P2: Entry Write id: 4 Percent: 6
+P2: Exit Write id: 4 Percent: 6 Clock: 1
+P2: Entry Read id: 0
+P2: Exit Read id: 0 Percent: 0 Clock: 0
+P2: Entry Write id: 2 Percent: 1
+P2: Exit Write id: 2 Percent: 1 Clock: 2
+P3: Entry Write id: 4 Percent: 6
+P1: Entry Write id: 4 Percent: 6
+P3: Exit Write id: 4 Percent: 6 Clock: 1
+P1: Exit Write id: 4 Percent: 6 Clock: 1
+P5: Entry Write id: 2 Percent: 1
+P3: Entry Write id: 2 Percent: 1
+P4: Entry Write id: 2 Percent: 1
+P5: Exit Write id: 2 Percent: 1 Clock: 2
+P4: Exit Write id: 2 Percent: 1 Clock: 2
+P3: Exit Write id: 2 Percent: 1 Clock: 2
+P1: Entry Write id: 2 Percent: 1
+P1: Exit Write id: 2 Percent: 1 Clock: 2
+P5: Entry Write id: 0 Percent: 1
+P3: Entry Write id: 0 Percent: 1
+P4: Entry Write id: 0 Percent: 1
+P3: Exit Write id: 0 Percent: 1 Clock: 2
+P5: Exit Write id: 0 Percent: 1 Clock: 2
+P4: Exit Write id: 0 Percent: 1 Clock: 2
+P1: Entry Write id: 0 Percent: 1
+P1: Exit Write id: 0 Percent: 1 Clock: 2
+P4: Entry Read id: 0
+P4: Exit Read id: 0 Percent: 1 Clock: 2
+P5: Entry Write id: 1 Percent: 6
+P5: Exit Write id: 1 Percent: 6 Clock: 2
+P4: Entry Write id: 1 Percent: 6
+P4: Exit Write id: 1 Percent: 6 Clock: 2
+P2: Entry Write id: 0 Percent: 1
+P2: Exit Write id: 0 Percent: 1 Clock: 2
+P2: Entry Write id: 1 Percent: 6
+P2: Exit Write id: 1 Percent: 6 Clock: 2
+P2: Entry Read id: 2
+P2: Exit Read id: 2 Percent: 1 Clock: 2
+P3: Entry Write id: 1 Percent: 6
+P3: Exit Write id: 1 Percent: 6 Clock: 2
+P1: Entry Write id: 1 Percent: 6
+P3: Entry Read id: 1
+P5: Entry Write id: 3 Percent: 1
+P3: Exit Read id: 1 Percent: 6 Clock: 2
+P1: Exit Write id: 1 Percent: 6 Clock: 2
+P5: Exit Write id: 3 Percent: 1 Clock: 3
+P4: Entry Write id: 3 Percent: 1
+P3: Entry Write id: 3 Percent: 1
+P4: Exit Write id: 3 Percent: 1 Clock: 3
+P5: Entry Write id: 3 Percent: 6
+P1: Entry Write id: 3 Percent: 1
+P3: Exit Write id: 3 Percent: 1 Clock: 3
+P5: Exit Write id: 3 Percent: 6 Clock: 3
+P1: Exit Write id: 3 Percent: 1 Clock: 3
+P4: Entry Write id: 3 Percent: 6
+P4: Exit Write id: 3 Percent: 6 Clock: 3
+P1: Entry Write id: 3 Percent: 6
+P1: Exit Write id: 3 Percent: 6 Clock: 3
+P4: Entry Read id: 6
+P4: Exit Read id: 6 Percent: 1 Clock: 0
+P2: Entry Write id: 3 Percent: 1
+P2: Exit Write id: 3 Percent: 1 Clock: 3
+P2: Entry Write id: 3 Percent: 6
+P2: Exit Write id: 3 Percent: 6 Clock: 3
+P2: Entry Write id: 1 Percent: 1
+P2: Exit Write id: 1 Percent: 1 Clock: 4
+P2: Entry Write id: 4 Percent: 11
+P2: Exit Write id: 4 Percent: 11 Clock: 4
+P3: Entry Write id: 3 Percent: 6
+P5: Entry Write id: 1 Percent: 1
+P3: Exit Write id: 3 Percent: 6 Clock: 3
+P5: Exit Write id: 1 Percent: 1 Clock: 4
+P5: Entry Write id: 4 Percent: 11
+P4: Entry Write id: 1 Percent: 1
+P1: Entry Write id: 1 Percent: 1
+P3: Entry Write id: 1 Percent: 1
+P5: Exit Write id: 4 Percent: 11 Clock: 4
+P4: Exit Write id: 1 Percent: 1 Clock: 4
+P3: Exit Write id: 1 Percent: 1 Clock: 4
+P1: Exit Write id: 1 Percent: 1 Clock: 4
+P1: Entry Write id: 4 Percent: 11
+P5: Entry Read id: 2
+P4: Entry Write id: 4 Percent: 11
+P3: Entry Write id: 4 Percent: 11
+P5: Exit Read id: 2 Percent: 1 Clock: 2
+P1: Exit Write id: 4 Percent: 11 Clock: 4
+P4: Exit Write id: 4 Percent: 11 Clock: 4
+P3: Exit Write id: 4 Percent: 11 Clock: 4
+P4: Entry Read id: 2
+P4: Exit Read id: 2 Percent: 1 Clock: 2
+P1: Entry Read id: 5
+P1: Exit Read id: 5 Percent: 0 Clock: 0
+P2: Entry Read id: 5
+P2: Exit Read id: 5 Percent: 0 Clock: 0
+P5: Entry Read id: 3
+P5: Exit Read id: 3 Percent: 6 Clock: 3
+P3: Entry Read id: 3
+P3: Exit Read id: 3 Percent: 6 Clock: 3
+P4: Entry Read id: 2
+P4: Exit Read id: 2 Percent: 1 Clock: 2
+P1: Entry Read id: 1
+P1: Exit Read id: 1 Percent: 1 Clock: 4
+P2: Entry Read id: 3
+P2: Exit Read id: 3 Percent: 6 Clock: 3
+P2: Entry Write id: 1 Percent: 6
+P2: Exit Write id: 1 Percent: 6 Clock: 6
+P5: Entry Write id: 1 Percent: 6
+P5: Exit Write id: 1 Percent: 6 Clock: 6
+P5: Entry Write id: 0 Percent: 6
+P3: Entry Write id: 1 Percent: 6
+P5: Exit Write id: 0 Percent: 6 Clock: 6
+P3: Exit Write id: 1 Percent: 6 Clock: 6
+P4: Entry Write id: 1 Percent: 6
+P1: Entry Write id: 1 Percent: 6
+P4: Exit Write id: 1 Percent: 6 Clock: 6
+P1: Exit Write id: 1 Percent: 6 Clock: 6
+P3: Entry Write id: 0 Percent: 6
+P3: Exit Write id: 0 Percent: 6 Clock: 6
+P4: Entry Write id: 0 Percent: 6
+P1: Entry Write id: 0 Percent: 6
+P4: Exit Write id: 0 Percent: 6 Clock: 6
+P1: Exit Write id: 0 Percent: 6 Clock: 6
+P4: Entry Read id: 6
+P1: Entry Write id: 3 Percent: 11
+P4: Exit Read id: 6 Percent: 1 Clock: 0
+P1: Exit Write id: 3 Percent: 11 Clock: 6
+P4: Entry Write id: 3 Percent: 11
+P4: Exit Write id: 3 Percent: 11 Clock: 6
+P2: Entry Write id: 0 Percent: 6
+P2: Exit Write id: 0 Percent: 6 Clock: 6
+P2: Entry Write id: 3 Percent: 11
+P2: Exit Write id: 3 Percent: 11 Clock: 6
+P2: Entry Read id: 3
+P2: Exit Read id: 3 Percent: 11 Clock: 6
+P5: Entry Write id: 3 Percent: 11
+P5: Exit Write id: 3 Percent: 11 Clock: 6
+P5: Entry Read id: 6
+P5: Exit Read id: 6 Percent: 1 Clock: 0
+P3: Entry Write id: 3 Percent: 11
+P3: Exit Write id: 3 Percent: 11 Clock: 6
+P5: Entry Write id: 4 Percent: 16
+P5: Exit Write id: 4 Percent: 16 Clock: 7
+P3: Entry Write id: 4 Percent: 16
+P3: Exit Write id: 4 Percent: 16 Clock: 7
+P1: Entry Write id: 4 Percent: 16
+P1: Exit Write id: 4 Percent: 16 Clock: 7
+P4: Entry Write id: 4 Percent: 16
+P1: Entry Read id: 1
+P1: Exit Read id: 1 Percent: 6 Clock: 6
+P4: Exit Write id: 4 Percent: 16 Clock: 7
+P4: Entry Read id: 1
+P4: Exit Read id: 1 Percent: 6 Clock: 6
+P2: Entry Write id: 4 Percent: 16
+P2: Exit Write id: 4 Percent: 16 Clock: 7
+P2: Entry Write id: 3 Percent: 11
+P2: Exit Write id: 3 Percent: 11 Clock: 8
+P2: Entry Write id: 0 Percent: 11
+P2: Exit Write id: 0 Percent: 11 Clock: 8
+P5: Entry Write id: 3 Percent: 11
+P5: Exit Write id: 3 Percent: 11 Clock: 8
+P3: Entry Write id: 3 Percent: 11
+P3: Exit Write id: 3 Percent: 11 Clock: 8
+P5: Entry Write id: 0 Percent: 11
+P5: Exit Write id: 0 Percent: 11 Clock: 8
+P3: Entry Write id: 0 Percent: 11
+P1: Entry Write id: 3 Percent: 11
+P1: Exit Write id: 3 Percent: 11 Clock: 8
+P3: Exit Write id: 0 Percent: 11 Clock: 8
+P5: Entry Write id: 4 Percent: 16
+P5: Exit Write id: 4 Percent: 16 Clock: 8
+P4: Entry Write id: 3 Percent: 11
+P3: Entry Write id: 4 Percent: 16
+P1: Entry Write id: 0 Percent: 11
+P4: Exit Write id: 3 Percent: 11 Clock: 8
+P3: Exit Write id: 4 Percent: 16 Clock: 8
+P1: Exit Write id: 0 Percent: 11 Clock: 8
+P4: Entry Write id: 0 Percent: 11
+P4: Exit Write id: 0 Percent: 11 Clock: 8
+P1: Entry Write id: 4 Percent: 16
+P1: Exit Write id: 4 Percent: 16 Clock: 8
+P4: Entry Write id: 4 Percent: 16
+P4: Exit Write id: 4 Percent: 16 Clock: 8
+P1: Entry Read id: 2
+P1: Exit Read id: 2 Percent: 1 Clock: 2
+P4: Entry Read id: 5
+P4: Exit Read id: 5 Percent: 0 Clock: 0
+P2: Entry Write id: 4 Percent: 16
+P2: Exit Write id: 4 Percent: 16 Clock: 8
+P2: Entry Read id: 2
+P2: Exit Read id: 2 Percent: 1 Clock: 2
+P2: Entry Write id: 3 Percent: 16
+P2: Exit Write id: 3 Percent: 16 Clock: 9
+P5: Entry Write id: 3 Percent: 16
+P5: Exit Write id: 3 Percent: 16 Clock: 9
+P5: Entry Write id: 0 Percent: 11
+P3: Entry Write id: 3 Percent: 16
+P3: Exit Write id: 3 Percent: 16 Clock: 9
+P5: Exit Write id: 0 Percent: 11 Clock: 9
+P3: Entry Write id: 0 Percent: 11
+P3: Exit Write id: 0 Percent: 11 Clock: 9
+P1: Entry Write id: 3 Percent: 16
+P4: Entry Write id: 3 Percent: 16
+P1: Exit Write id: 3 Percent: 16 Clock: 9
+P4: Exit Write id: 3 Percent: 16 Clock: 9
+P4: Entry Write id: 0 Percent: 11
+P1: Entry Write id: 0 Percent: 11
+P4: Exit Write id: 0 Percent: 11 Clock: 9
+P1: Exit Write id: 0 Percent: 11 Clock: 9
+P4: Entry Read id: 2
+P1: Entry Read id: 5
+P1: Exit Read id: 5 Percent: 0 Clock: 0
+P4: Exit Read id: 2 Percent: 1 Clock: 2
+P2: Entry Write id: 0 Percent: 11
+P2: Exit Write id: 0 Percent: 11 Clock: 9
+P2: Entry Read id: 0
+P2: Exit Read id: 0 Percent: 11 Clock: 9
+P2: Entry Write id: 0 Percent: 16
+P2: Exit Write id: 0 Percent: 16 Clock: 10
+P5: Entry Write id: 0 Percent: 16
+P5: Exit Write id: 0 Percent: 16 Clock: 10
+P5: Entry Write id: 6 Percent: 6
+P3: Entry Write id: 0 Percent: 16
+P5: Exit Write id: 6 Percent: 6 Clock: 10
+P3: Exit Write id: 0 Percent: 16 Clock: 10
+P3: Entry Write id: 6 Percent: 6
+P3: Exit Write id: 6 Percent: 6 Clock: 10
+P4: Entry Write id: 0 Percent: 16
+P1: Entry Write id: 0 Percent: 16
+P1: Exit Write id: 0 Percent: 16 Clock: 10
+P4: Exit Write id: 0 Percent: 16 Clock: 10
+P1: Entry Write id: 6 Percent: 6
+P4: Entry Write id: 6 Percent: 6
+P1: Exit Write id: 6 Percent: 6 Clock: 10
+P4: Exit Write id: 6 Percent: 6 Clock: 10
+P1: Entry Read id: 1
+P1: Exit Read id: 1 Percent: 6 Clock: 6
+P4: Entry Write id: 4 Percent: 21
+P1: Entry Write id: 4 Percent: 21
+P4: Exit Write id: 4 Percent: 21 Clock: 10
+P1: Exit Write id: 4 Percent: 21 Clock: 10
+P2: Entry Write id: 6 Percent: 6
+P2: Exit Write id: 6 Percent: 6 Clock: 10
+P2: Entry Write id: 4 Percent: 21
+P2: Exit Write id: 4 Percent: 21 Clock: 10
+P2: Entry Read id: 5
+P2: Exit Read id: 5 Percent: 0 Clock: 0
+P5: Entry Write id: 4 Percent: 21
+P5: Exit Write id: 4 Percent: 21 Clock: 10
+P3: Entry Write id: 4 Percent: 21
+P5: Entry Read id: 0
+P5: Exit Read id: 0 Percent: 16 Clock: 10
+P3: Exit Write id: 4 Percent: 21 Clock: 10
+P3: Entry Read id: 3
+P3: Exit Read id: 3 Percent: 16 Clock: 9
+P1: Entry Write id: 5 Percent: 21
+P4: Entry Write id: 5 Percent: 21
+P1: Exit Write id: 5 Percent: 21 Clock: 11
+P4: Exit Write id: 5 Percent: 21 Clock: 11
+P1: Entry Write id: 5 Percent: 11
+P4: Entry Write id: 5 Percent: 11
+P1: Exit Write id: 5 Percent: 11 Clock: 11
+P4: Exit Write id: 5 Percent: 11 Clock: 11
+P2: Entry Write id: 5 Percent: 21
+P2: Exit Write id: 5 Percent: 21 Clock: 11
+P2: Entry Write id: 5 Percent: 11
+P2: Exit Write id: 5 Percent: 11 Clock: 11
+P2: Entry Read id: 0
+P2: Exit Read id: 0 Percent: 16 Clock: 10
+P2: Entry Write id: 2 Percent: 6
+P2: Exit Write id: 2 Percent: 6 Clock: 12
+P5: Entry Write id: 5 Percent: 21
+P5: Exit Write id: 5 Percent: 21 Clock: 11
+P5: Entry Write id: 5 Percent: 11
+P3: Entry Write id: 5 Percent: 21
+P5: Exit Write id: 5 Percent: 11 Clock: 11
+P3: Exit Write id: 5 Percent: 21 Clock: 11
+P5: Entry Write id: 2 Percent: 6
+P3: Entry Write id: 5 Percent: 11
+P5: Exit Write id: 2 Percent: 6 Clock: 12
+P3: Exit Write id: 5 Percent: 11 Clock: 11
+P3: Entry Write id: 2 Percent: 6
+P5: Entry Write id: 6 Percent: 11
+P3: Exit Write id: 2 Percent: 6 Clock: 12
+P5: Exit Write id: 6 Percent: 11 Clock: 12
+P3: Entry Write id: 6 Percent: 11
+P3: Exit Write id: 6 Percent: 11 Clock: 12
+P1: Entry Write id: 2 Percent: 6
+P4: Entry Write id: 2 Percent: 6
+P1: Exit Write id: 2 Percent: 6 Clock: 12
+P4: Exit Write id: 2 Percent: 6 Clock: 12
+P1: Entry Write id: 6 Percent: 11
+P4: Entry Write id: 6 Percent: 11
+P4: Exit Write id: 6 Percent: 11 Clock: 12
+P1: Exit Write id: 6 Percent: 11 Clock: 12
+P1: Entry Read id: 2
+P1: Exit Read id: 2 Percent: 6 Clock: 12
+P4: Entry Read id: 1
+P4: Exit Read id: 1 Percent: 6 Clock: 6
+P2: Entry Write id: 6 Percent: 11
+P2: Exit Write id: 6 Percent: 11 Clock: 12
+P2: Entry Write id: 5 Percent: 11
+P2: Exit Write id: 5 Percent: 11 Clock: 13
+P2: Entry Write id: 1 Percent: 11
+P2: Exit Write id: 1 Percent: 11 Clock: 13
+P5: Entry Write id: 5 Percent: 11
+P5: Exit Write id: 5 Percent: 11 Clock: 13
+P3: Entry Write id: 5 Percent: 11
+P3: Exit Write id: 5 Percent: 11 Clock: 13
+P5: Entry Write id: 1 Percent: 11
+P5: Exit Write id: 1 Percent: 11 Clock: 13
+P3: Entry Write id: 1 Percent: 11
+P3: Exit Write id: 1 Percent: 11 Clock: 13
+P5: Entry Write id: 6 Percent: 11
+P3: Entry Write id: 6 Percent: 11
+P5: Exit Write id: 6 Percent: 11 Clock: 13
+P3: Exit Write id: 6 Percent: 11 Clock: 13
+P1: Entry Write id: 5 Percent: 11
+P4: Entry Write id: 5 Percent: 11
+P1: Exit Write id: 5 Percent: 11 Clock: 13
+P4: Exit Write id: 5 Percent: 11 Clock: 13
+P1: Entry Write id: 1 Percent: 11
+P4: Entry Write id: 1 Percent: 11
+P1: Exit Write id: 1 Percent: 11 Clock: 13
+P4: Exit Write id: 1 Percent: 11 Clock: 13
+P1: Entry Write id: 6 Percent: 11
+P4: Entry Write id: 6 Percent: 11
+P1: Exit Write id: 6 Percent: 11 Clock: 13
+P4: Exit Write id: 6 Percent: 11 Clock: 13
+P1: Entry Write id: 1 Percent: 11
+P4: Entry Write id: 1 Percent: 11
+P1: Exit Write id: 1 Percent: 11 Clock: 13
+P4: Exit Write id: 1 Percent: 11 Clock: 13
+P4: Entry Read id: 3
+P4: Exit Read id: 3 Percent: 16 Clock: 9
+P2: Entry Write id: 6 Percent: 11
+P2: Exit Write id: 6 Percent: 11 Clock: 13
+P2: Entry Write id: 1 Percent: 11
+P2: Exit Write id: 1 Percent: 11 Clock: 13
+P2: Entry Write id: 4 Percent: 26
+P2: Exit Write id: 4 Percent: 26 Clock: 14
+P3: Entry Write id: 1 Percent: 11
+P5: Entry Write id: 1 Percent: 11
+P5: Exit Write id: 1 Percent: 11 Clock: 13
+P3: Exit Write id: 1 Percent: 11 Clock: 13
+P3: Entry Write id: 4 Percent: 26
+P5: Entry Write id: 4 Percent: 26
+P5: Exit Write id: 4 Percent: 26 Clock: 14
+P3: Exit Write id: 4 Percent: 26 Clock: 14
+P5: Entry Read id: 5
+P3: Entry Write id: 6 Percent: 16
+P5: Exit Read id: 5 Percent: 11 Clock: 13
+P3: Exit Write id: 6 Percent: 16 Clock: 14
+P5: Entry Write id: 6 Percent: 16
+P5: Exit Write id: 6 Percent: 16 Clock: 14
+P1: Entry Write id: 4 Percent: 26
+P1: Exit Write id: 4 Percent: 26 Clock: 14
+P4: Entry Write id: 4 Percent: 26
+P4: Exit Write id: 4 Percent: 26 Clock: 14
+P1: Entry Write id: 6 Percent: 16
+P1: Exit Write id: 6 Percent: 16 Clock: 14
+P4: Entry Write id: 6 Percent: 16
+P1: Entry Read id: 4
+P1: Exit Read id: 4 Percent: 26 Clock: 14
+P4: Exit Write id: 6 Percent: 16 Clock: 14
+P4: Entry Read id: 4
+P4: Exit Read id: 4 Percent: 26 Clock: 14
+P2: Entry Write id: 6 Percent: 16
+P2: Exit Write id: 6 Percent: 16 Clock: 14
+P2: Entry Write id: 6 Percent: 16
+P2: Exit Write id: 6 Percent: 16 Clock: 15
+P3: Entry Write id: 6 Percent: 16
+P3: Exit Write id: 6 Percent: 16 Clock: 15
+P5: Entry Write id: 6 Percent: 16
+P5: Exit Write id: 6 Percent: 16 Clock: 15
+P3: Entry Read id: 6
+P3: Exit Read id: 6 Percent: 16 Clock: 15
+P5: Entry Write id: 1 Percent: 16
+P3: Entry Write id: 1 Percent: 16
+P5: Exit Write id: 1 Percent: 16 Clock: 15
+P3: Exit Write id: 1 Percent: 16 Clock: 15
+P1: Entry Write id: 6 Percent: 16
+P1: Exit Write id: 6 Percent: 16 Clock: 15
+P4: Entry Write id: 6 Percent: 16
+P4: Exit Write id: 6 Percent: 16 Clock: 15
+P1: Entry Write id: 1 Percent: 16
+P1: Exit Write id: 1 Percent: 16 Clock: 15
+P4: Entry Write id: 1 Percent: 16
+P1: Entry Read id: 0
+P1: Exit Read id: 0 Percent: 16 Clock: 10
+P4: Exit Write id: 1 Percent: 16 Clock: 15
+P4: Entry Read id: 1
+P4: Exit Read id: 1 Percent: 16 Clock: 15
+P2: Entry Write id: 1 Percent: 16
+P2: Exit Write id: 1 Percent: 16 Clock: 15
+P2: Entry Write id: 2 Percent: 11
+P2: Exit Write id: 2 Percent: 11 Clock: 16
+P2: Entry Write id: 4 Percent: 31
+P2: Exit Write id: 4 Percent: 31 Clock: 16
+P5: Entry Write id: 2 Percent: 11
+P3: Entry Write id: 2 Percent: 11
+P5: Exit Write id: 2 Percent: 11 Clock: 16
+P3: Exit Write id: 2 Percent: 11 Clock: 16
+P5: Entry Write id: 4 Percent: 31
+P3: Entry Write id: 4 Percent: 31
+P3: Exit Write id: 4 Percent: 31 Clock: 16
+P5: Exit Write id: 4 Percent: 31 Clock: 16
+P3: Entry Write id: 1 Percent: 16
+P5: Entry Write id: 1 Percent: 16
+P5: Exit Write id: 1 Percent: 16 Clock: 16
+P3: Exit Write id: 1 Percent: 16 Clock: 16
+P1: Entry Write id: 2 Percent: 11
+P1: Exit Write id: 2 Percent: 11 Clock: 16
+P1: Entry Write id: 4 Percent: 31
+P1: Exit Write id: 4 Percent: 31 Clock: 16
+P4: Entry Write id: 2 Percent: 11
+P4: Exit Write id: 2 Percent: 11 Clock: 16
+P1: Entry Write id: 1 Percent: 16
+P4: Entry Write id: 4 Percent: 31
+P1: Exit Write id: 1 Percent: 16 Clock: 16
+P4: Exit Write id: 4 Percent: 31 Clock: 16
+P4: Entry Write id: 1 Percent: 16
+P1: Entry Write id: 4 Percent: 31
+P1: Exit Write id: 4 Percent: 31 Clock: 16
+P4: Exit Write id: 1 Percent: 16 Clock: 16
+P4: Entry Write id: 4 Percent: 31
+P4: Exit Write id: 4 Percent: 31 Clock: 16
+P4: Entry Read id: 5
+P4: Exit Read id: 5 Percent: 11 Clock: 13
+P2: Entry Write id: 1 Percent: 16
+P2: Exit Write id: 1 Percent: 16 Clock: 16
+P2: Entry Write id: 4 Percent: 31
+P2: Exit Write id: 4 Percent: 31 Clock: 16
+P2: Entry Write id: 3 Percent: 21
+P2: Exit Write id: 3 Percent: 21 Clock: 17
+P5: Entry Write id: 4 Percent: 31
+P3: Entry Write id: 4 Percent: 31
+P5: Exit Write id: 4 Percent: 31 Clock: 16
+P3: Exit Write id: 4 Percent: 31 Clock: 16
+P3: Entry Write id: 3 Percent: 21
+P5: Entry Write id: 3 Percent: 21
+P3: Exit Write id: 3 Percent: 21 Clock: 17
+P5: Exit Write id: 3 Percent: 21 Clock: 17
+P3: Entry Read id: 4
+P5: Entry Write id: 0 Percent: 21
+P3: Exit Read id: 4 Percent: 31 Clock: 16
+P5: Exit Write id: 0 Percent: 21 Clock: 17
+P3: Entry Write id: 0 Percent: 21
+P3: Exit Write id: 0 Percent: 21 Clock: 17
+P1: Entry Write id: 3 Percent: 21
+P1: Exit Write id: 3 Percent: 21 Clock: 17
+P1: Entry Write id: 0 Percent: 21
+P1: Exit Write id: 0 Percent: 21 Clock: 17
+P4: Entry Write id: 3 Percent: 21
+P1: Entry Write id: 1 Percent: 21
+P1: Exit Write id: 1 Percent: 21 Clock: 17
+P4: Exit Write id: 3 Percent: 21 Clock: 17
+P4: Entry Write id: 0 Percent: 21
+P4: Exit Write id: 0 Percent: 21 Clock: 17
+P4: Entry Write id: 1 Percent: 21
+P4: Exit Write id: 1 Percent: 21 Clock: 17
+P4: Entry Read id: 3
+P4: Exit Read id: 3 Percent: 21 Clock: 17
+P2: Entry Write id: 0 Percent: 21
+P2: Exit Write id: 0 Percent: 21 Clock: 17
+P2: Entry Write id: 1 Percent: 21
+P2: Exit Write id: 1 Percent: 21 Clock: 17
+P2: Entry Read id: 1
+P2: Exit Read id: 1 Percent: 21 Clock: 17
+P2: Entry Write id: 6 Percent: 21
+P2: Exit Write id: 6 Percent: 21 Clock: 18
+P5: Entry Write id: 1 Percent: 21
+P5: Exit Write id: 1 Percent: 21 Clock: 17
+P3: Entry Write id: 1 Percent: 21
+P3: Exit Write id: 1 Percent: 21 Clock: 17
+P5: Entry Write id: 3 Percent: 21
+P3: Entry Write id: 3 Percent: 21
+P5: Exit Write id: 3 Percent: 21 Clock: 18
+P3: Exit Write id: 3 Percent: 21 Clock: 18
+P3: Entry Write id: 6 Percent: 21
+P5: Entry Write id: 6 Percent: 21
+P5: Exit Write id: 6 Percent: 21 Clock: 18
+P3: Exit Write id: 6 Percent: 21 Clock: 18
+P1: Entry Write id: 3 Percent: 21
+P1: Exit Write id: 3 Percent: 21 Clock: 18
+P1: Entry Write id: 6 Percent: 21
+P1: Exit Write id: 6 Percent: 21 Clock: 18
+P1: Entry Read id: 0
+P1: Exit Read id: 0 Percent: 21 Clock: 17
+P4: Entry Write id: 6 Percent: 21
+P4: Exit Write id: 6 Percent: 21 Clock: 18
+P4: Entry Read id: 4
+P4: Exit Read id: 4 Percent: 31 Clock: 16
+P4: Entry Write id: 0 Percent: 21
+P4: Exit Write id: 0 Percent: 21 Clock: 19
+P2: Entry Write id: 3 Percent: 21
+P2: Exit Write id: 3 Percent: 21 Clock: 18
+P2: Entry Write id: 0 Percent: 21
+P2: Exit Write id: 0 Percent: 21 Clock: 19
+P2: Entry Write id: 6 Percent: 21
+P2: Exit Write id: 6 Percent: 21 Clock: 19
+P5: Entry Write id: 0 Percent: 21
+P3: Entry Write id: 0 Percent: 21
+P5: Exit Write id: 0 Percent: 21 Clock: 19
+P3: Exit Write id: 0 Percent: 21 Clock: 19
+P5: Entry Write id: 6 Percent: 21
+P5: Exit Write id: 6 Percent: 21 Clock: 19
+P3: Entry Write id: 6 Percent: 21
+P3: Exit Write id: 6 Percent: 21 Clock: 19
+P3: Entry Read id: 0
+P3: Exit Read id: 0 Percent: 21 Clock: 19
+P1: Entry Write id: 0 Percent: 21
+P1: Exit Write id: 0 Percent: 21 Clock: 19
+P1: Entry Write id: 6 Percent: 21
+P1: Exit Write id: 6 Percent: 21 Clock: 19
+P1: Entry Write id: 3 Percent: 26
+P1: Exit Write id: 3 Percent: 26 Clock: 19
+P4: Entry Write id: 6 Percent: 21
+P4: Exit Write id: 6 Percent: 21 Clock: 19
+P4: Entry Write id: 3 Percent: 26
+P4: Exit Write id: 3 Percent: 26 Clock: 19
+P4: Entry Read id: 2
+P4: Exit Read id: 2 Percent: 11 Clock: 16
+P4: Entry Write id: 0 Percent: 26
+P4: Exit Write id: 0 Percent: 26 Clock: 20
+P2: Entry Write id: 3 Percent: 26
+P2: Exit Write id: 3 Percent: 26 Clock: 19
+P2: Entry Write id: 0 Percent: 26
+P2: Exit Write id: 0 Percent: 26 Clock: 20
+P5: Entry Write id: 3 Percent: 26
+P5: Exit Write id: 3 Percent: 26 Clock: 19
+P5: Entry Write id: 0 Percent: 26
+P5: Exit Write id: 0 Percent: 26 Clock: 20
+P3: Entry Write id: 3 Percent: 26
+P3: Exit Write id: 3 Percent: 26 Clock: 19
+P5: Entry Read id: 3
+P5: Exit Read id: 3 Percent: 26 Clock: 19
+P3: Entry Write id: 0 Percent: 26
+P5: Entry Write id: 5 Percent: 16
+P3: Exit Write id: 0 Percent: 26 Clock: 20
+P5: Exit Write id: 5 Percent: 16 Clock: 20
+P3: Entry Write id: 5 Percent: 16
+P3: Exit Write id: 5 Percent: 16 Clock: 20
+P1: Entry Write id: 0 Percent: 26
+P1: Exit Write id: 0 Percent: 26 Clock: 20
+P1: Entry Write id: 5 Percent: 16
+P1: Exit Write id: 5 Percent: 16 Clock: 20
+P1: Entry Write id: 1 Percent: 26
+P1: Exit Write id: 1 Percent: 26 Clock: 20
+P4: Entry Write id: 5 Percent: 16
+P4: Exit Write id: 5 Percent: 16 Clock: 20
+P4: Entry Write id: 1 Percent: 26
+P4: Exit Write id: 1 Percent: 26 Clock: 20
+P4: Entry Read id: 2
+P4: Exit Read id: 2 Percent: 11 Clock: 16
+P2: Entry Write id: 5 Percent: 16
+P2: Exit Write id: 5 Percent: 16 Clock: 20
+P2: Entry Write id: 1 Percent: 26
+P2: Exit Write id: 1 Percent: 26 Clock: 20
+P2: Entry Read id: 0
+P2: Exit Read id: 0 Percent: 26 Clock: 20
+P5: Entry Write id: 1 Percent: 26
+P3: Entry Write id: 1 Percent: 26
+P5: Exit Write id: 1 Percent: 26 Clock: 20
+P3: Exit Write id: 1 Percent: 26 Clock: 20
+P3: Entry Read id: 2
+P3: Exit Read id: 2 Percent: 11 Clock: 16
+P5: Entry Read id: 3
+P5: Exit Read id: 3 Percent: 26 Clock: 19
+P1: Entry Write id: 5 Percent: 16
+P1: Exit Write id: 5 Percent: 16 Clock: 21
+P1: Entry Write id: 4 Percent: 36
+P1: Exit Write id: 4 Percent: 36 Clock: 21
+P4: Entry Write id: 5 Percent: 16
+P4: Exit Write id: 5 Percent: 16 Clock: 21
+P4: Entry Write id: 4 Percent: 36
+P4: Exit Write id: 4 Percent: 36 Clock: 21
+P2: Entry Write id: 5 Percent: 16
+P2: Exit Write id: 5 Percent: 16 Clock: 21
+P2: Entry Write id: 4 Percent: 36
+P2: Exit Write id: 4 Percent: 36 Clock: 21
+P2: Entry Read id: 3
+P2: Exit Read id: 3 Percent: 26 Clock: 19
+P2: Entry Write id: 1 Percent: 26
+P2: Exit Write id: 1 Percent: 26 Clock: 22
+P3: Entry Write id: 5 Percent: 16
+P5: Entry Write id: 5 Percent: 16
+P3: Exit Write id: 5 Percent: 16 Clock: 21
+P5: Exit Write id: 5 Percent: 16 Clock: 21
+P3: Entry Write id: 4 Percent: 36
+P5: Entry Write id: 4 Percent: 36
+P3: Exit Write id: 4 Percent: 36 Clock: 21
+P5: Exit Write id: 4 Percent: 36 Clock: 21
+P3: Entry Write id: 1 Percent: 26
+P5: Entry Write id: 1 Percent: 26
+P5: Exit Write id: 1 Percent: 26 Clock: 22
+P3: Exit Write id: 1 Percent: 26 Clock: 22
+P3: Entry Write id: 5 Percent: 21
+P5: Entry Write id: 5 Percent: 21
+P3: Exit Write id: 5 Percent: 21 Clock: 22
+P5: Exit Write id: 5 Percent: 21 Clock: 22
+P1: Entry Write id: 1 Percent: 26
+P1: Exit Write id: 1 Percent: 26 Clock: 22
+P1: Entry Write id: 5 Percent: 21
+P1: Exit Write id: 5 Percent: 21 Clock: 22
+P1: Entry Read id: 1
+P1: Exit Read id: 1 Percent: 26 Clock: 22
+P4: Entry Write id: 1 Percent: 26
+P4: Exit Write id: 1 Percent: 26 Clock: 22
+P4: Entry Write id: 5 Percent: 21
+P4: Exit Write id: 5 Percent: 21 Clock: 22
+P4: Entry Read id: 5
+P4: Exit Read id: 5 Percent: 21 Clock: 22
+P2: Entry Write id: 5 Percent: 21
+P2: Exit Write id: 5 Percent: 21 Clock: 22
+P2: Entry Read id: 4
+P2: Exit Read id: 4 Percent: 36 Clock: 21
+P3: Entry Read id: 0
+P5: Entry Read id: 4
+P3: Exit Read id: 0 Percent: 26 Clock: 20
+P5: Exit Read id: 4 Percent: 36 Clock: 21
+P1: Entry Read id: 3
+P1: Exit Read id: 3 Percent: 26 Clock: 19
+P4: Entry Read id: 3
+P4: Exit Read id: 3 Percent: 26 Clock: 19
+P4: Entry Write id: 5 Percent: 21
+P4: Exit Write id: 5 Percent: 21 Clock: 24
+P2: Entry Write id: 5 Percent: 21
+P2: Exit Write id: 5 Percent: 21 Clock: 24
+P2: Entry Write id: 4 Percent: 41
+P2: Exit Write id: 4 Percent: 41 Clock: 24
+P3: Entry Write id: 5 Percent: 21
+P5: Entry Write id: 5 Percent: 21
+P3: Exit Write id: 5 Percent: 21 Clock: 24
+P5: Exit Write id: 5 Percent: 21 Clock: 24
+P5: Entry Write id: 4 Percent: 41
+P3: Entry Write id: 4 Percent: 41
+P5: Exit Write id: 4 Percent: 41 Clock: 24
+P3: Exit Write id: 4 Percent: 41 Clock: 24
+P3: Entry Write id: 6 Percent: 26
+P5: Entry Write id: 6 Percent: 26
+P5: Exit Write id: 6 Percent: 26 Clock: 24
+P3: Exit Write id: 6 Percent: 26 Clock: 24
+P1: Entry Write id: 5 Percent: 21
+P1: Exit Write id: 5 Percent: 21 Clock: 24
+P1: Entry Write id: 4 Percent: 41
+P1: Exit Write id: 4 Percent: 41 Clock: 24
+P1: Entry Write id: 6 Percent: 26
+P1: Exit Write id: 6 Percent: 26 Clock: 24
+P4: Entry Write id: 4 Percent: 41
+P4: Exit Write id: 4 Percent: 41 Clock: 24
+P4: Entry Write id: 6 Percent: 26
+P4: Exit Write id: 6 Percent: 26 Clock: 24
+P1: Entry Write id: 2 Percent: 16
+P1: Exit Write id: 2 Percent: 16 Clock: 24
+P4: Entry Write id: 2 Percent: 16
+P4: Exit Write id: 2 Percent: 16 Clock: 24
+P1: Entry Write id: 2 Percent: 16
+P1: Exit Write id: 2 Percent: 16 Clock: 24
+P4: Entry Write id: 2 Percent: 16
+P4: Exit Write id: 2 Percent: 16 Clock: 24
+P4: Entry Write id: 5 Percent: 26
+P4: Exit Write id: 5 Percent: 26 Clock: 25
+P2: Entry Write id: 6 Percent: 26
+P2: Exit Write id: 6 Percent: 26 Clock: 24
+P2: Entry Write id: 2 Percent: 16
+P2: Exit Write id: 2 Percent: 16 Clock: 24
+P2: Entry Write id: 2 Percent: 16
+P2: Exit Write id: 2 Percent: 16 Clock: 24
+P2: Entry Write id: 5 Percent: 26
+P2: Exit Write id: 5 Percent: 26 Clock: 25
+P3: Entry Write id: 2 Percent: 16
+P3: Exit Write id: 2 Percent: 16 Clock: 24
+P3: Entry Write id: 2 Percent: 16
+P5: Entry Write id: 2 Percent: 16
+P3: Exit Write id: 2 Percent: 16 Clock: 24
+P5: Exit Write id: 2 Percent: 16 Clock: 24
+P5: Entry Write id: 2 Percent: 16
+P3: Entry Write id: 5 Percent: 26
+P5: Exit Write id: 2 Percent: 16 Clock: 24
+P3: Exit Write id: 5 Percent: 26 Clock: 25
+P3: Entry Read id: 4
+P5: Entry Write id: 5 Percent: 26
+P3: Exit Read id: 4 Percent: 41 Clock: 24
+P5: Exit Write id: 5 Percent: 26 Clock: 25
+P3: Entry Write id: 5 Percent: 26
+P5: Entry Write id: 5 Percent: 26
+P3: Exit Write id: 5 Percent: 26 Clock: 25
+P5: Exit Write id: 5 Percent: 26 Clock: 25
+P1: Entry Write id: 5 Percent: 26
+P1: Exit Write id: 5 Percent: 26 Clock: 25
+P1: Entry Write id: 5 Percent: 26
+P4: Entry Write id: 5 Percent: 26
+P1: Exit Write id: 5 Percent: 26 Clock: 25
+P4: Exit Write id: 5 Percent: 26 Clock: 25
+P4: Entry Write id: 6 Percent: 26
+P1: Entry Write id: 6 Percent: 26
+P1: Exit Write id: 6 Percent: 26 Clock: 25
+P4: Exit Write id: 6 Percent: 26 Clock: 25
+P4: Entry Read id: 4
+P4: Exit Read id: 4 Percent: 41 Clock: 24
+P2: Entry Write id: 5 Percent: 26
+P2: Exit Write id: 5 Percent: 26 Clock: 25
+P2: Entry Write id: 6 Percent: 26
+P2: Exit Write id: 6 Percent: 26 Clock: 25
+P2: Entry Read id: 4
+P2: Exit Read id: 4 Percent: 41 Clock: 24
+P3: Entry Write id: 6 Percent: 26
+P5: Entry Write id: 6 Percent: 26
+P3: Exit Write id: 6 Percent: 26 Clock: 25
+P5: Exit Write id: 6 Percent: 26 Clock: 25
+P3: Entry Read id: 3
+P5: Entry Write id: 1 Percent: 31
+P3: Exit Read id: 3 Percent: 26 Clock: 19
+P5: Exit Write id: 1 Percent: 31 Clock: 26
+P3: Entry Write id: 1 Percent: 31
+P3: Exit Write id: 1 Percent: 31 Clock: 26
+P1: Entry Write id: 1 Percent: 31
+P1: Exit Write id: 1 Percent: 31 Clock: 26
+P4: Entry Write id: 1 Percent: 31
+P4: Exit Write id: 1 Percent: 31 Clock: 26
+P1: Entry Write id: 4 Percent: 46
+P1: Exit Write id: 4 Percent: 46 Clock: 26
+P4: Entry Write id: 4 Percent: 46
+P4: Exit Write id: 4 Percent: 46 Clock: 26
+P4: Entry Read id: 5
+P4: Exit Read id: 5 Percent: 26 Clock: 25
+P4: Entry Write id: 1 Percent: 31
+P4: Exit Write id: 1 Percent: 31 Clock: 27
+P2: Entry Write id: 1 Percent: 31
+P2: Exit Write id: 1 Percent: 31 Clock: 26
+P2: Entry Write id: 4 Percent: 46
+P2: Exit Write id: 4 Percent: 46 Clock: 26
+P2: Entry Write id: 1 Percent: 31
+P2: Exit Write id: 1 Percent: 31 Clock: 27
+P5: Entry Write id: 4 Percent: 46
+P5: Exit Write id: 4 Percent: 46 Clock: 26
+P3: Entry Write id: 4 Percent: 46
+P3: Exit Write id: 4 Percent: 46 Clock: 26
+P5: Entry Write id: 1 Percent: 31
+P5: Exit Write id: 1 Percent: 31 Clock: 27
+P3: Entry Write id: 1 Percent: 31
+P5: Entry Write id: 1 Percent: 31
+P3: Exit Write id: 1 Percent: 31 Clock: 27
+P5: Exit Write id: 1 Percent: 31 Clock: 27
+P3: Entry Read id: 2
+P3: Exit Read id: 2 Percent: 16 Clock: 24
+P3: Entry Write id: 1 Percent: 31
+P3: Exit Write id: 1 Percent: 31 Clock: 27
+P1: Entry Write id: 1 Percent: 31
+P1: Exit Write id: 1 Percent: 31 Clock: 27
+P1: Entry Write id: 1 Percent: 31
+P1: Exit Write id: 1 Percent: 31 Clock: 27
+P1: Entry Read id: 2
+P1: Exit Read id: 2 Percent: 16 Clock: 24
+P4: Entry Write id: 1 Percent: 31
+P4: Exit Write id: 1 Percent: 31 Clock: 27
+P1: Entry Write id: 1 Percent: 31
+P1: Exit Write id: 1 Percent: 31 Clock: 27
+P4: Entry Write id: 1 Percent: 31
+P4: Exit Write id: 1 Percent: 31 Clock: 27
+P4: Entry Write id: 2 Percent: 21
+P4: Exit Write id: 2 Percent: 21 Clock: 28
+P2: Entry Write id: 1 Percent: 31
+P2: Exit Write id: 1 Percent: 31 Clock: 27
+P2: Entry Write id: 1 Percent: 31
+P2: Exit Write id: 1 Percent: 31 Clock: 27
+P2: Entry Write id: 2 Percent: 21
+P2: Exit Write id: 2 Percent: 21 Clock: 28
+P2: Entry Write id: 6 Percent: 31
+P2: Exit Write id: 6 Percent: 31 Clock: 28
+P5: Entry Write id: 1 Percent: 31
+P5: Exit Write id: 1 Percent: 31 Clock: 27
+P3: Entry Write id: 1 Percent: 31
+P5: Entry Write id: 2 Percent: 21
+P5: Exit Write id: 2 Percent: 21 Clock: 28
+P3: Exit Write id: 1 Percent: 31 Clock: 27
+P5: Entry Write id: 6 Percent: 31
+P3: Entry Write id: 2 Percent: 21
+P5: Exit Write id: 6 Percent: 31 Clock: 28
+P3: Exit Write id: 2 Percent: 21 Clock: 28
+P5: Entry Write id: 3 Percent: 31
+P3: Entry Write id: 6 Percent: 31
+P5: Exit Write id: 3 Percent: 31 Clock: 28
+P3: Exit Write id: 6 Percent: 31 Clock: 28
+P3: Entry Write id: 3 Percent: 31
+P3: Exit Write id: 3 Percent: 31 Clock: 28
+P1: Entry Write id: 2 Percent: 21
+P1: Exit Write id: 2 Percent: 21 Clock: 28
+P1: Entry Write id: 6 Percent: 31
+P1: Exit Write id: 6 Percent: 31 Clock: 28
+P4: Entry Write id: 6 Percent: 31
+P4: Exit Write id: 6 Percent: 31 Clock: 28
+P1: Entry Write id: 3 Percent: 31
+P1: Exit Write id: 3 Percent: 31 Clock: 28
+P4: Entry Write id: 3 Percent: 31
+P4: Exit Write id: 3 Percent: 31 Clock: 28
+P1: Entry Write id: 5 Percent: 31
+P1: Exit Write id: 5 Percent: 31 Clock: 28
+P4: Entry Write id: 5 Percent: 31
+P4: Exit Write id: 5 Percent: 31 Clock: 28
+P1: Entry Write id: 4 Percent: 51
+P1: Exit Write id: 4 Percent: 51 Clock: 28
+P4: Entry Write id: 4 Percent: 51
+P4: Exit Write id: 4 Percent: 51 Clock: 28
+P4: Entry Write id: 5 Percent: 31
+P4: Exit Write id: 5 Percent: 31 Clock: 29
+P2: Entry Write id: 3 Percent: 31
+P2: Exit Write id: 3 Percent: 31 Clock: 28
+P2: Entry Write id: 5 Percent: 31
+P2: Exit Write id: 5 Percent: 31 Clock: 28
+P2: Entry Write id: 4 Percent: 51
+P2: Exit Write id: 4 Percent: 51 Clock: 28
+P2: Entry Write id: 5 Percent: 31
+P2: Exit Write id: 5 Percent: 31 Clock: 29
+P5: Entry Write id: 5 Percent: 31
+P5: Exit Write id: 5 Percent: 31 Clock: 28
+P3: Entry Write id: 5 Percent: 31
+P5: Entry Write id: 4 Percent: 51
+P3: Exit Write id: 5 Percent: 31 Clock: 28
+P5: Exit Write id: 4 Percent: 51 Clock: 28
+P3: Entry Write id: 4 Percent: 51
+P5: Entry Write id: 5 Percent: 31
+P3: Exit Write id: 4 Percent: 51 Clock: 28
+P5: Exit Write id: 5 Percent: 31 Clock: 29
+P5: Entry Read id: 1
+P3: Entry Write id: 5 Percent: 31
+P5: Exit Read id: 1 Percent: 31 Clock: 27
+P3: Exit Write id: 5 Percent: 31 Clock: 29
+P5: Entry Write id: 2 Percent: 21
+P3: Entry Write id: 2 Percent: 21
+P5: Exit Write id: 2 Percent: 21 Clock: 29
+P3: Exit Write id: 2 Percent: 21 Clock: 29
+P1: Entry Write id: 5 Percent: 31
+P1: Exit Write id: 5 Percent: 31 Clock: 29
+P1: Entry Write id: 2 Percent: 21
+P4: Entry Write id: 2 Percent: 21
+P1: Exit Write id: 2 Percent: 21 Clock: 29
+P4: Exit Write id: 2 Percent: 21 Clock: 29
+P4: Entry Write id: 1 Percent: 36
+P1: Entry Read id: 4
+P1: Exit Read id: 4 Percent: 51 Clock: 28
+P4: Exit Write id: 1 Percent: 36 Clock: 29
+P1: Entry Write id: 1 Percent: 36
+P1: Exit Write id: 1 Percent: 36 Clock: 29
+P2: Entry Write id: 2 Percent: 21
+P2: Exit Write id: 2 Percent: 21 Clock: 29
+P2: Entry Write id: 1 Percent: 36
+P2: Exit Write id: 1 Percent: 36 Clock: 29
+P2: Entry Read id: 4
+P2: Exit Read id: 4 Percent: 51 Clock: 28
+P2: Entry Write id: 1 Percent: 36
+P2: Exit Write id: 1 Percent: 36 Clock: 30
+P5: Entry Write id: 1 Percent: 36
+P3: Entry Write id: 1 Percent: 36
+P5: Exit Write id: 1 Percent: 36 Clock: 29
+P3: Exit Write id: 1 Percent: 36 Clock: 29
+P5: Entry Write id: 1 Percent: 36
+P3: Entry Write id: 1 Percent: 36
+P3: Exit Write id: 1 Percent: 36 Clock: 30
+P5: Exit Write id: 1 Percent: 36 Clock: 30
+P3: Entry Write id: 4 Percent: 51
+P5: Entry Write id: 4 Percent: 51
+P3: Exit Write id: 4 Percent: 51 Clock: 30
+P5: Exit Write id: 4 Percent: 51 Clock: 30
+P4: Entry Write id: 1 Percent: 36
+P4: Exit Write id: 1 Percent: 36 Clock: 30
+P1: Entry Write id: 1 Percent: 36
+P1: Exit Write id: 1 Percent: 36 Clock: 30
+P4: Entry Write id: 4 Percent: 51
+P4: Exit Write id: 4 Percent: 51 Clock: 30
+P1: Entry Write id: 4 Percent: 51
+P1: Exit Write id: 4 Percent: 51 Clock: 30
+P4: Entry Write id: 2 Percent: 26
+P1: Entry Read id: 2
+P1: Exit Read id: 2 Percent: 21 Clock: 29
+P4: Exit Write id: 2 Percent: 26 Clock: 30
+P1: Entry Write id: 2 Percent: 26
+P1: Exit Write id: 2 Percent: 26 Clock: 30
+P4: Entry Write id: 0 Percent: 31
+P4: Exit Write id: 0 Percent: 31 Clock: 31
+P2: Entry Write id: 4 Percent: 51
+P2: Exit Write id: 4 Percent: 51 Clock: 30
+P2: Entry Write id: 2 Percent: 26
+P2: Exit Write id: 2 Percent: 26 Clock: 30
+P2: Entry Write id: 0 Percent: 31
+P2: Exit Write id: 0 Percent: 31 Clock: 31
+P5: Entry Write id: 2 Percent: 26
+P3: Entry Write id: 2 Percent: 26
+P3: Exit Write id: 2 Percent: 26 Clock: 30
+P5: Exit Write id: 2 Percent: 26 Clock: 30
+P3: Entry Write id: 0 Percent: 31
+P5: Entry Write id: 0 Percent: 31
+P5: Exit Write id: 0 Percent: 31 Clock: 31
+P3: Exit Write id: 0 Percent: 31 Clock: 31
+P5: Entry Read id: 0
+P3: Entry Write id: 2 Percent: 26
+P5: Exit Read id: 0 Percent: 31 Clock: 31
+P3: Exit Write id: 2 Percent: 26 Clock: 31
+P5: Entry Write id: 2 Percent: 26
+P5: Exit Write id: 2 Percent: 26 Clock: 31
+P1: Entry Write id: 0 Percent: 31
+P4: Entry Write id: 2 Percent: 26
+P1: Exit Write id: 0 Percent: 31 Clock: 31
+P4: Exit Write id: 2 Percent: 26 Clock: 31
+P1: Entry Write id: 2 Percent: 26
+P4: Entry Write id: 4 Percent: 56
+P1: Exit Write id: 2 Percent: 26 Clock: 31
+P4: Exit Write id: 4 Percent: 56 Clock: 31
+P1: Entry Write id: 4 Percent: 56
+P1: Exit Write id: 4 Percent: 56 Clock: 31
+P1: Entry Read id: 4
+P1: Exit Read id: 4 Percent: 56 Clock: 31
+P2: Entry Write id: 2 Percent: 26
+P2: Exit Write id: 2 Percent: 26 Clock: 31
+P2: Entry Write id: 4 Percent: 56
+P2: Exit Write id: 4 Percent: 56 Clock: 31
+P2: Entry Read id: 4
+P2: Exit Read id: 4 Percent: 56 Clock: 31
+P3: Entry Write id: 4 Percent: 56
+P5: Entry Write id: 4 Percent: 56
+P3: Exit Write id: 4 Percent: 56 Clock: 31
+P5: Exit Write id: 4 Percent: 56 Clock: 31
+P5: Entry Read id: 2
+P3: Entry Write id: 6 Percent: 36
+P5: Exit Read id: 2 Percent: 26 Clock: 31
+P3: Exit Write id: 6 Percent: 36 Clock: 32
+P5: Entry Write id: 6 Percent: 36
+P5: Exit Write id: 6 Percent: 36 Clock: 32
+P4: Entry Write id: 6 Percent: 36
+P4: Exit Write id: 6 Percent: 36 Clock: 32
+P4: Entry Write id: 5 Percent: 36
+P4: Exit Write id: 5 Percent: 36 Clock: 32
+P1: Entry Write id: 6 Percent: 36
+P1: Exit Write id: 6 Percent: 36 Clock: 32
+P1: Entry Read id: 3
+P1: Exit Read id: 3 Percent: 31 Clock: 28
+P1: Entry Write id: 5 Percent: 36
+P1: Exit Write id: 5 Percent: 36 Clock: 32
+P2: Entry Write id: 6 Percent: 36
+P2: Exit Write id: 6 Percent: 36 Clock: 32
+P2: Entry Write id: 5 Percent: 36
+P2: Exit Write id: 5 Percent: 36 Clock: 32
+P2: Entry Read id: 1
+P2: Exit Read id: 1 Percent: 36 Clock: 30
+P2: Entry Write id: 5 Percent: 36
+P2: Exit Write id: 5 Percent: 36 Clock: 33
+P3: Entry Write id: 5 Percent: 36
+P5: Entry Write id: 5 Percent: 36
+P3: Exit Write id: 5 Percent: 36 Clock: 32
+P5: Exit Write id: 5 Percent: 36 Clock: 32
+P5: Entry Write id: 5 Percent: 36
+P3: Entry Write id: 5 Percent: 36
+P5: Exit Write id: 5 Percent: 36 Clock: 33
+P3: Exit Write id: 5 Percent: 36 Clock: 33
+P5: Entry Read id: 6
+P5: Exit Read id: 6 Percent: 36 Clock: 32
+P4: Entry Write id: 5 Percent: 36
+P4: Exit Write id: 5 Percent: 36 Clock: 33
+P4: Entry Read id: 6
+P4: Exit Read id: 6 Percent: 36 Clock: 32
+P4: Entry Write id: 1 Percent: 41
+P4: Exit Write id: 1 Percent: 41 Clock: 33
+P1: Entry Write id: 5 Percent: 36
+P4: Entry Write id: 5 Percent: 36
+P1: Exit Write id: 5 Percent: 36 Clock: 33
+P4: Exit Write id: 5 Percent: 36 Clock: 34
+P1: Entry Write id: 1 Percent: 41
+P1: Exit Write id: 1 Percent: 41 Clock: 33
+P2: Entry Write id: 1 Percent: 41
+P2: Exit Write id: 1 Percent: 41 Clock: 33
+P2: Entry Write id: 5 Percent: 36
+P2: Exit Write id: 5 Percent: 36 Clock: 34
+P2: Entry Write id: 5 Percent: 36
+P2: Exit Write id: 5 Percent: 36 Clock: 34
+P3: Entry Write id: 1 Percent: 41
+P5: Entry Write id: 1 Percent: 41
+P3: Exit Write id: 1 Percent: 41 Clock: 33
+P5: Exit Write id: 1 Percent: 41 Clock: 33
+P3: Entry Write id: 5 Percent: 36
+P5: Entry Write id: 5 Percent: 36
+P3: Exit Write id: 5 Percent: 36 Clock: 34
+P5: Exit Write id: 5 Percent: 36 Clock: 34
+P3: Entry Write id: 5 Percent: 36
+P5: Entry Write id: 5 Percent: 36
+P3: Exit Write id: 5 Percent: 36 Clock: 34
+P5: Exit Write id: 5 Percent: 36 Clock: 34
+P5: Entry Write id: 5 Percent: 36
+P3: Entry Write id: 5 Percent: 36
+P3: Exit Write id: 5 Percent: 36 Clock: 34
+P5: Exit Write id: 5 Percent: 36 Clock: 34
+P4: Entry Write id: 5 Percent: 36
+P4: Exit Write id: 5 Percent: 36 Clock: 34
+P1: Entry Write id: 5 Percent: 36
+P1: Exit Write id: 5 Percent: 36 Clock: 34
+P4: Entry Write id: 5 Percent: 36
+P1: Entry Write id: 5 Percent: 36
+P4: Exit Write id: 5 Percent: 36 Clock: 34
+P1: Exit Write id: 5 Percent: 36 Clock: 34
+P4: Entry Write id: 6 Percent: 41
+P4: Exit Write id: 6 Percent: 41 Clock: 34
+P1: Entry Write id: 5 Percent: 36
+P1: Exit Write id: 5 Percent: 36 Clock: 34
+P1: Entry Write id: 6 Percent: 41
+P1: Exit Write id: 6 Percent: 41 Clock: 34
+P1: Entry Read id: 3
+P1: Exit Read id: 3 Percent: 31 Clock: 28
+P2: Entry Write id: 5 Percent: 36
+P2: Exit Write id: 5 Percent: 36 Clock: 34
+P2: Entry Write id: 6 Percent: 41
+P2: Exit Write id: 6 Percent: 41 Clock: 34
+P2: Entry Read id: 5
+P2: Exit Read id: 5 Percent: 36 Clock: 34
+P2: Entry Write id: 6 Percent: 41
+P2: Exit Write id: 6 Percent: 41 Clock: 35
+P3: Entry Write id: 6 Percent: 41
+P5: Entry Write id: 6 Percent: 41
+P3: Exit Write id: 6 Percent: 41 Clock: 34
+P5: Exit Write id: 6 Percent: 41 Clock: 34
+P5: Entry Write id: 6 Percent: 41
+P3: Entry Write id: 6 Percent: 41
+P5: Exit Write id: 6 Percent: 41 Clock: 35
+P3: Exit Write id: 6 Percent: 41 Clock: 35
+P4: Entry Write id: 6 Percent: 41
+P5: Entry Read id: 6
+P5: Exit Read id: 6 Percent: 41 Clock: 35
+P4: Exit Write id: 6 Percent: 41 Clock: 35
+P4: Entry Write id: 5 Percent: 41
+P4: Exit Write id: 5 Percent: 41 Clock: 35
+P4: Entry Write id: 0 Percent: 36
+P1: Entry Write id: 6 Percent: 41
+P1: Exit Write id: 6 Percent: 41 Clock: 35
+P4: Exit Write id: 0 Percent: 36 Clock: 36
+P1: Entry Write id: 5 Percent: 41
+P1: Exit Write id: 5 Percent: 41 Clock: 35
+P1: Entry Read id: 5
+P1: Exit Read id: 5 Percent: 41 Clock: 35
+P2: Entry Write id: 5 Percent: 41
+P2: Exit Write id: 5 Percent: 41 Clock: 35
+P2: Entry Write id: 0 Percent: 36
+P2: Exit Write id: 0 Percent: 36 Clock: 36
+P3: Entry Write id: 5 Percent: 41
+P5: Entry Write id: 5 Percent: 41
+P3: Exit Write id: 5 Percent: 41 Clock: 35
+P5: Exit Write id: 5 Percent: 41 Clock: 35
+P3: Entry Write id: 0 Percent: 36
+P3: Exit Write id: 0 Percent: 36 Clock: 36
+P4: Entry Read id: 2
+P5: Entry Write id: 0 Percent: 36
+P4: Exit Read id: 2 Percent: 26 Clock: 31
+P5: Exit Write id: 0 Percent: 36 Clock: 36
+P4: Entry Write id: 0 Percent: 36
+P4: Exit Write id: 0 Percent: 36 Clock: 36
+P5: Entry Read id: 2
+P5: Exit Read id: 2 Percent: 26 Clock: 31
+P3: Entry Write id: 0 Percent: 36
+P3: Exit Write id: 0 Percent: 36 Clock: 36
+P3: Entry Read id: 2
+P3: Exit Read id: 2 Percent: 26 Clock: 31
+P4: Entry Read id: 2
+P4: Exit Read id: 2 Percent: 26 Clock: 31
+P5: Entry Write id: 0 Percent: 36
+P4: Entry Write id: 3 Percent: 36
+P5: Exit Write id: 0 Percent: 36 Clock: 36
+P4: Exit Write id: 3 Percent: 36 Clock: 37
+P5: Entry Read id: 6
+P5: Exit Read id: 6 Percent: 41 Clock: 35
+P3: Entry Write id: 3 Percent: 36
+P3: Exit Write id: 3 Percent: 36 Clock: 37
+P3: Entry Write id: 1 Percent: 46
+P4: Entry Write id: 1 Percent: 46
+P5: Entry Write id: 3 Percent: 36
+P3: Exit Write id: 1 Percent: 46 Clock: 38
+P4: Exit Write id: 1 Percent: 46 Clock: 38
+P5: Exit Write id: 3 Percent: 36 Clock: 37
+P4: Entry Read id: 5
+P3: Entry Read id: 4
+P3: Exit Read id: 4 Percent: 56 Clock: 31
+P4: Exit Read id: 5 Percent: 41 Clock: 35
+P5: Entry Write id: 1 Percent: 46
+P5: Exit Write id: 1 Percent: 46 Clock: 38
+P4: Entry Write id: 1 Percent: 46
+P4: Exit Write id: 1 Percent: 46 Clock: 38
+P3: Entry Write id: 1 Percent: 46
+P3: Exit Write id: 1 Percent: 46 Clock: 38
+P5: Entry Write id: 1 Percent: 46
+P3: Entry Read id: 6
+P5: Exit Write id: 1 Percent: 46 Clock: 38
+P3: Exit Read id: 6 Percent: 41 Clock: 35
+P5: Entry Write id: 2 Percent: 31
+P5: Exit Write id: 2 Percent: 31 Clock: 39
+P3: Entry Write id: 2 Percent: 31
+P3: Exit Write id: 2 Percent: 31 Clock: 39
+P4: Entry Write id: 2 Percent: 31
+P4: Exit Write id: 2 Percent: 31 Clock: 39
+P5: Entry Read id: 5
+P5: Exit Read id: 5 Percent: 41 Clock: 35
+P5: Entry Read id: 4
+P5: Exit Read id: 4 Percent: 56 Clock: 31
+P3: Entry Read id: 4
+P3: Exit Read id: 4 Percent: 56 Clock: 31
+P4: Entry Read id: 3
+P4: Exit Read id: 3 Percent: 36 Clock: 37
+P5: Entry Read id: 5
+P5: Exit Read id: 5 Percent: 41 Clock: 35
+P3: Entry Read id: 5
+P3: Exit Read id: 5 Percent: 41 Clock: 35
+P3: Entry Write id: 0 Percent: 41
+P4: Entry Write id: 0 Percent: 41
+P3: Exit Write id: 0 Percent: 41 Clock: 41
+P4: Exit Write id: 0 Percent: 41 Clock: 41
+P5: Entry Write id: 0 Percent: 41
+P5: Exit Write id: 0 Percent: 41 Clock: 41
+P5: Entry Read id: 2
+P4: Entry Read id: 5
+P5: Exit Read id: 2 Percent: 31 Clock: 39
+P4: Exit Read id: 5 Percent: 41 Clock: 35
+P3: Entry Read id: 4
+P3: Exit Read id: 4 Percent: 56 Clock: 31
+P3: Entry Read id: 6
+P4: Entry Read id: 4
+P3: Exit Read id: 6 Percent: 41 Clock: 35
+P4: Exit Read id: 4 Percent: 56 Clock: 31
+P5: Entry Read id: 4
+P5: Exit Read id: 4 Percent: 56 Clock: 31
+P3: Entry Read id: 3
+P3: Exit Read id: 3 Percent: 36 Clock: 37
+P5: Entry Write id: 2 Percent: 36
+P4: Entry Write id: 2 Percent: 36
+P3: Entry Write id: 2 Percent: 36
+P5: Exit Write id: 2 Percent: 36 Clock: 44
+P4: Exit Write id: 2 Percent: 36 Clock: 44
+P3: Exit Write id: 2 Percent: 36 Clock: 44
+P4: Entry Write id: 4 Percent: 61
+P3: Entry Write id: 4 Percent: 61
+P4: Exit Write id: 4 Percent: 61 Clock: 44
+P3: Exit Write id: 4 Percent: 61 Clock: 44

@@ -48,6 +48,7 @@ class Check implements Runnable {
 			if(arrOfStr[2].equals("Read") && arrOfStr[1].equals("Exit")){
                 if(data[Integer.parseInt(arrOfStr[4])] != Integer.parseInt(arrOfStr[6])){
                     System.out.println("gotcha");
+                    System.out.println(data[Integer.parseInt(arrOfStr[4])]);
                     success = false;
                     break;
                 }

@@ -129,6 +129,7 @@ public class Writer extends UnicastRemoteObject implements WriteInterface {
 
     public void requestFromServer(Request request){
         requestQueue.add(request);
+
     }
     public Queue<String> getReceiveQueue(){
         Queue<String> temp = new LinkedList<>();
@@ -161,12 +162,14 @@ public class Writer extends UnicastRemoteObject implements WriteInterface {
     public boolean getIsSafe(){
         return this.isSafe;
     }
+    
 }
 
 class DBWriter implements Runnable{
     String nickname;
     Writer writer;
     Queue <String> recQueue;
+    Object lock;
     Scanner scan = new Scanner(System.in);
     public DBWriter(String nName, Writer writer){
         this.nickname = nName;
@@ -411,96 +414,96 @@ class DBWriter implements Runnable{
         System.out.println(message);
     }
 }
-class syncDB  implements Runnable{
-    Queue<Student> q = new LinkedList<>();
-	int tempstatus = 0;
-    DBWriter dbWriter = null;
-    String nickname="";
-    Student s;
+// class syncDB  implements Runnable{
+//     Queue<Student> q = new LinkedList<>();
+// 	int tempstatus = 0;
+//     DBWriter dbWriter = null;
+//     String nickname="";
+//     Student s;
     
 	
 
 	
-	syncDB(Queue<Student> que, DBWriter DBW, String nickname){
-		this.q = que;
-        this.dbWriter = DBW;
-        this.nickname = nickname;
-	}
+// 	syncDB(Queue<Student> que, DBWriter DBW, String nickname){
+// 		this.q = que;
+//         this.dbWriter = DBW;
+//         this.nickname = nickname;
+// 	}
 	
-	public void run() {
-        Random  rand = new Random();
+// 	public void run() {
+//         Random  rand = new Random();
 
-		System.out.println("Thread for sync start");
-		int t = tempstatus;
-		try {
-			Thread.sleep(rand.nextInt(500));
-		} catch (InterruptedException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-		try {
-		      FileWriter logwtr = new FileWriter("Writers.log",true);
-		      BufferedWriter bw = new BufferedWriter(logwtr);
-		      PrintWriter pw = new PrintWriter(bw);
-		      System.out.println("Logging.....");
+// 		System.out.println("Thread for sync start");
+// 		int t = tempstatus;
+// 		try {
+// 			Thread.sleep(rand.nextInt(500));
+// 		} catch (InterruptedException e1) {
+// 			// TODO Auto-generated catch block
+// 			e1.printStackTrace();
+// 		}
+// 		try {
+// 		      FileWriter logwtr = new FileWriter("Writers.log",true);
+// 		      BufferedWriter bw = new BufferedWriter(logwtr);
+// 		      PrintWriter pw = new PrintWriter(bw);
+// 		      System.out.println("Logging.....");
 
-		      pw.println("P"+(this.nickname)+": Synch start "+t);
-	          pw.flush();
-		      logwtr.close();
+// 		      pw.println("P"+(this.nickname)+": Synch start "+t);
+// 	          pw.flush();
+// 		      logwtr.close();
 		      
-//		      System.out.println("Successfully wrote to the file.");
-		 } catch (Exception e) {
-		      System.out.println("An error occurred.");
-		      e.printStackTrace();
-		    }
-		try {
+// //		      System.out.println("Successfully wrote to the file.");
+// 		 } catch (Exception e) {
+// 		      System.out.println("An error occurred.");
+// 		      e.printStackTrace();
+// 		    }
+// 		try {
 			
-	   	 while(q.size() >0) {
-	   		 s = q.remove();
-	   		 dbWriter.write(s);
-	   		try {
+// 	   	 while(q.size() >0) {
+// 	   		 s = q.remove();
+// 	   		 dbWriter.write(s);
+// 	   		try {
 				
-			      FileWriter logwtr = new FileWriter("Writers.log",true);
-			      BufferedWriter bw = new BufferedWriter(logwtr);
-			      PrintWriter pw = new PrintWriter(bw);
-			      System.out.println("Logging....");
+// 			      FileWriter logwtr = new FileWriter("Writers.log",true);
+// 			      BufferedWriter bw = new BufferedWriter(logwtr);
+// 			      PrintWriter pw = new PrintWriter(bw);
+// 			      System.out.println("Logging....");
 
-			      pw.println("UPdate from "+s.getName()+" for id: "+s.getId()+" percent: "+s.getPercent());
+// 			      pw.println("UPdate from "+s.getName()+" for id: "+s.getId()+" percent: "+s.getPercent());
 
-//			      logwtr.append();
-		          pw.flush();
-			      logwtr.close();
-//			      System.out.println("Successfully wrote to the file.");
-			    } catch (Exception e) {
-			      System.out.println("An error occurred.");
-			      e.printStackTrace();
-			    }
-	   	 }
-   		//  Config.synchStart[this.status_bit] = false;
+// //			      logwtr.append();
+// 		          pw.flush();
+// 			      logwtr.close();
+// //			      System.out.println("Successfully wrote to the file.");
+// 			    } catch (Exception e) {
+// 			      System.out.println("An error occurred.");
+// 			      e.printStackTrace();
+// 			    }
+// 	   	 }
+//    		//  Config.synchStart[this.status_bit] = false;
 
-		 } catch (Exception e) {
-		      System.out.println("An error occurred.");
-		      e.printStackTrace();
-		    }
-		try {
+// 		 } catch (Exception e) {
+// 		      System.out.println("An error occurred.");
+// 		      e.printStackTrace();
+// 		    }
+// 		try {
 			
-		      FileWriter logwtr = new FileWriter("Writers.log",true);
-		      BufferedWriter bw = new BufferedWriter(logwtr);
-		      PrintWriter pw = new PrintWriter(bw);
-		      System.out.println("LOGGIGN");
+// 		      FileWriter logwtr = new FileWriter("Writers.log",true);
+// 		      BufferedWriter bw = new BufferedWriter(logwtr);
+// 		      PrintWriter pw = new PrintWriter(bw);
+// 		      System.out.println("LOGGIGN");
 
-		      pw.println("P"+nickname+": Synch end "+t);
+// 		      pw.println("P"+nickname+": Synch end "+t);
 
-//		      logwtr.append();
-	          pw.flush();
-		      logwtr.close();
-//		      System.out.println("Successfully wrote to the file.");
-		    } catch (Exception e) {
-		      System.out.println("An error occurred.");
-		      e.printStackTrace();
-		    }
+// //		      logwtr.append();
+// 	          pw.flush();
+// 		      logwtr.close();
+// //		      System.out.println("Successfully wrote to the file.");
+// 		    } catch (Exception e) {
+// 		      System.out.println("An error occurred.");
+// 		      e.printStackTrace();
+// 		    }
 
 
 	
-	}
-}
+// 	}
+// }
