@@ -73,7 +73,7 @@ public class Writer extends UnicastRemoteObject implements WriteInterface {
 
         Runnable writerComm = new DBWriter(writer.nickname, writer);
         executor.execute(writerComm);
-        while(writer.getIsSafe() || writer.sendStudentQueue.size()!=0){
+        while(writer.getIsSafe() || writer.receiveStudentQueue.size()!=0){
             Thread.sleep(200);
             if(writer.sendQueue.size()>0){
                 try {
@@ -103,7 +103,7 @@ public class Writer extends UnicastRemoteObject implements WriteInterface {
         }
 
         try{
-            System.out.println(writer.sendStudentQueue.size());
+            System.out.println(writer.receiveStudentQueue.size());
             writer.serverInterface.disconnect(writer.nickname);
         } catch(Exception e) {
             System.out.println("Failed to leave chat");
@@ -232,6 +232,7 @@ class DBWriter implements Runnable{
                      syncDB synch = new syncDB(temp, this, nickname);
                      Thread thrd_sync = new Thread(synch);
                      thrd_sync.start();
+                     thrd_sync.join();
                  }
 
                  System.out.println("WRITER "+nickname+" "+t);
