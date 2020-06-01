@@ -43,14 +43,15 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
             writers.addElement(new Process(nickname, writer));
             writer.messageFromServer("[Server]: Connected, proceed");
         } catch (Exception e) {
-        System.out.println("Cannot register: "+nickname);        
+        System.out.println("Cannot register: "+nickname);
     }
     }
 
     public void sendToAll(String message) {
-        for(Process w : writers){
+        for(int i=0; i<writers.size();i++){
             try {
-                w.getWriter().messageFromServer(message);
+                System.out.println(writers.get(i));
+                writers.get(i).getWriter().messageFromServer(message);
             } catch (Exception e) {
                 e.printStackTrace();
             }

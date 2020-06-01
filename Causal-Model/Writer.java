@@ -73,7 +73,7 @@ public class Writer extends UnicastRemoteObject implements WriteInterface {
 
         Runnable writerComm = new DBWriter(writer.nickname, writer);
         executor.execute(writerComm);
-        while(writer.getIsSafe()){
+        while(writer.getIsSafe() || writer.sendStudentQueue.size()!=0){
             Thread.sleep(200);
             if(writer.sendQueue.size()>0){
                 try {
@@ -90,6 +90,7 @@ public class Writer extends UnicastRemoteObject implements WriteInterface {
             }
             if(writer.sendStudentQueue.size()>0){
                 try {
+                    System.out.println(" queue not empty");
                     Student student = writer.sendStudentQueue.remove();
                     System.out.println("hehehe");
                     writer.serverInterface.sendStudent(student);
@@ -100,11 +101,14 @@ public class Writer extends UnicastRemoteObject implements WriteInterface {
 
             }
         }
+
         try{
+            System.out.println(writer.sendStudentQueue.size());
             writer.serverInterface.disconnect(writer.nickname);
         } catch(Exception e) {
             System.out.println("Failed to leave chat");
         }
+
         scan.close();
         executor.shutdown();
         System.exit(0);
@@ -129,7 +133,6 @@ public class Writer extends UnicastRemoteObject implements WriteInterface {
     }
     public void studentFromServer(Student student){
         System.out.println(student.getName());
-        if(!student.getName().equals("Process "+this.nickname))
             receiveStudentQueue.add(student);
     }
 
@@ -187,7 +190,8 @@ class DBWriter implements Runnable{
             int percent = 01;
             String email = nickname+".gmail";
 
-            while(writer.getIsSafe()){
+            while(writer.receiveStudentQueue.size()!=0 || writer.getIsSafe()){
+
                 Thread.sleep(2000);
                 Student s = new Student();
 	   	        t  = t% 7;
@@ -206,6 +210,7 @@ class DBWriter implements Runnable{
                 s.setPercent(percent);
                 s.setEmail(email);
                 s.setClock(c);
+                if(writer.getIsSafe()){
                 switch(rand.nextInt(2)) {
                     case 1:
                         c++;
@@ -218,7 +223,7 @@ class DBWriter implements Runnable{
                     default:
                         System.out.println("NOTHING");
               }
-
+          }
                  //sync with other writer processes
                  Queue<Student> temp = writer.getReceivedStudentQueue();
 
@@ -250,6 +255,7 @@ class DBWriter implements Runnable{
  		      BufferedWriter bw = new BufferedWriter(logwtr);
  		      PrintWriter pw = new PrintWriter(bw);
  		      System.out.println("Logging......");
+
 
  		      pw.println("P"+this.nickname+": Entry Read id: "+t);
  	          pw.flush();
@@ -309,6 +315,7 @@ class DBWriter implements Runnable{
 	 		      BufferedWriter bw = new BufferedWriter(logwtr);
 	 		      PrintWriter pw = new PrintWriter(bw);
                    System.out.println("LOGGING....");
+
 	 		      pw.println("P"+this.nickname+": Exit Read id: "+t+ " Percent: "+percent+" Clock: "+clock);
 	 	          pw.flush();
 	 		      logwtr.close();
@@ -346,7 +353,7 @@ class DBWriter implements Runnable{
  		      PrintWriter pw = new PrintWriter(bw);
  		      System.out.println("Logging.....");
 
- 		      pw.println("P"+this.nickname+": Entry Write id: "+t+" Percent: "+ percent);
+ 		      pw.println("P"+this.nickname+": Entry Write id: "+t+" Percent: "+ percent + "  " + name);
  	          pw.flush();
  		      logwtr.close();
 
@@ -400,8 +407,6 @@ class syncDB  implements Runnable{
     DBWriter dbWriter = null;
     String nickname="";
     Student s;
-    int[] writeDoneBefore = new int[]{ 0,0,0,0,0,0,0 };
-    public static CyclicBarrier gate = new CyclicBarrier(7);
 
 
 
@@ -440,19 +445,30 @@ class syncDB  implements Runnable{
 
 
 		try {
+            while(q.size() >0) {
+             s = q.remove();
+             dbWriter.write(s);
 
-	   	 while(q.size() >0) {
-	   		for(int i=0;i<7;i++){
-                writeforeachindex synch1 = new writeforeachindex(q,i+1,nickname,dbWriter,writeDoneBefore);
-                Thread thr = new Thread(synch1);
-                thr.start();
-            }
+             try {
 
+                  FileWriter logwtr = new FileWriter("Writers.log",true);
+                  BufferedWriter bw = new BufferedWriter(logwtr);
+                  PrintWriter pw = new PrintWriter(bw);
+                  System.out.println("Logging....");
 
-   		//  Config.synchStart[this.status_bit] = false;
+                  pw.println("UPdate from "+s.getName()+" for id: "+s.getId()+" percent: "+s.getPercent());
 
-		 }
-         Arrays.fill(writeDoneBefore, 0);
+//                logwtr.append();
+                  pw.flush();
+                  logwtr.close();
+//                System.out.println("Successfully wrote to the file.");
+                } catch (Exception e) {
+                  System.out.println("An error occurred.");
+                  e.printStackTrace();
+                }
+         }
+        //  Config.synchStart[this.status_bit] = false;
+
         } catch (Exception e) {
 		      System.out.println("An error occurred.");
 		      e.printStackTrace();
@@ -481,158 +497,96 @@ class syncDB  implements Runnable{
 }
 
 
-class writeforeachindex  implements Runnable{
-    Queue<Student> q = new LinkedList<>();
-    ArrayList<Student> l;
-    int id;
-    Student s = null;
-    String nickname;
-    DBWriter dbWriter = null;
-    int[] writeDoneBefore;
-    writeforeachindex(Queue<Student> q, int id, String nickname, DBWriter DBW, int[] writeDoneBefore){
-        this.q = q;
-        this.id=id;
-        l = new ArrayList(q);
-        this.nickname = nickname;
-        this.writeDoneBefore = writeDoneBefore;
-        try
-        {
-            this.dbWriter = DBW;
-        }
-        catch(Exception e)
-        {
-            e.printStackTrace();
-        }
-    }
-
-    public void run(){
-         s = null;
-
-        try
-        {
-            syncDB.gate.await();
-        }
-        catch (InterruptedException | BrokenBarrierException e)
-        {
-            e.printStackTrace();
-        }
-        for(int i=0; i<q.size(); i++){
-            s = l.get(i);
-            if(s.getId() == id && writeDoneBefore[s.getId()-1]==0){
-                try{
-                    writeDoneBefore[s.getId()-1]=1;
-                    dbWriter.write(s);
-
-
-            try {
-
-                  FileWriter logwtr = new FileWriter("Writers.log",true);
-                  BufferedWriter bw = new BufferedWriter(logwtr);
-                  PrintWriter pw = new PrintWriter(bw);
-                  System.out.println("Logging....");
-
-                  pw.println("UPdate from "+s.getName()+" for id: "+s.getId()+" percent: "+s.getPercent());
-//                logwtr.append();
-                  pw.flush();
-                  logwtr.close();
-//                System.out.println("Successfully wrote to the file.");
-                }
-
-                 catch (Exception e) {
-                  System.out.println("An error occurred.");
-                  e.printStackTrace();
-                }
-
-
-
-                    }
-                catch(Exception e)
-                    {
-                    e.printStackTrace();
-                    }
-
-                q.remove(i);
-                l.remove(i);
-                return;
-            }
-
-        }
-        return;
-    }
-    public Student getStud(){
-        return s;
-    }
-
-
-
-// public void write(Student s)throws Exception{
-//         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi"+nickname, "newuser", "password");
-
-//         //Execute a query
-//           System.out.println("Creating statement...");
-
-//           boolean idExists = false;
-//           Statement stmt = conn.createStatement();
-//           String sql = "SELECT * FROM samplermi";
-//           ResultSet rs = stmt.executeQuery(sql);
-
-//           int id = s.getId();
-//           String name = s.getName();
-//           String branch = s.getBranch();
-//           int percent = s.getPercent();
-//           String email = s.getEmail();
-//           int clock = s.getClock();
-
-//           int t = id % 7;
-//           try {
-//               FileWriter logwtr = new FileWriter("Writers.log",true);
-//               BufferedWriter bw = new BufferedWriter(logwtr);
-//               PrintWriter pw = new PrintWriter(bw);
-//               System.out.println("Logging.....");
-
-//               pw.println("P"+this.nickname+": Entry Write id: "+t+" Percent: "+ percent);
-//               pw.flush();
-//               logwtr.close();
-
-//             } catch (IOException e) {
-//               System.out.println("An error occurred.");
-//               e.printStackTrace();
-//             }
-//           // search for id in the database
-//           while(rs.next()) {
-//               if(t == rs.getInt("id")) {
-//                   idExists = true;
-//                   break;
-//               }
-//           }
-
-//           stmt = conn.createStatement();
-//           // If the corresponding  row is not there in the db , INSERT
-//           if (!idExists) {
-//               String insert = "INSERT INTO samplermi(id, name, branch, percentage, email,clock) values('"+t+"','"+name+"','"+branch+"','"+percent+"','"+email+"',"+clock+")";
-//               stmt.executeUpdate(insert);
-//           }
-//           else {
-
-//               String update = "UPDATE samplermi SET percentage = "+percent+", name = '"+name+"', clock = "+clock+" where id = "+t;
-//               stmt.executeUpdate(update);
-//           }
-//           try {
-//               FileWriter logwtr = new FileWriter("Writers.log",true);
-//               BufferedWriter bw = new BufferedWriter(logwtr);
-//               PrintWriter pw = new PrintWriter(bw);
-//               System.out.println("Logging.....");
-
-//               pw.println("P"+this.nickname+": Exit Write id: "+t     +" Percent: "+ percent+" Clock: "+clock);
-//               pw.flush();
-//               logwtr.close();
-//             } catch (IOException e) {
-//               System.out.println("An error occurred.");
-//               e.printStackTrace();
-//             }
-//           conn.close();
-//       System.out.println("wrote in Writer"+this.nickname);
+// class writeforeachindex  implements Runnable{
+//     Queue<Student> q = new LinkedList<>();
+//     ArrayList<Student> l;
+//     int id;
+//     Student s = null;
+//     String nickname;
+//     DBWriter dbWriter = null;
+//     int[] writeDoneBefore;
+//     writeforeachindex(Queue<Student> q, int id, String nickname, DBWriter DBW, int[] writeDoneBefore){
+//         this.q = q;
+//         this.id=id;
+//         l = new ArrayList(q);
+//         this.nickname = nickname;
+//         this.writeDoneBefore = writeDoneBefore;
+//         try
+//         {
+//             this.dbWriter = DBW;
+//         }
+//         catch(Exception e)
+//         {
+//             e.printStackTrace();
+//         }
 //     }
 
+//     public void run(){
+//          s = null;
 
-}
+//         try
+//         {
+//             syncDB.gate.await();
+//         }
+//         catch (InterruptedException | BrokenBarrierException e)
+//         {
+//             e.printStackTrace();
+//         }
+//         for(int i=0; i<q.size(); i++){
+//             s = l.get(i);
+//             if(s.getId() == id && writeDoneBefore[s.getId()]==0){
+//                 try{
+//                     writeDoneBefore[s.getId()]=1;
+//                     System.out.println(writeDoneBefore[s.getId()]);
+//                     System.out.println("WDB[0]:" + writeDoneBefore[0]);
+//                     System.out.println("WDB[1]:" + writeDoneBefore[1]);
+//                     System.out.println("WDB[2]:" + writeDoneBefore[2]);
+//                     System.out.println("WDB[3]:" + writeDoneBefore[3]);
+//                     System.out.println("WDB[4]:" + writeDoneBefore[4]);
+//                     System.out.println("WDB[5]:" + writeDoneBefore[5]);
+//                     System.out.println("WDB[6]:" + writeDoneBefore[6]);
+//                     dbWriter.write(s);
+
+
+//             try {
+
+//                   FileWriter logwtr = new FileWriter("Writers.log",true);
+//                   BufferedWriter bw = new BufferedWriter(logwtr);
+//                   PrintWriter pw = new PrintWriter(bw);
+//                   System.out.println("Logging....");
+//                   System.out.println(l.get(0));
+//                   System.out.println(l.size());
+//                   System.out.println(l.get(0).getName());
+//                   pw.println(nickname+" :UPdate from "+s.getName()+" for id: "+s.getId()+" percent: "+s.getPercent());
+// //                logwtr.append();
+//                   pw.flush();
+//                   logwtr.close();
+// //                System.out.println("Successfully wrote to the file.");
+//                 }
+
+//                  catch (Exception e) {
+//                   System.out.println("An error occurred.");
+//                   e.printStackTrace();
+//                 }
+
+
+
+//                     }
+//                 catch(Exception e)
+//                     {
+//                     e.printStackTrace();
+//                     }
+
+//                 q.remove(i);
+//                 l.remove(i);
+//                 return;
+//             }
+
+//         }
+//         return;
+//     }
+//     public Student getStud(){
+//         return s;
+//     }
+
+// }
