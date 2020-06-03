@@ -59,11 +59,15 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
     }
 
     public void sendStudentToAll(Student student) {
-        for(Process w : writers){
+        for(int j=0; j<writers.size();j++){
             try {
-                w.getWriter().studentFromServer(student);
+                Random rnd = new Random();
+                int delay = (rnd.nextInt(200) + 1);
+                Thread.sleep(delay);
+                writers.get(j).getWriter().studentFromServer(student);
             } catch (Exception e) {
                 e.printStackTrace();
+                System.out.println()
             }
         }
     }

@@ -81,6 +81,7 @@ public class Writer extends UnicastRemoteObject implements WriteInterface {
                     if(message.equals("stop")){
                         writer.isSafe = false;
                     }
+
                     writer.serverInterface.sendMessage(writer.nickname, message);
 
 				} catch (RemoteException e) {
@@ -103,6 +104,7 @@ public class Writer extends UnicastRemoteObject implements WriteInterface {
         }
 
         try{
+            Thread.sleep(30000);
             System.out.println(writer.receiveStudentQueue.size());
             writer.serverInterface.disconnect(writer.nickname);
         } catch(Exception e) {
@@ -397,6 +399,90 @@ class DBWriter implements Runnable{
 	      conn.close();
       System.out.println("wrote in Writer"+this.nickname);
     }
+
+    public void readBeforeWrite(Student s)throws Exception{
+        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rmi"+nickname, "newuser", "password");
+
+        //Execute a query
+          System.out.println("Creating statement...");
+
+          boolean idExists = false;
+          Statement stmt = conn.createStatement();
+          String sql = "SELECT * FROM samplermi";
+          ResultSet rs = stmt.executeQuery(sql);
+
+          int id = s.getId();
+          String name = s.getName();
+          String branch = s.getBranch();
+          int percent = s.getPercent();
+          String email = s.getEmail();
+          int clock = s.getClock();
+
+
+
+          read(id%7);
+
+          int t = id % 7;
+          try {
+              FileWriter logwtr = new FileWriter("Writers.log",true);
+              BufferedWriter bw = new BufferedWriter(logwtr);
+              PrintWriter pw = new PrintWriter(bw);
+              System.out.println("Logging.....");
+
+              pw.println("P"+this.nickname+": Entry Write id: "+t+" Percent: "+ percent + "  " + name);
+              pw.flush();
+              logwtr.close();
+
+            } catch (IOException e) {
+              System.out.println("An error occurred.");
+              e.printStackTrace();
+            }
+          // search for id in the database
+          while(rs.next()) {
+              if(t == rs.getInt("id")) {
+                  idExists = true;
+                  break;
+              }
+          }
+
+          stmt = conn.createStatement();
+          // If the corresponding  row is not there in the db , INSERT
+          if (!idExists) {
+              String insert = "INSERT INTO samplermi(id, name, branch, percentage, email,clock) values('"+t+"','"+name+"','"+branch+"','"+percent+"','"+email+"',"+clock+")";
+              stmt.executeUpdate(insert);
+          }
+          else {
+
+              String update = "UPDATE samplermi SET percentage = "+percent+", name = '"+name+"', clock = "+clock+" where id = "+t;
+              stmt.executeUpdate(update);
+          }
+          try {
+              FileWriter logwtr = new FileWriter("Writers.log",true);
+              BufferedWriter bw = new BufferedWriter(logwtr);
+              PrintWriter pw = new PrintWriter(bw);
+              System.out.println("Logging.....");
+
+              pw.println("P"+this.nickname+": Exit Write id: "+t     +" Percent: "+ percent+" Clock: "+clock);
+              pw.flush();
+              logwtr.close();
+            } catch (IOException e) {
+              System.out.println("An error occurred.");
+              e.printStackTrace();
+            }
+          conn.close();
+      System.out.println("wrote in Writer"+this.nickname);
+    }
+
+
+
+
+
+
+
+
+
+
+
 
     public void messageFromServer(String message) {
         System.out.println(message);
