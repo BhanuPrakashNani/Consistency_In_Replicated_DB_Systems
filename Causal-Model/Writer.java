@@ -191,7 +191,7 @@ class DBWriter implements Runnable{
             String branch = "cse";
             int percent = 01;
             String email = nickname+".gmail";
-
+            int h=1;
             while(writer.receiveStudentQueue.size()!=0 || writer.getIsSafe()){
 
                 Thread.sleep(2000);
@@ -199,10 +199,13 @@ class DBWriter implements Runnable{
 	   	        t  = t% 7;
                 String query = "SELECT * FROM samplermi";
                 ResultSet rs = stmt.executeQuery(query);
+                int l = Integer.parseInt(nickname)*100;
+
                 while(rs.next()) {
                     if(t == rs.getInt("id")) {
                         idExists = true;
-                        percent = rs.getInt("percentage")+5;
+                        h++;
+                        percent = l+h;
                         break;
                     }
                 }

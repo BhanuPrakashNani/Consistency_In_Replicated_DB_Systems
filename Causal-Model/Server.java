@@ -67,7 +67,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
                 writers.get(j).getWriter().studentFromServer(student);
             } catch (Exception e) {
                 e.printStackTrace();
-                System.out.println()
+
             }
         }
     }
